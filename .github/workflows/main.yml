@@ -15,7 +15,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Build
-      uses: jerryjvl/jekyll-build-action@v1
+      uses: dVerschaeve/jekyll-build-action@a96f644b84c6ae080f1a4bb0818bf058fd7ea192
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
