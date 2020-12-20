@@ -3,7 +3,7 @@ name: Transfer RDL JKAN Website to S3 Bucket
 on:
   push:
     branches:
-    - master
+    - gh-pages
 
 jobs:
   deploy:
