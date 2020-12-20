@@ -1,7 +1,7 @@
 title: JKAN
 greeting: Welcome to JKAN
 description: A lightweight, backend-free open data portal, powered by Jekyll.
-baseurl: /rdl-jkan.s3-website-ap-southeast-2.amazonaws.com
+baseurl: /
 logo: /img/jkan.png
 
 # Site theme
