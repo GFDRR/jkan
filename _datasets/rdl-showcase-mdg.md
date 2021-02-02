@@ -30,7 +30,7 @@ model_vulnerability_link: ""
 [//]: # (Map fields)
 map_occupancy: "Residential"
 map_component: "Buildings"
-map_type: "Insured"
+map_loss_type: "Insured"
 map_return_period: "all"
 map_units: ""
 map_metric: "AAL"

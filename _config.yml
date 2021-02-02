@@ -12,7 +12,7 @@ github_client_id:
 gatekeeper_host: 
 
 # Dataset schema
-schema: rdl-loss
+schema: rdl
 
 # Nav bar
 navigation:

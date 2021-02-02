@@ -50,7 +50,7 @@ dataset_fields:
     label: Occupancy
   - field_name: map_component
     label: Component
-  - field_name: map_type
+  - field_name: map_loss_type
     label: Loss Type
   - field_name: map_return_period
     label: Return Period
@@ -63,7 +63,7 @@ dataset_fields:
   - field_name: map_values_asset_ref
     label: Asset Reference
   - field_name: map_values_loss
-    label: loss
+    label: Loss Values
 
   ## Curve map
   - field_name: curve_map_occupancy
