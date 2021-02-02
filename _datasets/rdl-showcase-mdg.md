@@ -17,7 +17,6 @@ category:
 maintainer: Mattia Amadio
 maintainer_email: n/a
 
-
 [//]: # (Model fields)
 model_name: Name of source model
 model_description: "Descriptor"
