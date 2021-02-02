@@ -107,7 +107,7 @@ curve_map_fields:
     label: Occupancy
   - field_name: component
     label: Component
-  - field_name: loss_type
+  - field_name: type
     label: Loss Type
   - field_name: frequency
     label: Frequency

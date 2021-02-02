@@ -14,18 +14,21 @@ license: 'https://creativecommons.org/licenses/by/4.0/'
 category:
   - Loss
 
+maintainer: Mattia Amadio
+maintainer_email: n/a
+
 model:
-  - name: Name of source model
-  - description: "Descriptor"
-  - hazard_type: "EQ"
-  - process_type: "PRO"
-  - hazard_link: ""
-  - exposure_link: ""
-  - vulnerability_link: ""
+  name: Name of source model
+  description: "Descriptor"
+  hazard_type: "EQ"
+  process_type: "PRO"
+  hazard_link: ""
+  exposure_link: ""
+  vulnerability_link: ""
 map:
   - occupancy: "Residential"
   - component: "Buildings"
-  - loss_type: "Insured"
+  - type: "Insured"
   - return_period: "all"
   - units: ""
   - metric: "AAL"
@@ -43,6 +46,4 @@ curve_map_values:
   - asset_ref: ""
   - losses: ""
   - rates: 0.2
-maintainer: Mattia Amadio
-maintainer_email: n/a
 ---
