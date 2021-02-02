@@ -28,6 +28,65 @@ dataset_fields:
     label: Maintainer Email
     datajson: contactPoint.hasEmail
 
+  # RDL-Loss fields
+  ## Model
+  - field_name: model_name
+    label: Model Name
+  - field_name: model_description
+    label: Description
+  - field_name: model_hazard_type
+    label: Hazard Type
+  - field_name: model_process_type
+    label: Process Type
+  - field_name: model_hazard_link
+    label: Hazard Link
+  - field_name: model_exposure_link
+    label: Exposure Link
+  - field_name: model_vulnerability_link
+    label: Vulnerability Link
+  
+  ## map
+  - field_name: map_occupancy
+    label: Occupancy
+  - field_name: map_component
+    label: Component
+  - field_name: map_type
+    label: Loss Type
+  - field_name: map_return_period
+    label: Return Period
+  - field_name: map_units
+    label: Units
+  - field_name: map_metric
+    label: Metric
+  
+  ## Map values
+  - field_name: map_values_asset_ref
+    label: Asset Reference
+  - field_name: map_values_loss
+    label: loss
+
+  ## Curve map
+  - field_name: curve_map_occupancy
+    label: Occupancy
+  - field_name: curve_map_component
+    label: Component
+  - field_name: curve_map_type
+    label: Loss Type
+  - field_name: curve_map_frequency
+    label: Frequency
+  - field_name: curve_map_investigation_time
+    label: Investigation Time
+  - field_name: curve_map_units
+    label: units
+  
+  ## Curve map values
+  - field_name: curve_map_values_asset_ref
+    label: Asset Ref
+  - field_name: curve_map_values_losses
+    label: Losses
+  - field_name: curve_map_values_rates
+    label: Rates
+
 resource_fields:
   - field_name: name
     label: Resource Name
@@ -65,61 +124,3 @@ category_fields:
   - field_name: featured
     label: Featured on Homepage
     form_template: form/checkbox.html
-
-model_fields:
-  - field_name: name
-    label: Model Name
-  - field_name: description
-    label: Description
-  - field_name: hazard_type
-    label: Hazard Type
-  - field_name: process_type
-    label: Process Type
-  - field_name: hazard_link
-    label: Hazard Link
-  - field_name: exposure_link
-    label: Exposure Link
-  - field_name: vulnerability_link
-    label: Vulnerability Link
-
-map_fields:
-  - field_name: occupancy
-    label: Occupancy
-  - field_name: component
-    label: Component
-  - field_name: type
-    label: Loss Type
-  - field_name: return_period
-    label: Return Period
-  - field_name: units
-    label: Units
-  - field_name: metric
-    label: Metric
-
-map_values_fields:
-  - field_name: asset_ref
-    label: Asset Reference
-  - field_name: loss
-    label: loss
-  
-curve_map_fields:
-  - field_name: occupancy
-    label: Occupancy
-  - field_name: component
-    label: Component
-  - field_name: type
-    label: Loss Type
-  - field_name: frequency
-    label: Frequency
-  - field_name: investigation_time
-    label: Investigation Time
-  - field_name: units
-    label: units
-
-curve_map_values_fields:
-  - field_name: asset_ref
-    label: Asset Ref
-  - field_name: losses
-    label: Losses
-  - field_name: rates
-    label: Rates
