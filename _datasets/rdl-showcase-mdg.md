@@ -1,5 +1,5 @@
 ---
-schema: rdl-loss
+schema: rdl
 title: RDL showcase data (Loss), Madagascar
 organization: SWIO RAFI
 notes: Show case example data - SWIO RAFI data
