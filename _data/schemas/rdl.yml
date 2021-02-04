@@ -128,25 +128,25 @@ dataset_fields:
 
   ## Curve map
   - field_name: curve_map_occupancy
-    label: Occupancy
+    label: Occupancy (Curve map)
   - field_name: curve_map_component
-    label: Component
+    label: Component (Curve map)
   - field_name: curve_map_type
-    label: Loss Type
+    label: Loss Type (Curve map)
   - field_name: curve_map_frequency
-    label: Frequency
+    label: Frequency (Curve map)
   - field_name: curve_map_investigation_time
     label: Investigation Time
   - field_name: curve_map_units
-    label: units
+    label: Units (Curve map)
   
   ## Curve map values
   - field_name: curve_map_values_asset_ref
-    label: Asset Ref
+    label: Asset Ref (Curve map)
   - field_name: curve_map_values_losses
-    label: Losses
+    label: Losses (Curve map)
   - field_name: curve_map_values_rates
-    label: Rates
+    label: Rates (Curve map)
 
   # RDL-Exposure fields
   ## ExposureModel
