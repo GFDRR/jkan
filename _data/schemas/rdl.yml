@@ -30,59 +30,59 @@ dataset_fields:
 
   # RDL-Hazard fields
   ## Event Set
-  field_name: geographic_area_name
+  field_name: event_geographic_area_name
   label_name: Geographic area name
-  field_name: creation_date
+  field_name: event_creation_date
   label_name: Creation date
-  field_name: hazard_type
+  field_name: event_hazard_type
   label_name: Hazard type
-  field_name: time_start
+  field_name: event_time_start
   label_name: Time start
-  field_name: time_end
+  field_name: event_time_end
   label_name: Time end
-  field_name: time_duration
+  field_name: event_time_duration
   label_name: Time duration
-  field_name: description
+  field_name: event_description
   label_name: Description
-  field_name: bibliography
+  field_name: event_bibliography
   label_name: Bibliography
-  field_name: is_prob
+  field_name: event_is_prob
   label_name: Is prob
 
   ## Event
-  field_name: calculation_method
+  field_name: event_calculation_method
   label_name: Calculation method
-  field_name: frequency
+  field_name: event_frequency
   label_name: Frequency
-  field_name: occurence_probability
+  field_name: event_occurence_probability
   label_name: Occurence probability
-  field_name: occurrence_time_start
+  field_name: event_occurrence_time_start
   label_name: Occurrence time start
-  field_name: occurrence_time_end
+  field_name: event_occurrence_time_end
   label_name: Occurrence time end
-  field_name: occurrence_time_span
+  field_name: event_occurrence_time_span
   label_name: Occurrence time span
-  field_name: trigger_hazard_type  # are these fields necessary?
+  field_name: event_trigger_hazard_type  # are these fields necessary?
   label_name: Trigger hazard type
-  field_name: trigger_process_type
+  field_name: event_trigger_process_type
   label_name: Trigger Process Type
-  field_name: trigger_event
+  field_name: event_trigger_event
   label_name: Trigger event  # Name of trigger event. Adjusted from Schema - trigger_footprint_id
-  field_name: description
+  field_name: event_description
   label_name: Description
 
   ## FootprintSet
-  field_name: process_type
+  field_name: footprintset_process_type
   label_name: Process type
-  field_name: IMT
+  field_name: footprintset_IMT
   label_name: IMT
-  field_name: data_uncertainty
+  field_name: footprintset_data_uncertainty
   label_name: Data uncertainty
 
   ## Footprint
-  field_name: uncertainty_2nd_moment
+  field_name: footprint_uncertainty_2nd_moment
   label_name: Uncertainty 2nd moment
-  field_name: trigger_footprint
+  field_name: footprint_trigger_footprint
   label_name: Trigger footprint  # Name of trigger footprint. Adjusted from Schema - trigger_footprint_id
 
   ## Footprint Data
@@ -147,6 +147,64 @@ dataset_fields:
     label: Losses
   - field_name: curve_map_values_rates
     label: Rates
+
+  # RDL-Exposure fields
+  ## ExposureModel
+  field_name: exposure_name
+  label: Exposure Name
+  field_name: exposure_description
+  label: Description
+  field_name: exposure_taxonomy_source
+  label: Taxonomy source
+  field_name: exposure_category
+  label: Exposure category
+  field_name: exposure_area_type
+  label: Area type
+  field_name: exposure_area_unit
+  label: Area unit
+  field_name: exposure_tag_names
+  label: Tag names
+  field_name: exposure_use
+  label: Use
+
+  ## ModelCostType
+  field_name: cost_type_name
+  label: Cost type name
+  field_name: cost_type_aggregation_type
+  label: Aggregation type
+  field_name: cost_type_unit
+  label: Unit
+
+  ## Asset
+  field_name: asset_ref
+  label: Asset ref
+  field_name: asset_taxonomy
+  label: Taxonomy
+  field_name: asset_number_of_units
+  label: Number of units
+  field_name: asset_area
+  label: Area
+
+  ## Cost
+  field_name: cost_value
+  label: Value
+  field_name: cost_deductible
+  label: Deductible
+  field_name: cost_insurance_limit
+  label: Insurance limit
+
+  ## Occupancy
+  field_name: occupancy_period
+  label: Period
+  field_name: occupancy_occupants
+  label: Occupants
+
+  ## Tags
+  field_name: tag_name
+  label: Tag name
+  field_name: tag_value
+  label: Tag value
+
 
 resource_fields:
   - field_name: name
