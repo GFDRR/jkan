@@ -28,6 +28,45 @@ dataset_fields:
     label: Maintainer Email
     datajson: contactPoint.hasEmail
 
+resource_fields:
+  - field_name: name
+    label: Resource Name
+    datajson: distribution.title
+  - field_name: url
+    label: URL
+    datajson: distribution.downloadURL
+  - field_name: format
+    label: Format
+    datajson: distribution.format
+    form_template: form/dropdown.html
+    values:
+      - api
+      - csv
+      - json
+      - geojson
+      - shp
+      - gpkg
+
+organization_fields:
+  - field_name: title
+    label: Title
+  - field_name: description
+    label: Description
+  - field_name: logo
+    label: Logo
+
+category_fields:
+  - field_name: name
+    label: Name
+  - field_name: logo
+    label: Logo
+  - field_name: logo_credit
+    label: Logo Credit
+  - field_name: featured
+    label: Featured on Homepage
+    form_template: form/checkbox.html
+
+rdl_fields:
   # RDL-Hazard fields
   ## Event Set
   - field_name: event_geographic_area_name
@@ -424,41 +463,3 @@ dataset_fields:
     label: ISSN  # International Standard Serial Number associated with reference
   - field_name: reftable_doi  # Digital Object Identifier url associated with reference
     label: DOI  # Digital Object Identifier url associated with reference
-
-resource_fields:
-  - field_name: name
-    label: Resource Name
-    datajson: distribution.title
-  - field_name: url
-    label: URL
-    datajson: distribution.downloadURL
-  - field_name: format
-    label: Format
-    datajson: distribution.format
-    form_template: form/dropdown.html
-    values:
-      - api
-      - csv
-      - json
-      - geojson
-      - shp
-      - gpkg
-
-organization_fields:
-  - field_name: title
-    label: Title
-  - field_name: description
-    label: Description
-  - field_name: logo
-    label: Logo
-
-category_fields:
-  - field_name: name
-    label: Name
-  - field_name: logo
-    label: Logo
-  - field_name: logo_credit
-    label: Logo Credit
-  - field_name: featured
-    label: Featured on Homepage
-    form_template: form/checkbox.html
