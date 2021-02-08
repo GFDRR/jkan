@@ -14,7 +14,7 @@ export default class {
 
   _sourcesWithCount (datasets, params) {
     return chain(datasets)
-      .groupBy('sources')
+      .groupBy('source')
       .map(function (datasetsInSrc, src) {
         const filters = createDatasetFilters(pick(params, ['category']))
         const filteredDatasets = filter(datasetsInSrc, filters)
