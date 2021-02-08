@@ -19,7 +19,7 @@ export default class {
         const filters = createDatasetFilters(pick(params, ['category']))
         const filteredDatasets = filter(datasetsInSrc, filters)
         const orgSlug = slugify(src)
-        const selected = params.src && params.src === orgSlug
+        const selected = params.source && params.source === orgSlug
         const itemParams = selected ? omit(params, 'source') : defaults({src: orgSlug}, params)
         return {
           title: src,
