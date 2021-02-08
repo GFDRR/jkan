@@ -1,6 +1,6 @@
 # RDL categories
 - name: Hazard
-  logo: /img/categories/icon-wildfire.svg
+  logo: img/categories/icon-wildfire.svg
   featured: true
 
 - name: Exposure
