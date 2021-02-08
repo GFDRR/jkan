@@ -1,0 +1,26 @@
+---
+title: Data Sources
+layout: default
+permalink: /sources/
+---
+{% include breadcrumbs.html %}
+
+<a href="{{ site.baseurl }}/add-data-sources/" class="btn btn-default pull-right admin-only" data-hook="add-data-sources-btn"><i class="fa fa-plus"></i> Add Data Source</a>
+
+{% for sources in site.sources %}
+  {% assign dataset_count = site.datasets | where:"sources", sources.title | size %}
+  <div class="media">
+    <div class="media-left">
+      {% if sources.logo and sources.logo != empty %}
+        <a href="{{ site.baseurl }}{{ sources.url }}" class="sources-thumbnail">
+          <img class="media-object" src="{{ sources.logo }}" alt="{{ sources.title }}">
+        </a>
+      {% endif %}
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading"><a href="{{ site.baseurl }}{{ sources.url }}">{{ sources.title }}</a></h4>
+      <p>{{ sources.description }}</p>
+      <p><a href="{{ site.baseurl }}/datasets/?sources={{ sources.title | slugify }}">{{ dataset_count }} datasets</a></p>
+    </div>
+  </div>
+{% endfor %}

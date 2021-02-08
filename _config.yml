@@ -20,6 +20,8 @@ navigation:
     url: /datasets/
   - title: Organizations
     url: /organizations/
+  - title: Data Sources
+    url: /sources/
 
 # Collections
 collections:
@@ -29,6 +31,9 @@ collections:
   organizations:
     output: true
     permalink: /organizations/:path/
+  sources:
+    output: true
+    permalink: /sources/:path/
 
 # Collections (cont'd)
 defaults:
@@ -44,6 +49,11 @@ defaults:
       type: organizations
     values:
       layout: organization
+  - scope:
+      path: ""
+      type: sources
+    values:
+      layout: sources
 
 # Markdown settings
 markdown: kramdown
