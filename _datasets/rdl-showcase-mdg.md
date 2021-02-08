@@ -1,7 +1,8 @@
 ---
 schema: rdl
 title: RDL showcase data (Loss), Madagascar
-organization: SWIO RAFI
+organization: GFDRR
+source: SWIO RAFI
 notes: Show case example data - SWIO RAFI data
 resources:
   - name: Madagascar all RPs Geopackage

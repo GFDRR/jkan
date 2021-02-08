@@ -1,7 +1,8 @@
 ---
 schema: rdl
 title: RDL showcase data (Loss), Afghanistan
-organization: SWIO RAFI
+organization: GFDRR
+source: SWIO RAFI
 notes: Show case example data - SWIO RAFI data
 resources:
   - name: Afghanistan all RPs Geopackage
