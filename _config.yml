@@ -1,8 +1,8 @@
 title: JKAN
-greeting: Welcome to JKAN
-description: A lightweight, backend-free open data portal, powered by Jekyll.
-# baseurl: /
-logo: /img/jkan.png
+greeting: The Risk Data Library
+description: A GFDRR open data portal
+baseurl: ""
+logo: https://www.gfdrr.org/themes/custom/gfdrr/images/GFDRR_Primary%20Logo_BW-Shade.svg
 
 # Site theme
 jkan_theme: Default
