@@ -1,7 +1,7 @@
 title: JKAN
 greeting: The Risk Data Library
 description: A GFDRR open data portal
-baseurl: ""
+# baseurl: /
 logo: https://www.gfdrr.org/themes/custom/gfdrr/images/GFDRR_Primary%20Logo_BW-Shade.svg
 
 # Site theme
