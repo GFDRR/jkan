@@ -18,9 +18,9 @@ export default class {
       .map(function (datasetsInSrc, src) {
         const filters = createDatasetFilters(pick(params, ['category']))
         const filteredDatasets = filter(datasetsInSrc, filters)
-        const orgSlug = slugify(src)
-        const selected = params.source && params.source === orgSlug
-        const itemParams = selected ? omit(params, 'source') : defaults({src: orgSlug}, params)
+        const srcSlug = slugify(src)
+        const selected = params.source && params.source === srcSlug
+        const itemParams = selected ? omit(params, 'source') : defaults({source: srcSlug}, params)
         return {
           title: src,
           url: '?' + $.param(itemParams),

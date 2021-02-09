@@ -8,6 +8,8 @@ dataset_fields:
     label: Organization
     form_template: form/organization.html
     datajson: publisher.name
+  - field_name: source
+    label: Data source
   - field_name: notes
     label: Description
     form_template: form/textarea.html
@@ -65,6 +67,14 @@ category_fields:
   - field_name: featured
     label: Featured on Homepage
     form_template: form/checkbox.html
+
+source_fields:
+  - field_name: data_source
+    label: Data Source
+  - field_name: data_source_description
+    label: Description
+  - field_name: data_source_url
+    label: URL
 
 rdl_fields:
   # RDL-Hazard fields
