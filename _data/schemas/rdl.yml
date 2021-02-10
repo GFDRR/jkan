@@ -93,13 +93,238 @@ rdl_fields:
   - field_name: geo_coverage
     label_name: Geographic coverage
     values:
-      - Should
-      - I add
-      - All countries
-      - ISO codes
-      - This way?
-      - Doesn't seem the best
-      - for 232 countries
+      - ABW
+      - AFG
+      - AGO
+      - AIA
+      - ALB
+      - AND
+      - ARE
+      - ARG
+      - ARM
+      - ASM
+      - ATG
+      - AUS
+      - AUT
+      - AZE
+      - BDI
+      - BEL
+      - BEN
+      - BFA
+      - BGD
+      - BGR
+      - BHR
+      - BHS
+      - BIH
+      - BLM
+      - BLR
+      - BLZ
+      - BMU
+      - BOL
+      - BRA
+      - BRB
+      - BRN
+      - BTN
+      - BWA
+      - CAF
+      - CAN
+      - CHE
+      - CHL
+      - CHN
+      - CIV
+      - CMR
+      - COD
+      - COG
+      - COK
+      - COL
+      - COM
+      - CPV
+      - CRI
+      - CUB
+      - CUW
+      - CYM
+      - CYP
+      - CZE
+      - DEU
+      - DJI
+      - DMA
+      - DNK
+      - DOM
+      - DZA
+      - ECU
+      - EGY
+      - ERI
+      - ESP
+      - EST
+      - ETH
+      - FIN
+      - FJI
+      - FLK
+      - FRA
+      - FRO
+      - FSM
+      - GAB
+      - GBR
+      - GEO
+      - GGY
+      - GHA
+      - GIB
+      - GIN
+      - GMB
+      - GNB
+      - GNQ
+      - GRC
+      - GRD
+      - GRL
+      - GTM
+      - GUM
+      - GUY
+      - HKG
+      - HMD
+      - HND
+      - HRV
+      - HTI
+      - HUN
+      - IDN
+      - IMN
+      - IND
+      - IRL
+      - IRN
+      - IRQ
+      - ISL
+      - ISR
+      - ITA
+      - JAM
+      - JEY
+      - JOR
+      - JPN
+      - KAZ
+      - KEN
+      - KGZ
+      - KHM
+      - KIR
+      - KNA
+      - KOR
+      - KWT
+      - LAO
+      - LBN
+      - LBR
+      - LBY
+      - LCA
+      - LIE
+      - LKA
+      - LSO
+      - LTU
+      - LUX
+      - LVA
+      - MAC
+      - MAF
+      - MAR
+      - MCO
+      - MDA
+      - MDG
+      - MDV
+      - MEX
+      - MHL
+      - MKD
+      - MLI
+      - MLT
+      - MMR
+      - MNE
+      - MNG
+      - MNP
+      - MOZ
+      - MRT
+      - MSR
+      - MUS
+      - MWI
+      - MYS
+      - NAM
+      - NCL
+      - NER
+      - NFK
+      - NGA
+      - NIC
+      - NIU
+      - NLD
+      - NOR
+      - NPL
+      - NRU
+      - NZL
+      - OMN
+      - PAK
+      - PAN
+      - PCN
+      - PER
+      - PHL
+      - PLW
+      - PNG
+      - POL
+      - PRI
+      - PRK
+      - PRT
+      - PRY
+      - PSE
+      - PYF
+      - QAT
+      - ROU
+      - RUS
+      - RWA
+      - SAU
+      - SDN
+      - SEN
+      - SGP
+      - SGS
+      - SHN
+      - SLB
+      - SLE
+      - SLV
+      - SMR
+      - SOM
+      - SPM
+      - SRB
+      - SSD
+      - STP
+      - SUR
+      - SVK
+      - SVN
+      - SWE
+      - SWZ
+      - SXM
+      - SYC
+      - SYR
+      - TCA
+      - TCD
+      - TGO
+      - THA
+      - TJK
+      - TKM
+      - TLS
+      - TON
+      - TTO
+      - TUN
+      - TUR
+      - TUV
+      - TZA
+      - UGA
+      - UKR
+      - URY
+      - USA
+      - UZB
+      - VAT
+      - VCT
+      - VEN
+      - VGB
+      - VIR
+      - VNM
+      - VUT
+      - WLF
+      - WSM
+      - XXK
+      - YEM
+      - ZAF
+      - ZMB
+      - ZWE
   - field_name: publish
     label_name: Public
   - field_name: license_code
@@ -129,6 +354,8 @@ rdl_fields:
       - VO
       - WF
       - WI
+  - field_name: geo_area_name
+    label_name: Name of location covered (local-scale datasets)
   - field_name: event_time_start
     label_name: Event start time
   - field_name: event_time_end
@@ -139,6 +366,9 @@ rdl_fields:
     label_name: Event description
   - field_name: event_is_prob
     label_name: Is prob
+    values:
+      - True
+      - False
 
   ## Event
   - field_name: event_calculation_method
@@ -155,8 +385,49 @@ rdl_fields:
     label_name: Occurrence time span
   - field_name: event_trigger_hazard_type
     label_name: Trigger hazard type
+    values:
+      - CF
+      - CS
+      - DR
+      - EQ
+      - ET
+      - FL
+      - LS 
+      - MH
+      - TS
+      - VO
+      - WF
+      - WI
   - field_name: event_trigger_process_type
     label_name: Trigger Process Type
+    values:
+      - FCF
+      - FSS
+      - TOR
+      - DTA
+      - DTH
+      - DTM
+      - DTS
+      - Q1R
+      - Q2R
+      - QGM
+      - QLI
+      - ECD
+      - EHT
+      - FFF
+      - FPF
+      - LAV
+      - LSL
+      - TSI
+      - VAF
+      - VBL
+      - VFH
+      - VLH
+      - VLV
+      - VPF
+      - WFI
+      - ETC
+      - TCY
   - field_name: event_trigger_event
     label_name: Trigger event
   - field_name: event_description
@@ -195,6 +466,67 @@ rdl_fields:
       - TCY
   - field_name: footprintset_IMT
     label_name: Intensity measure
+    values:
+      - PGA_g
+      - PGA_m/s2
+      - PGV_m/s
+      - SA(0.2)_g
+      - SA(0.3)_g
+      - SA(1.0)_g
+      - SA(3.0)_g
+      - SA(0.2)_m/s2
+      - SA(0.3)_m/s2
+      - SA(1.0)_m/s2
+      - SA(3.0)_m/s2
+      - Sd(T1)_m
+      - Sv(T1)_m/s
+      - PGDf_m
+      - D_a5-95_s
+      - D_a5-75 _s
+      - IA_m/s
+      - Neq_-
+      - EMS_-
+      - AvgSa_m/s2
+      - I_Np_m/s2
+      - MMI_-
+      - CAV_m/s
+      - D_B_s
+      - d_fff_m
+      - d_fpf_m
+      - v_fff_m/s
+      - v_fpf_m/s
+      - v_tcy(3s)_km/h
+      - v_ect(3s)_km/h
+      - v_tcy(1m)_km/h
+      - v_ect(1m)_km/h
+      - v_tcy(10m)_km/h
+      - v_etc(10m)_km/h
+      - PGWS_tcy_km/h
+      - PGWS_ect_km/h
+      - d_lsl_m
+      - I_DF_m3/s2
+      - v_lsl_m/s2
+      - MFD_lsl_m
+      - SD_lsl_m
+      - LSI_-
+      - haz_lsl_-
+      - Rh_tsi_m
+      - d_tsi_m
+      - MMF_m4/s2
+      - F_drag_kN
+      - Fr_-
+      - v_tsi_m/s
+      - F_QS_kN
+      - MF_m3/s2
+      - h_tsi_m
+      - Fh_tsi_m
+      - h_vaf_m
+      - L_vaf_kg/m2
+      - v_fss_m/s
+      - d_fss_m
+      - CMI_-
+      - PDSI_-
+      - SPI_-
   - field_name: footprintset_data_uncertainty
     label_name: Data uncertainty
 
@@ -262,22 +594,15 @@ rdl_fields:
   - field_name: cost_type_unit
     label: Cost unit of measure
       
-  ## Cost
+  ## Cost and occupants are in-data values. Tags used for whole set specifications
   ### Not needed for RDL-JKAN
   # file_location
-
-  ## Occupants
-  - field_name: occupants_period
-    label: Period
-  - field_name: occupants_num_occupants
-    label: Occupants
 
   ## Tags
   - field_name: tag_name
     label: Tag name
   - field_name: tag_value
     label: Tag value
-
 
   # RDL-Loss fields
   ## Model
@@ -454,14 +779,108 @@ rdl_fields:
   ## Fcore
   - field_name: f_core_hazard_type_primary
     label: Primary hazard type
+    values:
+      - CF
+      - CS
+      - DR
+      - EQ
+      - ET
+      - FL
+      - LS 
+      - MH
+      - TS
+      - VO
+      - WF
+      - WI
   - field_name: f_core_hazard_type_secondary
     label: Secondary hazard type
+    values:
+      - CF
+      - CS
+      - DR
+      - EQ
+      - ET
+      - FL
+      - LS 
+      - MH
+      - TS
+      - VO
+      - WF
+      - WI
   - field_name: f_core_process_type_primary
     label: Primary process type
+    values:
+      - FCF
+      - FSS
+      - TOR
+      - DTA
+      - DTH
+      - DTM
+      - DTS
+      - Q1R
+      - Q2R
+      - QGM
+      - QLI
+      - ECD
+      - EHT
+      - FFF
+      - FPF
+      - LAV
+      - LSL
+      - TSI
+      - VAF
+      - VBL
+      - VFH
+      - VLH
+      - VLV
+      - VPF
+      - WFI
+      - ETC
+      - TCY
   - field_name: f_core_process_type_secondary
     label: Secondary process type
+    values:
+      - FCF
+      - FSS
+      - TOR
+      - DTA
+      - DTH
+      - DTM
+      - DTS
+      - Q1R
+      - Q2R
+      - QGM
+      - QLI
+      - ECD
+      - EHT
+      - FFF
+      - FPF
+      - LAV
+      - LSL
+      - TSI
+      - VAF
+      - VBL
+      - VFH
+      - VLH
+      - VLV
+      - VPF
+      - WFI
+      - ETC
+      - TCY
   - field_name: f_core_occupancy
     label: Occupancy
+    values:
+      - Residential
+      - Commercial
+      - Industrial
+      - Infrastructure
+      - Healthcare
+      - Educational
+      - Government
+      - Crop
+      - Livestock
+      - Forestry
+      - Mixed
   - field_name: f_core_taxonomy_source
     label: Taxonomy source
   - field_name: f_core_taxonomy
@@ -472,6 +891,239 @@ rdl_fields:
     label: Asset notes
   - field_name: f_core_country_iso
     label: Country ISO
+    values:
+      - ABW
+      - AFG
+      - AGO
+      - AIA
+      - ALB
+      - AND
+      - ARE
+      - ARG
+      - ARM
+      - ASM
+      - ATG
+      - AUS
+      - AUT
+      - AZE
+      - BDI
+      - BEL
+      - BEN
+      - BFA
+      - BGD
+      - BGR
+      - BHR
+      - BHS
+      - BIH
+      - BLM
+      - BLR
+      - BLZ
+      - BMU
+      - BOL
+      - BRA
+      - BRB
+      - BRN
+      - BTN
+      - BWA
+      - CAF
+      - CAN
+      - CHE
+      - CHL
+      - CHN
+      - CIV
+      - CMR
+      - COD
+      - COG
+      - COK
+      - COL
+      - COM
+      - CPV
+      - CRI
+      - CUB
+      - CUW
+      - CYM
+      - CYP
+      - CZE
+      - DEU
+      - DJI
+      - DMA
+      - DNK
+      - DOM
+      - DZA
+      - ECU
+      - EGY
+      - ERI
+      - ESP
+      - EST
+      - ETH
+      - FIN
+      - FJI
+      - FLK
+      - FRA
+      - FRO
+      - FSM
+      - GAB
+      - GBR
+      - GEO
+      - GGY
+      - GHA
+      - GIB
+      - GIN
+      - GMB
+      - GNB
+      - GNQ
+      - GRC
+      - GRD
+      - GRL
+      - GTM
+      - GUM
+      - GUY
+      - HKG
+      - HMD
+      - HND
+      - HRV
+      - HTI
+      - HUN
+      - IDN
+      - IMN
+      - IND
+      - IRL
+      - IRN
+      - IRQ
+      - ISL
+      - ISR
+      - ITA
+      - JAM
+      - JEY
+      - JOR
+      - JPN
+      - KAZ
+      - KEN
+      - KGZ
+      - KHM
+      - KIR
+      - KNA
+      - KOR
+      - KWT
+      - LAO
+      - LBN
+      - LBR
+      - LBY
+      - LCA
+      - LIE
+      - LKA
+      - LSO
+      - LTU
+      - LUX
+      - LVA
+      - MAC
+      - MAF
+      - MAR
+      - MCO
+      - MDA
+      - MDG
+      - MDV
+      - MEX
+      - MHL
+      - MKD
+      - MLI
+      - MLT
+      - MMR
+      - MNE
+      - MNG
+      - MNP
+      - MOZ
+      - MRT
+      - MSR
+      - MUS
+      - MWI
+      - MYS
+      - NAM
+      - NCL
+      - NER
+      - NFK
+      - NGA
+      - NIC
+      - NIU
+      - NLD
+      - NOR
+      - NPL
+      - NRU
+      - NZL
+      - OMN
+      - PAK
+      - PAN
+      - PCN
+      - PER
+      - PHL
+      - PLW
+      - PNG
+      - POL
+      - PRI
+      - PRK
+      - PRT
+      - PRY
+      - PSE
+      - PYF
+      - QAT
+      - ROU
+      - RUS
+      - RWA
+      - SAU
+      - SDN
+      - SEN
+      - SGP
+      - SGS
+      - SHN
+      - SLB
+      - SLE
+      - SLV
+      - SMR
+      - SOM
+      - SPM
+      - SRB
+      - SSD
+      - STP
+      - SUR
+      - SVK
+      - SVN
+      - SWE
+      - SWZ
+      - SXM
+      - SYC
+      - SYR
+      - TCA
+      - TCD
+      - TGO
+      - THA
+      - TJK
+      - TKM
+      - TLS
+      - TON
+      - TTO
+      - TUN
+      - TUR
+      - TUV
+      - TZA
+      - UGA
+      - UKR
+      - URY
+      - USA
+      - UZB
+      - VAT
+      - VCT
+      - VEN
+      - VGB
+      - VIR
+      - VNM
+      - VUT
+      - WLF
+      - WSM
+      - XXK
+      - YEM
+      - ZAF
+      - ZMB
+      - ZWE
   - field_name: f_core_applicability_notes
     label: Applicability notes
   - field_name: f_core_scale_applicability
@@ -490,22 +1142,6 @@ rdl_fields:
     label: Bespoke model reference
   - field_name: f_core_f_reference
     label: Reference
-  - field_name: f_core_license_code
-    label: License code
-  - field_name: f_core_license_reference
-    label: License reference
-  - field_name: f_core_project
-    label: Project
-  
-  - field_name: f_core_notes
-    label: Notes
-  - field_name: f_core_version
-    label: Version
-  - field_name: f_core_purpose
-    label: Purpose
-  - field_name: f_core_created_at
-    label: Created at
-
 
   ## FSpecifics
   - field_name: fspecifics_par_names
@@ -562,7 +1198,6 @@ rdl_fields:
     label: N events
   - field_name: fspecifics_n_assets
     label: N assets
-
 
   ## FAdditional
   - field_name: fAdditional_nonsampling_err
