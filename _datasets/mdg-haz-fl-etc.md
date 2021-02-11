@@ -1,6 +1,6 @@
 ---
 schema: rdl
-title: SWIO-RAFI Madagascar Earthquake Ground Shaking
+title: SWIO RAFI Madagascar Extra-Tropical Cyclone Pluvial Flood
 category:
   - Hazard
 notes: This data set was produced with financial support from the European Union in the framework of the ACP-EU Natural Disaster Risk Reduction Program, managed by the Global Facility for Disaster Reduction and Recovery (GFDRR).
@@ -13,8 +13,8 @@ project: GFDRR South West Indian Ocean Risk Assessment and Financing Initiative 
 bibliography: SWIO RAFI Report https://www.gfdrr.org/en/publication/southwest-indian-ocean-risk-assessment-and-financing-initiative-summary-report-and-risk
 geo_coverage: MDG
 resources:
-  - name: SWIO-RAFI Madagascar Earthquake Ground Shaking
-    url: 'https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/mdg-haz-eq.zip'
+  - name: SWIO-RAFI Madagascar Extra-Tropical Cyclone Pluvial Flood
+    url: 'https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/mdg-haz-fl-etc.zip'
     format: geotiff
 
 license: CC BY-SA 4.0
@@ -24,7 +24,7 @@ maintainer_email: labs.gfdrr@gmail.com
 
 [//]: # RDL-attributes: hazard fields
 [//]: ## Event Set
-event_hazard_type: "Earthquake"
+event_hazard_type: "Flood"
 geo_area_name: ""
 event_time_start: ""
 event_time_end: ""
@@ -40,13 +40,13 @@ event_occurrence_time_start: ""
 event_occurrence_time_end: ""
 event_occurrence_time_span: ""
 event_trigger_hazard_type: ""
-event_trigger_process_type: ""
+event_trigger_process_type: "Extra-Tropical Cyclone"
 event_trigger_event: ""
 event_description: ""
 
 [//]: ## FootprintSet
-footprintset_process_type: "Ground Motion"
-footprintset_IMT: "PGA (g)"
+footprintset_process_type: "Pluvial Flood"
+footprintset_IMT: "Flood Water Depth (m)"
 footprintset_data_uncertainty: ""
 
 [//]: ## Footprint

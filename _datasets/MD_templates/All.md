@@ -1270,6 +1270,5 @@ rdl_fields:
     label: ISSN  # International Standard Serial Number associated with reference
   - field_name: reftable_doi  # Digital Object Identifier url associated with reference
     label: DOI  # Digital Object Identifier url associated with reference
-	
-	
-	---
+
+---
