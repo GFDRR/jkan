@@ -8,8 +8,6 @@ dataset_fields:
     label: Organization
     form_template: form/organization.html
     datajson: publisher.name
-  - field_name: source
-    label: Data source
   - field_name: notes
     label: Description
     form_template: form/textarea.html
@@ -68,17 +66,9 @@ category_fields:
     label: Featured on Homepage
     form_template: form/checkbox.html
 
-source_fields:
-  - field_name: data_source
-    label: Data Source
-  - field_name: data_source_description
-    label: Description
-  - field_name: data_source_url
-    label: URL
-
-rdl_fields:
-  # RDL-attributes: common fields
-  ## Contribution
+# RDL-attributes: common fields
+## Contribution
+rdl_contribution:
   - field_name: component
     label_name: Schema component
     values:
@@ -347,8 +337,9 @@ rdl_fields:
       - ODC-By
       - PDDL
     
-  # RDL-attributes: hazard fields
-  ## Event Set
+# RDL-attributes: hazard fields
+rdl_hazard:
+  # Event set
   - field_name: event_hazard_type
     label_name: Hazard type
     values:
@@ -550,8 +541,8 @@ rdl_fields:
   ### Not needed for RDL-JKAN
   # file_location
 
-  # RDL-Exposure fields
-  ## ExposureModel
+# RDL-Exposure fields
+rdl_exposure:
   - field_name: exposure_name
     label: Exposure Name
   - field_name: exposure_description
@@ -614,8 +605,9 @@ rdl_fields:
   - field_name: tag_value
     label: Tag value
 
-  # RDL-Loss fields
-  ## Model
+# RDL-Loss fields  
+## Model
+rdl_loss:
   - field_name: model_name
     label: Model Name
   - field_name: model_description
@@ -701,7 +693,7 @@ rdl_fields:
       - Content
       - Business interruption
       - Other
-   - field_name: map_impact
+  - field_name: map_impact
     label: Impact type
     values:
       - Direct
@@ -762,7 +754,7 @@ rdl_fields:
       - Content
       - Business interruption
       - Other
-   - field_name: curve_map_impact
+  - field_name: curve_map_impact
     label: Impact type
     values:
       - Direct
@@ -779,13 +771,12 @@ rdl_fields:
     label: Investigation Time
   - field_name: curve_map_units
     label: Unit of measure
-  
-  ## Curve map values
-  ### Not needed for RDL-JKAN
-  # file_location
+    ## Curve map values
+    ### Not needed for RDL-JKAN
+    # file_location
 
-
-  # RDL-Vulnerability fields
+# RDL-Vulnerability fields
+rdl_vulnerability:
   ## Fcore
   - field_name: f_core_hazard_type_primary
     label: Primary hazard type
