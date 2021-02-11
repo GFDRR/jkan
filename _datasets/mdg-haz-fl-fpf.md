@@ -1,6 +1,6 @@
 ---
 schema: rdl
-title: SWIO RAFI Madagascar Tropical Cyclone Storm Surge
+title: SWIO RAFI Madagascar Tropical Cyclone Pluvial Flood
 category:
   - Hazard
 notes: This data set was produced with financial support from the European Union in the framework of the ACP-EU Natural Disaster Risk Reduction Program, managed by the Global Facility for Disaster Reduction and Recovery (GFDRR).
@@ -13,8 +13,8 @@ project: GFDRR South West Indian Ocean Risk Assessment and Financing Initiative 
 bibliography: SWIO RAFI Report https://www.gfdrr.org/en/publication/southwest-indian-ocean-risk-assessment-and-financing-initiative-summary-report-and-risk
 geo_coverage: MDG
 resources:
-  - name: SWIO-RAFI Madagascar Tropical Cyclone Storm Surge
-    url: 'https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/mdg-haz-fl-fss.zip'
+  - name: SWIO-RAFI Madagascar Tropical Cyclone Pluvial Flood
+    url: 'https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/mdg-haz-fl-fpf.zip'
     format: geotiff
 
 license: CC BY-SA 4.0
@@ -45,7 +45,7 @@ event_trigger_event: ""
 event_description: ""
 
 [//]: ## FootprintSet
-footprintset_process_type: "Storm Surge"
+footprintset_process_type: "Pluvial Flood"
 footprintset_IMT: "Flood Water Depth (m)"
 footprintset_data_uncertainty: ""
 
