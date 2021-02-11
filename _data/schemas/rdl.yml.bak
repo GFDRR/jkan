@@ -1,0 +1,465 @@
+# To add fields, make a new schema file in this directory
+# and change the schema setting in _config.yml to its name
+dataset_fields:
+  - field_name: title
+    label: Title
+    datajson: title
+  - field_name: organization
+    label: Organization
+    form_template: form/organization.html
+    datajson: publisher.name
+  - field_name: notes
+    label: Description
+    form_template: form/textarea.html
+    datajson: description
+  - field_name: license
+    label: License
+    form_template: form/license.html
+    datajson: license
+  - field_name: category
+    label: Schema component
+    form_template: form/category.html
+    display_template: display/category.html
+    datajson: category
+  - field_name: maintainer
+    label: Maintainer
+    datajson: contactPoint.fn
+  - field_name: maintainer_email
+    label: Maintainer Email
+    datajson: contactPoint.hasEmail
+
+resource_fields:
+  - field_name: name
+    label: Resource Name
+    datajson: distribution.title
+  - field_name: url
+    label: URL
+    datajson: distribution.downloadURL
+  - field_name: format
+    label: Format
+    datajson: distribution.format
+    form_template: form/dropdown.html
+    values:
+      - api
+      - csv
+      - json
+      - geojson
+      - shp
+      - gpkg
+
+organization_fields:
+  - field_name: title
+    label: Title
+  - field_name: description
+    label: Description
+  - field_name: logo
+    label: Logo
+
+category_fields:
+  - field_name: name
+    label: Name
+  - field_name: logo
+    label: Logo
+  - field_name: logo_credit
+    label: Logo Credit
+  - field_name: featured
+    label: Featured on Homepage
+    form_template: form/checkbox.html
+
+rdl_fields:
+  # RDL-Hazard fields
+  ## Event Set
+  - field_name: event_geographic_area_name
+    label_name: Geographic area name
+  - field_name: event_creation_date
+    label_name: Creation date
+  - field_name: event_hazard_type
+    label_name: Hazard type
+  - field_name: event_time_start
+    label_name: Time start
+  - field_name: event_time_end
+    label_name: Time end
+  - field_name: event_time_duration
+    label_name: Time duration
+  - field_name: event_description
+    label_name: Description
+  - field_name: event_bibliography
+    label_name: Bibliography
+  - field_name: event_is_prob
+    label_name: Is prob
+
+  ## Event
+  - field_name: event_calculation_method
+    label_name: Calculation method
+  - field_name: event_frequency
+    label_name: Frequency
+  - field_name: event_occurence_probability
+    label_name: Occurence probability
+  - field_name: event_occurrence_time_start
+    label_name: Occurrence time start
+  - field_name: event_occurrence_time_end
+    label_name: Occurrence time end
+  - field_name: event_occurrence_time_span
+    label_name: Occurrence time span
+  - field_name: event_trigger_hazard_type  # are these fields necessary?
+    label_name: Trigger hazard type
+  - field_name: event_trigger_process_type
+    label_name: Trigger Process Type
+  - field_name: event_trigger_event
+    label_name: Trigger event  # Name of trigger event. Adjusted from Schema - trigger_footprint_id
+  - field_name: event_description
+    label_name: Description
+
+  ## FootprintSet
+  - field_name: footprintset_process_type
+    label_name: Process type
+  - field_name: footprintset_IMT
+    label_name: IMT
+  - field_name: footprintset_data_uncertainty
+    label_name: Data uncertainty
+
+  ## Footprint
+  - field_name: footprint_uncertainty_2nd_moment
+    label_name: Uncertainty 2nd moment
+  - field_name: footprint_trigger_footprint
+    label_name: Trigger footprint  # Name of trigger footprint. Adjusted from Schema - trigger_footprint_id
+
+  ## Footprint Data
+  ### Not needed for RDL-JKAN
+  # file_location
+
+  # RDL-Loss fields
+  ## Model
+  - field_name: model_name
+    label: Model Name
+  - field_name: model_description
+    label: Description
+  - field_name: model_hazard_type
+    label: Hazard Type
+  - field_name: model_process_type
+    label: Process Type
+  - field_name: model_hazard_link
+    label: Hazard Link
+  - field_name: model_exposure_link
+    label: Exposure Link
+  - field_name: model_vulnerability_link
+    label: Vulnerability Link
+  
+  ## map
+  - field_name: map_occupancy
+    label: Occupancy
+  - field_name: map_component
+    label: Component
+  - field_name: map_loss_type
+    label: Loss Type
+  - field_name: map_return_period
+    label: Return Period
+  - field_name: map_units
+    label: Units
+  - field_name: map_metric
+    label: Metric
+  
+  ## Map values
+  - field_name: map_values_asset_ref
+    label: Asset Reference
+  - field_name: map_values_loss
+    label: Loss Values
+
+  ## Curve map
+  - field_name: curve_map_occupancy
+    label: Occupancy (Curve map)
+  - field_name: curve_map_component
+    label: Component (Curve map)
+  - field_name: curve_map_type
+    label: Loss Type (Curve map)
+  - field_name: curve_map_frequency
+    label: Frequency (Curve map)
+  - field_name: curve_map_investigation_time
+    label: Investigation Time
+  - field_name: curve_map_units
+    label: Units (Curve map)
+  
+  ## Curve map values
+  - field_name: curve_map_values_asset_ref
+    label: Asset Ref (Curve map)
+  - field_name: curve_map_values_losses
+    label: Losses (Curve map)
+  - field_name: curve_map_values_rates
+    label: Rates (Curve map)
+
+  # RDL-Exposure fields
+  ## ExposureModel
+  - field_name: exposure_name
+    label: Exposure Name
+  - field_name: exposure_description
+    label: Description
+  - field_name: exposure_taxonomy_source
+    label: Taxonomy source
+  - field_name: exposure_category
+    label: Exposure category
+  - field_name: exposure_area_type
+    label: Area type
+  - field_name: exposure_area_unit
+    label: Area unit
+  - field_name: exposure_tag_names
+    label: Tag names
+  - field_name: exposure_use
+    label: Use
+
+  ## ModelCostType
+  - field_name: cost_type_name
+    label: Cost type name
+  - field_name: cost_type_aggregation_type
+    label: Aggregation type
+  - field_name: cost_type_unit
+    label: Unit
+
+  ## Asset
+  - field_name: asset_ref
+    label: Asset ref
+  - field_name: asset_taxonomy
+    label: Taxonomy
+  - field_name: asset_number_of_units
+    label: Number of units
+  - field_name: asset_area
+    label: Area
+
+  ## Cost
+  - field_name: cost_value
+    label: Value
+  - field_name: cost_deductible
+    label: Deductible
+  - field_name: cost_insurance_limit
+    label: Insurance limit
+
+  ## Occupancy
+  - field_name: occupancy_period
+    label: Period
+  - field_name: occupancy_occupants
+    label: Occupants
+
+  ## Tags
+  - field_name: tag_name
+    label: Tag name
+  - field_name: tag_value
+    label: Tag value
+
+  # RDL-Vulnerability
+  ## Fcore
+  - field_name: f_core_hazard_type_primary
+    label: Primary hazard type
+  - field_name: f_core_hazard_type_secondary
+    label: Secondary hazard type
+  - field_name: f_core_process_type_primary
+    label: Primary process type
+  - field_name: f_core_process_type_secondary
+    label: Secondary process type
+  - field_name: f_core_occupancy
+    label: Occupancy
+  - field_name: f_core_taxonomy_source
+    label: Taxonomy source
+  - field_name: f_core_taxonomy
+    label: Taxonomy
+  - field_name: f_core_asset_type
+    label: Asset type
+  - field_name: f_core_asset_notes
+    label: Asset notes
+  - field_name: f_core_country_iso
+    label: Country ISO
+  - field_name: f_core_applicability_notes
+    label: Applicability notes
+  - field_name: f_core_scale_applicability
+    label: Scale applicability
+  - field_name: f_core_function_type
+    label: Function type
+  - field_name: f_core_approach
+    label: Approach
+  - field_name: f_core_f_relationship
+    label: F relationship
+  - field_name: f_core_f_math
+    label: Math
+  - field_name: f_core_f_math_model
+    label: Math model
+  - field_name: f_core_bespoke_model_ref
+    label: Bespoke model reference
+  - field_name: f_core_f_reference
+    label: Reference
+  - field_name: f_core_license_code
+    label: License code
+  - field_name: f_core_license_reference
+    label: License reference
+  - field_name: f_core_project
+    label: Project
+  
+  - field_name: f_core_notes
+    label: Notes
+  - field_name: f_core_version
+    label: Version
+  - field_name: f_core_purpose
+    label: Purpose
+  - field_name: f_core_created_at
+    label: Created at
+
+
+  ## FSpecifics
+  - field_name: fspecifics_par_names
+    label: Par names
+  - field_name: fspecifics_ub_par_value
+    label: UB par value
+  - field_name: fspecifics_ub_par_perc
+    label: UB par perc
+  - field_name: fspecifics_med_par_value
+    label: Med par value
+  - field_name: fspecifics_lb_par_value
+    label: LB par value
+  - field_name: fspecifics_lb_par_perc
+    label: LB par perc
+  - field_name: fspecifics_damage_scale_code
+    label: Damage scale code
+  - field_name: fspecifics_dm_state_name
+    label: DM state name
+  - field_name: fspecifics_n_dm_states
+    label: N DM states
+  - field_name: fspecifics_f_disc_im
+    label: F disc IM
+  - field_name: fspecifics_f_disc_ep
+    label: F disc EP
+  - field_name: fspecifics_lp_code
+    label: LP code
+  - field_name: fspecifics_lp_loss_value
+    label: LP loss value
+  - field_name: fspecifics_edp_cpde
+    label: EDP cpde
+  - field_name: fspecifics_edp_name
+    label: EDP name
+  - field_name: fspecifics_edp_dmstate_thre
+    label: EDP dmstate threshold
+  - field_name: fspecifics_im_code
+    label: IM code
+  - field_name: fspecifics_im_name
+    label: IM name
+  - field_name: fspecifics_im_range
+    label: IM range
+  - field_name: fspecifics_im_units
+    label: IM units
+  - field_name: fspecifics_im_method
+    label: IM method
+  - field_name: fspecifics_im_sim_type
+    label: IM sim type
+  - field_name: fspecifics_impe_reference
+    label: IMPE reference
+  - field_name: fspecifics_data_countries
+    label: Data countries
+  - field_name: fspecifics_im_data_source
+    label: IM data source
+  - field_name: fspecifics_n_events
+    label: N events
+  - field_name: fspecifics_n_assets
+    label: N assets
+
+
+  ## FAdditional
+  - field_name: fAdditional_nonsampling_err
+    label: Nonsampling error
+  - field_name: fAdditional_type_nonsampling_err
+    label: Type nonsampling err
+  - field_name: fAdditional_is_fix_nonsam_err
+    label: Is fix nonsam err
+  - field_name: fAdditional_is_data_aggregated
+    label: Is data aggregated
+  - field_name: fAdditional_n_data_points_aggr
+    label: N data points aggregated
+  - field_name: fAdditional_is_data_disaggr
+    label: Is data disaggrated
+  - field_name: fAdditional_an_analysis_type
+    label: AN analysis type
+  - field_name: fAdditional_em_analysis_type
+    label: EM analysis type
+  - field_name: fAdditional_jd_analysis_type
+    label: JD analysis type
+  - field_name: fAdditional_is_fit_good
+    label: Is fit good
+  - field_name: fAdditional_fit_ref
+    label: Fit reference
+  - field_name: fAdditional_val_data_source
+    label: Value data source
+  - field_name: fAdditional_val_study_reference
+    label: Value study reference
+  - field_name: fAdditional_sample
+    label: Sample
+
+  ## FScoring
+  - field_name: fscoring_geo_applicability
+    label: Geo applicability
+  - field_name: fscoring_core_id
+    label: Core id
+  - field_name: fscoring_geographic_relevance_score
+    label: Geographic relevance score
+
+  ## DMScale
+  - field_name: dmscale_asset_type
+    label: Asset type
+  - field_name: dmscale_occupancy
+    label: Occupancy
+  - field_name: dmscale_hazard_type
+    label: Hazard type
+  - field_name: dmscale_process_type
+    label: Process type
+  - field_name: dmscale_asset_notes
+    label: Asset notes
+  - field_name: dmscale_taxonomy_source
+    label: Taxonomy source
+  - field_name: dmscale_taxonomy
+    label: Taxonomy
+  - field_name: dmscale_n_dm_states
+    label: N DM states
+  - field_name: dmscale_dm_states_id
+    label: DM states id
+  - field_name: dmscale_dm_states_name
+    label: DM states name
+  - field_name: dmscale_damage_scale_name
+    label: Damage scale name
+  - field_name: dmscale_damage_scale_code
+    label: Damage scale code
+  - field_name: dmscale_damage_scale_type
+    label: Damage scale type
+  - field_name: dmscale_dm_scale_reference
+    label: DM scale reference
+  - field_name: dmscale_is_edp_thre
+    label: Is EDP threshold
+  - field_name: dmscale_is_dm_factor
+    label: Is DM factor
+  - field_name: dmscale_is_casualties
+    label: Is casualties
+  - field_name: dmscale_is_downtime
+    label: Is downtime
+
+  ## EDPTable
+  - field_name: edp_code
+    label: Code
+  - field_name: edp_description
+    label: Description
+  - field_name: edp_units
+    label: Units
+  - field_name: edp_name
+    label: Name
+
+  ## LPTable
+  - field_name: lp_code
+    label: Code
+  - field_name: lp_name
+    label: Name
+  - field_name: lp_description
+    label: Description
+  - field_name: lp_units
+    label: Units
+
+  ## ReferenceTable
+  - field_name: reftable_author_year
+    label: Author year
+  - field_name: reftable_title
+    label: Title
+  - field_name: reftable_issn  # International Standard Serial Number associated with reference
+    label: ISSN  # International Standard Serial Number associated with reference
+  - field_name: reftable_doi  # Digital Object Identifier url associated with reference
+    label: DOI  # Digital Object Identifier url associated with reference
