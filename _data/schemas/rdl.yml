@@ -687,7 +687,7 @@ rdl_fields:
       - Content
       - Business interruption
       - Other
-   - field_name: map_impact
+  - field_name: map_impact
     label: Impact type
     values:
       - Direct
@@ -748,7 +748,7 @@ rdl_fields:
       - Content
       - Business interruption
       - Other
-   - field_name: curve_map_impact
+  - field_name: curve_map_impact
     label: Impact type
     values:
       - Direct
