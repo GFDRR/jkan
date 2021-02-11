@@ -1,9 +1,8 @@
 ---
-[//]: # RDL-attributes for JKAN
-[//]: ## Contribution attributes and link to file
 schema: rdl
 title: SWIO RAFI Madagascar Earthquake Ground Shaking
-category: Hazard
+category:
+  - Hazard
 notes: This data set was produced with financial support from the European Union in the framework of the ACP-EU Natural Disaster Risk Reduction Program, managed by the Global Facility for Disaster Reduction and Recovery (GFDRR).
 organization: GFDRR
 source: SWIO RAFI
