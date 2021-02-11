@@ -1,97 +1,44 @@
 # To add fields, make a new schema file in this directory
 # and change the schema setting in _config.yml to its name
+
+# RDL-attributes: common fields
+## Contribution (dataset)
 dataset_fields:
   - field_name: title
     label: Title
     datajson: title
-  - field_name: organization
-    label: Organization
-    form_template: form/organization.html
-    datajson: publisher.name
-  - field_name: notes
-    label: Description
-    form_template: form/textarea.html
-    datajson: description
-  - field_name: license
-    label: License
-    form_template: form/license.html
-    datajson: license
+    ###change field name as "component"
   - field_name: category
     label: Schema component
     form_template: form/category.html
     display_template: display/category.html
     datajson: category
-  - field_name: maintainer
-    label: Maintainer
-    datajson: contactPoint.fn
-  - field_name: maintainer_email
-    label: Maintainer Email
-    datajson: contactPoint.hasEmail
-
-resource_fields:
-  - field_name: name
-    label: Resource Name
-    datajson: distribution.title
-  - field_name: url
-    label: URL
-    datajson: distribution.downloadURL
-  - field_name: format
-    label: Format
-    datajson: distribution.format
-    form_template: form/dropdown.html
-    values:
-      - api
-      - csv
-      - json
-      - geojson
-      - shp
-      - gpkg
-
-organization_fields:
-  - field_name: title
-    label: Title
-  - field_name: description
-    label: Description
-  - field_name: logo
-    label: Logo
-
-category_fields:
-  - field_name: name
-    label: Name
-  - field_name: logo
-    label: Logo
-  - field_name: logo_credit
-    label: Logo Credit
-  - field_name: featured
-    label: Featured on Homepage
-    form_template: form/checkbox.html
-
-rdl_fields:
-  # RDL-attributes: common fields
-  ## Contribution
-  - field_name: component
-    label_name: Schema component
     values:
       - Hazard
       - Exposure
       - Vulnerability
       - Loss
-  - field_name: model_source
-    label_name: Name of source model
-  - field_name: model_date
-    label_name: Model release date
   - field_name: notes
-    label_name: Notes
+    label: Description
+    form_template: form/textarea.html
+    datajson: description
+    ###change field name as "model_source"
+  - field_name: organization
+    label: Name of model source
+    form_template: form/organization.html
+    datajson: publisher.name
+  - field_name: model_date
+    label: Model release date
   - field_name: version
-    label_name: Version
+    label: Version
   - field_name: purpose
-    label_name: Purpose
+    label: Purpose
   - field_name: project
-    label_name: Project
+    label: Project
   - field_name: bibliography
-    label_name: Bibliographic source
+    label: Bibliographic source
   - field_name: geo_coverage
-    label_name: Geographic coverage
+    label: Geographic coverage
     values:
       - ABW
       - AFG
@@ -324,11 +271,11 @@ rdl_fields:
       - YEM
       - ZAF
       - ZMB
-      - ZWE
-  - field_name: publish
-    label_name: Public
-  - field_name: license_code
-    label_name: License code
+      - ZWE 
+  - field_name: license
+    label: License
+    form_template: form/license.html
+    datajson: license
     values:
       - CC0
       - CC BY 4.0
@@ -336,11 +283,60 @@ rdl_fields:
       - ODbl
       - ODC-By
       - PDDL
-    
+  - field_name: maintainer
+    label: Maintainer
+    datajson: contactPoint.fn
+  - field_name: maintainer_email
+    label: Maintainer Email
+    datajson: contactPoint.hasEmail
+      - Hazard
+      - Exposure
+      - Vulnerability
+      - Loss
+
+resource_fields:
+  - field_name: name
+    label: Resource Name
+    datajson: distribution.title
+  - field_name: url
+    label: URL
+    datajson: distribution.downloadURL
+  - field_name: format
+    label: Format
+    datajson: distribution.format
+    form_template: form/dropdown.html
+    values:
+      - api
+      - csv
+      - json
+      - geojson
+      - shp
+      - gpkg
+
+organization_fields:
+  - field_name: title
+    label: Title
+  - field_name: description
+    label: Description
+  - field_name: logo
+    label: Logo
+
+category_fields:
+  - field_name: name
+    label: Name
+  - field_name: logo
+    label: Logo
+  - field_name: logo_credit
+    label: Logo Credit
+  - field_name: featured
+    label: Featured on Homepage
+    form_template: form/checkbox.html
+
+rdl_fields:
   # RDL-attributes: hazard fields
   ## Event Set
   - field_name: event_hazard_type
-    label_name: Hazard type
+    label: Hazard type
     values:
       - CF
       - CS
@@ -355,36 +351,36 @@ rdl_fields:
       - WF
       - WI
   - field_name: geo_area_name
-    label_name: Name of location covered (local-scale datasets)
+    label: Name of location covered (local-scale datasets)
   - field_name: event_time_start
-    label_name: Event start time
+    label: Event start time
   - field_name: event_time_end
-    label_name: Event end time
+    label: Event end time
   - field_name: event_time_duration
-    label_name: Time duration
+    label: Time duration
   - field_name: event_description
-    label_name: Event description
+    label: Event description
   - field_name: event_is_prob
-    label_name: Is prob
+    label: Is prob
     values:
       - True
       - False
 
   ## Event
   - field_name: event_calculation_method
-    label_name: Calculation method
+    label: Calculation method
   - field_name: event_frequency
-    label_name: Frequency
+    label: Frequency
   - field_name: event_occurence_probability
-    label_name: Occurence probability
+    label: Occurence probability
   - field_name: event_occurrence_time_start
-    label_name: Occurrence time start
+    label: Occurrence time start
   - field_name: event_occurrence_time_end
-    label_name: Occurrence time end
+    label: Occurrence time end
   - field_name: event_occurrence_time_span
-    label_name: Occurrence time span
+    label: Occurrence time span
   - field_name: event_trigger_hazard_type
-    label_name: Trigger hazard type
+    label: Trigger hazard type
     values:
       - CF
       - CS
@@ -399,7 +395,7 @@ rdl_fields:
       - WF
       - WI
   - field_name: event_trigger_process_type
-    label_name: Trigger Process Type
+    label: Trigger Process Type
     values:
       - FCF
       - FSS
@@ -429,13 +425,13 @@ rdl_fields:
       - ETC
       - TCY
   - field_name: event_trigger_event
-    label_name: Trigger event
+    label: Trigger event
   - field_name: event_description
-    label_name: Description specific to this event
+    label: Description specific to this event
 
   ## FootprintSet
   - field_name: footprintset_process_type
-    label_name: Process type
+    label: Process type
     values:
       - FCF
       - FSS
@@ -465,7 +461,7 @@ rdl_fields:
       - ETC
       - TCY
   - field_name: footprintset_IMT
-    label_name: Intensity measure
+    label: Intensity measure
     values:
       - PGA_g
       - PGA_m/s2
@@ -528,13 +524,13 @@ rdl_fields:
       - PDSI_-
       - SPI_-
   - field_name: footprintset_data_uncertainty
-    label_name: Data uncertainty
+    label: Data uncertainty
 
   ## Footprint
   - field_name: footprint_uncertainty_2nd_moment
-    label_name: Uncertainty 2nd moment
+    label: Uncertainty 2nd moment
   - field_name: footprint_trigger_footprint
-    label_name: Trigger footprint
+    label: Trigger footprint
 
   ## Footprint Data
   ### Not needed for RDL-JKAN
