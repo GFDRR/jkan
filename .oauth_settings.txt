@@ -1,4 +1,0 @@
-
-# Heroku settings
-Client ID: 0fba5158d7ca63d255ce
-Client secret: cb654e64660d154cb0b966a5442d3557e1ceb56d 
