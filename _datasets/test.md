@@ -1,15 +1,11 @@
 ---
 schema: rdl
 title: SWIO RAFI Madagascar Earthquake Ground Shaking
-notes: text
 organization: GFDRR
 source: SWIO RAFI
-model_date: 2016
-version: 1
+notes: text
 purpose: text
 project: text
-bibliography: SWIORAFI
-geo_coverage: MDG
 resources:
   - name: 
     url: 'https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/mdg-haz-eq.zip'
