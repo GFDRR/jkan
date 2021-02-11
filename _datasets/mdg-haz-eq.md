@@ -24,31 +24,31 @@ maintainer_email: labs.gfdrr@gmail.com
 
 [//]: # RDL-attributes: hazard fields
 [//]: ## Event Set
-event_hazard_type: Earthquake
-geo_area_name:
-event_time_start:
-event_time_end:
-event_time_duration:
-event_description:
-event_is_prob: True
+event_hazard_type: "Earthquake"
+geo_area_name: ""
+event_time_start: ""
+event_time_end: ""
+event_time_duration: ""
+event_description: ""
+event_is_prob: "True"
 
 [//]: ## Event 
-event_calculation_method:
-event_frequency:
-event_occurence_probability: 10, 25, 50, 100, 250, 500, 10000
-event_occurrence_time_start:
-event_occurrence_time_end:
-event_occurrence_time_span:
-event_trigger_hazard_type:
-event_trigger_process_type:
-event_trigger_event:
-event_description:
+event_calculation_method: ""
+event_frequency: ""
+event_occurence_probability: "10, 25, 50, 100, 250, 500, 10000"
+event_occurrence_time_start: ""
+event_occurrence_time_end: ""
+event_occurrence_time_span: ""
+event_trigger_hazard_type: ""
+event_trigger_process_type: ""
+event_trigger_event: ""
+event_description: ""
 
 [//]: ## FootprintSet
-footprintset_process_type: Ground Motion
-footprintset_IMT: PGA, g
-footprintset_data_uncertainty:
+footprintset_process_type: "Ground Motion"
+footprintset_IMT: "PGA, g"
+footprintset_data_uncertainty: ""
 
 [//]: ## Footprint
-footprint_uncertainty_2nd_moment:
-footprint_trigger_footprint:
+footprint_uncertainty_2nd_moment: ""
+footprint_trigger_footprint: ""
