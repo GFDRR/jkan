@@ -7,8 +7,8 @@ source: SWIO RAFI
 model_date: 2016
 version: 1
 purpose: text
-project: GFDRR South West Indian Ocean Risk Assessment and Financing Initiative (SWIO-RAFI)
-bibliography: SWIO RAFI Report https://www.gfdrr.org/en/publication/southwest-indian-ocean-risk-assessment-and-financing-initiative-summary-report-and-risk
+project: text
+bibliography: SWIORAFI
 geo_coverage: MDG
 resources:
   - name: 
