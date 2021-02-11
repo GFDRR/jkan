@@ -1,6 +1,6 @@
 ---
 schema: rdl
-title: SWIO RAFI Madagascar Earthquake Ground Shaking
+title: SWIO-RAFI Madagascar Earthquake Ground Shaking
 category:
   - Hazard
 notes: This data set was produced with financial support from the European Union in the framework of the ACP-EU Natural Disaster Risk Reduction Program, managed by the Global Facility for Disaster Reduction and Recovery (GFDRR).
@@ -13,7 +13,7 @@ project: GFDRR South West Indian Ocean Risk Assessment and Financing Initiative 
 bibliography: SWIO RAFI Report https://www.gfdrr.org/en/publication/southwest-indian-ocean-risk-assessment-and-financing-initiative-summary-report-and-risk
 geo_coverage: MDG
 resources:
-  - name: 
+  - name: SWIO-RAFI Madagascar Earthquake Ground Shaking
     url: 'https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/mdg-haz-eq.zip'
     format: geotiff
 
