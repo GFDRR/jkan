@@ -27,8 +27,8 @@ maintainer_email: labs.gfdrr@gmail.com
 
 [//]: # RDL-Loss fields
 [//]: ## LossModel
-model_name: Name of source model
-model_description: "Descriptor"
+model_name: "Multi-Hazard Losses"
+model_description: "Average Annual Losses and RP losses at ADM2 level for all hazards combined"
 model_hazard_type: "MH"
 model_process_type: ""
 model_hazard_link: ""
@@ -39,7 +39,7 @@ model_vulnerability_link: ""
 map_occupancy: "Residential"
 map_category: "Buildings"
 map_element: "Structure"
-map_impact: "Direct
+map_impact: "Direct"
 map_loss_type: "Ground up"
 map_frequency: "Return Period"
 map_return_period: "10, 25, 50, 100, 250, 500, 10000"
