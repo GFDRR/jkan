@@ -350,7 +350,7 @@ rdl_hazard:
       - WF
       - WI
   - field_name: geo_area_name
-    label: Name of location covered (local-scale datasets)
+    label: Name of location
   - field_name: event_time_start
     label: Event start time
   - field_name: event_time_end
