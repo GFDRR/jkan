@@ -22,7 +22,7 @@ resources:
   - name: Madagascar Exceedence Probability curves for Multi-Hazard at ADM0, ADM1 and ADM2
     url: 'https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/mdg-loss-mh-epc.zip'
     format: csv
-	
+
 license: CC BY-SA 4.0
 
 maintainer: GFDRR
