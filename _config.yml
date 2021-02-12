@@ -20,8 +20,6 @@ navigation:
     url: /datasets/
   - title: Organizations
     url: /organizations/
-  - title: Data Sources
-    url: /sources/
 
 # Collections
 collections:
