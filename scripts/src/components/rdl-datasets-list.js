@@ -12,14 +12,16 @@
  */
 import {pick, defaults, filter} from 'lodash'
 
-import TmplDatasetItem from '../templates/dataset-item'
+import TmplDatasetItem from '../templates/rdl-datasets-item'
 import {queryByHook, setContent, createDatasetFilters} from '../util'
+
+console.log("rdl data list")
 
 export default class {
   constructor (opts) {
     const elements = {
-      datasetsItems: queryByHook('datasets-items', opts.el),
-      datasetsCount: queryByHook('datasets-count', opts.el),
+      datasetsItems: queryByHook('rdl-datasets-items', opts.el),
+      datasetsCount: queryByHook('rdl-datasets-count', opts.el),
       searchQuery: queryByHook('search-query', opts.el)
     }
 

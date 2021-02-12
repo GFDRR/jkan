@@ -8,7 +8,7 @@ logo: https://www.gfdrr.org/themes/custom/gfdrr/images/GFDRR_Primary%20Logo_BW-S
 jkan_theme: Default
 
 # Authentication
-github_client_id: 0fba5158d7ca63d255ce
+github_client_id: e70f0123742062ebd1cc
 gatekeeper_host: https://rdl-jkan.herokuapp.com
 
 # Dataset schema

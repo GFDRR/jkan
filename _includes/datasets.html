@@ -1,6 +1,8 @@
 {% for dataset in include.datasets %}
 <dataset>
-  <h3><a href="{{ site.baseurl }}{{ dataset.url }}">{{ dataset.title }}</a></h3>
+  <h3><a href="{{ site.baseurl }}{{ dataset.url }}">{{ dataset.license }}</a></h3>
   {{ dataset.notes | truncate: 300, '...' }}
+  {{ dataset.title }}
+  {{ dataset.license }}
 </dataset>
 {% endfor %}
