@@ -19,7 +19,7 @@ resources:
   - name: Madagascar all RPs Shapefile
     url: 'https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/mdg-loss-mh.zip'
     format: shp
-  - name: Madagascar Exceedence Probability curves for Multi-Hazard at ADM0, ADM1 and ADM2
+  - name: Madagascar Exceedence Probability curves
     url: 'https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/mdg-loss-mh-epc.zip'
     format: csv
 
