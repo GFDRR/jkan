@@ -6,7 +6,7 @@ category:
 notes: Average Annual Losses (AAL) for current population (AALpop), current asset (AALnowUSD), population SSP scenarios at 2050 (AALpopSP1-5), asset SSP scenarios at 2050 (AAL_usd_SP1-5).
 organization: GFDRR
 source: disasterrisk.af
-model_date: 2016
+model_date: 2018
 version: 1
 purpose: Quantification of site specific risk of flood, earthquakes, tropical cyclones, storm surge and tsunamis, to support improvement in the resiliency and capacity of South West Indian Ocean island states through the creation of disaster risk financing strategies.
 project: GFDRR South West Indian Ocean Risk Assessment and Financing Initiative (SWIO-RAFI)
