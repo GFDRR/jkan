@@ -299,7 +299,7 @@ asset_area:
 
 [//]: ## CostType
 cost_type_name:
-ost_type_aggregation_type:
+cost_type_aggregation_type:
 cost_type_unit:
 
 [//]: ## Tags

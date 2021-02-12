@@ -1,6 +1,6 @@
 ---
 schema: rdl
-title: SWIO-RAFI Madagascar Multi-Hazard Losses
+title: SWIO-RAFI Madagascar exposure
 category:
   - Exposure
 notes: This data set was produced with financial support from the European Union in the framework of the ACP-EU Natural Disaster Risk Reduction Program, managed by the Global Facility for Disaster Reduction and Recovery (GFDRR).
@@ -35,5 +35,11 @@ exposure_area_type:
 exposure_area_unit:
 exposure_tag_names:
 exposure_occupancy: Residential, Commercial, Industrial, Infrastructure, Government, Total
+
+[//]: ## CostType
+cost_type_name: Total replacement value
+cost_type_aggregation_type: Gridded, Administrative units
+cost_type_unit: USD
+
 
 ---
