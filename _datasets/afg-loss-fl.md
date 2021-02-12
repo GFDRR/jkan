@@ -8,9 +8,8 @@ organization: GFDRR
 source: disasterrisk.af
 model_date: 2018
 version: 1
-purpose: Quantification of site specific risk of flood, earthquakes, tropical cyclones, storm surge and tsunamis, to support improvement in the resiliency and capacity of South West Indian Ocean island states through the creation of disaster risk financing strategies.
-project: GFDRR South West Indian Ocean Risk Assessment and Financing Initiative (SWIO-RAFI)
-bibliography: SWIO RAFI Report https://www.gfdrr.org/en/publication/southwest-indian-ocean-risk-assessment-and-financing-initiative-summary-report-and-risk
+purpose: Assessment of disaster risk from natural hazards in Afghanistan for current and future scenarios
+project: Afghanistan Disaster Risk Information GeoPortaland
 geo_coverage: AFG
 resources:
   - name: Afghanistan all RPs Geopackage
