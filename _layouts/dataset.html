@@ -85,10 +85,12 @@ layout: default
         
           {% for field in rdl_fields %}
             {% assign value = page[field[field_name]] %}
-            <tr>
-              <th>{{ field.label }}</th>
-              <td>{{ value }}</td>
-            </tr>
+            {% if value != "" and value != null %}
+              <tr>
+                <th>{{ field.label }}</th>
+                <td>{{ value }}</td>
+              </tr>
+            {% endif %}
           {% endfor %}
       </table>
       <!-- <table class="table table-striped dataset-details">
