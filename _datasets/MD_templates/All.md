@@ -1,288 +1,268 @@
-# To add fields, make a new schema file in this directory
-# and change the schema setting in _config.yml to its name
+---
+schema: rdl
+title:
+category:
+  - Hazard
+  - Exposure
+  - Vulnerability
+  - Loss
+notes:
+organization:
+source: SWIO RAFI
+model_date:
+version:
+purpose:
+project:
+bibliography:
+geo_coverage:
+  - ABW
+  - AFG
+  - AGO
+  - AIA
+  - ALB
+  - AND
+  - ARE
+  - ARG
+  - ARM
+  - ASM
+  - ATG
+  - AUS
+  - AUT
+  - AZE
+  - BDI
+  - BEL
+  - BEN
+  - BFA
+  - BGD
+  - BGR
+  - BHR
+  - BHS
+  - BIH
+  - BLM
+  - BLR
+  - BLZ
+  - BMU
+  - BOL
+  - BRA
+  - BRB
+  - BRN
+  - BTN
+  - BWA
+  - CAF
+  - CAN
+  - CHE
+  - CHL
+  - CHN
+  - CIV
+  - CMR
+  - COD
+  - COG
+  - COK
+  - COL
+  - COM
+  - CPV
+  - CRI
+  - CUB
+  - CUW
+  - CYM
+  - CYP
+  - CZE
+  - DEU
+  - DJI
+  - DMA
+  - DNK
+  - DOM
+  - DZA
+  - ECU
+  - EGY
+  - ERI
+  - ESP
+  - EST
+  - ETH
+  - FIN
+  - FJI
+  - FLK
+  - FRA
+  - FRO
+  - FSM
+  - GAB
+  - GBR
+  - GEO
+  - GGY
+  - GHA
+  - GIB
+  - GIN
+  - GMB
+  - GNB
+  - GNQ
+  - GRC
+  - GRD
+  - GRL
+  - GTM
+  - GUM
+  - GUY
+  - HKG
+  - HMD
+  - HND
+  - HRV
+  - HTI
+  - HUN
+  - IDN
+  - IMN
+  - IND
+  - IRL
+  - IRN
+  - IRQ
+  - ISL
+  - ISR
+  - ITA
+  - JAM
+  - JEY
+  - JOR
+  - JPN
+  - KAZ
+  - KEN
+  - KGZ
+  - KHM
+  - KIR
+  - KNA
+  - KOR
+  - KWT
+  - LAO
+  - LBN
+  - LBR
+  - LBY
+  - LCA
+  - LIE
+  - LKA
+  - LSO
+  - LTU
+  - LUX
+  - LVA
+  - MAC
+  - MAF
+  - MAR
+  - MCO
+  - MDA
+  - MDG
+  - MDV
+  - MEX
+  - MHL
+  - MKD
+  - MLI
+  - MLT
+  - MMR
+  - MNE
+  - MNG
+  - MNP
+  - MOZ
+  - MRT
+  - MSR
+  - MUS
+  - MWI
+  - MYS
+  - NAM
+  - NCL
+  - NER
+  - NFK
+  - NGA
+  - NIC
+  - NIU
+  - NLD
+  - NOR
+  - NPL
+  - NRU
+  - NZL
+  - OMN
+  - PAK
+  - PAN
+  - PCN
+  - PER
+  - PHL
+  - PLW
+  - PNG
+  - POL
+  - PRI
+  - PRK
+  - PRT
+  - PRY
+  - PSE
+  - PYF
+  - QAT
+  - ROU
+  - RUS
+  - RWA
+  - SAU
+  - SDN
+  - SEN
+  - SGP
+  - SGS
+  - SHN
+  - SLB
+  - SLE
+  - SLV
+  - SMR
+  - SOM
+  - SPM
+  - SRB
+  - SSD
+  - STP
+  - SUR
+  - SVK
+  - SVN
+  - SWE
+  - SWZ
+  - SXM
+  - SYC
+  - SYR
+  - TCA
+  - TCD
+  - TGO
+  - THA
+  - TJK
+  - TKM
+  - TLS
+  - TON
+  - TTO
+  - TUN
+  - TUR
+  - TUV
+  - TZA
+  - UGA
+  - UKR
+  - URY
+  - USA
+  - UZB
+  - VAT
+  - VCT
+  - VEN
+  - VGB
+  - VIR
+  - VNM
+  - VUT
+  - WLF
+  - WSM
+  - XXK
+  - YEM
+  - ZAF
+  - ZMB
+  - ZWE 
 
-# RDL-attributes: common fields
-## Contribution (dataset)
-dataset_fields:
-  - field_name: title
-    label: Title
-    datajson: title
-    ### Change field name as "component"
-  - field_name: category
-    label: Schema component
-    form_template: form/category.html
-    display_template: display/category.html
-    datajson: category
-    values:
-      - Hazard
-      - Exposure
-      - Vulnerability
-      - Loss
-  - field_name: notes
-    label: Description
-    form_template: form/textarea.html
-    datajson: description
-    ### Change field name as "model_source"
-  - field_name: organization
-    label: Name of model source
-    form_template: form/organization.html
-    datajson: publisher.name
-  - field_name: model_date
-    label: Model release date
-  - field_name: version
-    label: Version
-  - field_name: purpose
-    label: Purpose
-  - field_name: project
-    label: Project
-  - field_name: bibliography
-    label: Bibliographic source
-  - field_name: geo_coverage
-    label: Geographic coverage
-    values:
-      - ABW
-      - AFG
-      - AGO
-      - AIA
-      - ALB
-      - AND
-      - ARE
-      - ARG
-      - ARM
-      - ASM
-      - ATG
-      - AUS
-      - AUT
-      - AZE
-      - BDI
-      - BEL
-      - BEN
-      - BFA
-      - BGD
-      - BGR
-      - BHR
-      - BHS
-      - BIH
-      - BLM
-      - BLR
-      - BLZ
-      - BMU
-      - BOL
-      - BRA
-      - BRB
-      - BRN
-      - BTN
-      - BWA
-      - CAF
-      - CAN
-      - CHE
-      - CHL
-      - CHN
-      - CIV
-      - CMR
-      - COD
-      - COG
-      - COK
-      - COL
-      - COM
-      - CPV
-      - CRI
-      - CUB
-      - CUW
-      - CYM
-      - CYP
-      - CZE
-      - DEU
-      - DJI
-      - DMA
-      - DNK
-      - DOM
-      - DZA
-      - ECU
-      - EGY
-      - ERI
-      - ESP
-      - EST
-      - ETH
-      - FIN
-      - FJI
-      - FLK
-      - FRA
-      - FRO
-      - FSM
-      - GAB
-      - GBR
-      - GEO
-      - GGY
-      - GHA
-      - GIB
-      - GIN
-      - GMB
-      - GNB
-      - GNQ
-      - GRC
-      - GRD
-      - GRL
-      - GTM
-      - GUM
-      - GUY
-      - HKG
-      - HMD
-      - HND
-      - HRV
-      - HTI
-      - HUN
-      - IDN
-      - IMN
-      - IND
-      - IRL
-      - IRN
-      - IRQ
-      - ISL
-      - ISR
-      - ITA
-      - JAM
-      - JEY
-      - JOR
-      - JPN
-      - KAZ
-      - KEN
-      - KGZ
-      - KHM
-      - KIR
-      - KNA
-      - KOR
-      - KWT
-      - LAO
-      - LBN
-      - LBR
-      - LBY
-      - LCA
-      - LIE
-      - LKA
-      - LSO
-      - LTU
-      - LUX
-      - LVA
-      - MAC
-      - MAF
-      - MAR
-      - MCO
-      - MDA
-      - MDG
-      - MDV
-      - MEX
-      - MHL
-      - MKD
-      - MLI
-      - MLT
-      - MMR
-      - MNE
-      - MNG
-      - MNP
-      - MOZ
-      - MRT
-      - MSR
-      - MUS
-      - MWI
-      - MYS
-      - NAM
-      - NCL
-      - NER
-      - NFK
-      - NGA
-      - NIC
-      - NIU
-      - NLD
-      - NOR
-      - NPL
-      - NRU
-      - NZL
-      - OMN
-      - PAK
-      - PAN
-      - PCN
-      - PER
-      - PHL
-      - PLW
-      - PNG
-      - POL
-      - PRI
-      - PRK
-      - PRT
-      - PRY
-      - PSE
-      - PYF
-      - QAT
-      - ROU
-      - RUS
-      - RWA
-      - SAU
-      - SDN
-      - SEN
-      - SGP
-      - SGS
-      - SHN
-      - SLB
-      - SLE
-      - SLV
-      - SMR
-      - SOM
-      - SPM
-      - SRB
-      - SSD
-      - STP
-      - SUR
-      - SVK
-      - SVN
-      - SWE
-      - SWZ
-      - SXM
-      - SYC
-      - SYR
-      - TCA
-      - TCD
-      - TGO
-      - THA
-      - TJK
-      - TKM
-      - TLS
-      - TON
-      - TTO
-      - TUN
-      - TUR
-      - TUV
-      - TZA
-      - UGA
-      - UKR
-      - URY
-      - USA
-      - UZB
-      - VAT
-      - VCT
-      - VEN
-      - VGB
-      - VIR
-      - VNM
-      - VUT
-      - WLF
-      - WSM
-      - XXK
-      - YEM
-      - ZAF
-      - ZMB
-      - ZWE 
-  - field_name: license
-    label: License
-    form_template: form/license.html
-    datajson: license
-    values:
-      - CC0
-      - CC BY 4.0
-      - CC BY-SA 4.0
-      - ODbl
-      - ODC-By
-      - PDDL
+resources:
+  - name: package name and format
+    url: 'https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/COMP/NAME'
+    format: gpkg
+  - name: Afghanistan all RPs Shapefile
+    url: 'https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/COMP/NAME'
+    format: shp
+
+license:
+  - CC0
+  - CC BY 4.0
+  - CC BY-SA 4.0
+  - ODbl
+  - ODC-By
+  - PDDL
   - field_name: maintainer
     label: Maintainer
     datajson: contactPoint.fn
@@ -292,7 +272,8 @@ dataset_fields:
       - Hazard
       - Exposure
       - Vulnerability
-      - Loss
+      - Loss  
+
 
 resource_fields:
   - field_name: name
@@ -301,17 +282,6 @@ resource_fields:
   - field_name: url
     label: URL
     datajson: distribution.downloadURL
-  - field_name: format
-    label: Format
-    datajson: distribution.format
-    form_template: form/dropdown.html
-    values:
-      - api
-      - csv
-      - json
-      - geojson
-      - shp
-      - gpkg
 
 organization_fields:
   - field_name: title
@@ -332,7 +302,8 @@ category_fields:
     label: Featured on Homepage
     form_template: form/checkbox.html
 
-rdl_hazard:
+rdl_fields:
+  # RDL-attributes: hazard fields
   ## Event Set
   - field_name: event_hazard_type
     label: Hazard type
@@ -535,7 +506,7 @@ rdl_hazard:
   ### Not needed for RDL-JKAN
   # file_location
 
-rdl_exposure:
+  # RDL-Exposure fields
   ## ExposureModel
   - field_name: exposure_name
     label: Exposure Name
@@ -588,7 +559,7 @@ rdl_exposure:
     label: Aggregation type
   - field_name: cost_type_unit
     label: Cost unit of measure
-
+      
   ## Cost and occupants are in-data values. Tags used for whole set specifications
   ### Not needed for RDL-JKAN
   # file_location
@@ -599,7 +570,7 @@ rdl_exposure:
   - field_name: tag_value
     label: Tag value
 
-rdl_loss:
+  # RDL-Loss fields
   ## Model
   - field_name: model_name
     label: Model Name
@@ -686,7 +657,7 @@ rdl_loss:
       - Content
       - Business interruption
       - Other
-  - field_name: map_impact
+   - field_name: map_impact
     label: Impact type
     values:
       - Direct
@@ -747,7 +718,7 @@ rdl_loss:
       - Content
       - Business interruption
       - Other
-  - field_name: curve_map_impact
+   - field_name: curve_map_impact
     label: Impact type
     values:
       - Direct
@@ -769,7 +740,8 @@ rdl_loss:
   ### Not needed for RDL-JKAN
   # file_location
 
-rdl_vulnerability:
+
+  # RDL-Vulnerability fields
   ## Fcore
   - field_name: f_core_hazard_type_primary
     label: Primary hazard type
@@ -1298,3 +1270,5 @@ rdl_vulnerability:
     label: ISSN  # International Standard Serial Number associated with reference
   - field_name: reftable_doi  # Digital Object Identifier url associated with reference
     label: DOI  # Digital Object Identifier url associated with reference
+
+---
