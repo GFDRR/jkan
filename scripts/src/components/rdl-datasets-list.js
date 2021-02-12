@@ -10,12 +10,16 @@
  *   data-organization="sample-department"
  *   data-category="education"
  */
+
+// Comment for rdl-dataset.json:
+// need to loop over each dataset entry and only include fields if it exists in the .md file...
+// the contents then get displayed by rdl-datasets-items
+
+
 import {pick, defaults, filter} from 'lodash'
 
 import TmplDatasetItem from '../templates/rdl-datasets-item'
 import {queryByHook, setContent, createDatasetFilters} from '../util'
-
-console.log("rdl data list")
 
 export default class {
   constructor (opts) {

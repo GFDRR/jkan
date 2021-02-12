@@ -2,8 +2,6 @@ import $ from 'jquery'
 
 import {queryByHook} from '../util'
 
-console.log("rdl data display")
-
 export default class {
   constructor (opts) {
     const elements = {
