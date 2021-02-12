@@ -7,7 +7,7 @@ dataset_fields:
   - field_name: title
     label: Title
     datajson: title
-    ###change field name as "component"
+    ### Change field name as "component"
   - field_name: category
     label: Schema component
     form_template: form/category.html
@@ -22,7 +22,7 @@ dataset_fields:
     label: Description
     form_template: form/textarea.html
     datajson: description
-    ###change field name as "model_source"
+    ### Change field name as "model_source"
   - field_name: organization
     label: Name of model source
     form_template: form/organization.html
@@ -332,8 +332,7 @@ category_fields:
     label: Featured on Homepage
     form_template: form/checkbox.html
 
-rdl_fields:
-  # RDL-attributes: hazard fields
+rdl_hazard:
   ## Event Set
   - field_name: event_hazard_type
     label: Hazard type
@@ -536,7 +535,7 @@ rdl_fields:
   ### Not needed for RDL-JKAN
   # file_location
 
-  # RDL-Exposure fields
+rdl_exposure:
   ## ExposureModel
   - field_name: exposure_name
     label: Exposure Name
@@ -600,7 +599,7 @@ rdl_fields:
   - field_name: tag_value
     label: Tag value
 
-  # RDL-Loss fields
+rdl_loss:
   ## Model
   - field_name: model_name
     label: Model Name
@@ -770,8 +769,7 @@ rdl_fields:
   ### Not needed for RDL-JKAN
   # file_location
 
-
-  # RDL-Vulnerability fields
+rdl_vulnerability:
   ## Fcore
   - field_name: f_core_hazard_type_primary
     label: Primary hazard type
