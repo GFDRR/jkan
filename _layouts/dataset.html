@@ -74,18 +74,24 @@ layout: default
       <h2>RDL Schema Info</h2>
       <table class="table table-striped dataset-details">
         {% if page.category contains 'Hazard' %}
-          {% assign hazard_fields = site.data.schemas[schema].rdl_hazard %}
-          {% for field in hazard_fields %}
+          {% assign rdl_fields = site.data.schemas[schema].rdl_hazard %}
+        {% elsif page.category contains 'Exposure' %}
+          {% assign rdl_fields = site.data.schemas[schema].rdl_exposure %}
+        {% elsif page.category contains 'Vulnerability' %}
+          {% assign rdl_fields = site.data.schemas[schema].rdl_vulnerability %}
+        {% elsif page.category contains 'Loss' %}
+          {% assign rdl_fields = site.data.schemas[schema].rdl_loss %}
+        {% endif %}
+        
+          {% for field in rdl_fields %}
             {% assign value = page[field[field_name]] %}
             <tr>
               <th>{{ field.label }}</th>
               <td>{{ value }}</td>
             </tr>
           {% endfor %}
-        {% endif %}
       </table>
-
-      <table class="table table-striped dataset-details">
+      <!-- <table class="table table-striped dataset-details">
         {% for field in rdl_fields %}
           {% unless dataset_system_fields contains field.field_name %}
             {% assign value = page[field[field_name]] %}
@@ -101,7 +107,7 @@ layout: default
             {% endif %}
           {% endunless %}
         {% endfor %}
-      </table>
+      </table> -->
 
       <h2>Additional Info</h2>
       <table class="table table-striped dataset-details">
@@ -131,7 +137,6 @@ layout: default
             {% endif %}
           {% endunless %}
         {% endfor %}
-
       </table>
     </div>
   </div>
