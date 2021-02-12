@@ -1,12 +1,13 @@
 export default (data) => (
 `<rdl-dataset>
   <h3><a href="${data.url}">${data.title}</a></h3>
-  Description: ${data.notes || ''}
+  ${data.notes || ''}
+  <br/><br/>
+  <strong>Developed by (date):</strong> ${data.source} (${data.model_date || 'Date not supplied'})
   <br/>
-  Developed by (date): ${data.source} (${data.model_date || 'Date not supplied'})
-  <br/>
-  Geo Coverage: ${data.geo_coverage || 'not supplied'}
+  <strong>Geo Coverage:</strong> ${data.geo_coverage || 'not supplied'}
   <br />
-  License: ${data.license}
+  <strong>License:</strong> ${data.license}
+  <hr>
 </rdl-dataset>`
 )
