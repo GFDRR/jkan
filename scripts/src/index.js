@@ -7,6 +7,7 @@ import {omit} from 'lodash'
 import UserModel from './models/user'
 import Navigation from './components/navigation'
 import DatasetsList from './components/datasets-list'
+import RDLDatasetsList from './components/rdl-datasets-list'
 import CategoriesFilter from './components/categories-filter'
 import OrganizationsFilter from './components/organizations-filter'
 import SourcesFilter from './components/sources-filter'
@@ -16,6 +17,7 @@ import AdminForm from './components/admin-form'
 import CategoriesForm from './components/categories-form'
 import LicensesForm from './components/licenses-form'
 import DatasetDisplay from './components/dataset-display'
+import RDLDatasetDisplay from './components/rdl-datasets-display'
 import DeletePageButton from './components/delete-page-button'
 import EditableList from './components/editable-list'
 import ViewSwitcher from './components/view-switcher'
@@ -54,11 +56,13 @@ const components = [
   {tag: 'categories-form', class: CategoriesForm},
   {tag: 'licenses-form', class: LicensesForm},
   {tag: 'dataset-display', class: DatasetDisplay},
+  {tag: 'rdl-dataset-display', class: RDLDatasetDisplay},
   {tag: 'delete-page-button', class: DeletePageButton},
   {tag: 'editable-list', class: EditableList},
   {tag: 'view-switcher', class: ViewSwitcher},
   {tag: 'theme-gallery', class: ThemeGallery},
   {tag: 'datasets-list', class: DatasetsList, usesDatasets: true},
+  {tag: 'rdl-datasets-list', class: RDLDatasetsList, usesDatasets: true},
   {tag: 'categories-filter', class: CategoriesFilter, usesDatasets: true},
   {tag: 'organizations-filter', class: OrganizationsFilter, usesDatasets: true},
   {tag: 'sources-filter', class: SourcesFilter, usesDatasets: true}
@@ -81,6 +85,6 @@ for (let component of components) {
 // Helper function to ensure datasets.json is only fetched once per page
 let datasetsCache
 function getDatasets () {
-  datasetsCache = datasetsCache || $.getJSON(`${settings.BASE_URL}/datasets.json`)
+  datasetsCache = datasetsCache || $.getJSON(`${settings.BASE_URL}/rdl-datasets.json`)
   return datasetsCache
 }

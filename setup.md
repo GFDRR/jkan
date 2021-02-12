@@ -41,8 +41,8 @@ Pick an `App Name`, and fill in your `Client ID` and `Client Secret`. Enter the 
 <div class="row">
   <div class="col-sm-6 col-sm-offset-3">
     <div class="form-group">
-      <label class="control-label" for="app_name">App Name</label>
-      <input type="text" class="form-control" id="app_name" data-hook="app-name" placeholder="ie. jkan-gatekeeper">
+      <label class="control-label" for="rdl-jkan">App Name</label>
+      <input type="text" class="form-control" id="rdl-jkan" data-hook="rdl-jkan" placeholder="ie. jkan-gatekeeper">
       <p class="help-block"></p>
     </div>
   </div>
