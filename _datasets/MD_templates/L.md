@@ -385,8 +385,8 @@ curve_map_impact:
 curve_map_loss_type:
   - Ground up
   - Insured
-urve_map_frequency
-curve_map_investigation_time
-curve_map_units
+curve_map_frequency:
+curve_map_investigation_time:
+curve_map_units:
 
 ---

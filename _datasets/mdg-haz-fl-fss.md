@@ -15,7 +15,7 @@ geo_coverage: MDG
 resources:
   - name: SWIO-RAFI Madagascar Tropical Cyclone Storm Surge
     url: 'https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/mdg-haz-fl-fss.zip'
-    format: geotiff
+    format: shp
 
 license: CC BY-SA 4.0
 
