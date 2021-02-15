@@ -1,4 +1,4 @@
-title: JKAN
+title: RDL
 greeting: The Risk Data Library
 description: A GFDRR open data portal
 # baseurl: /
@@ -94,3 +94,5 @@ exclude:
   - webpack.config.js
   - README.md
   - LICENSE
+
+baseurl: /rdl-jkan
