@@ -15,7 +15,7 @@
   src: https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/darkly/bootstrap.min.css
 - name: Flatly
   logo: /img/themes/flatly.png
-  src: https://gfdrr.github.io/rdl-jkan/css/bootstrap.css
+  src: https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css
 - name: Journal
   logo: /img/themes/journal.png
   src: https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/journal/bootstrap.min.css
