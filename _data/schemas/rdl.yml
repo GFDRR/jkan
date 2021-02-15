@@ -361,7 +361,7 @@ rdl_hazard:
   - field_name: event_description
     label: Event description
   - field_name: event_is_prob
-    label: Is prob
+    label: Probabilistic modelling
     values:
       - True
       - False
