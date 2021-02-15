@@ -1,18 +1,18 @@
 ---
 schema: rdl
-title: Afghanistan Flood risk scenarios (Kabul)
+title: Afghanistan Flood hazard scenarios (Kabul)
 category:
   - Hazard
-notes: Average Annual Losses (AAL) for current population (AALpop), current asset (AALnowUSD), population SSP scenarios at 2050 (AALpopSP1-5), asset SSP scenarios at 2050 (AAL_usd_SP1-5).
+notes: Flood extent and water depth in Kabul urban area for three return period scenarios: RP5, RP100 and RP1000 years.
 organization: GFDRR
 source: disasterrisk.af
 model_date: 2018
 version: 1
 purpose: Assessment of disaster risk from natural hazards in Afghanistan for current and future scenarios
-project: Afghanistan Disaster Risk Information GeoPortaland
+project: Afghanistan Disaster Risk Information GeoPortal
 geo_coverage: AFG
 resources:
-  - name: Afghanistan all RPs Geopackage
+  - name: Kabul flood hazard scenarios
     url: 'https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/afg-haz-fl-kabul.zip'
     format: geotiff
 
