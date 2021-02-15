@@ -6,6 +6,7 @@ notes: >-
   the framework of the ACP-EU Natural Disaster Risk Reduction Program, managed
   by the Global Facility for Disaster Reduction and Recovery (GFDRR).
 organization: GFDRR
+source: AIR Worldwide
 resources:
   - name: Madagascar exposure all sectors (grid)
     url: >-
