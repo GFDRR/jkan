@@ -1,6 +1,6 @@
 ---
 schema: rdl
-title: SWIO-RAFI Madagascar Earthquake Ground Shakking
+title: SWIO-RAFI Madagascar Earthquake Ground Shaking
 notes: >-
   This data set was produced with financial support from the European Union in
   the framework of the ACP-EU Natural Disaster Risk Reduction Program, managed
