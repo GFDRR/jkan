@@ -312,6 +312,7 @@ resource_fields:
       - geojson
       - shp
       - gpkg
+      - geotiff
 
 organization_fields:
   - field_name: title
