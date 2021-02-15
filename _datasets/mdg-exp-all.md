@@ -7,10 +7,10 @@ notes: >-
   by the Global Facility for Disaster Reduction and Recovery (GFDRR).
 organization: GFDRR
 resources:
-  - name: Madagascar exposure all sectors 2
+  - name: Madagascar exposure all sectors
     url: >-
       https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/mdg-exp-grd.zip
-    format: ''
+    format: gpkg
   - name: Madagascar exposure all sectors (ADM2 and ADM3)
     url: >-
       https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/mdg-exp-adm.zip
