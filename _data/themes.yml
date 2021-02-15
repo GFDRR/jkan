@@ -1,6 +1,9 @@
 - name: Default
   logo: /img/themes/default.png
   src: ''
+- name: RDL-flatly
+  logo: /img/themes/RDL-flatly.png
+  src: /rdl-jkan/css/bootstrap.min.css
 - name: Cerulean
   logo: /img/themes/cerulean.png
   src: https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cerulean/bootstrap.min.css

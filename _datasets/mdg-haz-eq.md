@@ -11,7 +11,7 @@ resources:
   - name: SWIO-RAFI Madagascar Earthquake Ground Shaking
     url: >-
       https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/mdg-haz-eq.zip
-    format: ''
+    format: geotiff
 category:
   - Hazard
 model_date: '2016'
@@ -28,7 +28,7 @@ bibliography: >-
   SWIO RAFI Report
   https://www.gfdrr.org/en/publication/southwest-indian-ocean-risk-assessment-and-financing-initiative-summary-report-and-risk
 geo_coverage: MDG
-license: ''
+license: 'CC BY-SA 4.0'
 maintainer: GFDRR
 maintainer_email: labs.gfdrr@gmail.com
 ---
