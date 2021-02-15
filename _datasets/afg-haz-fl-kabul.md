@@ -3,7 +3,7 @@ schema: rdl
 title: Afghanistan Flood hazard scenarios (Kabul)
 category:
   - Hazard
-notes: Flood extent and water depth in Kabul urban area for three return period scenarios: RP5, RP100 and RP1000 years.
+notes: "Flood extent and water depth in Kabul urban area for three return period scenarios: RP5, RP100 and RP1000 years"
 organization: GFDRR
 source: disasterrisk.af
 model_date: 2018
@@ -36,7 +36,7 @@ z-resolution: ""
 [//]: ## Event 
 event_calculation_method: "Simulated"
 event_frequency: ""
-event_occurence_probability: "10, 100, 10000"
+event_occurence_probability: "10, 100, 1000 years"
 event_occurrence_time_start: ""
 event_occurrence_time_end: ""
 event_occurrence_time_span: ""
