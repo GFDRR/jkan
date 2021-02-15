@@ -9,11 +9,11 @@ organization: GFDRR
 resources:
   - name: Madagascar exposure all sectors
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/mdg-exp-grd.zip
+      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/exposure/mdg-exp-grd.zip
     format: gpkg
   - name: Madagascar exposure all sectors (ADM2 and ADM3)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/mdg-exp-adm.zip
+      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/exposure/mdg-exp-adm.zip
     format: shp
 category:
   - Exposure
