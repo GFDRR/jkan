@@ -1,44 +1,37 @@
 ---
 schema: rdl
 title: SWIO-RAFI Madagascar Exposure
-category:
-  - Exposure
-notes: This data set was produced with financial support from the European Union in the framework of the ACP-EU Natural Disaster Risk Reduction Program, managed by the Global Facility for Disaster Reduction and Recovery (GFDRR).
+notes: >-
+  This data set was produced with financial support from the European Union in
+  the framework of the ACP-EU Natural Disaster Risk Reduction Program, managed
+  by the Global Facility for Disaster Reduction and Recovery (GFDRR).
 organization: GFDRR
-source: AIR Worldwide
-model_date: 2016
-version: 1
-purpose: Quantification of site specific risk of flood, earthquakes, tropical cyclones, storm surge and tsunamis, to support improvement in the resiliency and capacity of South West Indian Ocean island states through the creation of disaster risk financing strategies.
-project: GFDRR South West Indian Ocean Risk Assessment and Financing Initiative (SWIO-RAFI)
-bibliography: SWIO RAFI Report https://www.gfdrr.org/en/publication/southwest-indian-ocean-risk-assessment-and-financing-initiative-summary-report-and-risk
-geo_coverage: MDG
 resources:
   - name: Madagascar exposure all sectors
-    url: 'https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/mdg-exp-grd.zip'
-    format: geotiff
+    url: >-
+      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/exposure/mdg-exp-grd.zip
+    format: gpkg
   - name: Madagascar exposure all sectors (ADM2 and ADM3)
-    url: 'https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/mdg-exp-adm.zip'
+    url: >-
+      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/exposure/mdg-exp-adm.zip
     format: shp
-
-license: CC BY-SA 4.0
-
+category:
+  - Exposure
+model_date: '2016'
+version: '1'
+purpose: >-
+  Quantification of site specific risk of flood, earthquakes, tropical cyclones,
+  storm surge and tsunamis, to support improvement in the resiliency and
+  capacity of South West Indian Ocean island states through the creation of
+  disaster risk financing strategies.
+project: >-
+  GFDRR South West Indian Ocean Risk Assessment and Financing Initiative
+  (SWIO-RAFI)
+bibliography: >-
+  SWIO RAFI Report
+  https://www.gfdrr.org/en/publication/southwest-indian-ocean-risk-assessment-and-financing-initiative-summary-report-and-risk
+geo_coverage: MDG
+license: ''
 maintainer: GFDRR
 maintainer_email: labs.gfdrr@gmail.com
-
-[//]: # RDL-Exposure fields
-[//]: ## ExposureModel
-exposure_name: "AIR Worldwide"
-exposure_description: "Exposure data are provided in terms of replacement value of buildings for a variety of occupancy and construction classes in both gridded form and aggregated to administrative units."
-exposure_taxonomy_source:
-exposure_category: "Buildings, Infrastructures"
-exposure_area_type:
-exposure_area_unit:
-exposure_tag_names:
-exposure_occupancy: Residential, Commercial, Industrial, Infrastructure, Government, Total
-
-[//]: ## CostType
-cost_type_name: Total replacement value
-cost_type_aggregation_type: Gridded, Administrative units
-cost_type_unit: USD
-
 ---
