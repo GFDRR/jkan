@@ -10,7 +10,7 @@ resources:
   - name: SWIO-RAFI Madagascar Earthquake Ground Shaking
     url: >-
       https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/mdg-haz-eq.zip
-    format: ''
+    format: geotiff
 category:
   - Hazard
 model_date: '2016'
