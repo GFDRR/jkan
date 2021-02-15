@@ -27,7 +27,7 @@ bibliography: >-
   SWIO RAFI Report
   https://www.gfdrr.org/en/publication/southwest-indian-ocean-risk-assessment-and-financing-initiative-summary-report-and-risk
 geo_coverage: MDG
-license: ''
+license: 'CC BY-SA 4.0'
 maintainer: GFDRR
 maintainer_email: labs.gfdrr@gmail.com
 ---
