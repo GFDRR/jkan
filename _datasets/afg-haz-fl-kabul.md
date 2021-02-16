@@ -30,8 +30,6 @@ event_time_end: ""
 event_time_duration: ""
 event_description: ""
 event_is_prob: "True"
-h-resolution: "10 m"
-z-resolution: ""
 
 [//]: ## Event 
 event_calculation_method: "Simulated"

@@ -35,4 +35,18 @@ geo_coverage: MDG
 license: 'https://creativecommons.org/licenses/by-sa/4.0/'
 maintainer: GFDRR
 maintainer_email: labs.gfdrr@gmail.com
+
+[//]: # RDL-Exposure fields
+[//]: ## ExposureModel
+exposure_name: 'AIR Worldwide'
+exposure_description: 'Exposure data are provided in terms of replacement value of buildings for a variety of occupancy and construction classes in both gridded form and aggregated to administrative units.'
+exposure_taxonomy_source: SWIO RAFI
+exposure_category: 'Buildings, Infrastructures'
+exposure_occupancy: 'Residential, Commercial, Industrial, Infrastructure, Government, Total'
+
+[//]: ## CostType
+cost_type_name: 'Total replacement value'
+cost_type_aggregation_type: 'Gridded, Administrative units'
+cost_type_unit: 'USD'
+
 ---
