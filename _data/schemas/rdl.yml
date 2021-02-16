@@ -313,6 +313,7 @@ resource_fields:
       - shp
       - gpkg
       - geotiff
+      - markdown
 
 organization_fields:
   - field_name: title

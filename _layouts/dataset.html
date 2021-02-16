@@ -69,6 +69,12 @@ layout: default
           </table>
         </li>
         {% endfor %}
+        <li>
+          <a href="{{ site.baseurl }}/{{ page.path }}" property="dcat:accessURL" download>
+            <span property="dct:title">Metadata</span>
+          </a>
+          <span class="label label-default" property="dcat:mediaType">markdown</span>
+        </li>
       </ul>
 
       <h2>RDL Schema Info</h2>
