@@ -45,7 +45,7 @@ map_element: "Structure"
 map_impact: "Direct"
 map_loss_type: "Ground up"
 map_frequency: "Return Period"
-map_return_period: "10, 25, 50, 100, 250, 500, 10000"
+map_return_period: "10, 25, 50, 100, 250, 500, 1000"
 map_units: "USD"
 map_metric: "AAL"
 

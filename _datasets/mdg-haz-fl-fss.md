@@ -35,7 +35,7 @@ event_is_prob: "True"
 [//]: ## Event 
 event_calculation_method: "Simulated"
 event_frequency: ""
-event_occurence_probability: "10, 25, 50, 100, 250, 500, 10000"
+event_occurence_probability: "10, 25, 50, 100, 250, 500, 1000"
 event_occurrence_time_start: ""
 event_occurrence_time_end: ""
 event_occurrence_time_span: ""
