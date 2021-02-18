@@ -1,0 +1,1216 @@
+# To add fields, make a new schema file in this directory
+# and change the schema setting in _config.yml to its name
+
+# RDL schema (RDS) V0.1
+
+# RDS-attributes: common fields
+# Contribution (dataset)
+dataset_fields:
+  - field_name: title
+    label: Title of dataset
+    datajson: title
+  - field_name: category
+    label: Schema component
+    form_template: form/category.html
+    display_template: display/category.html
+    datajson: category
+    values:
+      - Hazard
+      - Exposure
+      - Vulnerability
+      - Loss
+  - field_name: abstract
+    label: Abstract
+    form_template: form/textarea.html
+    datajson: description
+  - field_name: organization
+    label: Publisher of dataset
+    form_template: form/organization.html
+    datajson: publisher.name
+  - field_name: model_source
+    label: Name of source model
+  - field_name: model_date
+    label: Model release date
+  - field_name: version
+    label: Version of the dataset
+  - field_name: purpose
+    label: Purpose of the data
+  - field_name: project
+    label: Project that produced the dataset
+  - field_name: notes
+    label: Additional details about the dataset
+  - field_name: biblio_title
+    label: Bibliographic resource (author; title; year)
+  - field_name: biblio_url
+    label: Link to bibliographic resource
+  - field_name: geo_coverage
+    label: Geographic coverage (countries)
+    values:
+      - ABW
+      - AFG
+      - AGO
+      - AIA
+      - ALB
+      - AND
+      - ARE
+      - ARG
+      - ARM
+      - ASM
+      - ATG
+      - AUS
+      - AUT
+      - AZE
+      - BDI
+      - BEL
+      - BEN
+      - BFA
+      - BGD
+      - BGR
+      - BHR
+      - BHS
+      - BIH
+      - BLM
+      - BLR
+      - BLZ
+      - BMU
+      - BOL
+      - BRA
+      - BRB
+      - BRN
+      - BTN
+      - BWA
+      - CAF
+      - CAN
+      - CHE
+      - CHL
+      - CHN
+      - CIV
+      - CMR
+      - COD
+      - COG
+      - COK
+      - COL
+      - COM
+      - CPV
+      - CRI
+      - CUB
+      - CUW
+      - CYM
+      - CYP
+      - CZE
+      - DEU
+      - DJI
+      - DMA
+      - DNK
+      - DOM
+      - DZA
+      - ECU
+      - EGY
+      - ERI
+      - ESP
+      - EST
+      - ETH
+      - FIN
+      - FJI
+      - FLK
+      - FRA
+      - FRO
+      - FSM
+      - GAB
+      - GBR
+      - GEO
+      - GGY
+      - GHA
+      - GIB
+      - GIN
+      - GMB
+      - GNB
+      - GNQ
+      - GRC
+      - GRD
+      - GRL
+      - GTM
+      - GUM
+      - GUY
+      - HKG
+      - HMD
+      - HND
+      - HRV
+      - HTI
+      - HUN
+      - IDN
+      - IMN
+      - IND
+      - IRL
+      - IRN
+      - IRQ
+      - ISL
+      - ISR
+      - ITA
+      - JAM
+      - JEY
+      - JOR
+      - JPN
+      - KAZ
+      - KEN
+      - KGZ
+      - KHM
+      - KIR
+      - KNA
+      - KOR
+      - KWT
+      - LAO
+      - LBN
+      - LBR
+      - LBY
+      - LCA
+      - LIE
+      - LKA
+      - LSO
+      - LTU
+      - LUX
+      - LVA
+      - MAC
+      - MAF
+      - MAR
+      - MCO
+      - MDA
+      - MDG
+      - MDV
+      - MEX
+      - MHL
+      - MKD
+      - MLI
+      - MLT
+      - MMR
+      - MNE
+      - MNG
+      - MNP
+      - MOZ
+      - MRT
+      - MSR
+      - MUS
+      - MWI
+      - MYS
+      - NAM
+      - NCL
+      - NER
+      - NFK
+      - NGA
+      - NIC
+      - NIU
+      - NLD
+      - NOR
+      - NPL
+      - NRU
+      - NZL
+      - OMN
+      - PAK
+      - PAN
+      - PCN
+      - PER
+      - PHL
+      - PLW
+      - PNG
+      - POL
+      - PRI
+      - PRK
+      - PRT
+      - PRY
+      - PSE
+      - PYF
+      - QAT
+      - ROU
+      - RUS
+      - RWA
+      - SAU
+      - SDN
+      - SEN
+      - SGP
+      - SGS
+      - SHN
+      - SLB
+      - SLE
+      - SLV
+      - SMR
+      - SOM
+      - SPM
+      - SRB
+      - SSD
+      - STP
+      - SUR
+      - SVK
+      - SVN
+      - SWE
+      - SWZ
+      - SXM
+      - SYC
+      - SYR
+      - TCA
+      - TCD
+      - TGO
+      - THA
+      - TJK
+      - TKM
+      - TLS
+      - TON
+      - TTO
+      - TUN
+      - TUR
+      - TUV
+      - TZA
+      - UGA
+      - UKR
+      - URY
+      - USA
+      - UZB
+      - VAT
+      - VCT
+      - VEN
+      - VGB
+      - VIR
+      - VNM
+      - VUT
+      - WLF
+      - WSM
+      - XXK
+      - YEM
+      - ZAF
+      - ZMB
+      - ZWE 
+  - field_name: license
+    label: License
+    form_template: form/license.html
+    datajson: license
+    values:
+      - CC0-1.0
+      - CC-BY-4.0
+      - CC-BY-SA-4.0
+      - ODbl-1.0
+      - ODC-BY-1.0
+      - PDDL-1.0
+  - field_name: maintainer
+    label: Maintainer
+    datajson: contactPoint.fn
+  - field_name: maintainer_email
+    label: Maintainer Email
+    datajson: contactPoint.hasEmail
+    
+resource_fields:
+  - field_name: name
+    label: Resource name
+    datajson: distribution.title
+  - field_name: url
+    label: URL to resource
+    datajson: distribution.downloadURL
+  - field_name: format
+    label: Format
+    datajson: distribution.format
+    form_template: form/dropdown.html
+    values:
+      - api
+      - csv
+      - json
+      - geojson
+      - shapefile
+      - geopackage
+      - geotiff
+      - markdown
+  - field_name: h-res
+    label: Horizontal resolution
+  - field_name: epsg
+    label: Reference coordinate system (default: 4326)
+    
+organization_fields:
+  - field_name: title
+    label: Title
+  - field_name: description
+    label: Description
+  - field_name: logo
+    label: Logo
+
+category_fields:
+  - field_name: name
+    label: Name
+  - field_name: logo
+    label: Logo
+  - field_name: logo_credit
+    label: Logo Credit
+  - field_name: featured
+    label: Featured on Homepage
+    form_template: form/checkbox.html
+
+# HazardModel
+rdl_hazard:
+  ## EventSet
+  - field_name: event_hazard_type
+    label: Hazard type
+    values:
+      - CF
+      - CS
+      - DR
+      - EQ
+      - ET
+      - FL
+      - LS 
+      - MH
+      - TS
+      - VO
+      - WF
+      - WI
+  - field_name: event_analysis_type
+    label: Type of analysis
+    values:
+      - Deterministic
+      - Probabilistic
+  - field_name: event_geo_area
+    label: The name of the geographic area covered by the hazard analysis (Comma-separated list of geographic names).
+  - field_name: event_time_start
+    label: Event start time
+  - field_name: event_time_end
+    label: Event end time
+  - field_name: event_time_span
+    label: Time span considered
+  - field_name: event_time_year
+    label: General reference year to which the scenario refers to (e.g. "2050")
+  ## Event
+  - field_name: event_calculation_method
+    label: Calculation method
+    values:
+      - Inferred
+      - Simulated
+      - Observed
+  - field_name: event_frequency_type
+    label: Frequency
+    values:
+      - Rate of Exceedence
+      - Probability of Exceedence
+      - Return Period
+  - field_name: event_return_period
+    label: Probability of occurrence expressed as return periods list (10, 100, 1000) or range (10-1000)
+  - field_name: event_occurrence_time_start
+    label: Occurrence time start
+  - field_name: event_occurrence_time_end
+    label: Occurrence time end
+  - field_name: event_occurrence_time_span
+    label: Occurrence time span
+  - field_name: event_trigger_hazard_type
+    label: Trigger hazard type
+    values:
+      - CF
+      - CS
+      - DR
+      - EQ
+      - ET
+      - FL
+      - LS 
+      - MH
+      - TS
+      - VO
+      - WF
+      - WI
+  - field_name: event_trigger_process_type
+    label: Trigger Process Type
+    values:
+      - FCF
+      - FSS
+      - TOR
+      - DTA
+      - DTH
+      - DTM
+      - DTS
+      - Q1R
+      - Q2R
+      - QGM
+      - QLI
+      - ECD
+      - EHT
+      - FFF
+      - FPF
+      - LAV
+      - LSL
+      - TSI
+      - VAF
+      - VBL
+      - VFH
+      - VLH
+      - VLV
+      - VPF
+      - WFI
+      - ETC
+      - TCY
+  - field_name: event_description
+    label: Additional information about this specific event
+
+  ## FootprintSet
+  - field_name: footprintset_process_type
+    label: Process type
+    values:
+      - FCF
+      - FSS
+      - TOR
+      - DTA
+      - DTH
+      - DTM
+      - DTS
+      - Q1R
+      - Q2R
+      - QGM
+      - QLI
+      - ECD
+      - EHT
+      - FFF
+      - FPF
+      - LAV
+      - LSL
+      - TSI
+      - VAF
+      - VBL
+      - VFH
+      - VLH
+      - VLV
+      - VPF
+      - WFI
+      - ETC
+      - TCY
+  - field_name: footprintset_imt
+    label: Intensity measure
+    values:
+      - PGA_g
+      - PGA_m/s2
+      - PGV_m/s
+      - SA(0.2)_g
+      - SA(0.3)_g
+      - SA(1.0)_g
+      - SA(3.0)_g
+      - SA(0.2)_m/s2
+      - SA(0.3)_m/s2
+      - SA(1.0)_m/s2
+      - SA(3.0)_m/s2
+      - Sd(T1)_m
+      - Sv(T1)_m/s
+      - PGDf_m
+      - D_a5-95_s
+      - D_a5-75 _s
+      - IA_m/s
+      - Neq_-
+      - EMS_-
+      - AvgSa_m/s2
+      - I_Np_m/s2
+      - MMI_-
+      - CAV_m/s
+      - D_B_s
+      - d_fff_m
+      - d_fpf_m
+      - v_fff_m/s
+      - v_fpf_m/s
+      - v_tcy(3s)_km/h
+      - v_ect(3s)_km/h
+      - v_tcy(1m)_km/h
+      - v_ect(1m)_km/h
+      - v_tcy(10m)_km/h
+      - v_etc(10m)_km/h
+      - PGWS_tcy_km/h
+      - PGWS_ect_km/h
+      - d_lsl_m
+      - I_DF_m3/s2
+      - v_lsl_m/s2
+      - MFD_lsl_m
+      - SD_lsl_m
+      - LSI_-
+      - haz_lsl_-
+      - Rh_tsi_m
+      - d_tsi_m
+      - MMF_m4/s2
+      - F_drag_kN
+      - Fr_-
+      - v_tsi_m/s
+      - F_QS_kN
+      - MF_m3/s2
+      - h_tsi_m
+      - Fh_tsi_m
+      - h_vaf_m
+      - L_vaf_kg/m2
+      - v_fss_m/s
+      - d_fss_m
+      - CMI_-
+      - PDSI_-
+      - SPI_-
+  - field_name: footprintset_data_uncertainty
+    label: Data uncertainty
+
+
+# ExposureModel
+rdl_exposure:
+  ## Model
+  - field_name: exposure_category
+    label: Exposure category
+    values:
+      - Buildings
+      - Indicators
+      - Infrastructures
+      - Crops, livestock and forestry
+  - field_name: exposure_occupancy
+    label: Occupancy type
+    values:
+      - Residential
+      - Commercial
+      - Industrial
+      - Infrastructure
+      - Healthcare
+      - Educational
+      - Government
+      - Crop
+      - Livestock
+      - Forestry
+      - Mixed
+  - field_name: exposure_occupancy_time
+    label: Period of occupancy, if appliable
+  - field_name: exposure_taxonomy_source
+    label: Taxonomy source
+  - field_name: exposure_taxonomy_code
+    label: Taxonomy code
+  - field_name: event_time_year
+    label: General reference year to which the scenario refers to (e.g. "2050")
+  - field_name: exposure_aggregation_type
+    label: Level of data representation
+    values:
+      - Individual items
+      - Aggregated to grid
+      - Aggregated to boundaries
+  - field_name: exposure_add_attributes
+    label: List of key attributes included in the dataset
+  ## CostType
+  - field_name: exposure_val_type
+    label: Type of asset value
+    values:
+      - Structure
+      - Content
+      - Product
+      - Others
+  - field_name: exposure_val_unit
+    label: Unit of measure of exposed value
+
+
+# VulnerabilityModel
+rdl_vulnerability:
+  ## Model
+  - field_name: hazard_type_primary
+    label: Primary hazard type
+    values:
+      - CF
+      - CS
+      - DR
+      - EQ
+      - ET
+      - FL
+      - LS 
+      - MH
+      - TS
+      - VO
+      - WF
+      - WI
+  - field_name: hazard_type_secondary
+    label: Secondary hazard type
+    values:
+      - CF
+      - CS
+      - DR
+      - EQ
+      - ET
+      - FL
+      - LS 
+      - MH
+      - TS
+      - VO
+      - WF
+      - WI
+  - field_name: process_type_primary
+    label: Primary process type
+    values:
+      - FCF
+      - FSS
+      - TOR
+      - DTA
+      - DTH
+      - DTM
+      - DTS
+      - Q1R
+      - Q2R
+      - QGM
+      - QLI
+      - ECD
+      - EHT
+      - FFF
+      - FPF
+      - LAV
+      - LSL
+      - TSI
+      - VAF
+      - VBL
+      - VFH
+      - VLH
+      - VLV
+      - VPF
+      - WFI
+      - ETC
+      - TCY
+  - field_name: process_type_secondary
+    label: Secondary process type
+    values:
+      - FCF
+      - FSS
+      - TOR
+      - DTA
+      - DTH
+      - DTM
+      - DTS
+      - Q1R
+      - Q2R
+      - QGM
+      - QLI
+      - ECD
+      - EHT
+      - FFF
+      - FPF
+      - LAV
+      - LSL
+      - TSI
+      - VAF
+      - VBL
+      - VFH
+      - VLH
+      - VLV
+      - VPF
+      - WFI
+      - ETC
+      - TCY
+  - field_name: event_frequency_type
+    label: Type of frequency
+    values:
+      - Rate of Exceedence
+      - Probability of Exceedence
+      - Return Period     
+
+  - field_name: footprintset_imt
+    label: Intensity measure
+    values:
+      - PGA_g
+      - PGA_m/s2
+      - PGV_m/s
+      - SA(0.2)_g
+      - SA(0.3)_g
+      - SA(1.0)_g
+      - SA(3.0)_g
+      - SA(0.2)_m/s2
+      - SA(0.3)_m/s2
+      - SA(1.0)_m/s2
+      - SA(3.0)_m/s2
+      - Sd(T1)_m
+      - Sv(T1)_m/s
+      - PGDf_m
+      - D_a5-95_s
+      - D_a5-75 _s
+      - IA_m/s
+      - Neq_-
+      - EMS_-
+      - AvgSa_m/s2
+      - I_Np_m/s2
+      - MMI_-
+      - CAV_m/s
+      - D_B_s
+      - d_fff_m
+      - d_fpf_m
+      - v_fff_m/s
+      - v_fpf_m/s
+      - v_tcy(3s)_km/h
+      - v_ect(3s)_km/h
+      - v_tcy(1m)_km/h
+      - v_ect(1m)_km/h
+      - v_tcy(10m)_km/h
+      - v_etc(10m)_km/h
+      - PGWS_tcy_km/h
+      - PGWS_ect_km/h
+      - d_lsl_m
+      - I_DF_m3/s2
+      - v_lsl_m/s2
+      - MFD_lsl_m
+      - SD_lsl_m
+      - LSI_-
+      - haz_lsl_-
+      - Rh_tsi_m
+      - d_tsi_m
+      - MMF_m4/s2
+      - F_drag_kN
+      - Fr_-
+      - v_tsi_m/s
+      - F_QS_kN
+      - MF_m3/s2
+      - h_tsi_m
+      - Fh_tsi_m
+      - h_vaf_m
+      - L_vaf_kg/m2
+      - v_fss_m/s
+      - d_fss_m
+      - CMI_-
+      - PDSI_-
+      - SPI_-
+  - field_name: exposure_category
+    label: Category of exposed asset
+    values:
+      - Buildings
+      - Indicators
+      - Infrastructures
+      - Crops, livestock and forestry     
+  - field_name: exposure_occupancy
+    label: Occupancy
+    values:
+      - Residential
+      - Commercial
+      - Industrial
+      - Infrastructure
+      - Healthcare
+      - Educational
+      - Government
+      - Crop
+      - Livestock
+      - Forestry
+      - Mixed
+  - field_name: exposure_val_type
+    label: Type of asset value
+    values:
+      - Structure
+      - Content
+      - Product
+      - Others
+  - field_name: exposure_val_unit
+    label: Unit of measure of exposed value
+  - field_name: exposure_taxonomy_source
+    label: Taxonomy source
+  - field_name: exposure_taxonomy_code
+    label: Taxonomy
+  - field_name: vuln_impact_type
+    label: Type of impact considered
+    values:
+      - Direct
+      - Indirect
+      - Total
+  - field_name: vuln_scale_applicability
+    label: Scale applicability
+    values:
+      - Individual items
+      - Aggregated to grid
+      - Aggregated to boundaries
+  - field_name: vuln_local_applicability
+    label: Area within a country or region to wich the model specifically applies
+  - field_name: vuln_country_transferability
+    label: List of countries in which the model could be applied
+    values:
+      - ABW
+      - AFG
+      - AGO
+      - AIA
+      - ALB
+      - AND
+      - ARE
+      - ARG
+      - ARM
+      - ASM
+      - ATG
+      - AUS
+      - AUT
+      - AZE
+      - BDI
+      - BEL
+      - BEN
+      - BFA
+      - BGD
+      - BGR
+      - BHR
+      - BHS
+      - BIH
+      - BLM
+      - BLR
+      - BLZ
+      - BMU
+      - BOL
+      - BRA
+      - BRB
+      - BRN
+      - BTN
+      - BWA
+      - CAF
+      - CAN
+      - CHE
+      - CHL
+      - CHN
+      - CIV
+      - CMR
+      - COD
+      - COG
+      - COK
+      - COL
+      - COM
+      - CPV
+      - CRI
+      - CUB
+      - CUW
+      - CYM
+      - CYP
+      - CZE
+      - DEU
+      - DJI
+      - DMA
+      - DNK
+      - DOM
+      - DZA
+      - ECU
+      - EGY
+      - ERI
+      - ESP
+      - EST
+      - ETH
+      - FIN
+      - FJI
+      - FLK
+      - FRA
+      - FRO
+      - FSM
+      - GAB
+      - GBR
+      - GEO
+      - GGY
+      - GHA
+      - GIB
+      - GIN
+      - GMB
+      - GNB
+      - GNQ
+      - GRC
+      - GRD
+      - GRL
+      - GTM
+      - GUM
+      - GUY
+      - HKG
+      - HMD
+      - HND
+      - HRV
+      - HTI
+      - HUN
+      - IDN
+      - IMN
+      - IND
+      - IRL
+      - IRN
+      - IRQ
+      - ISL
+      - ISR
+      - ITA
+      - JAM
+      - JEY
+      - JOR
+      - JPN
+      - KAZ
+      - KEN
+      - KGZ
+      - KHM
+      - KIR
+      - KNA
+      - KOR
+      - KWT
+      - LAO
+      - LBN
+      - LBR
+      - LBY
+      - LCA
+      - LIE
+      - LKA
+      - LSO
+      - LTU
+      - LUX
+      - LVA
+      - MAC
+      - MAF
+      - MAR
+      - MCO
+      - MDA
+      - MDG
+      - MDV
+      - MEX
+      - MHL
+      - MKD
+      - MLI
+      - MLT
+      - MMR
+      - MNE
+      - MNG
+      - MNP
+      - MOZ
+      - MRT
+      - MSR
+      - MUS
+      - MWI
+      - MYS
+      - NAM
+      - NCL
+      - NER
+      - NFK
+      - NGA
+      - NIC
+      - NIU
+      - NLD
+      - NOR
+      - NPL
+      - NRU
+      - NZL
+      - OMN
+      - PAK
+      - PAN
+      - PCN
+      - PER
+      - PHL
+      - PLW
+      - PNG
+      - POL
+      - PRI
+      - PRK
+      - PRT
+      - PRY
+      - PSE
+      - PYF
+      - QAT
+      - ROU
+      - RUS
+      - RWA
+      - SAU
+      - SDN
+      - SEN
+      - SGP
+      - SGS
+      - SHN
+      - SLB
+      - SLE
+      - SLV
+      - SMR
+      - SOM
+      - SPM
+      - SRB
+      - SSD
+      - STP
+      - SUR
+      - SVK
+      - SVN
+      - SWE
+      - SWZ
+      - SXM
+      - SYC
+      - SYR
+      - TCA
+      - TCD
+      - TGO
+      - THA
+      - TJK
+      - TKM
+      - TLS
+      - TON
+      - TTO
+      - TUN
+      - TUR
+      - TUV
+      - TZA
+      - UGA
+      - UKR
+      - URY
+      - USA
+      - UZB
+      - VAT
+      - VCT
+      - VEN
+      - VGB
+      - VIR
+      - VNM
+      - VUT
+      - WLF
+      - WSM
+      - XXK
+      - YEM
+      - ZAF
+      - ZMB
+      - ZWE
+  - field_name: vuln_transferability_notes
+    label: Details about applicability to different areas
+  - field_name: vuln_function_type
+    label: Function type
+    values:
+      - Fragility
+      - Vulnerability
+      - Damage-to-Loss
+  - field_name: vuln_calculation_method
+    label: The methodology used for the calculation of the function
+    values:
+      - Inferred
+      - Simulated
+      - Observed
+  - field_name: vuln_approach
+    label: Approach
+    values:
+      - Empirical
+      - Analytical
+      - Judgement
+      - Hybrid
+  - field_name: vuln_f_relationship
+    label: F relationship
+    values:
+      - Mathematical
+      - Discrete
+  - field_name: vuln_f_math
+    label: Math
+    values:
+      - Parametric
+      - Bespoke
+  ## Specifics
+  - field_name: vuln_analysis_details
+    label: Description of analysis that produced the function
+  - field_name: vuln_par_names
+    label: Parameters considered by the function
+  - field_name: vuln_im_name
+    label: Name of loss intensity measure
+  - field_name: vuln_im_units
+    label: Unit of loss intensity measrue
+  - field_name: vuln_n_events
+    label: Number of events the function has been built on
+  - field_name: vuln_n_assets
+    label: Number of assets the function has been built on
+  - field_name: vuln_is_fit_good
+    label: Is the function fit good overall?
+  - field_name: vuln_is_edp_thre
+    label: Is the damage scale is associated to an engineered-design parameter threshold?
+  - field_name: vuln_is_dm_factor
+    label: Is the damage scale is associated to a damage factor?
+  - field_name: vuln_is_casualties
+    label: Is the damage scale is associated to a casualties estimation?
+  - field_name: vuln_is_downtime
+    label: Is the damage scale is associated to a downtime estimation (e.g. service interruption)?
+
+# LossModel
+rdl_loss:
+  ## Model
+  - field_name: model_hazard_type
+    label: Hazard Type
+    values:
+      - CF
+      - CS
+      - DR
+      - EQ
+      - ET
+      - FL
+      - LS 
+      - MH
+      - TS
+      - VO
+      - WF
+      - WI
+  - field_name: model_process_type
+    label: Process Type
+    values:
+      - FCF
+      - FSS
+      - TOR
+      - DTA
+      - DTH
+      - DTM
+      - DTS
+      - Q1R
+      - Q2R
+      - QGM
+      - QLI
+      - ECD
+      - EHT
+      - FFF
+      - FPF
+      - LAV
+      - LSL
+      - TSI
+      - VAF
+      - VBL
+      - VFH
+      - VLH
+      - VLV
+      - VPF
+      - WFI
+      - ETC
+      - TCY
+  - field_name: event_time_start
+    label: Event start time
+  - field_name: event_time_end
+    label: Event end time
+  - field_name: event_time_year
+    label: General reference year to which the scenario refers to (e.g. "2050")
+  - field_name: exposure_occupancy
+    label: Occupancy type
+    values:
+      - Residential
+      - Commercial
+      - Industrial
+      - Infrastructure
+      - Healthcare
+      - Educational
+      - Government
+      - Crop
+      - Livestock
+      - Forestry
+      - Mixed
+  - field_name: exposure_category
+    label: Category of exposed asset
+    values:
+      - Buildings
+      - Indicators
+      - Infrastructures
+      - Crops, livestock and forestry     
+  - field_name: exposure_val_type
+    label: Element of exposure on which loss is calculated
+    values:
+      - Structure
+      - Content
+      - Business interruption
+      - Other
+  - field_name: loss_impact
+    label: Impact type
+    values:
+      - Direct
+      - Indirect
+      - Total
+  - field_name: loss_type
+    label: Loss Type
+    values:
+      - Ground up
+      - Insured
+  - field_name: loss_frequency_type
+    label: Type of frequency
+    values:
+      - Rate of Exceedence
+      - Probability of Exceedence
+      - Return Period     
+  - field_name: loss_return_period
+    label: Return Period in years
+  - field_name: loss_metric
+    label: Metric
+    values:
+      - Annual Average Losses
+      - Annual Average Loss Ratio
+      - Probable Maximal Loss
+  - field_name: loss_val_unit
+    label: Unit of measure of loss value  
+  - field_name: loss_aggregation_type
+    label: Level of data representation
+    values:
+      - Individual items
+      - Aggregated to grid
+      - Aggregated to boundaries
+  - field_name: model_hazard_link
+    label: URL of source hazard data
+  - field_name: model_exposure_link
+    label: URL of source exposure data
+  - field_name: model_vulnerability_link
+    label: URL of source vulnerability data

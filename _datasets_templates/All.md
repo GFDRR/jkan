@@ -252,7 +252,7 @@ resources:
   - name: package name and format
     url: 'https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/COMP/NAME'
     format: gpkg
-  - name: Afghanistan all RPs Shapefile
+  - name: package name and format
     url: 'https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/COMP/NAME'
     format: shp
 
