@@ -319,7 +319,7 @@ resource_fields:
   - field_name: h-res
     label: Horizontal resolution
   - field_name: epsg
-    label: Reference coordinate system (default: 4326)
+    label: Reference coordinate system. Default is 4326 (WGS84)
     
 organization_fields:
   - field_name: title
