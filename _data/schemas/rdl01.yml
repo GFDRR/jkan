@@ -300,9 +300,13 @@ resource_fields:
   - field_name: name
     label: Resource name
     datajson: distribution.title
-  - field_name: url
-    label: URL to resource
-    datajson: distribution.downloadURL
+  - field_name: aggregation_type
+    label: Level of data representation
+    values:
+      - Individual items
+      - Aggregated to grid
+      - Aggregated to boundaries
+      - N/A
   - field_name: format
     label: Format
     datajson: distribution.format
@@ -320,7 +324,10 @@ resource_fields:
     label: Horizontal resolution
   - field_name: epsg
     label: Reference coordinate system. Default is 4326 (WGS84)
-    
+  - field_name: url
+    label: URL to resource
+    datajson: distribution.downloadURL
+
 organization_fields:
   - field_name: title
     label: Title
@@ -572,12 +579,6 @@ rdl_exposure:
     label: Taxonomy code
   - field_name: event_time_year
     label: General reference year to which the scenario refers to (e.g. "2050")
-  - field_name: exposure_aggregation_type
-    label: Level of data representation
-    values:
-      - Individual items
-      - Aggregated to grid
-      - Aggregated to boundaries
   - field_name: exposure_add_attributes
     label: List of key attributes included in the dataset
   ## CostType
@@ -1202,12 +1203,6 @@ rdl_loss:
       - Probable Maximal Loss
   - field_name: loss_val_unit
     label: Unit of measure of loss value  
-  - field_name: loss_aggregation_type
-    label: Level of data representation
-    values:
-      - Individual items
-      - Aggregated to grid
-      - Aggregated to boundaries
   - field_name: model_hazard_link
     label: URL of source hazard data
   - field_name: model_exposure_link
