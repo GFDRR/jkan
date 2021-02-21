@@ -1,3 +1,14 @@
+function license_link(data) {
+  if (data.license_display != null) {
+    return `<strong>License:</strong> 
+    <a property="dct:license" resource="${data.license_display}" href="${data.license}">
+      ${data.license_display}
+    </a>`
+  }
+
+  return `<strong>License:</strong> Unknown or not provided`
+}
+
 export default (data) => (
 `<rdl-dataset>
   <h3><a href="${data.url}">${data.title}</a></h3>
@@ -7,7 +18,11 @@ export default (data) => (
   <br/>
   <strong>Geo Coverage:</strong> ${data.geo_coverage || 'not supplied'}
   <br />
-  <strong>License:</strong> ${data.license}
+  <strong>License:</strong> ${license_link(data)}
   <hr>
 </rdl-dataset>`
 )
+
+// <a property="dct:license" resource="${data.license_display}" href="${data.license || ''}">
+//   ${data.license_display || 'Unknown or not provided'}
+// </a>
