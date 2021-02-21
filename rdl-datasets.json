@@ -12,6 +12,7 @@
     "source": {{dataset.source | jsonify}},
     "model_date": {{dataset.model_date | jsonify}},
     "geo_coverage": {{ site.data.ISO3[dataset.geo_coverage] | jsonify }},
-    "url": "{{ site.baseurl }}{{ dataset.url }}"
+    "url": "{{ site.baseurl }}{{ dataset.url }}",
+    "resources": {{ dataset.resources | jsonify }}
   }{% unless forloop.last %},{% endunless %}{% endfor %}
 ]

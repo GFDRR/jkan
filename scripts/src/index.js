@@ -10,6 +10,7 @@ import DatasetsList from './components/datasets-list'
 import RDLDatasetsList from './components/rdl-datasets-list'
 import CategoriesFilter from './components/categories-filter'
 import OrganizationsFilter from './components/organizations-filter'
+import RDLFileTypesFilter from './components/rdl-filetypes-filter'
 import SourcesFilter from './components/sources-filter'
 import Form from './components/form'
 import DatasetForm from './components/dataset-form'
@@ -65,6 +66,7 @@ const components = [
   {tag: 'rdl-datasets-list', class: RDLDatasetsList, usesDatasets: true},
   {tag: 'categories-filter', class: CategoriesFilter, usesDatasets: true},
   {tag: 'organizations-filter', class: OrganizationsFilter, usesDatasets: true},
+  {tag: 'rdl-filetypes-filter', class: RDLFileTypesFilter, usesDatasets: true},
   {tag: 'sources-filter', class: SourcesFilter, usesDatasets: true}
 ]
 for (let component of components) {
