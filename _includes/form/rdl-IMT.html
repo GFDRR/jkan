@@ -1,0 +1,8 @@
+<div class="form-group">
+    <label for="{{ include.field_name }}[]">{{ include.field.label }}</label>
+    <select class="form-control select2" id="{{ include.field_name }}[]" name="{{ include.field_name }}[]" style="width: 100%">
+      {% for imt in site.data.rdl-IMT %}
+        <option value={{ imt }}>{{ imt }}</option>
+      {% endfor %}
+    </select>
+  </div>
