@@ -27,9 +27,9 @@ dataset_fields:
     label: Publisher of dataset
     form_template: form/organization.html
     datajson: publisher.name
-  - field_name: model_source
+  - field_name: source
     label: Name of source model
-  - field_name: model_date
+  - field_name: date
     label: Model release date
   - field_name: version
     label: Version of the dataset
@@ -350,7 +350,7 @@ category_fields:
 # HazardModel
 rdl_hazard:
   ## EventSet
-  - field_name: event_hazard_type
+  - field_name: hazard_type
     label: Hazard type
     values:
       - CF
@@ -365,43 +365,43 @@ rdl_hazard:
       - VO
       - WF
       - WI
-  - field_name: event_analysis_type
+  - field_name: analysis_type
     label: Type of analysis
     values:
       - Deterministic
       - Probabilistic
-  - field_name: event_geo_area
+  - field_name: geo_area
     label: The name of the geographic area covered by the hazard analysis (Comma-separated list of geographic names).
-  - field_name: event_time_start
+  - field_name: time_start
     label: Event start time
-  - field_name: event_time_end
+  - field_name: time_end
     label: Event end time
-  - field_name: event_time_span
+  - field_name: time_span
     label: Time span considered
-  - field_name: event_time_year
+  - field_name: time_year
     label: General reference year to which the scenario refers to (e.g. "2050")
   ## Event
-  - field_name: event_calculation_method
+  - field_name: calculation_method
     label: Calculation method
     values:
       - Inferred
       - Simulated
       - Observed
-  - field_name: event_frequency_type
+  - field_name: frequency_type
     label: Frequency
     values:
       - Rate of Exceedence
       - Probability of Exceedence
       - Return Period
-  - field_name: event_return_period
+  - field_name: return_period
     label: Probability of occurrence expressed as return periods list (10, 100, 1000) or range (10-1000)
-  - field_name: event_occurrence_time_start
+  - field_name: occurrence_time_start
     label: Occurrence time start
-  - field_name: event_occurrence_time_end
+  - field_name: occurrence_time_end
     label: Occurrence time end
-  - field_name: event_occurrence_time_span
+  - field_name: occurrence_time_span
     label: Occurrence time span
-  - field_name: event_trigger_hazard_type
+  - field_name: trigger_hazard_type
     label: Trigger hazard type
     values:
       - CF
@@ -416,7 +416,7 @@ rdl_hazard:
       - VO
       - WF
       - WI
-  - field_name: event_trigger_process_type
+  - field_name: trigger_process_type
     label: Trigger Process Type
     values:
       - FCF
@@ -446,11 +446,11 @@ rdl_hazard:
       - WFI
       - ETC
       - TCY
-  - field_name: event_description
+  - field_name: description
     label: Additional information about this specific event
 
   ## FootprintSet
-  - field_name: footprintset_process_type
+  - field_name: process_type
     label: Process type
     values:
       - FCF
@@ -480,7 +480,7 @@ rdl_hazard:
       - WFI
       - ETC
       - TCY
-  - field_name: footprintset_imt
+  - field_name: imt
     label: Intensity measure
     values:
       - PGA_g
@@ -543,21 +543,21 @@ rdl_hazard:
       - CMI_-
       - PDSI_-
       - SPI_-
-  - field_name: footprintset_data_uncertainty
+  - field_name: data_uncertainty
     label: Data uncertainty
 
 
 # ExposureModel
 rdl_exposure:
   ## Model
-  - field_name: exposure_category
+  - field_name: category
     label: Exposure category
     values:
       - Buildings
       - Indicators
       - Infrastructures
       - Crops, livestock and forestry
-  - field_name: exposure_occupancy
+  - field_name: occupancy
     label: Occupancy type
     values:
       - Residential
@@ -571,25 +571,25 @@ rdl_exposure:
       - Livestock
       - Forestry
       - Mixed
-  - field_name: exposure_occupancy_time
+  - field_name: occupancy_time
     label: Period of occupancy, if appliable
-  - field_name: exposure_taxonomy_source
+  - field_name: taxonomy_source
     label: Taxonomy source
-  - field_name: exposure_taxonomy_code
+  - field_name: taxonomy_code
     label: Taxonomy code
   - field_name: event_time_year
     label: General reference year to which the scenario refers to (e.g. "2050")
-  - field_name: exposure_add_attributes
+  - field_name: add_attributes
     label: List of key attributes included in the dataset
   ## CostType
-  - field_name: exposure_val_type
+  - field_name: val_type
     label: Type of asset value
     values:
       - Structure
       - Content
       - Product
       - Others
-  - field_name: exposure_val_unit
+  - field_name: val_unit
     label: Unit of measure of exposed value
 
 
@@ -686,14 +686,14 @@ rdl_vulnerability:
       - WFI
       - ETC
       - TCY
-  - field_name: event_frequency_type
+  - field_name: frequency_type
     label: Type of frequency
     values:
       - Rate of Exceedence
       - Probability of Exceedence
       - Return Period     
 
-  - field_name: footprintset_imt
+  - field_name: imt
     label: Intensity measure
     values:
       - PGA_g
@@ -756,14 +756,14 @@ rdl_vulnerability:
       - CMI_-
       - PDSI_-
       - SPI_-
-  - field_name: exposure_category
+  - field_name: category
     label: Category of exposed asset
     values:
       - Buildings
       - Indicators
       - Infrastructures
       - Crops, livestock and forestry     
-  - field_name: exposure_occupancy
+  - field_name: occupancy
     label: Occupancy
     values:
       - Residential
@@ -777,34 +777,34 @@ rdl_vulnerability:
       - Livestock
       - Forestry
       - Mixed
-  - field_name: exposure_val_type
+  - field_name: val_type
     label: Type of asset value
     values:
       - Structure
       - Content
       - Product
       - Others
-  - field_name: exposure_val_unit
+  - field_name: val_unit
     label: Unit of measure of exposed value
-  - field_name: exposure_taxonomy_source
+  - field_name: taxonomy_source
     label: Taxonomy source
-  - field_name: exposure_taxonomy_code
+  - field_name: taxonomy_code
     label: Taxonomy
-  - field_name: vuln_impact_type
+  - field_name: impact_type
     label: Type of impact considered
     values:
       - Direct
       - Indirect
       - Total
-  - field_name: vuln_scale_applicability
+  - field_name: scale_applicability
     label: Scale applicability
     values:
       - Individual items
       - Aggregated to grid
       - Aggregated to boundaries
-  - field_name: vuln_local_applicability
+  - field_name: local_applicability
     label: Area within a country or region to wich the model specifically applies
-  - field_name: vuln_country_transferability
+  - field_name: country_transferability
     label: List of countries in which the model could be applied
     values:
       - ABW
@@ -1039,65 +1039,65 @@ rdl_vulnerability:
       - ZAF
       - ZMB
       - ZWE
-  - field_name: vuln_transferability_notes
+  - field_name: transferability_notes
     label: Details about applicability to different areas
-  - field_name: vuln_function_type
+  - field_name: function_type
     label: Function type
     values:
       - Fragility
       - Vulnerability
       - Damage-to-Loss
-  - field_name: vuln_calculation_method
+  - field_name: calculation_method
     label: The methodology used for the calculation of the function
     values:
       - Inferred
       - Simulated
       - Observed
-  - field_name: vuln_approach
+  - field_name: approach
     label: Approach
     values:
       - Empirical
       - Analytical
       - Judgement
       - Hybrid
-  - field_name: vuln_f_relationship
+  - field_name: f_relationship
     label: F relationship
     values:
       - Mathematical
       - Discrete
-  - field_name: vuln_f_math
+  - field_name: f_math
     label: Math
     values:
       - Parametric
       - Bespoke
   ## Specifics
-  - field_name: vuln_analysis_details
+  - field_name: analysis_details
     label: Description of analysis that produced the function
-  - field_name: vuln_par_names
+  - field_name: par_names
     label: Parameters considered by the function
-  - field_name: vuln_im_name
+  - field_name: im_name
     label: Name of loss intensity measure
-  - field_name: vuln_im_units
+  - field_name: im_units
     label: Unit of loss intensity measrue
-  - field_name: vuln_n_events
+  - field_name: n_events
     label: Number of events the function has been built on
-  - field_name: vuln_n_assets
+  - field_name: n_assets
     label: Number of assets the function has been built on
-  - field_name: vuln_is_fit_good
+  - field_name: is_fit_good
     label: Is the function fit good overall?
-  - field_name: vuln_is_edp_thre
+  - field_name: is_edp_thre
     label: Is the damage scale is associated to an engineered-design parameter threshold?
-  - field_name: vuln_is_dm_factor
+  - field_name: is_dm_factor
     label: Is the damage scale is associated to a damage factor?
-  - field_name: vuln_is_casualties
+  - field_name: is_casualties
     label: Is the damage scale is associated to a casualties estimation?
-  - field_name: vuln_is_downtime
+  - field_name: is_downtime
     label: Is the damage scale is associated to a downtime estimation (e.g. service interruption)?
 
 # LossModel
 rdl_loss:
   ## Model
-  - field_name: model_hazard_type
+  - field_name: hazard_type
     label: Hazard Type
     values:
       - CF
@@ -1112,7 +1112,7 @@ rdl_loss:
       - VO
       - WF
       - WI
-  - field_name: model_process_type
+  - field_name: process_type
     label: Process Type
     values:
       - FCF
@@ -1142,13 +1142,13 @@ rdl_loss:
       - WFI
       - ETC
       - TCY
-  - field_name: event_time_start
+  - field_name: time_start
     label: Event start time
-  - field_name: event_time_end
+  - field_name: time_end
     label: Event end time
-  - field_name: event_time_year
+  - field_name: time_year
     label: General reference year to which the scenario refers to (e.g. "2050")
-  - field_name: exposure_occupancy
+  - field_name: occupancy
     label: Occupancy type
     values:
       - Residential
@@ -1162,21 +1162,21 @@ rdl_loss:
       - Livestock
       - Forestry
       - Mixed
-  - field_name: exposure_category
+  - field_name: category
     label: Category of exposed asset
     values:
       - Buildings
       - Indicators
       - Infrastructures
       - Crops, livestock and forestry     
-  - field_name: exposure_val_type
+  - field_name: val_type
     label: Element of exposure on which loss is calculated
     values:
       - Structure
       - Content
       - Business interruption
       - Other
-  - field_name: loss_impact
+  - field_name: impact
     label: Impact type
     values:
       - Direct
@@ -1187,25 +1187,25 @@ rdl_loss:
     values:
       - Ground up
       - Insured
-  - field_name: loss_frequency_type
+  - field_name: frequency_type
     label: Type of frequency
     values:
       - Rate of Exceedence
       - Probability of Exceedence
       - Return Period     
-  - field_name: loss_return_period
+  - field_name: return_period
     label: Return Period in years
-  - field_name: loss_metric
+  - field_name: metric
     label: Metric
     values:
       - Annual Average Losses
       - Annual Average Loss Ratio
       - Probable Maximal Loss
-  - field_name: loss_val_unit
+  - field_name: val_unit
     label: Unit of measure of loss value  
-  - field_name: model_hazard_link
+  - field_name: hazard_link
     label: URL of source hazard data
-  - field_name: model_exposure_link
+  - field_name: exposure_link
     label: URL of source exposure data
-  - field_name: model_vulnerability_link
+  - field_name: vulnerability_link
     label: URL of source vulnerability data
