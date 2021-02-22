@@ -5,12 +5,14 @@
     "title": {{ dataset.title | jsonify }},
     "organization": {{ dataset.organization | jsonify }}{% if dataset.notes != "" %},
     "notes": {{ dataset.notes | jsonify }}{% endif %}{% if dataset.notes != "" %},
-    "category": {{ dataset.category | jsonify }}{% endif %}{% if dataset.license != "" %},
+    "category": {{ dataset.category | jsonify }}{% endif %}{% if site.data.licenses[dataset.license] != null %},
+    "license_display": {{ site.data.licenses[dataset.license] | jsonify }}{% endif %}{% if site.data.licenses[dataset.license] != null %},
     "license": {{ dataset.license | jsonify }}{% endif %},
     "organization": {{dataset.organization | jsonify}},
     "source": {{dataset.source | jsonify}},
     "model_date": {{dataset.model_date | jsonify}},
-    "geo_coverage": {{dataset.geo_coverage | jsonify}},
-    "url": "{{ site.baseurl }}{{ dataset.url }}"
+    "geo_coverage": {{ site.data.ISO3[dataset.geo_coverage] | jsonify }},
+    "url": "{{ site.baseurl }}{{ dataset.url }}",
+    "resources": {{ dataset.resources | jsonify }}
   }{% unless forloop.last %},{% endunless %}{% endfor %}
 ]

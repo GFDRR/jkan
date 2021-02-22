@@ -39,6 +39,12 @@ export function createDatasetFilters (filters) {
     if (filters.category) {
       conditions.push(dataset.category && slugify(dataset.category).indexOf(filters.category) !== -1)
     }
+    if (filters.resources) {
+      conditions.push(dataset.resources.some(x => x.format === filters.resources))
+    }
+    if (filters.geo_coverage) {
+      conditions.push(dataset.geo_coverage && slugify(dataset.geo_coverage) === filters.geo_coverage)
+    }
     return conditions.every(function (value) { return !!value })
   }
 }

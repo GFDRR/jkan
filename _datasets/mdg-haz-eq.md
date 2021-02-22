@@ -19,7 +19,8 @@ purpose: Quantification of site specific risk of flood, earthquakes, tropical cy
 project: GFDRR South West Indian Ocean Risk Assessment and Financing Initiative (SWIO-RAFI)
 bibliography: SWIO RAFI Report https://www.gfdrr.org/en/publication/southwest-indian-ocean-risk-assessment-and-financing-initiative-summary-report-and-risk
 geo_coverage: MDG
-license: 'CC BY-SA 4.0'
+license: 'https://creativecommons.org/licenses/by-sa/4.0/'
+
 maintainer: GFDRR
 maintainer_email: labs.gfdrr@gmail.com
 

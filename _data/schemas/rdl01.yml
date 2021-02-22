@@ -45,6 +45,7 @@ dataset_fields:
     label: Link to bibliographic resource
   - field_name: geo_coverage
     label: Geographic coverage (countries)
+    display_template: display/geo_coverage.html
     values:
       - ABW
       - AFG

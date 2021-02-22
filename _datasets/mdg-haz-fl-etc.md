@@ -17,7 +17,7 @@ resources:
     url: 'https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/mdg-haz-fl-etc.zip'
     format: geotiff
 
-license: CC BY-SA 4.0
+license: 'https://creativecommons.org/licenses/by-sa/4.0/'
 
 maintainer: GFDRR
 maintainer_email: labs.gfdrr@gmail.com

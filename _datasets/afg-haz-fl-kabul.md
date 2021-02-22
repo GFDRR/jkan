@@ -16,7 +16,7 @@ resources:
     url: 'https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/afg-haz-fl-kabul.zip'
     format: geotiff
 
-license: CC BY 4.0
+license: 'https://creativecommons.org/licenses/by/4.0/'
 
 maintainer: GFDRR
 maintainer_email: labs.gfdrr@gmail.com
