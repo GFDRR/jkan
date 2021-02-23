@@ -7,13 +7,23 @@ function display_rdl_component_fields() {
   var selected = $("#category\\[\\]").val()
 
   var target = $(`#rdl-schema-${selected.toLowerCase()}`)
-
+  var target_fields = $(`fieldset#rdl-schema-${selected.toLowerCase()}`)
+  
+  // find fieldsets and input fields
   var fieldsets = $('fieldset[id*="rdl-schema-"]')
-  fieldsets.hide()  //hide all rdl fieldsets
-  fieldsets.children().prop('disabled', true)  // disable form fields
+  var input_fields = $('fieldset[id*="rdl-schema-"]')
 
-  target.children().prop('disabled', false)
-  target.show()  // display only the target fieldset
+  // hide all rdl fieldsets and disable input fields
+  fieldsets.hide()
+  $.each(input_fields.find("input, button, select, textarea"), function(index, value) {
+    $(value).prop("disabled", true);
+  });
+
+  // activate and display only the target fieldset
+  $.each(target_fields.find("input, button, select, textarea"), function(index, value) {
+    $(value).prop("disabled", false);
+  });
+  target.show()
 }
 
 
