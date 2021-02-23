@@ -119,6 +119,7 @@ rdl_hazard:
     form_template: form/rdl-hazard_type.html
   - field_name: analysis_type
     label: Type of analysis
+    required: true
     form_template: form/dropdown.html
     values:
       - Deterministic
@@ -136,6 +137,7 @@ rdl_hazard:
   ## Event
   - field_name: calculation_method
     label: Calculation method
+    required: true
     form_template: form/dropdown.html
     values:
       - Inferred
@@ -143,6 +145,7 @@ rdl_hazard:
       - Observed
   - field_name: frequency_type
     label: Frequency
+    required: true
     form_template: form/dropdown.html
     values:
       - Rate of Exceedence
@@ -168,9 +171,11 @@ rdl_hazard:
   ## FootprintSet
   - field_name: process_type
     label: Process type
+    required: true
     form_template: form/rdl-process_type.html
   - field_name: imt
     label: Intensity measure
+    required: true
     form_template: form/rdl-IMT.html
   - field_name: data_uncertainty
     label: Data uncertainty
@@ -181,6 +186,7 @@ rdl_exposure:
   ## Model
   - field_name: category
     label: Exposure category
+    required: true
     form_template: form/dropdown.html
     values:
       - Buildings
@@ -189,6 +195,7 @@ rdl_exposure:
       - Crops, livestock and forestry
   - field_name: occupancy
     label: Occupancy type
+    required: true
     form_template: form/rdl-occupancy.html
   - field_name: occupancy_time
     label: Period of occupancy, if appliable
@@ -207,6 +214,7 @@ rdl_exposure:
   ## CostType
   - field_name: val_type
     label: Type of asset value
+    required: true
     form_template: form/dropdown.html
     values:
       - Structure
@@ -215,6 +223,7 @@ rdl_exposure:
       - Others
   - field_name: val_unit
     label: Unit of measure of exposed value
+    required: true
   
 
 
@@ -223,18 +232,21 @@ rdl_vulnerability:
   ## Model
   - field_name: hazard_type_primary
     label: Primary hazard type
+    required: true
     form_template: form/rdl-hazard_type.html
   - field_name: hazard_type_secondary
     label: Secondary hazard type
     form_template: form/rdl-hazard_type.html
   - field_name: process_type_primary
     label: Primary process type
+    required: true
     form_template: form/rdl-process_type.html
   - field_name: process_type_secondary
     label: Secondary process type
     form_template: form/rdl-process_type.html
   - field_name: frequency_type
     label: Type of frequency
+    required: true
     form_template: form/dropdown.html
     values:
       - Rate of Exceedence
@@ -243,9 +255,11 @@ rdl_vulnerability:
 
   - field_name: imt
     label: Intensity measure
+    required: true
     form_template: form/rdl-IMT.html
   - field_name: category
     label: Category of exposed asset
+    required: true
     form_template: form/dropdown.html
     values:
       - Buildings
@@ -254,9 +268,11 @@ rdl_vulnerability:
       - Crops, livestock and forestry     
   - field_name: occupancy
     label: Occupancy
+    required: true
     form_template: form/rdl-occupancy.html
   - field_name: val_type
     label: Type of asset value
+    required: true
     form_template: form/dropdown.html
     values:
       - Structure
@@ -265,12 +281,14 @@ rdl_vulnerability:
       - Others
   - field_name: val_unit
     label: Unit of measure of exposed value
+    required: true
   - field_name: taxonomy_source
     label: Taxonomy source
   - field_name: taxonomy_code
     label: Taxonomy
   - field_name: impact_type
     label: Type of impact considered
+    required: true
     form_template: form/dropdown.html
     values:
       - Direct
@@ -278,6 +296,7 @@ rdl_vulnerability:
       - Total
   - field_name: scale_applicability
     label: Scale applicability
+    required: true
     form_template: form/dropdown.html
     values:
       - Individual items
@@ -287,12 +306,14 @@ rdl_vulnerability:
     label: Area within a country or region to wich the model specifically applies
   - field_name: country_transferability
     label: List of countries in which the model could be applied
+    required: true
     display_template: display/geo_coverage.html
     form_template: form/geo_coverage.html
   - field_name: transferability_notes
     label: Details about applicability to different areas
   - field_name: function_type
     label: Function type
+    required: true
     form_template: form/dropdown.html
     values:
       - Fragility
@@ -315,6 +336,7 @@ rdl_vulnerability:
       - Hybrid
   - field_name: f_relationship
     label: F relationship
+    required: true
     form_template: form/dropdown.html
     values:
       - Mathematical
@@ -340,14 +362,19 @@ rdl_vulnerability:
     label: Number of assets the function has been built on
   - field_name: is_fit_good
     label: Is the function fit good overall?
+    required: true
   - field_name: is_edp_thre
     label: Is the damage scale is associated to an engineered-design parameter threshold?
+    required: true
   - field_name: is_dm_factor
     label: Is the damage scale is associated to a damage factor?
+    required: true
   - field_name: is_casualties
     label: Is the damage scale is associated to a casualties estimation?
+    required: true
   - field_name: is_downtime
     label: Is the damage scale is associated to a downtime estimation (e.g. service interruption)?
+    required: true
 
 # LossModel
 rdl_loss:
@@ -366,9 +393,11 @@ rdl_loss:
     label: General reference year to which the scenario refers to (e.g. "2050")
   - field_name: occupancy
     label: Occupancy type
+    required: true
     form_template: form/rdl-occupancy.html
   - field_name: category
     label: Category of exposed asset
+    required: true
     form_template: form/dropdown.html
     values:
       - Buildings
@@ -377,6 +406,7 @@ rdl_loss:
       - Crops, livestock and forestry     
   - field_name: val_type
     label: Element of exposure on which loss is calculated
+    required: true
     form_template: form/dropdown.html
     values:
       - Structure
@@ -385,6 +415,7 @@ rdl_loss:
       - Other
   - field_name: impact
     label: Impact type
+    required: true
     form_template: form/dropdown.html
     values:
       - Direct
@@ -392,12 +423,14 @@ rdl_loss:
       - Total
   - field_name: loss_type
     label: Loss Type
+    required: true
     form_template: form/dropdown.html
     values:
       - Ground up
       - Insured
   - field_name: frequency_type
     label: Type of frequency
+    required: true
     form_template: form/dropdown.html
     values:
       - Rate of Exceedence
@@ -407,6 +440,7 @@ rdl_loss:
     label: Return Period in years
   - field_name: metric
     label: Metric
+    required: true
     form_template: form/dropdown.html
     values:
       - Annual Average Losses
@@ -414,6 +448,7 @@ rdl_loss:
       - Probable Maximal Loss
   - field_name: val_unit
     label: Unit of measure of loss value  
+    required: true
   - field_name: hazard_link
     label: URL of source hazard data
   - field_name: exposure_link

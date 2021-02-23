@@ -1,5 +1,5 @@
 <div class="form-group">
-    <label for="{{ include.field_name }}[]">{{ include.field.label }}</label>
+    <label for="{{ include.field_name }}[]">{{ include.field.label }}{% if include.field.required %}<span style='color: red'>*{% endif %}</span></label>
     <select class="form-control select2" id="{{ include.field_name }}[]" name="{{ include.field_name }}[]" style="width: 100%">
       {% for haz in site.data.rdl-hazard_type %}
         <option value={{ haz[0] }}>{{ haz[1] }}</option>

@@ -60,7 +60,7 @@
         {% assign template = field.form_template | default: "form/text.html" %}
         {% assign field_name = field.field_name %}
         {% assign value = include.dataset[field_name] %}
-        {% include {{ template }} field=field field_name=field_name value=value %}
+        {% include {{ template }} field=field field_name=field_name value=value required=required%}
       {% endunless %}
     {% endfor %}
   </fieldset>
