@@ -3,6 +3,7 @@
 {% assign resource_fields = site.data.schemas[schema].resource_fields %}
 {% assign dataset_system_fields = "title|organization|notes" | split: "|" %}
 {% assign datasets = site.collections | where:"label","datasets" | first %}
+
 <form data-component="form dataset-form"
   data-file-dir="{{ datasets.relative_directory }}"
   data-render-dir="datasets"
@@ -39,7 +40,7 @@
   </div>
 
   <fieldset>
-    <h2>Additional Info</h2>
+    <h2>Common Information</h2>
 
     {% for field in dataset_fields %}
       {% unless dataset_system_fields contains field.field_name %}
@@ -50,6 +51,54 @@
       {% endunless %}
     {% endfor %}
 
+  </fieldset>
+
+  <fieldset id="rdl-schema-hazard" style="display: none">
+    <h2>Hazard Component</h2>
+    {% for field in site.data.schemas["rdl"].rdl_hazard %}
+      {% unless dataset_system_fields contains field.field_name %}
+        {% assign template = field.form_template | default: "form/text.html" %}
+        {% assign field_name = field.field_name %}
+        {% assign value = include.dataset[field_name] %}
+        {% include {{ template }} field=field field_name=field_name value=value %}
+      {% endunless %}
+    {% endfor %}
+  </fieldset>
+
+  <fieldset id="rdl-schema-exposure" style="display: none">
+    <h2>Exposure Component</h2>
+    {% for field in site.data.schemas["rdl"].rdl_exposure %}
+      {% unless dataset_system_fields contains field.field_name %}
+        {% assign template = field.form_template | default: "form/text.html" %}
+        {% assign field_name = field.field_name %}
+        {% assign value = include.dataset[field_name] %}
+        {% include {{ template }} field=field field_name=field_name value=value %}
+      {% endunless %}
+    {% endfor %}
+  </fieldset>
+
+  <fieldset id="rdl-schema-loss" style="display: none">
+    <h2>Loss Component</h2>
+    {% for field in site.data.schemas["rdl"].rdl_loss %}
+      {% unless dataset_system_fields contains field.field_name %}
+        {% assign template = field.form_template | default: "form/text.html" %}
+        {% assign field_name = field.field_name %}
+        {% assign value = include.dataset[field_name] %}
+        {% include {{ template }} field=field field_name=field_name value=value %}
+      {% endunless %}
+    {% endfor %}
+  </fieldset>
+
+  <fieldset id="rdl-schema-vulnerability" style="display: none">
+    <h2>Vulnerability Component</h2>
+    {% for field in site.data.schemas["rdl"].rdl_vulnerability %}
+      {% unless dataset_system_fields contains field.field_name %}
+        {% assign template = field.form_template | default: "form/text.html" %}
+        {% assign field_name = field.field_name %}
+        {% assign value = include.dataset[field_name] %}
+        {% include {{ template }} field=field field_name=field_name value=value %}
+      {% endunless %}
+    {% endfor %}
   </fieldset>
 
   <button type="submit" class="btn btn-primary">Submit</button>

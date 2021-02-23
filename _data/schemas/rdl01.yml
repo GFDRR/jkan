@@ -46,250 +46,11 @@ dataset_fields:
   - field_name: geo_coverage
     label: Geographic coverage (countries)
     display_template: display/geo_coverage.html
-    values:
-      - ABW
-      - AFG
-      - AGO
-      - AIA
-      - ALB
-      - AND
-      - ARE
-      - ARG
-      - ARM
-      - ASM
-      - ATG
-      - AUS
-      - AUT
-      - AZE
-      - BDI
-      - BEL
-      - BEN
-      - BFA
-      - BGD
-      - BGR
-      - BHR
-      - BHS
-      - BIH
-      - BLM
-      - BLR
-      - BLZ
-      - BMU
-      - BOL
-      - BRA
-      - BRB
-      - BRN
-      - BTN
-      - BWA
-      - CAF
-      - CAN
-      - CHE
-      - CHL
-      - CHN
-      - CIV
-      - CMR
-      - COD
-      - COG
-      - COK
-      - COL
-      - COM
-      - CPV
-      - CRI
-      - CUB
-      - CUW
-      - CYM
-      - CYP
-      - CZE
-      - DEU
-      - DJI
-      - DMA
-      - DNK
-      - DOM
-      - DZA
-      - ECU
-      - EGY
-      - ERI
-      - ESP
-      - EST
-      - ETH
-      - FIN
-      - FJI
-      - FLK
-      - FRA
-      - FRO
-      - FSM
-      - GAB
-      - GBR
-      - GEO
-      - GGY
-      - GHA
-      - GIB
-      - GIN
-      - GMB
-      - GNB
-      - GNQ
-      - GRC
-      - GRD
-      - GRL
-      - GTM
-      - GUM
-      - GUY
-      - HKG
-      - HMD
-      - HND
-      - HRV
-      - HTI
-      - HUN
-      - IDN
-      - IMN
-      - IND
-      - IRL
-      - IRN
-      - IRQ
-      - ISL
-      - ISR
-      - ITA
-      - JAM
-      - JEY
-      - JOR
-      - JPN
-      - KAZ
-      - KEN
-      - KGZ
-      - KHM
-      - KIR
-      - KNA
-      - KOR
-      - KWT
-      - LAO
-      - LBN
-      - LBR
-      - LBY
-      - LCA
-      - LIE
-      - LKA
-      - LSO
-      - LTU
-      - LUX
-      - LVA
-      - MAC
-      - MAF
-      - MAR
-      - MCO
-      - MDA
-      - MDG
-      - MDV
-      - MEX
-      - MHL
-      - MKD
-      - MLI
-      - MLT
-      - MMR
-      - MNE
-      - MNG
-      - MNP
-      - MOZ
-      - MRT
-      - MSR
-      - MUS
-      - MWI
-      - MYS
-      - NAM
-      - NCL
-      - NER
-      - NFK
-      - NGA
-      - NIC
-      - NIU
-      - NLD
-      - NOR
-      - NPL
-      - NRU
-      - NZL
-      - OMN
-      - PAK
-      - PAN
-      - PCN
-      - PER
-      - PHL
-      - PLW
-      - PNG
-      - POL
-      - PRI
-      - PRK
-      - PRT
-      - PRY
-      - PSE
-      - PYF
-      - QAT
-      - ROU
-      - RUS
-      - RWA
-      - SAU
-      - SDN
-      - SEN
-      - SGP
-      - SGS
-      - SHN
-      - SLB
-      - SLE
-      - SLV
-      - SMR
-      - SOM
-      - SPM
-      - SRB
-      - SSD
-      - STP
-      - SUR
-      - SVK
-      - SVN
-      - SWE
-      - SWZ
-      - SXM
-      - SYC
-      - SYR
-      - TCA
-      - TCD
-      - TGO
-      - THA
-      - TJK
-      - TKM
-      - TLS
-      - TON
-      - TTO
-      - TUN
-      - TUR
-      - TUV
-      - TZA
-      - UGA
-      - UKR
-      - URY
-      - USA
-      - UZB
-      - VAT
-      - VCT
-      - VEN
-      - VGB
-      - VIR
-      - VNM
-      - VUT
-      - WLF
-      - WSM
-      - XXK
-      - YEM
-      - ZAF
-      - ZMB
-      - ZWE 
+    form_template: form/geo_coverage.html
   - field_name: license
     label: License
     form_template: form/license.html
     datajson: license
-    values:
-      - CC0-1.0
-      - CC-BY-4.0
-      - CC-BY-SA-4.0
-      - ODbl-1.0
-      - ODC-BY-1.0
-      - PDDL-1.0
   - field_name: maintainer
     label: Maintainer
     datajson: contactPoint.fn
@@ -303,6 +64,7 @@ resource_fields:
     datajson: distribution.title
   - field_name: aggregation_type
     label: Level of data representation
+    form_template: form/dropdown.html
     values:
       - Individual items
       - Aggregated to grid
@@ -351,23 +113,13 @@ category_fields:
 # HazardModel
 rdl_hazard:
   ## EventSet
-  - field_name: hazard_type
+  - field_name: event_hazard_type
     label: Hazard type
-    values:
-      - CF
-      - CS
-      - DR
-      - EQ
-      - ET
-      - FL
-      - LS 
-      - MH
-      - TS
-      - VO
-      - WF
-      - WI
+    required: true
+    form_template: form/rdl-hazard_type.html
   - field_name: analysis_type
     label: Type of analysis
+    form_template: form/dropdown.html
     values:
       - Deterministic
       - Probabilistic
@@ -384,12 +136,14 @@ rdl_hazard:
   ## Event
   - field_name: calculation_method
     label: Calculation method
+    form_template: form/dropdown.html
     values:
       - Inferred
       - Simulated
       - Observed
   - field_name: frequency_type
     label: Frequency
+    form_template: form/dropdown.html
     values:
       - Rate of Exceedence
       - Probability of Exceedence
@@ -404,146 +158,20 @@ rdl_hazard:
     label: Occurrence time span
   - field_name: trigger_hazard_type
     label: Trigger hazard type
-    values:
-      - CF
-      - CS
-      - DR
-      - EQ
-      - ET
-      - FL
-      - LS 
-      - MH
-      - TS
-      - VO
-      - WF
-      - WI
+    form_template: form/rdl-hazard_type.html
   - field_name: trigger_process_type
     label: Trigger Process Type
-    values:
-      - FCF
-      - FSS
-      - TOR
-      - DTA
-      - DTH
-      - DTM
-      - DTS
-      - Q1R
-      - Q2R
-      - QGM
-      - QLI
-      - ECD
-      - EHT
-      - FFF
-      - FPF
-      - LAV
-      - LSL
-      - TSI
-      - VAF
-      - VBL
-      - VFH
-      - VLH
-      - VLV
-      - VPF
-      - WFI
-      - ETC
-      - TCY
+    form_template: form/rdl-process_type.html
   - field_name: description
     label: Additional information about this specific event
 
   ## FootprintSet
   - field_name: process_type
     label: Process type
-    values:
-      - FCF
-      - FSS
-      - TOR
-      - DTA
-      - DTH
-      - DTM
-      - DTS
-      - Q1R
-      - Q2R
-      - QGM
-      - QLI
-      - ECD
-      - EHT
-      - FFF
-      - FPF
-      - LAV
-      - LSL
-      - TSI
-      - VAF
-      - VBL
-      - VFH
-      - VLH
-      - VLV
-      - VPF
-      - WFI
-      - ETC
-      - TCY
+    form_template: form/rdl-process_type.html
   - field_name: imt
     label: Intensity measure
-    values:
-      - PGA_g
-      - PGA_m/s2
-      - PGV_m/s
-      - SA(0.2)_g
-      - SA(0.3)_g
-      - SA(1.0)_g
-      - SA(3.0)_g
-      - SA(0.2)_m/s2
-      - SA(0.3)_m/s2
-      - SA(1.0)_m/s2
-      - SA(3.0)_m/s2
-      - Sd(T1)_m
-      - Sv(T1)_m/s
-      - PGDf_m
-      - D_a5-95_s
-      - D_a5-75 _s
-      - IA_m/s
-      - Neq_-
-      - EMS_-
-      - AvgSa_m/s2
-      - I_Np_m/s2
-      - MMI_-
-      - CAV_m/s
-      - D_B_s
-      - d_fff_m
-      - d_fpf_m
-      - v_fff_m/s
-      - v_fpf_m/s
-      - v_tcy(3s)_km/h
-      - v_ect(3s)_km/h
-      - v_tcy(1m)_km/h
-      - v_ect(1m)_km/h
-      - v_tcy(10m)_km/h
-      - v_etc(10m)_km/h
-      - PGWS_tcy_km/h
-      - PGWS_ect_km/h
-      - d_lsl_m
-      - I_DF_m3/s2
-      - v_lsl_m/s2
-      - MFD_lsl_m
-      - SD_lsl_m
-      - LSI_-
-      - haz_lsl_-
-      - Rh_tsi_m
-      - d_tsi_m
-      - MMF_m4/s2
-      - F_drag_kN
-      - Fr_-
-      - v_tsi_m/s
-      - F_QS_kN
-      - MF_m3/s2
-      - h_tsi_m
-      - Fh_tsi_m
-      - h_vaf_m
-      - L_vaf_kg/m2
-      - v_fss_m/s
-      - d_fss_m
-      - CMI_-
-      - PDSI_-
-      - SPI_-
+    form_template: form/rdl-IMT.html
   - field_name: data_uncertainty
     label: Data uncertainty
 
@@ -553,6 +181,7 @@ rdl_exposure:
   ## Model
   - field_name: category
     label: Exposure category
+    form_template: form/dropdown.html
     values:
       - Buildings
       - Indicators
@@ -560,20 +189,13 @@ rdl_exposure:
       - Crops, livestock and forestry
   - field_name: occupancy
     label: Occupancy type
-    values:
-      - Residential
-      - Commercial
-      - Industrial
-      - Infrastructure
-      - Healthcare
-      - Educational
-      - Government
-      - Crop
-      - Livestock
-      - Forestry
-      - Mixed
+    form_template: form/rdl-occupancy.html
   - field_name: occupancy_time
     label: Period of occupancy, if appliable
+    form_template: form/dropdown.html
+    values:
+      - Night
+      - Day
   - field_name: taxonomy_source
     label: Taxonomy source
   - field_name: taxonomy_code
@@ -585,6 +207,7 @@ rdl_exposure:
   ## CostType
   - field_name: val_type
     label: Type of asset value
+    form_template: form/dropdown.html
     values:
       - Structure
       - Content
@@ -592,6 +215,7 @@ rdl_exposure:
       - Others
   - field_name: val_unit
     label: Unit of measure of exposed value
+  
 
 
 # VulnerabilityModel
@@ -599,96 +223,19 @@ rdl_vulnerability:
   ## Model
   - field_name: hazard_type_primary
     label: Primary hazard type
-    values:
-      - CF
-      - CS
-      - DR
-      - EQ
-      - ET
-      - FL
-      - LS 
-      - MH
-      - TS
-      - VO
-      - WF
-      - WI
+    form_template: form/rdl-hazard_type.html
   - field_name: hazard_type_secondary
     label: Secondary hazard type
-    values:
-      - CF
-      - CS
-      - DR
-      - EQ
-      - ET
-      - FL
-      - LS 
-      - MH
-      - TS
-      - VO
-      - WF
-      - WI
+    form_template: form/rdl-hazard_type.html
   - field_name: process_type_primary
     label: Primary process type
-    values:
-      - FCF
-      - FSS
-      - TOR
-      - DTA
-      - DTH
-      - DTM
-      - DTS
-      - Q1R
-      - Q2R
-      - QGM
-      - QLI
-      - ECD
-      - EHT
-      - FFF
-      - FPF
-      - LAV
-      - LSL
-      - TSI
-      - VAF
-      - VBL
-      - VFH
-      - VLH
-      - VLV
-      - VPF
-      - WFI
-      - ETC
-      - TCY
+    form_template: form/rdl-process_type.html
   - field_name: process_type_secondary
     label: Secondary process type
-    values:
-      - FCF
-      - FSS
-      - TOR
-      - DTA
-      - DTH
-      - DTM
-      - DTS
-      - Q1R
-      - Q2R
-      - QGM
-      - QLI
-      - ECD
-      - EHT
-      - FFF
-      - FPF
-      - LAV
-      - LSL
-      - TSI
-      - VAF
-      - VBL
-      - VFH
-      - VLH
-      - VLV
-      - VPF
-      - WFI
-      - ETC
-      - TCY
+    form_template: form/rdl-process_type.html
   - field_name: frequency_type
     label: Type of frequency
+    form_template: form/dropdown.html
     values:
       - Rate of Exceedence
       - Probability of Exceedence
@@ -696,69 +243,10 @@ rdl_vulnerability:
 
   - field_name: imt
     label: Intensity measure
-    values:
-      - PGA_g
-      - PGA_m/s2
-      - PGV_m/s
-      - SA(0.2)_g
-      - SA(0.3)_g
-      - SA(1.0)_g
-      - SA(3.0)_g
-      - SA(0.2)_m/s2
-      - SA(0.3)_m/s2
-      - SA(1.0)_m/s2
-      - SA(3.0)_m/s2
-      - Sd(T1)_m
-      - Sv(T1)_m/s
-      - PGDf_m
-      - D_a5-95_s
-      - D_a5-75 _s
-      - IA_m/s
-      - Neq_-
-      - EMS_-
-      - AvgSa_m/s2
-      - I_Np_m/s2
-      - MMI_-
-      - CAV_m/s
-      - D_B_s
-      - d_fff_m
-      - d_fpf_m
-      - v_fff_m/s
-      - v_fpf_m/s
-      - v_tcy(3s)_km/h
-      - v_ect(3s)_km/h
-      - v_tcy(1m)_km/h
-      - v_ect(1m)_km/h
-      - v_tcy(10m)_km/h
-      - v_etc(10m)_km/h
-      - PGWS_tcy_km/h
-      - PGWS_ect_km/h
-      - d_lsl_m
-      - I_DF_m3/s2
-      - v_lsl_m/s2
-      - MFD_lsl_m
-      - SD_lsl_m
-      - LSI_-
-      - haz_lsl_-
-      - Rh_tsi_m
-      - d_tsi_m
-      - MMF_m4/s2
-      - F_drag_kN
-      - Fr_-
-      - v_tsi_m/s
-      - F_QS_kN
-      - MF_m3/s2
-      - h_tsi_m
-      - Fh_tsi_m
-      - h_vaf_m
-      - L_vaf_kg/m2
-      - v_fss_m/s
-      - d_fss_m
-      - CMI_-
-      - PDSI_-
-      - SPI_-
+    form_template: form/rdl-IMT.html
   - field_name: category
     label: Category of exposed asset
+    form_template: form/dropdown.html
     values:
       - Buildings
       - Indicators
@@ -766,20 +254,10 @@ rdl_vulnerability:
       - Crops, livestock and forestry     
   - field_name: occupancy
     label: Occupancy
-    values:
-      - Residential
-      - Commercial
-      - Industrial
-      - Infrastructure
-      - Healthcare
-      - Educational
-      - Government
-      - Crop
-      - Livestock
-      - Forestry
-      - Mixed
+    form_template: form/rdl-occupancy.html
   - field_name: val_type
     label: Type of asset value
+    form_template: form/dropdown.html
     values:
       - Structure
       - Content
@@ -793,12 +271,14 @@ rdl_vulnerability:
     label: Taxonomy
   - field_name: impact_type
     label: Type of impact considered
+    form_template: form/dropdown.html
     values:
       - Direct
       - Indirect
       - Total
   - field_name: scale_applicability
     label: Scale applicability
+    form_template: form/dropdown.html
     values:
       - Individual items
       - Aggregated to grid
@@ -807,255 +287,27 @@ rdl_vulnerability:
     label: Area within a country or region to wich the model specifically applies
   - field_name: country_transferability
     label: List of countries in which the model could be applied
-    values:
-      - ABW
-      - AFG
-      - AGO
-      - AIA
-      - ALB
-      - AND
-      - ARE
-      - ARG
-      - ARM
-      - ASM
-      - ATG
-      - AUS
-      - AUT
-      - AZE
-      - BDI
-      - BEL
-      - BEN
-      - BFA
-      - BGD
-      - BGR
-      - BHR
-      - BHS
-      - BIH
-      - BLM
-      - BLR
-      - BLZ
-      - BMU
-      - BOL
-      - BRA
-      - BRB
-      - BRN
-      - BTN
-      - BWA
-      - CAF
-      - CAN
-      - CHE
-      - CHL
-      - CHN
-      - CIV
-      - CMR
-      - COD
-      - COG
-      - COK
-      - COL
-      - COM
-      - CPV
-      - CRI
-      - CUB
-      - CUW
-      - CYM
-      - CYP
-      - CZE
-      - DEU
-      - DJI
-      - DMA
-      - DNK
-      - DOM
-      - DZA
-      - ECU
-      - EGY
-      - ERI
-      - ESP
-      - EST
-      - ETH
-      - FIN
-      - FJI
-      - FLK
-      - FRA
-      - FRO
-      - FSM
-      - GAB
-      - GBR
-      - GEO
-      - GGY
-      - GHA
-      - GIB
-      - GIN
-      - GMB
-      - GNB
-      - GNQ
-      - GRC
-      - GRD
-      - GRL
-      - GTM
-      - GUM
-      - GUY
-      - HKG
-      - HMD
-      - HND
-      - HRV
-      - HTI
-      - HUN
-      - IDN
-      - IMN
-      - IND
-      - IRL
-      - IRN
-      - IRQ
-      - ISL
-      - ISR
-      - ITA
-      - JAM
-      - JEY
-      - JOR
-      - JPN
-      - KAZ
-      - KEN
-      - KGZ
-      - KHM
-      - KIR
-      - KNA
-      - KOR
-      - KWT
-      - LAO
-      - LBN
-      - LBR
-      - LBY
-      - LCA
-      - LIE
-      - LKA
-      - LSO
-      - LTU
-      - LUX
-      - LVA
-      - MAC
-      - MAF
-      - MAR
-      - MCO
-      - MDA
-      - MDG
-      - MDV
-      - MEX
-      - MHL
-      - MKD
-      - MLI
-      - MLT
-      - MMR
-      - MNE
-      - MNG
-      - MNP
-      - MOZ
-      - MRT
-      - MSR
-      - MUS
-      - MWI
-      - MYS
-      - NAM
-      - NCL
-      - NER
-      - NFK
-      - NGA
-      - NIC
-      - NIU
-      - NLD
-      - NOR
-      - NPL
-      - NRU
-      - NZL
-      - OMN
-      - PAK
-      - PAN
-      - PCN
-      - PER
-      - PHL
-      - PLW
-      - PNG
-      - POL
-      - PRI
-      - PRK
-      - PRT
-      - PRY
-      - PSE
-      - PYF
-      - QAT
-      - ROU
-      - RUS
-      - RWA
-      - SAU
-      - SDN
-      - SEN
-      - SGP
-      - SGS
-      - SHN
-      - SLB
-      - SLE
-      - SLV
-      - SMR
-      - SOM
-      - SPM
-      - SRB
-      - SSD
-      - STP
-      - SUR
-      - SVK
-      - SVN
-      - SWE
-      - SWZ
-      - SXM
-      - SYC
-      - SYR
-      - TCA
-      - TCD
-      - TGO
-      - THA
-      - TJK
-      - TKM
-      - TLS
-      - TON
-      - TTO
-      - TUN
-      - TUR
-      - TUV
-      - TZA
-      - UGA
-      - UKR
-      - URY
-      - USA
-      - UZB
-      - VAT
-      - VCT
-      - VEN
-      - VGB
-      - VIR
-      - VNM
-      - VUT
-      - WLF
-      - WSM
-      - XXK
-      - YEM
-      - ZAF
-      - ZMB
-      - ZWE
+    display_template: display/geo_coverage.html
+    form_template: form/geo_coverage.html
   - field_name: transferability_notes
     label: Details about applicability to different areas
   - field_name: function_type
     label: Function type
+    form_template: form/dropdown.html
     values:
       - Fragility
       - Vulnerability
       - Damage-to-Loss
   - field_name: calculation_method
     label: The methodology used for the calculation of the function
+    form_template: form/dropdown.html
     values:
       - Inferred
       - Simulated
       - Observed
   - field_name: approach
     label: Approach
+    form_template: form/dropdown.html
     values:
       - Empirical
       - Analytical
@@ -1063,11 +315,13 @@ rdl_vulnerability:
       - Hybrid
   - field_name: f_relationship
     label: F relationship
+    form_template: form/dropdown.html
     values:
       - Mathematical
       - Discrete
   - field_name: f_math
     label: Math
+    form_template: form/dropdown.html
     values:
       - Parametric
       - Bespoke
@@ -1100,49 +354,10 @@ rdl_loss:
   ## Model
   - field_name: hazard_type
     label: Hazard Type
-    values:
-      - CF
-      - CS
-      - DR
-      - EQ
-      - ET
-      - FL
-      - LS 
-      - MH
-      - TS
-      - VO
-      - WF
-      - WI
+    form_template: form/rdl-hazard_type.html
   - field_name: process_type
     label: Process Type
-    values:
-      - FCF
-      - FSS
-      - TOR
-      - DTA
-      - DTH
-      - DTM
-      - DTS
-      - Q1R
-      - Q2R
-      - QGM
-      - QLI
-      - ECD
-      - EHT
-      - FFF
-      - FPF
-      - LAV
-      - LSL
-      - TSI
-      - VAF
-      - VBL
-      - VFH
-      - VLH
-      - VLV
-      - VPF
-      - WFI
-      - ETC
-      - TCY
+    form_template: form/rdl-process_type.html
   - field_name: time_start
     label: Event start time
   - field_name: time_end
@@ -1151,20 +366,10 @@ rdl_loss:
     label: General reference year to which the scenario refers to (e.g. "2050")
   - field_name: occupancy
     label: Occupancy type
-    values:
-      - Residential
-      - Commercial
-      - Industrial
-      - Infrastructure
-      - Healthcare
-      - Educational
-      - Government
-      - Crop
-      - Livestock
-      - Forestry
-      - Mixed
+    form_template: form/rdl-occupancy.html
   - field_name: category
     label: Category of exposed asset
+    form_template: form/dropdown.html
     values:
       - Buildings
       - Indicators
@@ -1172,6 +377,7 @@ rdl_loss:
       - Crops, livestock and forestry     
   - field_name: val_type
     label: Element of exposure on which loss is calculated
+    form_template: form/dropdown.html
     values:
       - Structure
       - Content
@@ -1179,17 +385,20 @@ rdl_loss:
       - Other
   - field_name: impact
     label: Impact type
+    form_template: form/dropdown.html
     values:
       - Direct
       - Indirect
       - Total
   - field_name: loss_type
     label: Loss Type
+    form_template: form/dropdown.html
     values:
       - Ground up
       - Insured
   - field_name: frequency_type
     label: Type of frequency
+    form_template: form/dropdown.html
     values:
       - Rate of Exceedence
       - Probability of Exceedence
@@ -1198,6 +407,7 @@ rdl_loss:
     label: Return Period in years
   - field_name: metric
     label: Metric
+    form_template: form/dropdown.html
     values:
       - Annual Average Losses
       - Annual Average Loss Ratio

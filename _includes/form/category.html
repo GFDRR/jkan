@@ -1,6 +1,7 @@
 <div class="form-group">
   <label for="{{ include.field_name }}[]">{{ include.field.label }}</label>
-  <select class="form-control select2" id="{{ include.field_name }}[]" name="{{ include.field_name }}[]" multiple="multiple" style="width: 100%">
+  <select class="form-control select2" id="{{ include.field_name }}[]" name="{{ include.field_name }}[]" style="width: 100%">
+    <option disabled selected value> -- select an option -- </option>
     {% for category in site.data.categories %}
       <option{% if include.value == category.name or include.value contains category.name %} selected="selected"{% endif %}>{{ category.name }}</option>
     {% endfor %}
