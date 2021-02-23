@@ -6,10 +6,12 @@
 dataset_fields:
   - field_name: title
     label: Title
+    required: true
     datajson: title
     ### Change field name as "component"
   - field_name: category
     label: Schema component
+    required: true
     form_template: form/category.html
     display_template: display/category.html
     datajson: category
@@ -20,15 +22,18 @@ dataset_fields:
       - Loss
   - field_name: notes
     label: Description
+    required: true
     form_template: form/textarea.html
     datajson: description
     ### Change field name as "model_source"
   - field_name: organization
     label: Name of model source
+    required: true
     form_template: form/organization.html
     datajson: publisher.name
   - field_name: model_date
     label: Model release date
+    required: true
   - field_name: version
     label: Version
   - field_name: purpose
@@ -37,12 +42,15 @@ dataset_fields:
     label: Project
   - field_name: bibliography
     label: Bibliographic source
+    required: true
   - field_name: geo_coverage
     label: Geographic coverage
+    required: true
     display_template: display/geo_coverage.html
     form_template: form/geo_coverage.html
   - field_name: license
     label: License
+    required: true
     form_template: form/license.html
     datajson: license
   - field_name: maintainer
@@ -100,6 +108,7 @@ rdl_hazard:
     form_template: form/rdl-hazard_type.html
   - field_name: geo_area_name
     label: Name of location
+    required: true
   - field_name: event_time_start
     label: Event start time
   - field_name: event_time_end
@@ -110,6 +119,8 @@ rdl_hazard:
     label: Event description
   - field_name: event_is_prob
     label: Probabilistic modelling
+    required: true
+    form_template: form/dropdown.html
     values:
       - True
       - False
