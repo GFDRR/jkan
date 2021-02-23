@@ -1,5 +1,5 @@
 <div class="form-group">
-    <label for="{{ include.field_name }}[]">{{ include.field.label }}</label>
+    <label for="{{ include.field_name }}[]">{{ include.field.label }}{{include.required | default: ""}}</label>
     <select class="form-control select2" id="{{ include.field_name }}[]" name="{{ include.field_name }}[]" style="width: 100%">
       {% for occu in site.data.rdl-occupancy %}
         <option value={{ occu }}>{{ occu }}</option>

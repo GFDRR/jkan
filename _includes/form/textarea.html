@@ -1,4 +1,4 @@
 <div class="form-group">
-  <label for="{{ include.field_name }}">{{ include.field.label }}</label>
+  <label for="{{ include.field_name }}">{{ include.field.label }}{{include.required | default: ""}}</label>
   <textarea class="form-control" id="{{ include.field_name }}" name="{{ include.field_name }}" placeholder="{{ include.field.placeholder | default: include.field.label }}">{{ include.value }}</textarea>
 </div>

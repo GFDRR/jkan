@@ -1,5 +1,5 @@
 <div class="form-group">
-  <label for="{{ include.field_name }}">{{ include.field.label }}</label>
+  <label for="{{ include.field_name }}">{{ include.field.label }}{{include.required | default: ""}}</label>
   <select class="form-control" id="{{ include.field_name }}" name="{{ include.field_name }}">
     <option value="">{{ include.field.placeholder | default: "Select..." }}</option>
     {% for value in field.values %}

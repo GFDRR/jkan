@@ -19,7 +19,10 @@
         {% assign template = field.form_template | default: "form/text.html" %}
         {% assign field_name = field.field_name %}
         {% assign value = include.dataset[field_name] %}
-        {% include {{ template }} field=field field_name=field_name value=value %}
+        {% if field.required %} 
+          {% assign required="<span style='color: red'>*</span>" %} 
+        {% endif %}
+        {% include {{ template }} field=field field_name=field_name value=value required=required %}
       {% endif %}
     {% endfor %}
   </fieldset>
@@ -47,7 +50,10 @@
         {% assign template = field.form_template | default: "form/text.html" %}
         {% assign field_name = field.field_name %}
         {% assign value = include.dataset[field_name] %}
-        {% include {{ template }} field=field field_name=field_name value=value %}
+        {% if field.required %} 
+          {% assign required="<span style='color: red'>*</span>" %} 
+        {% endif %}
+        {% include {{ template }} field=field field_name=field_name value=value required=required%}
       {% endunless %}
     {% endfor %}
 
@@ -60,6 +66,9 @@
         {% assign template = field.form_template | default: "form/text.html" %}
         {% assign field_name = field.field_name %}
         {% assign value = include.dataset[field_name] %}
+        {% if field.required %} 
+          {% assign required="<span style='color: red'>*</span>" %} 
+        {% endif %}
         {% include {{ template }} field=field field_name=field_name value=value required=required%}
       {% endunless %}
     {% endfor %}
@@ -72,7 +81,10 @@
         {% assign template = field.form_template | default: "form/text.html" %}
         {% assign field_name = field.field_name %}
         {% assign value = include.dataset[field_name] %}
-        {% include {{ template }} field=field field_name=field_name value=value %}
+        {% if field.required %} 
+          {% assign required="<span style='color: red'>*</span>" %} 
+        {% endif %}
+        {% include {{ template }} field=field field_name=field_name value=value required=required%}
       {% endunless %}
     {% endfor %}
   </fieldset>
@@ -84,7 +96,10 @@
         {% assign template = field.form_template | default: "form/text.html" %}
         {% assign field_name = field.field_name %}
         {% assign value = include.dataset[field_name] %}
-        {% include {{ template }} field=field field_name=field_name value=value %}
+        {% if field.required %} 
+          {% assign required="<span style='color: red'>*</span>" %} 
+        {% endif %}
+        {% include {{ template }} field=field field_name=field_name value=value required=required%}
       {% endunless %}
     {% endfor %}
   </fieldset>
@@ -96,7 +111,10 @@
         {% assign template = field.form_template | default: "form/text.html" %}
         {% assign field_name = field.field_name %}
         {% assign value = include.dataset[field_name] %}
-        {% include {{ template }} field=field field_name=field_name value=value %}
+        {% if field.required %} 
+          {% assign required="<span style='color: red'>*</span>" %} 
+        {% endif %}
+        {% include {{ template }} field=field field_name=field_name value=value required=required%}
       {% endunless %}
     {% endfor %}
   </fieldset>
