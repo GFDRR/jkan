@@ -8,9 +8,11 @@
 dataset_fields:
   - field_name: title
     label: Title of dataset
+    required: true
     datajson: title
   - field_name: category
     label: Schema component
+    required: true
     form_template: form/category.html
     display_template: display/category.html
     datajson: category
@@ -21,16 +23,20 @@ dataset_fields:
       - Loss
   - field_name: abstract
     label: Abstract
+    required: true
     form_template: form/textarea.html
     datajson: description
   - field_name: organization
     label: Publisher of dataset
+    required: true
     form_template: form/organization.html
     datajson: publisher.name
   - field_name: source
     label: Name of source model
+    required: true
   - field_name: date
     label: Model release date
+    required: true
   - field_name: version
     label: Version of the dataset
   - field_name: purpose
@@ -45,10 +51,12 @@ dataset_fields:
     label: Link to bibliographic resource
   - field_name: geo_coverage
     label: Geographic coverage (countries)
+    required: true
     display_template: display/geo_coverage.html
     form_template: form/geo_coverage.html
   - field_name: license
     label: License
+    required: true
     form_template: form/license.html
     datajson: license
   - field_name: maintainer
@@ -61,6 +69,7 @@ dataset_fields:
 resource_fields:
   - field_name: name
     label: Resource name
+    required: true
     datajson: distribution.title
   - field_name: aggregation_type
     label: Level of data representation
@@ -72,6 +81,7 @@ resource_fields:
       - N/A
   - field_name: format
     label: Format
+    required: true
     datajson: distribution.format
     form_template: form/dropdown.html
     values:
@@ -87,8 +97,10 @@ resource_fields:
     label: Horizontal resolution
   - field_name: epsg
     label: Reference coordinate system. Default is 4326 (WGS84)
+    required: true
   - field_name: url
     label: URL to resource
+    required: true
     datajson: distribution.downloadURL
 
 organization_fields:
