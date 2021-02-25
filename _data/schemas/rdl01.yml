@@ -122,6 +122,7 @@ category_fields:
     label: Featured on Homepage
     form_template: form/checkbox.html
 
+
 # HazardModel
 rdl_hazard:
   ## EventSet
@@ -238,7 +239,6 @@ rdl_exposure:
     required: true
   
 
-
 # VulnerabilityModel
 rdl_vulnerability:
   ## Model
@@ -264,7 +264,6 @@ rdl_vulnerability:
       - Rate of Exceedence
       - Probability of Exceedence
       - Return Period     
-
   - field_name: imt
     label: Intensity measure
     required: true
