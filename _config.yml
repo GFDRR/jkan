@@ -1,7 +1,7 @@
-title: RDL
-greeting: The Risk Data Library
-description: A GFDRR open data portal
-baseurl: /
+title: Risk Data Library catalog (beta)
+greeting: Risk Data Library catalog
+description: A simple catalog to find datasets compliant with the Risk Data Library
+baseurl: 
 logo: https://www.gfdrr.org/themes/custom/gfdrr/images/GFDRR_Primary%20Logo_BW-Shade.svg
 
 # Site theme
