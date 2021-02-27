@@ -1,4 +1,5 @@
+{% if include.field_name contains "email" %}{% assign entry_type="email"%}{% else %}{% assign entry_type="text"%}{% endif %}
 <div class="form-group">
   <label for="{{ include.field_name }}">{{ include.field.label | default: include.field_label }}{{ include.required | default: "" }}</label>
-  <input type="text" class="form-control" id="{{ include.field_name }}" name="{{ include.field_name }}" placeholder="{{ include.field.placeholder | default include.field.label }}" value="{{ include.value }}">
+  <input type="{{ entry_type }}" class="form-control" id="{{ include.field_name }}" name="{{ include.field_name }}" placeholder="{{ include.field.placeholder | default include.field.label }}" {% if include.required %}required="true"{% endif %} value="{{ include.value }}">
 </div>
