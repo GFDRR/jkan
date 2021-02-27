@@ -1,7 +1,7 @@
 <div class="form-group">
-  <label for="{{ include.field_name }}">{{ include.field.label }}{{include.required | default: ""}}</label>
+  <label for="{{ include.field_name }}">{{ include.field.label }}{{ include.required | default: "" }}</label>
   <div class="input-group">
-    <select class="form-control" id="{{ include.field_name }}" name="{{ include.field_name }}">
+    <select class="form-control" id="{{ include.field_name }}" name="{{ include.field_name }}" {% if include.required %}required="true"{% endif %}>
       <option value="">{{ include.field.placeholder | default: "Select..." }}</option>
       {% for organization in site.organizations %}
         <option{% if include.value == organization.title %} selected="selected"{% endif %}>{{ organization.title }}</option>
