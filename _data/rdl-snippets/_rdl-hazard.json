@@ -1,0 +1,12 @@
+---
+note: Example JSON file - template used to send Hazard Schema details to client separate from `rdl-datasets.json`
+---
+[{% for field in site.data.schemas["rdl"].rdl_hazard %}
+  {
+    "field_name": "{{ field.field_name}}",
+    "label": "{{ field.label }}"{%if field.values %},
+    "values": {{field.values | jsonify}}
+    {% endif %}
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
