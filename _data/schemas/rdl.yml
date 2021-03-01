@@ -1,14 +1,15 @@
 # To add fields, make a new schema file in this directory
 # and change the schema setting in _config.yml to its name
 
-# RDL-attributes: common fields
-## Contribution (dataset)
+# RDL schema (RDS) V0.1
+
+# RDS-attributes: common fields
+# Contribution (dataset)
 dataset_fields:
   - field_name: title
-    label: Title
+    label: Title of dataset
     required: true
     datajson: title
-    ### Change field name as "component"
   - field_name: category
     label: Schema component
     required: true
@@ -20,31 +21,36 @@ dataset_fields:
       - Exposure
       - Vulnerability
       - Loss
-  - field_name: notes
-    label: Description
+  - field_name: abstract
+    label: Abstract
     required: true
     form_template: form/textarea.html
     datajson: description
-    ### Change field name as "model_source"
   - field_name: organization
-    label: Name of model source
+    label: Publisher of dataset
     required: true
     form_template: form/organization.html
     datajson: publisher.name
-  - field_name: model_date
+  - field_name: source
+    label: Name of source model
+    required: true
+  - field_name: date
     label: Model release date
     required: true
   - field_name: version
-    label: Version
+    label: Version of the dataset
   - field_name: purpose
-    label: Purpose
+    label: Purpose of the data
   - field_name: project
-    label: Project
-  - field_name: bibliography
-    label: Bibliographic source
-    required: true
+    label: Project that produced the dataset
+  - field_name: notes
+    label: Additional details about the dataset
+  - field_name: biblio_title
+    label: Bibliographic resource (author; title; year)
+  - field_name: biblio_url
+    label: Link to bibliographic resource
   - field_name: geo_coverage
-    label: Geographic coverage
+    label: Geographic coverage (countries)
     required: true
     display_template: display/geo_coverage.html
     form_template: form/geo_coverage.html
@@ -62,13 +68,20 @@ dataset_fields:
 
 resource_fields:
   - field_name: name
-    label: Resource Name
+    label: Resource name
+    required: true
     datajson: distribution.title
-  - field_name: url
-    label: URL
-    datajson: distribution.downloadURL
+  - field_name: aggregation_type
+    label: Level of data representation
+    form_template: form/dropdown.html
+    values:
+      - Individual items
+      - Aggregated to grid
+      - Aggregated to boundaries
+      - N/A
   - field_name: format
     label: Format
+    required: true
     datajson: distribution.format
     form_template: form/dropdown.html
     values:
@@ -76,10 +89,19 @@ resource_fields:
       - csv
       - json
       - geojson
-      - shp
-      - gpkg
+      - shapefile
+      - geopackage
       - geotiff
       - markdown
+  - field_name: h-res
+    label: Horizontal resolution
+  - field_name: epsg
+    label: Reference coordinate system. Default is 4326 (WGS84)
+    required: true
+  - field_name: url
+    label: URL to resource
+    required: true
+    datajson: distribution.downloadURL
 
 organization_fields:
   - field_name: title
@@ -100,99 +122,82 @@ category_fields:
     label: Featured on Homepage
     form_template: form/checkbox.html
 
+# HazardModel
 rdl_hazard:
-  ## Event Set
+  ## EventSet
   - field_name: event_hazard_type
     label: Hazard type
     required: true
     form_template: form/rdl-hazard_type.html
-  - field_name: geo_area_name
-    label: Name of location
-    required: true
-  - field_name: event_time_start
-    label: Event start time
-  - field_name: event_time_end
-    label: Event end time
-  - field_name: event_time_duration
-    label: Time duration
-  - field_name: event_description
-    label: Event description
-  - field_name: event_is_prob
-    label: Probabilistic modelling
+  - field_name: analysis_type
+    label: Type of analysis
     required: true
     form_template: form/dropdown.html
     values:
-      - True
-      - False
-
+      - Deterministic
+      - Probabilistic
+  - field_name: geo_area
+    label: The name of the geographic area covered by the hazard analysis (Comma-separated list of geographic names).
+  - field_name: time_start
+    label: Event start time
+  - field_name: time_end
+    label: Event end time
+  - field_name: time_span
+    label: Time span considered
+  - field_name: time_year
+    label: General reference year to which the scenario refers to (e.g. "2050")
   ## Event
-  - field_name: event_calculation_method
+  - field_name: calculation_method
     label: Calculation method
-  - field_name: event_frequency
+    required: true
+    form_template: form/dropdown.html
+    values:
+      - Inferred
+      - Simulated
+      - Observed
+  - field_name: frequency_type
     label: Frequency
-  - field_name: event_occurence_probability
-    label: Occurence probability
-  - field_name: event_occurrence_time_start
+    required: true
+    form_template: form/rdl-frequency_type.html
+  - field_name: return_period
+    label: Probability of occurrence expressed as return periods list (10, 100, 1000) or range (10-1000)
+  - field_name: occurrence_time_start
     label: Occurrence time start
-  - field_name: event_occurrence_time_end
+  - field_name: occurrence_time_end
     label: Occurrence time end
-  - field_name: event_occurrence_time_span
+  - field_name: occurrence_time_span
     label: Occurrence time span
-  - field_name: event_trigger_hazard_type
+  - field_name: trigger_hazard_type
     label: Trigger hazard type
     form_template: form/rdl-hazard_type.html
-  - field_name: event_trigger_process_type
+  - field_name: trigger_process_type
     label: Trigger Process Type
     form_template: form/rdl-process_type.html
-  - field_name: event_trigger_event
-    label: Trigger event
-  - field_name: event_description
-    label: Description specific to this event
+  - field_name: description
+    label: Additional information about this specific event
 
   ## FootprintSet
-  - field_name: footprintset_process_type
+  - field_name: process_type
     label: Process type
+    required: true
     form_template: form/rdl-process_type.html
-  - field_name: footprintset_IMT
+  - field_name: imt
     label: Intensity measure
+    required: true
     form_template: form/rdl-IMT.html
-  - field_name: footprintset_data_uncertainty
+  - field_name: data_uncertainty
     label: Data uncertainty
 
-  ## Footprint
-  - field_name: footprint_uncertainty_2nd_moment
-    label: Uncertainty 2nd moment
-  - field_name: footprint_trigger_footprint
-    label: Trigger footprint
-
-  ## Footprint Data
-  ### Not needed for RDL-JKAN
-  # file_location
-
+# ExposureModel
 rdl_exposure:
-  ## ExposureModel
-  - field_name: exposure_name
-    label: Exposure Name
-  - field_name: exposure_description
-    label: Description
-  - field_name: exposure_taxonomy_source
-    label: Taxonomy source
-  - field_name: exposure_category
+  ## Model
+  - field_name: category
     label: Exposure category
-    form_template: form/dropdown.html
-    values:
-      - Buildings
-      - Indicators
-      - Infrastructures
-      - Crops, livestock and forestry
-  - field_name: exposure_area_type
-    label: Area type
-  - field_name: exposure_area_unit
-    label: Area unit
-  - field_name: exposure_tag_names
-    label: Tag names
-  - field_name: exposure_occupancy
-    label: Occupancy
+    required: true
+    form_template: form/rdl-exposed_asset.html
+  - field_name: occupancy
+    label: Occupancy type
+    required: true
     form_template: form/rdl-occupancy.html
   - field_name: occupancy_time
     label: Period of occupancy, if appliable
@@ -200,360 +205,220 @@ rdl_exposure:
     values:
       - Night
       - Day
-
-  ## Asset
-  - field_name: asset_ref
-    label: Asset reference code
-  - field_name: asset_taxonomy
-    label: Taxonomy name
-  - field_name: asset_number_of_units
-    label: Number of units
-  - field_name: asset_area
-    label: Area
-
+  - field_name: taxonomy_source
+    label: Taxonomy source
+  - field_name: taxonomy_code
+    label: Taxonomy code
+  - field_name: event_time_year
+    label: General reference year to which the scenario refers to (e.g. "2050")
+  - field_name: add_attributes
+    label: List of key attributes included in the dataset
   ## CostType
-  - field_name: cost_type_name
-    label: Cost type name
-  - field_name: cost_type_aggregation_type
-    label: Aggregation type
-  - field_name: cost_type_unit
-    label: Cost unit of measure
+  - field_name: val_type
+    label: Type of asset value
+    required: true
+    form_template: form/rdl-val_type.html
+  - field_name: val_unit
+    label: Unit of measure of exposed value
+    required: true
 
-  ## Cost and occupants are in-data values. Tags used for whole set specifications
-  ### Not needed for RDL-JKAN
-  # file_location
-
-  ## Tags
-  - field_name: tag_name
-    label: Tag name
-  - field_name: tag_value
-    label: Tag value
-
-rdl_loss:
-  ## Model
-  - field_name: model_name
-    label: Model Name
-  - field_name: model_description
-    label: Model description
-  - field_name: model_hazard_type
-    label: Hazard Type
-    form_template: form/rdl-hazard_type.html
-  - field_name: model_process_type
-    label: Process Type
-    form_template: form/rdl-process_type.html
-  - field_name: model_hazard_link
-    label: Hazard Link
-  - field_name: model_exposure_link
-    label: Exposure Link
-  - field_name: model_vulnerability_link
-    label: Vulnerability Link
-  
-  ## Map
-  - field_name: map_occupancy
-    label: Occupancy
-    form_template: form/rdl-occupancy.html
-  - field_name: map_category
-    label: Category of exposed asset
-    form_template: form/dropdown.html
-    values:
-      - Buildings
-      - Indicators
-      - Infrastructures
-      - Crops, livestock and forestry     
-  - field_name: map_element
-    label: Element of loss
-    form_template: form/dropdown.html
-    values:
-      - Structure
-      - Content
-      - Business interruption
-      - Other
-  - field_name: map_impact
-    label: Impact type
-    form_template: form/dropdown.html
-    values:
-      - Direct
-      - Indirect
-      - Mixed
-  - field_name: map_loss_type
-    label: Loss Type
-    form_template: form/dropdown.html
-    values:
-      - Ground up
-      - Insured
-  - field_name: map_frequency
-    label: Type of frequency
-    form_template: form/dropdown.html
-    values:
-      - Rate of Exceedence
-      - Probability of Exceedence
-      - Return Period     
-  - field_name: map_return_period
-    label: Return Period in years
-  - field_name: map_units
-    label: Unit of measure
-  - field_name: map_metric
-    label: Metric
-    form_template: form/dropdown.html
-    values:
-      - AAL
-      - AALR
-      - PML
-  
-  ## Map values
-  ### Not needed for RDL-JKAN
-  # file_location
-
-  ## CurveMap
-  - field_name: curve_map_occupancy
-    label: Occupancy (Curve map)
-    form_template: form/rdl-occupancy.html
-  - field_name: curve_map_category
-    label: Category of exposed asset
-    form_template: form/dropdown.html
-    values:
-      - Buildings
-      - Indicators
-      - Infrastructures
-      - Crops, livestock and forestry     
-  - field_name: curve_map_element
-    label: Element of loss
-    form_template: form/dropdown.html
-    values:
-      - Structure
-      - Content
-      - Business interruption
-      - Other
-  - field_name: curve_map_impact
-    label: Impact type
-    form_template: form/dropdown.html
-    values:
-      - Direct
-      - Indirect
-      - Mixed
-  - field_name: curve_map_loss_type
-    label: Loss Type
-    form_template: form/dropdown.html
-    values:
-      - Ground up
-      - Insured
-  - field_name: curve_map_frequency
-    label: Frequency representation type
-  - field_name: curve_map_investigation_time
-    label: Investigation Time
-  - field_name: curve_map_units
-    label: Unit of measure
-  
-  ## Curve map values
-  ### Not needed for RDL-JKAN
-  # file_location
-
+# VulnerabilityModel
 rdl_vulnerability:
-  ## Fcore
-  - field_name: f_core_hazard_type_primary
+  ## Model
+  - field_name: hazard_type_primary
     label: Primary hazard type
+    required: true
     form_template: form/rdl-hazard_type.html
-  - field_name: f_core_hazard_type_secondary
+  - field_name: hazard_type_secondary
     label: Secondary hazard type
     form_template: form/rdl-hazard_type.html
-  - field_name: f_core_process_type_primary
+  - field_name: process_type_primary
     label: Primary process type
+    required: true
     form_template: form/rdl-process_type.html
-  - field_name: f_core_process_type_secondary
+  - field_name: process_type_secondary
     label: Secondary process type
     form_template: form/rdl-process_type.html
-  - field_name: f_core_occupancy
+  - field_name: frequency_type
+    label: Type of frequency
+    required: true
+    form_template: form/rdl-frequency_type.html
+  - field_name: imt
+    label: Intensity measure
+    required: true
+    form_template: form/rdl-IMT.html
+  - field_name: category
+    label: Category of exposed asset
+    required: true
+    form_template: form/rdl-exposed_asset.html
+  - field_name: occupancy
     label: Occupancy
+    required: true
     form_template: form/rdl-occupancy.html
-  - field_name: f_core_taxonomy_source
+  - field_name: val_type
+    label: Type of asset value
+    required: true
+    form_template: form/rdl-val_type.html
+  - field_name: val_unit
+    label: Unit of measure of exposed value
+    required: true
+  - field_name: taxonomy_source
     label: Taxonomy source
-  - field_name: f_core_taxonomy
+  - field_name: taxonomy_code
     label: Taxonomy
-  - field_name: f_core_asset_type
-    label: Asset type
-  - field_name: f_core_asset_notes
-    label: Asset notes
-  - field_name: f_core_country_iso
-    label: Country ISO
+  - field_name: impact_type
+    label: Type of impact considered
+    required: true
+    form_template: form/dropdown.html
+    values:
+      - Direct
+      - Indirect
+      - Total
+  - field_name: scale_applicability
+    label: Scale applicability
+    required: true
+    form_template: form/dropdown.html
+    values:
+      - Individual items
+      - Aggregated to grid
+      - Aggregated to boundaries
+      - N/A
+  - field_name: local_applicability
+    label: Area within a country or region to wich the model specifically applies
+  - field_name: country_transferability
+    label: List of countries in which the model could be applied
+    required: true
     display_template: display/geo_coverage.html
     form_template: form/geo_coverage.html
-  - field_name: f_core_applicability_notes
-    label: Applicability notes
-  - field_name: f_core_scale_applicability
-    label: Scale applicability
-  - field_name: f_core_function_type
+  - field_name: transferability_notes
+    label: Details about applicability to different areas
+  - field_name: function_type
     label: Function type
-  - field_name: f_core_approach
+    required: true
+    form_template: form/dropdown.html
+    values:
+      - Fragility
+      - Vulnerability
+      - Damage-to-Loss
+  - field_name: calculation_method
+    label: The methodology used for the calculation of the function
+    form_template: form/dropdown.html
+    values:
+      - Inferred
+      - Simulated
+      - Observed
+  - field_name: approach
     label: Approach
-  - field_name: f_core_f_relationship
+    form_template: form/dropdown.html
+    values:
+      - Empirical
+      - Analytical
+      - Judgement
+      - Hybrid
+  - field_name: f_relationship
     label: F relationship
-  - field_name: f_core_f_math
+    required: true
+    form_template: form/dropdown.html
+    values:
+      - Mathematical
+      - Discrete
+  - field_name: f_math
     label: Math
-  - field_name: f_core_f_math_model
-    label: Math model
-  - field_name: f_core_bespoke_model_ref
-    label: Bespoke model reference
-  - field_name: f_core_f_reference
-    label: Reference
+    form_template: form/dropdown.html
+    values:
+      - Parametric
+      - Bespoke
+  ## Specifics
+  - field_name: analysis_details
+    label: Description of analysis that produced the function
+  - field_name: par_names
+    label: Parameters considered by the function
+  - field_name: im_name
+    label: Name of loss intensity measure
+  - field_name: im_units
+    label: Unit of loss intensity measrue
+  - field_name: n_events
+    label: Number of events the function has been built on
+  - field_name: n_assets
+    label: Number of assets the function has been built on
+  - field_name: is_fit_good
+    label: Is the function fit good overall?
+    required: true
+  - field_name: is_edp_thre
+    label: Is the damage scale is associated to an engineered-design parameter threshold?
+    required: true
+  - field_name: is_dm_factor
+    label: Is the damage scale is associated to a damage factor?
+    required: true
+  - field_name: is_casualties
+    label: Is the damage scale is associated to a casualties estimation?
+    required: true
+  - field_name: is_downtime
+    label: Is the damage scale is associated to a downtime estimation (e.g. service interruption)?
+    required: true
 
-  ## FSpecifics
-  - field_name: fspecifics_par_names
-    label: Par names
-  - field_name: fspecifics_ub_par_value
-    label: UB par value
-  - field_name: fspecifics_ub_par_perc
-    label: UB par perc
-  - field_name: fspecifics_med_par_value
-    label: Med par value
-  - field_name: fspecifics_lb_par_value
-    label: LB par value
-  - field_name: fspecifics_lb_par_perc
-    label: LB par perc
-  - field_name: fspecifics_damage_scale_code
-    label: Damage scale code
-  - field_name: fspecifics_dm_state_name
-    label: DM state name
-  - field_name: fspecifics_n_dm_states
-    label: N DM states
-  - field_name: fspecifics_f_disc_im
-    label: F disc IM
-  - field_name: fspecifics_f_disc_ep
-    label: F disc EP
-  - field_name: fspecifics_lp_code
-    label: LP code
-  - field_name: fspecifics_lp_loss_value
-    label: LP loss value
-  - field_name: fspecifics_edp_cpde
-    label: EDP cpde
-  - field_name: fspecifics_edp_name
-    label: EDP name
-  - field_name: fspecifics_edp_dmstate_thre
-    label: EDP dmstate threshold
-  - field_name: fspecifics_im_code
-    label: IM code
-  - field_name: fspecifics_im_name
-    label: IM name
-  - field_name: fspecifics_im_range
-    label: IM range
-  - field_name: fspecifics_im_units
-    label: IM units
-  - field_name: fspecifics_im_method
-    label: IM method
-  - field_name: fspecifics_im_sim_type
-    label: IM sim type
-  - field_name: fspecifics_impe_reference
-    label: IMPE reference
-  - field_name: fspecifics_data_countries
-    label: Data countries
-  - field_name: fspecifics_im_data_source
-    label: IM data source
-  - field_name: fspecifics_n_events
-    label: N events
-  - field_name: fspecifics_n_assets
-    label: N assets
-
-  ## FAdditional
-  - field_name: fAdditional_nonsampling_err
-    label: Nonsampling error
-  - field_name: fAdditional_type_nonsampling_err
-    label: Type nonsampling err
-  - field_name: fAdditional_is_fix_nonsam_err
-    label: Is fix nonsam err
-  - field_name: fAdditional_is_data_aggregated
-    label: Is data aggregated
-  - field_name: fAdditional_n_data_points_aggr
-    label: N data points aggregated
-  - field_name: fAdditional_is_data_disaggr
-    label: Is data disaggrated
-  - field_name: fAdditional_an_analysis_type
-    label: AN analysis type
-  - field_name: fAdditional_em_analysis_type
-    label: EM analysis type
-  - field_name: fAdditional_jd_analysis_type
-    label: JD analysis type
-  - field_name: fAdditional_is_fit_good
-    label: Is fit good
-  - field_name: fAdditional_fit_ref
-    label: Fit reference
-  - field_name: fAdditional_val_data_source
-    label: Value data source
-  - field_name: fAdditional_val_study_reference
-    label: Value study reference
-  - field_name: fAdditional_sample
-    label: Sample
-
-  ## FScoring
-  - field_name: fscoring_geo_applicability
-    label: Geo applicability
-  - field_name: fscoring_core_id
-    label: Core id
-  - field_name: fscoring_geographic_relevance_score
-    label: Geographic relevance score
-
-  ## DMScale
-  - field_name: dmscale_asset_type
-    label: Asset type
-  - field_name: dmscale_occupancy
-    label: Occupancy
-  - field_name: dmscale_hazard_type
-    label: Hazard type
-  - field_name: dmscale_process_type
-    label: Process type
-  - field_name: dmscale_asset_notes
-    label: Asset notes
-  - field_name: dmscale_taxonomy_source
-    label: Taxonomy source
-  - field_name: dmscale_taxonomy
-    label: Taxonomy
-  - field_name: dmscale_n_dm_states
-    label: N DM states
-  - field_name: dmscale_dm_states_id
-    label: DM states id
-  - field_name: dmscale_dm_states_name
-    label: DM states name
-  - field_name: dmscale_damage_scale_name
-    label: Damage scale name
-  - field_name: dmscale_damage_scale_code
-    label: Damage scale code
-  - field_name: dmscale_damage_scale_type
-    label: Damage scale type
-  - field_name: dmscale_dm_scale_reference
-    label: DM scale reference
-  - field_name: dmscale_is_edp_thre
-    label: Is EDP threshold
-  - field_name: dmscale_is_dm_factor
-    label: Is DM factor
-  - field_name: dmscale_is_casualties
-    label: Is casualties
-  - field_name: dmscale_is_downtime
-    label: Is downtime
-
-  ## EDPTable
-  - field_name: edp_code
-    label: Code
-  - field_name: edp_description
-    label: Description
-  - field_name: edp_units
-    label: Units
-  - field_name: edp_name
-    label: Name
-
-  ## LPTable
-  - field_name: lp_code
-    label: Code
-  - field_name: lp_name
-    label: Name
-  - field_name: lp_description
-    label: Description
-  - field_name: lp_units
-    label: Units
-
-  ## ReferenceTable
-  - field_name: reftable_author_year
-    label: Author year
-  - field_name: reftable_title
-    label: Title
-  - field_name: reftable_issn  # International Standard Serial Number associated with reference
-    label: ISSN  # International Standard Serial Number associated with reference
-  - field_name: reftable_doi  # Digital Object Identifier url associated with reference
-    label: DOI  # Digital Object Identifier url associated with reference
+# LossModel
+rdl_loss:
+  ## Model
+  - field_name: hazard_type
+    label: Hazard Type
+    form_template: form/rdl-hazard_type.html
+  - field_name: process_type
+    label: Process Type
+    form_template: form/rdl-process_type.html
+  - field_name: time_start
+    label: Event start time
+  - field_name: time_end
+    label: Event end time
+  - field_name: time_year
+    label: General reference year to which the scenario refers to (e.g. "2050")
+  - field_name: occupancy
+    label: Occupancy type
+    required: true
+    form_template: form/rdl-occupancy.html
+  - field_name: category
+    label: Category of exposed asset
+    required: true
+    form_template: form/rdl-exposed_asset.html
+  - field_name: val_type
+    label: Element of exposure on which loss is calculated
+    required: true
+    form_template: form/rdl-val_type.html
+  - field_name: impact
+    label: Impact type
+    required: true
+    form_template: form/dropdown.html
+    values:
+      - Direct
+      - Indirect
+      - Total
+  - field_name: loss_type
+    label: Loss Type
+    required: true
+    form_template: form/dropdown.html
+    values:
+      - Ground up
+      - Insured
+  - field_name: frequency_type
+    label: Type of frequency
+    required: true
+    form_template: form/rdl-frequency_type.html
+  - field_name: return_period
+    label: Return Period in years
+  - field_name: metric
+    label: Metric
+    required: true
+    form_template: form/dropdown.html
+    values:
+      - Annual Average Losses
+      - Annual Average Loss Ratio
+      - Probable Maximal Loss
+  - field_name: val_unit
+    label: Unit of measure of loss value
+    required: true
+  - field_name: hazard_link
+    label: URL of source hazard data
+  - field_name: exposure_link
+    label: URL of source exposure data
+  - field_name: vulnerability_link
+    label: URL of source vulnerability data
