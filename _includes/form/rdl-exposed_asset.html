@@ -1,0 +1,8 @@
+<div class="form-group">
+    <label for="{{ include.field_name }}[]">{{ include.field.label }}{{ include.required | default: "" }}</label>
+    <select class="form-control select2" id="{{ include.field_name }}[]" name="{{ include.field_name }}[]" {% if include.required %}required="true"{% endif %} style="width: 100%">
+      {% for asset in site.data.rdl-exposed_asset %}
+        <option value={{ asset }}>{{ asset }}</option>
+      {% endfor %}
+    </select>
+  </div>
