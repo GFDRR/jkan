@@ -21,6 +21,8 @@
         {% assign value = include.dataset[field_name] %}
         {% if field.required %} 
           {% assign required="<span style='color: red'>*</span>" %} 
+        {% else %}
+          {% assign required=false %}
         {% endif %}
         {% include {{ template }} field=field field_name=field_name value=value required=required %}
       {% endif %}
@@ -52,6 +54,8 @@
         {% assign value = include.dataset[field_name] %}
         {% if field.required %} 
           {% assign required="<span style='color: red'>*</span>" %} 
+        {% else %}
+          {% assign required=false %}
         {% endif %}
         {% include {{ template }} field=field field_name=field_name value=value required=required%}
       {% endunless %}
@@ -68,6 +72,8 @@
         {% assign value = include.dataset[field_name] %}
         {% if field.required %} 
           {% assign required="<span style='color: red'>*</span>" %} 
+        {% else %}
+          {% assign required=false %}
         {% endif %}
         {% include {{ template }} field=field field_name=field_name value=value required=required%}
       {% endunless %}
@@ -83,6 +89,8 @@
         {% assign value = include.dataset[field_name] %}
         {% if field.required %} 
           {% assign required="<span style='color: red'>*</span>" %} 
+        {% else %}
+          {% assign required=false %}
         {% endif %}
         {% include {{ template }} field=field field_name=field_name value=value required=required%}
       {% endunless %}
@@ -98,6 +106,8 @@
         {% assign value = include.dataset[field_name] %}
         {% if field.required %} 
           {% assign required="<span style='color: red'>*</span>" %} 
+        {% else %}
+          {% assign required=false %}
         {% endif %}
         {% include {{ template }} field=field field_name=field_name value=value required=required%}
       {% endunless %}
@@ -113,6 +123,8 @@
         {% assign value = include.dataset[field_name] %}
         {% if field.required %} 
           {% assign required="<span style='color: red'>*</span>" %} 
+        {% else %}
+          {% assign required=false %}
         {% endif %}
         {% include {{ template }} field=field field_name=field_name value=value required=required%}
       {% endunless %}
