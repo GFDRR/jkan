@@ -1,26 +1,58 @@
 # To add fields, make a new schema file in this directory
 # and change the schema setting in _config.yml to its name
+
+# RDL-attributes: common fields
+## Contribution (dataset)
 dataset_fields:
   - field_name: title
     label: Title
+    required: true
     datajson: title
-  - field_name: organization
-    label: Organization
-    form_template: form/organization.html
-    datajson: publisher.name
-  - field_name: notes
-    label: Description
-    form_template: form/textarea.html
-    datajson: description
-  - field_name: license
-    label: License
-    form_template: form/license.html
-    datajson: license
+    ### Change field name as "component"
   - field_name: category
     label: Schema component
+    required: true
     form_template: form/category.html
     display_template: display/category.html
     datajson: category
+    values:
+      - Hazard
+      - Exposure
+      - Vulnerability
+      - Loss
+  - field_name: notes
+    label: Description
+    required: true
+    form_template: form/textarea.html
+    datajson: description
+    ### Change field name as "model_source"
+  - field_name: organization
+    label: Name of model source
+    required: true
+    form_template: form/organization.html
+    datajson: publisher.name
+  - field_name: model_date
+    label: Model release date
+    required: true
+  - field_name: version
+    label: Version
+  - field_name: purpose
+    label: Purpose
+  - field_name: project
+    label: Project
+  - field_name: bibliography
+    label: Bibliographic source
+    required: true
+  - field_name: geo_coverage
+    label: Geographic coverage
+    required: true
+    display_template: display/geo_coverage.html
+    form_template: form/geo_coverage.html
+  - field_name: license
+    label: License
+    required: true
+    form_template: form/license.html
+    datajson: license
   - field_name: maintainer
     label: Maintainer
     datajson: contactPoint.fn
@@ -46,6 +78,8 @@ resource_fields:
       - geojson
       - shp
       - gpkg
+      - geotiff
+      - markdown
 
 organization_fields:
   - field_name: title
@@ -66,128 +100,76 @@ category_fields:
     label: Featured on Homepage
     form_template: form/checkbox.html
 
-rdl_fields:
-  # RDL-Hazard fields
+rdl_hazard:
   ## Event Set
-  - field_name: event_geographic_area_name
-    label_name: Geographic area name
-  - field_name: event_creation_date
-    label_name: Creation date
   - field_name: event_hazard_type
-    label_name: Hazard type
+    label: Hazard type
+    required: true
+    form_template: form/rdl-hazard_type.html
+  - field_name: geo_area_name
+    label: Name of location
+    required: true
   - field_name: event_time_start
-    label_name: Time start
+    label: Event start time
   - field_name: event_time_end
-    label_name: Time end
+    label: Event end time
   - field_name: event_time_duration
-    label_name: Time duration
+    label: Time duration
   - field_name: event_description
-    label_name: Description
-  - field_name: event_bibliography
-    label_name: Bibliography
+    label: Event description
   - field_name: event_is_prob
-    label_name: Is prob
+    label: Probabilistic modelling
+    required: true
+    form_template: form/dropdown.html
+    values:
+      - True
+      - False
 
   ## Event
   - field_name: event_calculation_method
-    label_name: Calculation method
+    label: Calculation method
   - field_name: event_frequency
-    label_name: Frequency
+    label: Frequency
   - field_name: event_occurence_probability
-    label_name: Occurence probability
+    label: Occurence probability
   - field_name: event_occurrence_time_start
-    label_name: Occurrence time start
+    label: Occurrence time start
   - field_name: event_occurrence_time_end
-    label_name: Occurrence time end
+    label: Occurrence time end
   - field_name: event_occurrence_time_span
-    label_name: Occurrence time span
-  - field_name: event_trigger_hazard_type  # are these fields necessary?
-    label_name: Trigger hazard type
+    label: Occurrence time span
+  - field_name: event_trigger_hazard_type
+    label: Trigger hazard type
+    form_template: form/rdl-hazard_type.html
   - field_name: event_trigger_process_type
-    label_name: Trigger Process Type
+    label: Trigger Process Type
+    form_template: form/rdl-process_type.html
   - field_name: event_trigger_event
-    label_name: Trigger event  # Name of trigger event. Adjusted from Schema - trigger_footprint_id
+    label: Trigger event
   - field_name: event_description
-    label_name: Description
+    label: Description specific to this event
 
   ## FootprintSet
   - field_name: footprintset_process_type
-    label_name: Process type
+    label: Process type
+    form_template: form/rdl-process_type.html
   - field_name: footprintset_IMT
-    label_name: IMT
+    label: Intensity measure
+    form_template: form/rdl-IMT.html
   - field_name: footprintset_data_uncertainty
-    label_name: Data uncertainty
+    label: Data uncertainty
 
   ## Footprint
   - field_name: footprint_uncertainty_2nd_moment
-    label_name: Uncertainty 2nd moment
+    label: Uncertainty 2nd moment
   - field_name: footprint_trigger_footprint
-    label_name: Trigger footprint  # Name of trigger footprint. Adjusted from Schema - trigger_footprint_id
+    label: Trigger footprint
 
   ## Footprint Data
   ### Not needed for RDL-JKAN
   # file_location
 
-  # RDL-Loss fields
-  ## Model
-  - field_name: model_name
-    label: Model Name
-  - field_name: model_description
-    label: Description
-  - field_name: model_hazard_type
-    label: Hazard Type
-  - field_name: model_process_type
-    label: Process Type
-  - field_name: model_hazard_link
-    label: Hazard Link
-  - field_name: model_exposure_link
-    label: Exposure Link
-  - field_name: model_vulnerability_link
-    label: Vulnerability Link
-  
-  ## map
-  - field_name: map_occupancy
-    label: Occupancy
-  - field_name: map_component
-    label: Component
-  - field_name: map_loss_type
-    label: Loss Type
-  - field_name: map_return_period
-    label: Return Period
-  - field_name: map_units
-    label: Units
-  - field_name: map_metric
-    label: Metric
-  
-  ## Map values
-  - field_name: map_values_asset_ref
-    label: Asset Reference
-  - field_name: map_values_loss
-    label: Loss Values
-
-  ## Curve map
-  - field_name: curve_map_occupancy
-    label: Occupancy (Curve map)
-  - field_name: curve_map_component
-    label: Component (Curve map)
-  - field_name: curve_map_type
-    label: Loss Type (Curve map)
-  - field_name: curve_map_frequency
-    label: Frequency (Curve map)
-  - field_name: curve_map_investigation_time
-    label: Investigation Time
-  - field_name: curve_map_units
-    label: Units (Curve map)
-  
-  ## Curve map values
-  - field_name: curve_map_values_asset_ref
-    label: Asset Ref (Curve map)
-  - field_name: curve_map_values_losses
-    label: Losses (Curve map)
-  - field_name: curve_map_values_rates
-    label: Rates (Curve map)
-
-  # RDL-Exposure fields
+rdl_exposure:
   ## ExposureModel
   - field_name: exposure_name
     label: Exposure Name
@@ -197,46 +179,49 @@ rdl_fields:
     label: Taxonomy source
   - field_name: exposure_category
     label: Exposure category
+    form_template: form/dropdown.html
+    values:
+      - Buildings
+      - Indicators
+      - Infrastructures
+      - Crops, livestock and forestry
   - field_name: exposure_area_type
     label: Area type
   - field_name: exposure_area_unit
     label: Area unit
   - field_name: exposure_tag_names
     label: Tag names
-  - field_name: exposure_use
-    label: Use
-
-  ## ModelCostType
-  - field_name: cost_type_name
-    label: Cost type name
-  - field_name: cost_type_aggregation_type
-    label: Aggregation type
-  - field_name: cost_type_unit
-    label: Unit
+  - field_name: exposure_occupancy
+    label: Occupancy
+    form_template: form/rdl-occupancy.html
+  - field_name: occupancy_time
+    label: Period of occupancy, if appliable
+    form_template: form/dropdown.html
+    values:
+      - Night
+      - Day
 
   ## Asset
   - field_name: asset_ref
-    label: Asset ref
+    label: Asset reference code
   - field_name: asset_taxonomy
-    label: Taxonomy
+    label: Taxonomy name
   - field_name: asset_number_of_units
     label: Number of units
   - field_name: asset_area
     label: Area
 
-  ## Cost
-  - field_name: cost_value
-    label: Value
-  - field_name: cost_deductible
-    label: Deductible
-  - field_name: cost_insurance_limit
-    label: Insurance limit
+  ## CostType
+  - field_name: cost_type_name
+    label: Cost type name
+  - field_name: cost_type_aggregation_type
+    label: Aggregation type
+  - field_name: cost_type_unit
+    label: Cost unit of measure
 
-  ## Occupancy
-  - field_name: occupancy_period
-    label: Period
-  - field_name: occupancy_occupants
-    label: Occupants
+  ## Cost and occupants are in-data values. Tags used for whole set specifications
+  ### Not needed for RDL-JKAN
+  # file_location
 
   ## Tags
   - field_name: tag_name
@@ -244,18 +229,142 @@ rdl_fields:
   - field_name: tag_value
     label: Tag value
 
-  # RDL-Vulnerability
+rdl_loss:
+  ## Model
+  - field_name: model_name
+    label: Model Name
+  - field_name: model_description
+    label: Model description
+  - field_name: model_hazard_type
+    label: Hazard Type
+    form_template: form/rdl-hazard_type.html
+  - field_name: model_process_type
+    label: Process Type
+    form_template: form/rdl-process_type.html
+  - field_name: model_hazard_link
+    label: Hazard Link
+  - field_name: model_exposure_link
+    label: Exposure Link
+  - field_name: model_vulnerability_link
+    label: Vulnerability Link
+  
+  ## Map
+  - field_name: map_occupancy
+    label: Occupancy
+    form_template: form/rdl-occupancy.html
+  - field_name: map_category
+    label: Category of exposed asset
+    form_template: form/dropdown.html
+    values:
+      - Buildings
+      - Indicators
+      - Infrastructures
+      - Crops, livestock and forestry     
+  - field_name: map_element
+    label: Element of loss
+    form_template: form/dropdown.html
+    values:
+      - Structure
+      - Content
+      - Business interruption
+      - Other
+  - field_name: map_impact
+    label: Impact type
+    form_template: form/dropdown.html
+    values:
+      - Direct
+      - Indirect
+      - Mixed
+  - field_name: map_loss_type
+    label: Loss Type
+    form_template: form/dropdown.html
+    values:
+      - Ground up
+      - Insured
+  - field_name: map_frequency
+    label: Type of frequency
+    form_template: form/dropdown.html
+    values:
+      - Rate of Exceedence
+      - Probability of Exceedence
+      - Return Period     
+  - field_name: map_return_period
+    label: Return Period in years
+  - field_name: map_units
+    label: Unit of measure
+  - field_name: map_metric
+    label: Metric
+    form_template: form/dropdown.html
+    values:
+      - AAL
+      - AALR
+      - PML
+  
+  ## Map values
+  ### Not needed for RDL-JKAN
+  # file_location
+
+  ## CurveMap
+  - field_name: curve_map_occupancy
+    label: Occupancy (Curve map)
+    form_template: form/rdl-occupancy.html
+  - field_name: curve_map_category
+    label: Category of exposed asset
+    form_template: form/dropdown.html
+    values:
+      - Buildings
+      - Indicators
+      - Infrastructures
+      - Crops, livestock and forestry     
+  - field_name: curve_map_element
+    label: Element of loss
+    form_template: form/dropdown.html
+    values:
+      - Structure
+      - Content
+      - Business interruption
+      - Other
+  - field_name: curve_map_impact
+    label: Impact type
+    form_template: form/dropdown.html
+    values:
+      - Direct
+      - Indirect
+      - Mixed
+  - field_name: curve_map_loss_type
+    label: Loss Type
+    form_template: form/dropdown.html
+    values:
+      - Ground up
+      - Insured
+  - field_name: curve_map_frequency
+    label: Frequency representation type
+  - field_name: curve_map_investigation_time
+    label: Investigation Time
+  - field_name: curve_map_units
+    label: Unit of measure
+  
+  ## Curve map values
+  ### Not needed for RDL-JKAN
+  # file_location
+
+rdl_vulnerability:
   ## Fcore
   - field_name: f_core_hazard_type_primary
     label: Primary hazard type
+    form_template: form/rdl-hazard_type.html
   - field_name: f_core_hazard_type_secondary
     label: Secondary hazard type
+    form_template: form/rdl-hazard_type.html
   - field_name: f_core_process_type_primary
     label: Primary process type
+    form_template: form/rdl-process_type.html
   - field_name: f_core_process_type_secondary
     label: Secondary process type
+    form_template: form/rdl-process_type.html
   - field_name: f_core_occupancy
     label: Occupancy
+    form_template: form/rdl-occupancy.html
   - field_name: f_core_taxonomy_source
     label: Taxonomy source
   - field_name: f_core_taxonomy
@@ -266,6 +375,8 @@ rdl_fields:
     label: Asset notes
   - field_name: f_core_country_iso
     label: Country ISO
+    display_template: display/geo_coverage.html
+    form_template: form/geo_coverage.html
   - field_name: f_core_applicability_notes
     label: Applicability notes
   - field_name: f_core_scale_applicability
@@ -284,22 +395,6 @@ rdl_fields:
     label: Bespoke model reference
   - field_name: f_core_f_reference
     label: Reference
-  - field_name: f_core_license_code
-    label: License code
-  - field_name: f_core_license_reference
-    label: License reference
-  - field_name: f_core_project
-    label: Project
-  
-  - field_name: f_core_notes
-    label: Notes
-  - field_name: f_core_version
-    label: Version
-  - field_name: f_core_purpose
-    label: Purpose
-  - field_name: f_core_created_at
-    label: Created at
-
 
   ## FSpecifics
   - field_name: fspecifics_par_names
@@ -356,7 +451,6 @@ rdl_fields:
     label: N events
   - field_name: fspecifics_n_assets
     label: N assets
-
 
   ## FAdditional
   - field_name: fAdditional_nonsampling_err
