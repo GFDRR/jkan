@@ -55,9 +55,6 @@ defaults:
       type: sources
     values:
       layout: sources
-  - scope:
-      path: "/legal"
-      type: legal
 
 # Markdown settings
 markdown: kramdown
