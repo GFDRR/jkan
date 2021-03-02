@@ -41,6 +41,8 @@ navigation:
     url: /datasets/
   - title: Organizations
     url: /organizations/
+  - title: RDL Project
+    url: http://riskdatalibrary.org/
 
 # Collections
 collections:
@@ -65,6 +67,9 @@ defaults:
       type: organizations
     values:
       layout: organization
+  - scope:
+      path: "/legal"
+      type: legal
 
 # Markdown settings
 markdown: kramdown
