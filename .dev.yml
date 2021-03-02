@@ -67,9 +67,6 @@ defaults:
       type: organizations
     values:
       layout: organization
-  - scope:
-      path: "/legal"
-      type: legal
 
 # Markdown settings
 markdown: kramdown
