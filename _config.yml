@@ -21,6 +21,8 @@ navigation:
     url: /datasets/
   - title: Organizations
     url: /organizations/
+  - title: RDL Project
+    url: http://riskdatalibrary.org/
 
 # Collections
 collections:

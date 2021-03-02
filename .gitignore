@@ -10,3 +10,5 @@ node_modules
 .oauth_settings.txt
 Gemfile
 Gemfile.lock
+
+.dev_gemfile.lock
