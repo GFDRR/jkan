@@ -16,7 +16,7 @@ export default (data) => (
   <br/><br/>
   <strong>Developed by (date):</strong> ${data.source} (${data.model_date || 'Date not supplied'})
   <br/>
-  <strong>Geo Coverage:</strong> ${data.geo_coverage || 'Not supplied'}
+  <strong>Geo Coverage:</strong> ${data.geo_coverage.toString().replace(",", ", ") || 'Not supplied'}
   <br />
   <strong>License:</strong> ${license_link(data)}
   <hr>

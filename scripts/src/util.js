@@ -43,9 +43,19 @@ export function createDatasetFilters (filters) {
       conditions.push(dataset.resources.some(x => x.format === filters.resources))
     }
     if (filters.geo_coverage) {
-      conditions.push(dataset.geo_coverage && slugify(dataset.geo_coverage) === filters.geo_coverage)
+      // for multi-country data sets, search for country name against joined string
+      var res = false
+      var x = dataset.geo_coverage
+      if (Array.isArray(dataset.geo_coverage)) {
+        x = x.join()
+        res = dataset.geo_coverage && slugify(x).includes(filters.geo_coverage)
+      } else {
+        res = x && slugify(x) === filters.geo_coverage
+      }
+      conditions.push(res)
     }
-    return conditions.every(function (value) { return !!value })
+
+    return conditions.every(function (value) { return !! value })
   }
 }
 

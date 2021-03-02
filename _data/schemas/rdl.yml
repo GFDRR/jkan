@@ -34,7 +34,7 @@ dataset_fields:
   - field_name: source
     label: Name of source model
     required: true
-  - field_name: date
+  - field_name: model_date
     label: Model release date
     required: true
   - field_name: version
