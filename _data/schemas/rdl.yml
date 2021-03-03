@@ -140,7 +140,7 @@ rdl_hazard:
       - Deterministic
       - Probabilistic
   - field_name: geo_area
-    label: The name of the geographic area covered by the analysis
+    label: Name of specific geographic area covered by the analysis
   - field_name: time_start
     label: Event start time
   - field_name: time_end
@@ -163,7 +163,7 @@ rdl_hazard:
     required: true
     form_template: form/rdl-frequency_type.html
   - field_name: return_period
-    label: Probability of occurrence expressed as return periods list (10, 100, 1000) or range (10-1000)
+    label: Probability of occurrence
   - field_name: occurrence_time_start
     label: Occurrence time start
   - field_name: occurrence_time_end
@@ -213,7 +213,7 @@ rdl_exposure:
   - field_name: taxonomy_code
     label: Taxonomy code
   - field_name: event_time_year
-    label: General reference year to which the scenario refers to (e.g. "2050")
+    label: General reference year to which the model refers to
   - field_name: add_attributes
     label: List of key attributes included in the dataset
   ## CostType
@@ -374,14 +374,12 @@ rdl_loss:
   - field_name: time_end
     label: Event end time
   - field_name: time_year
-    label: General reference year to which the scenario refers to (e.g. "2050")
+    label: General reference year to which the model refers to
   - field_name: occupancy
     label: Occupancy type
-    required: true
     form_template: form/rdl-occupancy.html
   - field_name: category
     label: Category of exposed asset
-    required: true
     form_template: form/rdl-exposed_asset.html
   - field_name: val_type
     label: Element of exposure on which loss is calculated
