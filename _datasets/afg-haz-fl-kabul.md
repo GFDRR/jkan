@@ -34,7 +34,7 @@ license: 'https://creativecommons.org/licenses/by-sa/4.0/'
 maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
 event_hazard_type:
-  - CF
+  - FL
 analysis_type: Probabilistic
 geo_area: Kabul
 time_start: ''
@@ -48,10 +48,8 @@ return_period: '5, 100, 1000 years'
 occurrence_time_start: ''
 occurrence_time_end: ''
 occurrence_time_span: ''
-trigger_hazard_type:
-  - FL
-trigger_process_type:
-  - FFF
+trigger_hazard_type: ''
+trigger_process_type: ''
 description: ''
 process_type:
   - FFF
