@@ -46,7 +46,7 @@ dataset_fields:
   - field_name: notes
     label: Additional details about the dataset
   - field_name: biblio_title
-    label: Bibliographic resource (author; title; year)
+    label: Bibliographic resource
   - field_name: biblio_url
     label: Link to bibliographic resource
   - field_name: geo_coverage
@@ -140,7 +140,7 @@ rdl_hazard:
       - Deterministic
       - Probabilistic
   - field_name: geo_area
-    label: The name of the geographic area covered by the hazard analysis (Comma-separated list of geographic names).
+    label: The name of the geographic area covered by the analysis
   - field_name: time_start
     label: Event start time
   - field_name: time_end
@@ -148,7 +148,7 @@ rdl_hazard:
   - field_name: time_span
     label: Time span considered
   - field_name: time_year
-    label: General reference year to which the scenario refers to (e.g. "2050")
+    label: General reference year for the scenario
   ## Event
   - field_name: calculation_method
     label: Calculation method
