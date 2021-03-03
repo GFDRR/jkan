@@ -9,8 +9,8 @@ resources:
   - name: Afghanistan flood hazard historical events
     aggregation_type: Aggregated to grid
     format: geotiff
-    h-res: '90'
-    epsg: ''
+    h-res: 90 m
+    epsg:  32642 (WGS84 UTM42N)
     url: >-
       https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/hzd-afg-fl-hist_events.zip
 category:
