@@ -16,7 +16,7 @@ resources:
 category:
   - Hazard
 abstract: >-
-  Flood extent and water depth in Afghanistan for 4 historical events: 1978,
+  Flood extent and water depth in Afghanistan simulated for 4 historical events: 1978,
   2/1991, 5/1991, 1992
 source: AF-MHRA
 model_date: '2016'
