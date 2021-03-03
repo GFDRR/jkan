@@ -4,7 +4,7 @@ title: 'Afghanistan Flood risk scenarios, current and 2050 (population and asset
 organization: GFDRR
 notes: ''
 resources:
-  - name: Afghanistan all RPs Geopackage
+  - name: Afghanistan AAL and all RPs, current and 2050 (population and asset)
     aggregation_type: Grid
     format: geopackage
     h-res: 90 m
@@ -45,10 +45,8 @@ process_type:
 time_start: ''
 time_end: ''
 time_year: Baseline and 2050
-occupancy:
-  - Residential
-val_type:
-  - Structure
+occupancy: ''
+val_type: ''
 impact: Direct
 loss_type: Ground up
 frequency_type:
