@@ -10,7 +10,7 @@ resources:
     aggregation_type: Grid
     format: geotiff
     h-res: 10 m
-    epsg: ''
+    epsg: 32642 (WGS84 UTM42N)
     url: >-
       https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/hzd-afg-fl-kabul.zip
 category:
