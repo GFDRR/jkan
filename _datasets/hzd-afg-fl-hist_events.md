@@ -47,16 +47,13 @@ time_end: ''
 time_span: ''
 time_year: ''
 calculation_method: Simulated
-frequency_type:
-  - Rate
+frequency_type: ''
 return_period: ''
 occurrence_time_start: '1959'
 occurrence_time_end: '2001'
 occurrence_time_span: 42 years
 trigger_hazard_type:
-  - FL
 trigger_process_type:
-  - FFF
 description: >-
   The flood events in 1991 were riverine floods, while the flood in 1992 was a
   flash flood and land-slide event. The exact type of events in 1978 is unknown.
