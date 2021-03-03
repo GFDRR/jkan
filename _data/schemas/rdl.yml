@@ -72,12 +72,13 @@ resource_fields:
     required: true
     datajson: distribution.title
   - field_name: aggregation_type
-    label: Level of data representation
+    label: Data representation
     form_template: form/dropdown.html
     values:
-      - Individual items
-      - Aggregated to grid
-      - Aggregated to boundaries
+      - Footprints
+      - Points or lines
+      - Grid
+      - Administrative boundaries
       - N/A
   - field_name: format
     label: Format
@@ -93,10 +94,12 @@ resource_fields:
       - geopackage
       - geotiff
       - markdown
+      - pdf
+      - website
   - field_name: h-res
     label: Horizontal resolution
   - field_name: epsg
-    label: Reference coordinate system. Default is 4326 (WGS84)
+    label: Reference coordinate system
     required: true
   - field_name: url
     label: URL to resource
@@ -174,7 +177,7 @@ rdl_hazard:
     label: Trigger Process Type
     form_template: form/rdl-process_type.html
   - field_name: description
-    label: Additional information about this specific event
+    label: Additional information about the event
 
   ## FootprintSet
   - field_name: process_type
