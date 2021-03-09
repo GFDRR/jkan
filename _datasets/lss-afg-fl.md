@@ -16,7 +16,6 @@ resources:
       https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/lss-afg-fl.gpkg
 category:
   - Loss
-  - Indicators
 abstract: >-
   Average Annual Losses (AAL) for current population (AALpop), current asset
   (AALnowUSD), population SSP scenarios at 2050 (AALpopSP1-5), asset SSP
@@ -57,7 +56,7 @@ frequency_type:
 return_period: ''
 metric: Annual Average Losses
 val_unit: USD
-hazard_link: 'http://jkan.riskdatalibrary.org/datasets/afg-loss-fl/'
+hazard_link: 'http://jkan.riskdatalibrary.org/datasets/hzd-afg-fl-baseline/'
 exposure_link: ''
 vulnerability_link: ''
 ---
