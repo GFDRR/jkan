@@ -40,10 +40,10 @@ event_hazard_type:
   - FL
 analysis_type: Probabilistic
 geo_area: ''
-time_start: ''
-time_end: ''
-time_span: ''
-time_year: '2016'
+time_start: '1958'
+time_end: '2001'
+time_span: '44 years'
+time_year: ''
 calculation_method: Simulated
 frequency_type:
   - Return Period
