@@ -26,6 +26,9 @@ dataset_fields:
     required: true
     form_template: form/textarea.html
     datajson: description
+  - field_name: notes
+    label: Additional details about the dataset
+    form_template: form/textarea.html
   - field_name: organization
     label: Publisher of dataset
     required: true
@@ -44,8 +47,6 @@ dataset_fields:
     form_template: form/textarea.html
   - field_name: project
     label: Project that produced the dataset
-  - field_name: notes
-    label: Additional details about the dataset
   - field_name: biblio_title
     label: Bibliographic resource
   - field_name: biblio_url
