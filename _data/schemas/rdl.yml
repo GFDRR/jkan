@@ -41,6 +41,7 @@ dataset_fields:
     label: Version of the dataset
   - field_name: purpose
     label: Purpose of the data
+    form_template: form/textarea.html
   - field_name: project
     label: Project that produced the dataset
   - field_name: notes
