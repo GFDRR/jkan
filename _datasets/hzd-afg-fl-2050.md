@@ -16,7 +16,10 @@ abstract: >-
   Flood extent and water depth in Afghanistan for eight return period
   scenarios: RP5, RP10, RP20, RP50, RP100, RP250, RP250 and RP1000 years.
 notes:  >-
-  For the ﬂood risk assessment.
+    Representative Concentration Pathway RCP6.0 scenarios. Climate projections for 2050 were drawn from an ensemble of five global climate models (GCMs), to determine how precipitation and snowfall may increase or decrease.
+  Three GCMs (GFDL, HadGEM, and NorESM) indicate  an increase in rainfall plus snowmelt, and two GCMs indicate a decrease in rainfall  plus snow melt (IPSL and Miroc).
+  In other words, there does not appear to be a clear concept of climate change impacts on the Afghanistan hydrometeorology.
+  In order to be conservative, the risk analysis for the year 2050 was conducted taking a relatively “dry” GCM (IPSL) for drought risk analysis and a relatively “wet” GCM (NorESM) for ﬂood risk analysis.
 source: AF-MHRA
 model_date: '2016'
 version: '1'
