@@ -6,7 +6,7 @@ resources:
   - name: Afghanistan Landslide hazard susceptibility
     aggregation_type: Grid
     format: geotiff
-    h-res: '30'
+    h-res: '30 m'
     epsg: 32642 (WGS84 UTM42N)
     url: >-
       https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/hzd-afg-ls-eq.zip
