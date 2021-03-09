@@ -38,9 +38,9 @@ dataset_fields:
     label: Model release date
     required: true
   - field_name: version
-    label: Version of the dataset
+    label: Dataset version
   - field_name: purpose
-    label: Purpose of the data
+    label: Data purpose
     form_template: form/textarea.html
   - field_name: project
     label: Project that produced the dataset
