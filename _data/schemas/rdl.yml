@@ -133,6 +133,7 @@ rdl_hazard:
     label: Hazard type
     required: true
     form_template: form/rdl-hazard_type.html
+    display_template: display/hazard_type.html
   - field_name: analysis_type
     label: Type of analysis
     required: true
@@ -174,9 +175,11 @@ rdl_hazard:
   - field_name: trigger_hazard_type
     label: Trigger hazard type
     form_template: form/rdl-hazard_type.html
+    display_template: display/hazard_type.html
   - field_name: trigger_process_type
     label: Trigger Process Type
     form_template: form/rdl-process_type.html
+    display_template: display/process_type.html
   - field_name: description
     label: Additional information about the event
 
@@ -185,10 +188,12 @@ rdl_hazard:
     label: Process type
     required: true
     form_template: form/rdl-process_type.html
+    display_template: display/process_type.html
   - field_name: imt
     label: Intensity measure
     required: true
     form_template: form/rdl-IMT.html
+    display_template: display/IMT.html
   - field_name: data_uncertainty
     label: Data uncertainty
 
@@ -233,16 +238,20 @@ rdl_vulnerability:
     label: Primary hazard type
     required: true
     form_template: form/rdl-hazard_type.html
+    display_template: display/hazard_type.html
   - field_name: hazard_type_secondary
     label: Secondary hazard type
     form_template: form/rdl-hazard_type.html
+    display_template: display/hazard_type.html
   - field_name: process_type_primary
     label: Primary process type
     required: true
     form_template: form/rdl-process_type.html
+    display_template: display/process_type.html
   - field_name: process_type_secondary
     label: Secondary process type
     form_template: form/rdl-process_type.html
+    display_template: display/process_type.html
   - field_name: frequency_type
     label: Type of frequency
     required: true
@@ -251,6 +260,7 @@ rdl_vulnerability:
     label: Intensity measure
     required: true
     form_template: form/rdl-IMT.html
+    display_template: display/IMT.html
   - field_name: exposure_category
     label: Category of exposed asset
     required: true
@@ -367,9 +377,11 @@ rdl_loss:
   - field_name: hazard_type
     label: Hazard Type
     form_template: form/rdl-hazard_type.html
+    display_template: display/hazard_type.html
   - field_name: process_type
     label: Process Type
     form_template: form/rdl-process_type.html
+    display_template: display/process_type.html
   - field_name: time_start
     label: Event start time
   - field_name: time_end
