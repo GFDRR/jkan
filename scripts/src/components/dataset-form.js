@@ -6,6 +6,11 @@ import 'select2'
 function display_rdl_component_fields() {
   var selected = $("#category\\[\\]").val()
 
+  if (selected == null) {
+    // nothing to show
+    return
+  }
+
   var target = $(`#rdl-schema-${selected.toLowerCase()}`)
   var target_fields = $(`fieldset#rdl-schema-${selected.toLowerCase()}`)
   
