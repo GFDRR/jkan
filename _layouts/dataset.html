@@ -93,10 +93,34 @@ layout: default
         {% for field in rdl_fields %}
           {% assign value = page[field[field_name]] %}
           {% if value != "" and value != null %}
-            <tr>
-              <th>{{ field.label }}</th>
-              <td>{{ value }}</td>
-            </tr>
+            {% if field.display_template %}
+              {% include {{ field.display_template }} field=field value=value %}
+            {% else %}
+              {% if field.field_name contains "_link" %}
+                {% if value and value contains "://" %}
+                  {% capture link %} <a property="dct:page" resource="{{ value }}" href="{{ value }}">{{ value }}</a> {% endcapture %}
+                {% else %}
+                  {% assign link = value %}
+                {% endif %}
+
+                <tr>
+                  <th>{{ field.label }}</th>
+                  <td>{{ link }}</td>
+                </tr>
+              {% elsif field.field_name == "biblio_title" %}
+                {% assign bibrsrc = dataset_fields | where: "field_name", "biblio_url" %}
+                {% assign rsrc = page.biblio_url %}
+                <tr>
+                  <th>{{ field.label }}</th>
+                  <td><a property="dct:page" resource="{{ rsrc }}" href="{{ rsrc }}">{{ value }}</a></td>
+                </tr>
+              {% else %}
+                <tr>
+                  <th>{{ field.label }}</th>
+                  <td>{{ value }}</td>
+                </tr>
+              {% endif %}
+            {% endif %}
           {% endif %}
         {% endfor %}
       </table>
@@ -110,10 +134,22 @@ layout: default
               {% if field.display_template %}
                 {% include {{ field.display_template }} field=field value=value %}
               {% else %}
+                {% if field.label == "Link to bibliographic resource" %}
+                  {% continue %}
+                {% endif %}
+                {% if field.label == "Bibliographic resource" %}
+                  {% assign bibrsrc = dataset_fields | where: "field_name", "biblio_url" %}
+                  {% assign rsrc = page.biblio_url %}
+                <tr>
+                  <th>{{ field.label }}</th>
+                  <td><a property="dct:page" resource="{{ rsrc }}" href="{{ rsrc }}">{{ value }}</a></td>
+                </tr>
+                {% else %}
                 <tr>
                   <th>{{ field.label }}</th>
                   <td>{{ value }}</td>
                 </tr>
+                {% endif %}
               {% endif %}
             {% endif %}
           {% endunless %}
