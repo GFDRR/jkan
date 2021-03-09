@@ -37,6 +37,9 @@ export default class {
       schema: $('#category\\[\\]', opts.el)
     }
 
+    // activate field if already selected (needed for edit page)
+    display_rdl_component_fields()
+
     // add onchange behavior
     schemas.schema.on("change", display_rdl_component_fields)
 
