@@ -1,5 +1,13 @@
 <tr>
     <th>{{ include.field.label }}</th>
     <td>
-        {{ site.data.ISO3[include.value] }}
+        {% if include.value[0] %}
+            {% for c in include.value %}
+            {% capture code %}{{ c }}{% endcapture %}
+                {{ site.data.ISO3[code] }}{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+        {% else %}
+            {% capture code %}{{ include.value }}{% endcapture %}
+            {{ site.data.ISO3[code] }}
+        {% endif %}
     </td>
