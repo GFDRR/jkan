@@ -134,9 +134,14 @@ layout: default
               {% if field.display_template %}
                 {% include {{ field.display_template }} field=field value=value %}
               {% else %}
-                {% if field.label == "Link to bibliographic resource" %}
+                {% if field.field_name == "biblio_url" %}
                   {% continue %}
                 {% endif %}
+
+                {% if field.field_name == "abstract" %}
+                  {% continue %}
+                {% endif %}
+
                 {% if field.label == "Bibliographic resource" %}
                   {% assign bibrsrc = dataset_fields | where: "field_name", "biblio_url" %}
                   {% assign rsrc = page.biblio_url %}
@@ -158,7 +163,7 @@ layout: default
         <tr>
           <th>Additional notes</th>
           <td>
-            <p property="dct:description">{{ page.abstract }}</p>
+            <p property="dct:description">{{ page.notes }}</p>
           </td>
         </tr>
         {% if page.license and page.license != empty %}
