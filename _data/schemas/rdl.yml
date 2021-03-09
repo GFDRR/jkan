@@ -194,7 +194,7 @@ rdl_hazard:
 # ExposureModel
 rdl_exposure:
   ## Model
-  - field_name: category
+  - field_name: exposure_category
     label: Exposure category
     required: true
     form_template: form/rdl-exposed_asset.html
@@ -250,7 +250,7 @@ rdl_vulnerability:
     label: Intensity measure
     required: true
     form_template: form/rdl-IMT.html
-  - field_name: category
+  - field_name: vulnerability_category
     label: Category of exposed asset
     required: true
     form_template: form/rdl-exposed_asset.html
@@ -378,7 +378,7 @@ rdl_loss:
   - field_name: occupancy
     label: Occupancy type
     form_template: form/rdl-occupancy.html
-  - field_name: category
+  - field_name: loss_category
     label: Category of exposed asset
     form_template: form/rdl-exposed_asset.html
   - field_name: val_type
