@@ -60,21 +60,19 @@ hazard_type:
   - DR
 process_type:
   - DTM
-  - DTA
-  - DTS
 time_start: ''
 time_end: ''
 time_year: ''
 occupancy:
   - Crop
 exposure_category:
-  - 'Crops, livestock and forestry'
+  - 'Crops,'
 val_type:
   - Others
 impact: Total
 loss_type: Ground up
 frequency_type:
-  - N/A
+  - Return
 return_period: '10, 20, 50, 100, 250, 500, 1000 years'
 metric: Annual Average Losses
 val_unit: USD
