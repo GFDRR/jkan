@@ -49,6 +49,7 @@ dataset_fields:
     label: Project that produced the dataset
   - field_name: biblio_title
     label: Bibliographic resource
+    placeholder: "Hint: (author; title; year)"
   - field_name: biblio_url
     label: Link to bibliographic resource
   - field_name: geo_coverage
@@ -99,6 +100,7 @@ resource_fields:
   - field_name: epsg
     label: Reference coordinate system
     required: true
+    placeholder: "Hint: 4326 (WGS84)"
   - field_name: url
     label: URL to resource
     required: true
@@ -163,6 +165,7 @@ rdl_hazard:
     form_template: form/rdl-frequency_type.html
   - field_name: return_period
     label: Probability of occurrence
+    placeholder: "Hint: RP list (10, 100, 1000 years) or range (10-1000 years)"
   - field_name: occurrence_time_start
     label: Occurrence time start
   - field_name: occurrence_time_end
