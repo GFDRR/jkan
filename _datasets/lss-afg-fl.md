@@ -9,7 +9,7 @@ abstract: >-
 resources:
   - name: Afghanistan AAL and all RPs, current and 2050 (population and asset)
     aggregation_type: Grid
-    format: geopackage
+    format: gpkg
     h-res: 90 m
     epsg: 32642 (WGS84 UTM42N)
     url: >-
