@@ -18,7 +18,7 @@ export default (data) => (
   <br/>
   <strong>Geo Coverage:</strong> ${data.geo_coverage.toString().replace(",", ", ") || 'Not supplied'}
   <br />
-  <strong>License:</strong> ${license_link(data)}
+  ${license_link(data)}
   <hr>
 </rdl-dataset>`
 )
