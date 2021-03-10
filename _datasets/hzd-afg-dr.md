@@ -1,6 +1,6 @@
 ---
 schema: rdl
-title: 'Afghanistan Drought hazard scenarios, baseline and 2050'
+title: Afghanistan Drought hazard scenarios (baseline and 2050)
 organization: GFDRR
 filename: hzd-afg-dr.md
 resources:
@@ -18,7 +18,10 @@ abstract: >-
   Annual water availability per subcatchment for baseline and 2050 according to
   seven return period scenarios: RP5, RP10, RP20, RP50, RP100, RP250, RP250 and
   RP1000 years.
-notes: "Rainfall deficit: annual rainfall per subcatchment, expressed as a % of the median annual rainfall.\r\nWater shortage: water shortage for irrigated agriculture per subcatchment expressed as % of the total water demand. Zero indicates water surplus."
+notes: >-
+  Annual water availability per subcatchment for baseline and 2050 according to
+  seven return period scenarios: RP5, RP10, RP20, RP50, RP100, RP250, RP250 and
+  RP1000 years.
 source: AF-MHRA
 model_date: '2016'
 version: '1'
@@ -41,6 +44,7 @@ maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
 hazard_type:
   - DR
+  - DR
 analysis_type: Probabilistic
 geo_area: ''
 time_start: ''
@@ -49,7 +53,7 @@ time_span: 1959–1998
 time_year: ''
 calculation_method: Simulated
 frequency_type:
-  - Return
+  - N/A
 return_period: '10, 20, 50, 100, 250, 500, 1000 years'
 occurrence_time_start: '1959'
 occurrence_time_end: '1998'
