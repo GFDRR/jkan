@@ -35,7 +35,7 @@ dataset_fields:
     form_template: form/organization.html
     datajson: publisher.name
   - field_name: source
-    label: Name of source model
+    label: Source model name
     required: true
   - field_name: model_date
     label: Model release date
@@ -55,7 +55,7 @@ dataset_fields:
     label: Geographic coverage (countries)
     required: true
     display_template: display/geo_coverage.html
-    form_template: form/geo_coverage.html
+    form_template: form/rdl-geo_coverage.html
   - field_name: license
     label: License
     required: true
@@ -67,6 +67,13 @@ dataset_fields:
   - field_name: maintainer_email
     label: Maintainer Email
     datajson: contactPoint.hasEmail
+
+  # - field_name: creator
+  #   label: Creator
+  #   datajson: contactPoint.fn
+  # - field_name: creator_email
+  #   label: Creator Email
+  #   datajson: contactPoint.hasEmail
 
 resource_fields:
   - field_name: name
@@ -119,7 +126,7 @@ category_fields:
 # HazardModel
 rdl_hazard:
   ## EventSet
-  - field_name: event_hazard_type
+  - field_name: hazard_type
     label: Hazard type
     required: true
     form_template: form/rdl-hazard_type.html
@@ -162,7 +169,7 @@ rdl_hazard:
     label: Occurrence time end
   - field_name: occurrence_time_span
     label: Occurrence time span
-  - field_name: trigger_hazard_type
+  - field_name: hazard_type
     label: Trigger hazard type
     form_template: form/rdl-hazard_type.html
     display_template: display/hazard_type.html
@@ -293,7 +300,7 @@ rdl_vulnerability:
     label: List of countries in which the model could be applied
     required: true
     display_template: display/geo_coverage.html
-    form_template: form/geo_coverage.html
+    form_template: form/rdl-geo_coverage.html
   - field_name: transferability_notes
     label: Details about applicability to different areas
   - field_name: function_type

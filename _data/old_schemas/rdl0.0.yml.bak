@@ -47,7 +47,7 @@ dataset_fields:
     label: Geographic coverage
     required: true
     display_template: display/geo_coverage.html
-    form_template: form/geo_coverage.html
+    form_template: form/rdl-geo_coverage.html
   - field_name: license
     label: License
     required: true
@@ -376,7 +376,7 @@ rdl_vulnerability:
   - field_name: f_core_country_iso
     label: Country ISO
     display_template: display/geo_coverage.html
-    form_template: form/geo_coverage.html
+    form_template: form/rdl-geo_coverage.html
   - field_name: f_core_applicability_notes
     label: Applicability notes
   - field_name: f_core_scale_applicability
