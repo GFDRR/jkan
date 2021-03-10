@@ -26,7 +26,7 @@ maintainer_email: labs.gfdrr@gmail.com
 
 [//]: # RDL-attributes: hazard fields
 [//]: ## Event Set
-event_hazard_type: "Earthquake"
+hazard_type: "Earthquake"
 event_is_prob: "True"
 
 [//]: ## Event 

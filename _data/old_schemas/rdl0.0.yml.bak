@@ -102,7 +102,7 @@ category_fields:
 
 rdl_hazard:
   ## Event Set
-  - field_name: event_hazard_type
+  - field_name: hazard_type
     label: Hazard type
     required: true
     form_template: form/rdl-hazard_type.html

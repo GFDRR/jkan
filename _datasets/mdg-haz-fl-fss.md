@@ -24,7 +24,7 @@ maintainer_email: labs.gfdrr@gmail.com
 
 [//]: # RDL-attributes: hazard fields
 [//]: ## Event Set
-event_hazard_type: "Flood"
+hazard_type: "Flood"
 geo_area_name: ""
 event_time_start: ""
 event_time_end: ""

@@ -267,7 +267,7 @@ maintainer_email:
 
 [//]: # RDL-attributes: hazard fields
 [//]: ## Event Set
-event_hazard_type:
+hazard_type:
   - CF
   - CS
   - DR
