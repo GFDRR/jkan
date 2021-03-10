@@ -38,7 +38,7 @@ export default class {
       // If creating new file, set file path and page url
       } else {
         if (!formData.title) return notie.alert('error', 'Title is required')
-        const fileSlug = slugify(formData.rdl_dataset_filename)
+        const fileSlug = slugify(formData.filename)
         file.filePath = (fileDir ? fileDir + '/' : '') + `${fileSlug}.md`
         file.renderPath = `/${renderDir}/${fileSlug}/`
         commitMsg = `Created ${file.fileName}` // computed by file model when filePath is set

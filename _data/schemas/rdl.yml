@@ -34,6 +34,10 @@ dataset_fields:
     required: true
     form_template: form/organization.html
     datajson: publisher.name
+  - field_name: filename
+    label: RDL Dataset filename
+    required: true
+    form_template: form/text.html
   - field_name: source
     label: Source model name
     required: true

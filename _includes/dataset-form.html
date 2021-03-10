@@ -1,7 +1,7 @@
 {% assign schema = include.dataset.schema | default: site.schema %}
 {% assign dataset_fields = site.data.schemas[schema].dataset_fields %}
 {% assign resource_fields = site.data.schemas[schema].resource_fields %}
-{% assign dataset_system_fields = "title|organization|notes" | split: "|" %}
+{% assign dataset_system_fields = "title|organization|notes|filename" | split: "|" %}
 {% assign datasets = site.collections | where:"label","datasets" | first %}
 
 <form data-component="form dataset-form"
@@ -30,10 +30,7 @@
         {% include {{ template }} field=field field_name=field_name value=value required=required %}
       {% endif %}
     {% endfor %}
-
-    <!-- RDL custom filename setter -->
-    <label for="rdl-dataset-filename">RDL Dataset filename<span style='color: red'>*</span></label>
-    <input id="rdl-dataset-filename" type="text" class="form-control" required=true>
+    
   </fieldset>
 
   <h2>Resources</h2>
