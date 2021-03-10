@@ -78,26 +78,15 @@ resource_fields:
     form_template: form/dropdown.html
     values:
       - Footprints
-      - Points or lines
       - Grid
       - Administrative boundaries
+      - Points or lines
       - N/A
   - field_name: format
     label: Format
     required: true
     datajson: distribution.format
-    form_template: form/dropdown.html
-    values:
-      - api
-      - csv
-      - json
-      - geojson
-      - shapefile
-      - geopackage
-      - geotiff
-      - markdown
-      - pdf
-      - website
+    form_template: form/rdl-data_format.html
   - field_name: h-res
     label: Horizontal resolution
   - field_name: epsg

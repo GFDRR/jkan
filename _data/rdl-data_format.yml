@@ -1,0 +1,10 @@
+api: api
+csv: csv 
+json: json 
+geojson: geojson 
+shp: shapefile
+gpkg: geopackage
+geotiff: geotiff
+md: markdown
+pdf: pdf
+website: website
