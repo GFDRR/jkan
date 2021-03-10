@@ -1,22 +1,32 @@
 ---
 schema: rdl
-title: 'Afghanistan Flood risk scenarios, current and 2050 (population and asset)'
+title: 'Afghanistan Flood risk scenarios, baseline and 2050 (population and asset)'
 organization: GFDRR
+filename: lss-afg-fl.md
+resources:
+  - name: 'Afghanistan AAL and all RPs, baseline and 2050 (population and asset)'
+    aggregation_type: Administrative boundaries
+    format:
+      - gpkg
+    h-res: ''
+    epsg: 32642 (WGS84 UTM42N)
+    url: >-
+      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/lss-afg-fl.gpkg
+  - name: 'Afghanistan AAL and all RPs, baseline'
+    aggregation_type: Grid
+    format:
+      - geotiff
+    h-res: '90'
+    epsg: 32642 (WGS84 UTM42N)
+    url: >-
+      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/lss-afg-fl.zip
+category:
+  - Loss
 abstract: >-
   Average Annual Losses (AAL) for current population (AALpop), current asset
   (AALnowUSD), population SSP scenarios at 2050 (AALpopSP1-5), asset SSP
   scenarios at 2050 (AAL_usd_SP1-5).
-resources:
-  - name: Afghanistan AAL and all RPs, current and 2050 (population and asset)
-    aggregation_type: Grid
-    format: gpkg
-    h-res: 90 m
-    epsg: 32642 (WGS84 UTM42N)
-    url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/lss-afg-fl.gpkg
-category:
-  - Loss
-abstract: >-
+notes: >-
   Average Annual Losses (AAL) for current population (AALpop), current asset
   (AALnowUSD), population SSP scenarios at 2050 (AALpopSP1-5), asset SSP
   scenarios at 2050 (AAL_usd_SP1-5).
@@ -47,13 +57,13 @@ process_type:
 time_start: ''
 time_end: ''
 time_year: Baseline and 2050
-occupancy: ''
-val_type: ''
+val_type:
+  - Structure
 impact: Direct
 loss_type: Ground up
 frequency_type:
-  - Probability
-return_period: ''
+  - Return
+return_period: '5, 10, 20, 50, 100, 250, 500, 1000 years'
 metric: Annual Average Losses
 val_unit: USD
 hazard_link: 'http://jkan.riskdatalibrary.org/datasets/hzd-afg-fl-baseline/'
