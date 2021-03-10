@@ -1,8 +1,12 @@
 <div class="form-group">
     <label for="{{ include.field_name }}[]">{{ include.field.label }}{{ include.required | default: "" }}</label>
     <select class="form-control select2" id="{{ include.field_name }}[]" name="{{ include.field_name }}[]" {% if include.required %}required="true"{% endif %} style="width: 100%">
+      {% if include.value[0] %}{% assign value = include.value[0] %}{% else %}{% assign value = include.value %}{% endif %}
+      {% if value == "" or value == nil %}
+        <option disabled selected value> -- select an option -- </option>
+      {% endif %}
       {% for imt in site.data.rdl-IMT %}
-        <option value={{ imt[0] }}>{{ imt[1] }}</option>
+        <option{% if value == imt[0] %} selected="selected"{% endif %} value={{ imt[0] }}>{{ imt[1] }}</option>
       {% endfor %}
     </select>
   </div>
