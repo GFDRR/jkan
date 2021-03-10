@@ -73,7 +73,7 @@ val_type:
 impact: Total
 loss_type: Ground up
 frequency_type:
-  - Return
+  - Return period
 return_period: '10, 20, 50, 100, 250, 500, 1000 years'
 metric: Annual Average Losses
 val_unit: USD
