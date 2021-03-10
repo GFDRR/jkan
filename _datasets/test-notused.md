@@ -6,7 +6,7 @@ category:
   - Hazard
 abstract: test
 notes: ''
-source: testtest
+source: test
 model_date: test
 version: ''
 purpose: ''
@@ -15,11 +15,12 @@ biblio_title: ''
 biblio_url: ''
 geo_coverage:
   - AFG
+  - AIA
 license: 'https://creativecommons.org/licenses/by/4.0/'
 maintainer: ''
 maintainer_email: ''
 hazard_type:
-  - CS
+  - CF
 analysis_type: Deterministic
 geo_area: ''
 time_start: ''
@@ -35,7 +36,7 @@ occurrence_time_end: ''
 occurrence_time_span: ''
 description: ''
 process_type:
-  - TOR
+  - FSS
 imt:
   - PGV_m/s
 data_uncertainty: ''
