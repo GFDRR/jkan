@@ -11,7 +11,7 @@ resources:
     h-res: ''
     epsg: 32642 (WGS84 UTM42N)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/lss-afg-dr-dta.zip
+      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/lss-afg-dr-dta.gpkg
   - name: 'Afghanistan Drought risk: water per capita'
     aggregation_type: Administrative boundaries
     format:
@@ -34,11 +34,8 @@ abstract: >-
   Annual average losses in agricultural production (USD) and affected
   population, both for the baseline reference and future (2050) situation .
 notes: >-
-  Results are given for the current (reference, or baseline) situation and for
-  the future situation (2050; five SSP scenarios). The results show, for each
-  admin level, return values of the average available water per capita in
-  m3/years. Same results as above, but now presented in terms of five classes,
-  varying from severe drought (class 1) to abundance of water (class 5).
+  Annual average losses in agricultural production (USD) and affected
+  population, both for the baseline reference and future (2050) situation .
 source: AF-MHRA
 model_date: '2016'
 version: '1'
@@ -75,7 +72,7 @@ val_type:
 impact: Total
 loss_type: Ground up
 frequency_type:
-  - Return
+  - N/A
 return_period: '10, 20, 50, 100, 250, 500, 1000 years'
 metric: Annual Average Losses
 val_unit: USD
