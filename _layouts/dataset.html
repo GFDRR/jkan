@@ -123,6 +123,10 @@ layout: default
             {% endif %}
           {% endif %}
         {% endfor %}
+        <tr>
+          <th>RDL schema file</th>
+          <td>{{ page.path | split: "/" | last | split: "." | first}}</td>
+        </tr>
       </table>
 
       <h2>Additional Info</h2>
