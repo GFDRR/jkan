@@ -44,12 +44,11 @@ maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
 hazard_type:
   - DR
-  - DR
 analysis_type: Probabilistic
 geo_area: ''
 time_start: ''
 time_end: ''
-time_span: 1959–1998
+time_span: ''
 time_year: ''
 calculation_method: Simulated
 frequency_type:
