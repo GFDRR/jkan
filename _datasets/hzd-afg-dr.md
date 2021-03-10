@@ -52,7 +52,7 @@ time_span: ''
 time_year: ''
 calculation_method: Simulated
 frequency_type:
-  - N/A
+  - Return Period
 return_period: '10, 20, 50, 100, 250, 500, 1000 years'
 occurrence_time_start: '1959'
 occurrence_time_end: '1998'
