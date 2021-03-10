@@ -60,13 +60,15 @@ hazard_type:
   - DR
 process_type:
   - DTM
+  - DTA
+  - DTS
 time_start: ''
 time_end: ''
 time_year: ''
 occupancy:
   - Crop
 exposure_category:
-  - 'Crops,'
+  - 'Crops, livestock and forestry'
 val_type:
   - Others
 impact: Total
