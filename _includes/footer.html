@@ -2,6 +2,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="{{ site.baseurl }}/scripts/dist/bundle.js"></script>
 
+<script type="text/javascript">
+$(document).ready(function() {
+    $("a[rdlmail]").on("mouseover click hover", function() {
+        this.href = this.href.replace('tt%7C%7C@rdl.org/', '').replace('@@','.')
+    });
+})
+</script>
+
 <footer class="text-center navbar-default" style="bottom: 0px;">
     <div class="container">
         <div class="row">
@@ -17,13 +25,16 @@
             <div class="col-lg-3 col-md-3" style="text-align: left; color: white"><br />
                 <ul class="list-unstyled">
                     <li>
-                        <a href="#!"><font style="color:white">Privacy Policy</font></a>
+                        <a href="#!" style="color: white">Privacy Policy</a>
                     </li>
                     <li>
-                        <a href="/legal/"><font style="color:white">Disclaimer</font></a>
+                        <a href="/legal/" style="color: white">Disclaimer</a>
                     </li>
                     <li>
-                        <a href="mailto:contact@riskdatalibrary.org"><font style="color: white">Contact</font></a>
+                        <a rdlmail href="mailto:tt||@rdl.org/contact@riskdatalibrary@@org?subject=RDL JKAN enquiry"
+                        style="color: white">
+                        Contact
+                        </a>
                     </li>
                 </ul>
             </div>
