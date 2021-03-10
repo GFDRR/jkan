@@ -2,7 +2,7 @@
 schema: rdl
 title: 'Afghanistan Flood risk scenarios, current and 2050 (population and asset)'
 organization: GFDRR
-notes: >-
+abstract: >-
   Average Annual Losses (AAL) for current population (AALpop), current asset
   (AALnowUSD), population SSP scenarios at 2050 (AALpopSP1-5), asset SSP
   scenarios at 2050 (AAL_usd_SP1-5).

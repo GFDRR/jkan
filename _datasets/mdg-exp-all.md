@@ -1,7 +1,7 @@
 ---
 schema: rdl
 title: SWIO-RAFI Madagascar Exposure
-notes: >-
+abstract: >-
   This data set was produced with financial support from the European Union in
   the framework of the ACP-EU Natural Disaster Risk Reduction Program, managed
   by the Global Facility for Disaster Reduction and Recovery (GFDRR).

@@ -3,7 +3,7 @@ schema: rdl
 title: SWIO RAFI Madagascar Tropical Cyclone Pluvial Flood
 category:
   - Hazard
-notes: This data set was produced with financial support from the European Union in the framework of the ACP-EU Natural Disaster Risk Reduction Program, managed by the Global Facility for Disaster Reduction and Recovery (GFDRR).
+abstract: This data set was produced with financial support from the European Union in the framework of the ACP-EU Natural Disaster Risk Reduction Program, managed by the Global Facility for Disaster Reduction and Recovery (GFDRR).
 organization: GFDRR
 source: AIR Worldwide
 model_date: 2016

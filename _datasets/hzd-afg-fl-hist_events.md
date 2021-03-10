@@ -2,7 +2,7 @@
 schema: rdl
 title: Afghanistan Flood hazard (historical events)
 organization: GFDRR
-notes: >-
+abstract: >-
   Flood extent and water depth in Afghanistan for 4 historical events: 1978,
   2/1991, 5/1991, 1992
 resources:

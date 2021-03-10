@@ -15,7 +15,6 @@ category:
 abstract: >-
   Flood extent and water depth in Afghanistan for eight return period
   scenarios: RP5, RP10, RP20, RP50, RP100, RP250, RP250 and RP1000 years.
-notes: ''
 source: AF-MHRA
 model_date: '2016'
 version: '1'

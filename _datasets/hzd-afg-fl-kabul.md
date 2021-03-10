@@ -2,7 +2,7 @@
 schema: rdl
 title: Afghanistan Flood hazard scenarios (Kabul)
 organization: GFDRR
-notes: >-
+abstract: >-
   Flood extent and water depth in Kabul urban area for three return period
   scenarios: RP5, RP100 and RP1000 years.
 resources:
