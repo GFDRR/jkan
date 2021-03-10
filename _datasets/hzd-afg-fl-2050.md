@@ -36,7 +36,7 @@ geo_coverage:
 license: 'https://creativecommons.org/licenses/by-sa/4.0/'
 maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
-event_hazard_type:
+hazard_type:
   - FL
 analysis_type: Probabilistic
 geo_area: ''

@@ -46,7 +46,7 @@ resources:
 [//]: # RDS hazard attributes
 rdl_hazard:
 [//]: ## EventSet
-  - event_hazard_type:
+  - hazard_type:
 	  - CF
 	  - CS
 	  - DR
