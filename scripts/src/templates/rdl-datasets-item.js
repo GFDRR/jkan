@@ -12,7 +12,7 @@ function license_link(data) {
 export default (data) => (
 `<rdl-dataset>
   <h3><a href="${data.url}">${data.title}</a></h3>
-  ${data.notes || ''}
+  ${data.abstract || ''}
   <br/><br/>
   <strong>Developed by (date):</strong> ${data.source} (${data.model_date || 'Date not supplied'})
   <br/>
