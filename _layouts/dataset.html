@@ -164,12 +164,15 @@ layout: default
           {% endunless %}
         {% endfor %}
 
-        <tr>
-          <th>Additional notes</th>
-          <td>
-            <p property="dct:description">{{ page.notes }}</p>
-          </td>
-        </tr>
+        {% if page.notes %}
+          <tr>
+            <th>Additional notes</th>
+            <td>
+              <p property="dct:description">{{ page.notes }}</p>
+            </td>
+          </tr>
+        {% endif %}
+
         {% if page.license and page.license != empty %}
           <tr>
             <th>License</th>
