@@ -44,7 +44,6 @@ maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
 hazard_type:
   - EQ
-  - EQ
 analysis_type: Probabilistic
 geo_area: ''
 time_start: ''
