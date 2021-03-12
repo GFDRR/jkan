@@ -16,9 +16,12 @@ category:
   - Hazard
 abstract: >-
   Earthquake hazard map representing Peak ground acceleration (PGA) measured in
-  units of g (9.81ms^-2) for seven return period scenarios: RP10, RP50, RP100,
+  units of g (9.81m/s2) for seven return period scenarios: RP10, RP50, RP100,
   RP250, RP500 , RP1000 and RP2500 years. 
-notes: ''
+notes: >-
+  Earthquake hazard map representing Peak ground acceleration (PGA) measured in
+  units of g (9.81m/s2) for seven return period scenarios: RP10, RP50, RP100,
+  RP250, RP500 , RP1000 and RP2500 years. 
 source: AF-MHRA
 model_date: '2016'
 version: '1'
@@ -40,6 +43,7 @@ license: 'https://creativecommons.org/licenses/by-sa/4.0/'
 maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
 hazard_type:
+  - EQ
   - EQ
 analysis_type: Probabilistic
 geo_area: ''
