@@ -2,14 +2,16 @@
 schema: rdl
 title: Afghanistan Landslide hazard susceptibility
 organization: GFDRR
+filename: hzd-afg-ls-eq-suscept
 resources:
   - name: Afghanistan Landslide hazard susceptibility
     aggregation_type: Grid
-    format: geotiff
-    h-res: '30 m'
+    format:
+      - geotiff
+    h-res: 30 m
     epsg: 32642 (WGS84 UTM42N)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/hzd-afg-ls-eq.zip
+      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/hzd-afg-ls-eq-susceptibility.zip
 category:
   - Hazard
 abstract: >-
@@ -18,8 +20,10 @@ abstract: >-
   evolution (S3) nationwide, including: rotational slides, translational slides,
   earth flows and lateral spreading.
 notes: >-
-  Susceptibility values are represented according the following scale: 0=Null;
-  1-3=Low; 4-5=Moderate; 6=High; 7-9=Very High
+  Susceptibility map for bedrock landslides in slow evolution (S1),  bedrock
+  landslides in rapid evolution (S2) and cover material landslides in rapid
+  evolution (S3) nationwide, including: rotational slides, translational slides,
+  earth flows and lateral spreading.
 source: AF-MHRA
 model_date: '2016'
 version: '1'
@@ -42,6 +46,7 @@ maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
 hazard_type:
   - LS
+  - LS
 analysis_type: Probabilistic
 geo_area: ''
 time_start: ''
@@ -52,11 +57,9 @@ calculation_method: Simulated
 frequency_type:
   - N/A
 return_period: ''
-occurrence_time_start: ''
-occurrence_time_end: ''
-occurrence_time_span: ''
-trigger_hazard_type:
-  - EQ
+occurrence_time_start: '1950'
+occurrence_time_end: '2001'
+occurrence_time_span: 50 years
 description: ''
 process_type:
   - LSL
