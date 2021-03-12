@@ -18,30 +18,39 @@ export default class {
       .filter('resources')
       .flatMap(function (value, index, collection) {
         // Explode objects where file type is an array into one object per file type
-        if (typeof value.resources === 'string') return value
+        // if (typeof value.resources === 'string') return value
         const duplicates = []
         const dup_url = []  // keep track of dataset url
         value.resources.forEach(function (resource) {
-          if (dup_url.some(x => x == value.url)) {
+          var rsrc_fmt = resource.format
+
+          // Only use first item if list detected
+          // (shouldn't be a list though)
+          if (Array.isArray(resource.format)) {
+            rsrc_fmt = resource.format[0]
+          }
+
+          if (dup_url.some(x => x == value.url+rsrc_fmt)) {
             // do not add again if this dataset was previously added
+            // store combination of url and resource format
             return
           }
-          duplicates.push(defaults({resources: resource.format}, value))
-          dup_url.push(value.url)
+          duplicates.push(defaults({resources: rsrc_fmt}, value))
+          dup_url.push(value.url+rsrc_fmt)
         })
+        
         return duplicates
       })
       .groupBy('resources')
       .map(function (datasetsWithRsrc, resource) {
-        const filters = createDatasetFilters(pick(params, ['resources.format']))
-        const filteredDatasets = filter(datasetsWithRsrc, filters)
         const resourceSlug = slugify(resource)
         const selected = params.resources && params.resources === resourceSlug
         const itemParams = selected ? omit(params, 'resources') : defaults({resources: resourceSlug}, params)
+
         return {
           title: resource,
           url: '?' + $.param(itemParams),
-          count: filteredDatasets.length,
+          count: datasetsWithRsrc.length,
           unfilteredCount: datasetsWithRsrc.length,
           selected: selected
         }

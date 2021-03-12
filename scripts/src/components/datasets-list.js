@@ -31,7 +31,7 @@ export default class {
     const datasetsMarkup = filteredDatasets.map(TmplDatasetItem)
     setContent(elements.datasetsItems, datasetsMarkup)
 
-    // // Dataset count
+    // Dataset count
     const datasetSuffix =  filteredDatasets.length > 1 ? 's' : ''
     const datasetsCountMarkup = filteredDatasets.length + ' dataset' + datasetSuffix;
     setContent(elements.datasetsCount, datasetsCountMarkup)
