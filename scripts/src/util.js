@@ -40,7 +40,13 @@ export function createDatasetFilters (filters) {
       conditions.push(dataset.category && slugify(dataset.category).indexOf(filters.category) !== -1)
     }
     if (filters.resources) {
-      conditions.push(dataset.resources.some(x => x.format === filters.resources))
+      conditions.push(dataset.resources.some(x => {
+        if (Array.isArray(x.format)) {
+          return x.format.some(f => f === filters.resources)
+        } else {
+          return x.format === filters.resources
+        }
+      }))
     }
     if (filters.geo_coverage) {
       // for multi-country data sets, search for country name against joined string

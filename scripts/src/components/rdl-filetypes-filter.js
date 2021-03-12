@@ -20,8 +20,14 @@ export default class {
         // Explode objects where file type is an array into one object per file type
         if (typeof value.resources === 'string') return value
         const duplicates = []
+        const dup_url = []  // keep track of dataset url
         value.resources.forEach(function (resource) {
+          if (dup_url.some(x => x == value.url)) {
+            // do not add again if this dataset was previously added
+            return
+          }
           duplicates.push(defaults({resources: resource.format}, value))
+          dup_url.push(value.url)
         })
         return duplicates
       })

@@ -97,3 +97,4 @@ exclude:
   - webpack.config.js
   - README.md
   - LICENSE
+  - _datasets_templates
