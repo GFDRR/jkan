@@ -6,7 +6,7 @@
         <option disabled selected value> -- select an option -- </option>
       {% endif %}
       {% for occu in site.data.rdl-occupancy %}
-        <option{% if value == occu %} selected="selected"{% endif %} value={{ occu }}>{{ occu }}</option>
+        <option{% if value == occu %} selected="selected"{% endif %} value="{{ occu }}">{{ occu }}</option>
       {% endfor %}
     </select>
   </div>

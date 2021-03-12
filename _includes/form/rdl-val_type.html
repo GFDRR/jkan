@@ -7,7 +7,7 @@
       <option disabled selected value> -- select an option -- </option>
     {% endif %}
     {% for val in site.data.rdl-val_type %}
-    <option{% if value == val %} selected="selected"{% endif %} value={{ val }}>{{ val }}</option>
+    <option{% if value == val %} selected="selected"{% endif %} value="{{ val }}">{{ val }}</option>
     {% endfor %}
     
   </select>

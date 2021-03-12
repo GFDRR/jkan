@@ -6,7 +6,7 @@
         <option disabled selected value> -- select an option if needed -- </option>
       {% endif %}
       {% for freq in site.data.rdl-frequency_type %}
-        <option{% if value == freq %} selected="selected"{% endif %} value={{ freq }}>{{ freq }}</option>
+        <option{% if value == freq %} selected="selected"{% endif %} value="{{ freq }}">{{ freq }}</option>
       {% endfor %}
     </select>
   </div>

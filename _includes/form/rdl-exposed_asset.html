@@ -6,7 +6,7 @@
         <option disabled selected value> -- select an option -- </option>
       {% endif %}
       {% for asset in site.data.rdl-exposed_asset %}
-        <option{% if value == asset %} selected="selected"{% endif %}  value={{ asset }}>{{ asset }}</option>
+        <option{% if value == asset %} selected="selected"{% endif %}  value="{{ asset }}">{{ asset }}</option>
       {% endfor %}
     </select>
   </div>

@@ -6,7 +6,7 @@
         <option disabled selected value> -- select an option -- </option>
       {% endif %}
       {% for imt in site.data.rdl-IMT %}
-        <option{% if value == imt[0] %} selected="selected"{% endif %} value={{ imt[0] }}>{{ imt[1] }}</option>
+        <option{% if value == imt[0] %} selected="selected"{% endif %} value="{{ imt[0] }}">{{ imt[1] }}</option>
       {% endfor %}
     </select>
   </div>
