@@ -18,7 +18,10 @@ abstract: >-
   Earthquake-induced landslide hazard measured as probability of occurrance for
   seven return periods: RP10, RP50, RP100, RP250, RP500 , RP1000 and RP2500
   years. 
-notes: ''
+notes: >-
+  Earthquake-induced landslide hazard measured as probability of occurrance for
+  seven return periods: RP10, RP50, RP100, RP250, RP500 , RP1000 and RP2500
+  years. 
 source: AF-MHRA
 model_date: '2016'
 version: '1'
@@ -41,7 +44,7 @@ maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
 hazard_type:
   - LS
-  - EQ
+  - LS
 analysis_type: Probabilistic
 geo_area: ''
 time_start: ''
@@ -54,7 +57,7 @@ frequency_type:
 return_period: '10, 50, 100, 250, 500, 1000, 2500 years'
 occurrence_time_start: '1950'
 occurrence_time_end: '2001'
-occurrence_time_span: '50'
+occurrence_time_span: 50 years
 trigger_process_type:
   - QGM
 description: ''
