@@ -15,7 +15,8 @@ geo_coverage: MDG
 resources:
   - name: Madagascar all RPs Geopackage
     url: 'https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/mdg-loss-mh.gpkg'
-    format: gpkg
+    format: 
+      - gpkg
   - name: Madagascar all RPs Shapefile
     url: 'https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/mdg-loss-mh.zip'
     format: shp
