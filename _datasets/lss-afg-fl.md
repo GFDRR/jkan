@@ -1,10 +1,10 @@
 ---
 schema: rdl
-title: 'Afghanistan Flood risk scenarios, baseline and 2050 (population and asset)'
+title: 'Afghanistan Flood risk scenarios for population and asset (baseline and 2050)'
 organization: GFDRR
 filename: lss-afg-fl.md
 resources:
-  - name: 'Afghanistan AAL and all RPs, baseline and 2050 (population and asset)'
+  - name: 'Afghanistan AAL and all RPs, (baseline and 2050)'
     aggregation_type: Administrative boundaries
     format:
       - gpkg
