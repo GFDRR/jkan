@@ -52,10 +52,13 @@ layout: default
           {% if resource.description %}<div class="resource-description">{{ resource.description }}</div>{% endif %}
           <table class="table table-striped table-condensed resource-details" data-hook="resource-details">
             {% assign rsrc_desc = resource_fields | where_exp:"item", "item.field_name == 'resource_description'" | first %}
+            {% if resource[rsrc_desc.field_name] %}
             <tr>
-              <th>{{}} {{rsrc_desc.label}}</th>
+              <th>{{rsrc_desc.label}}</th>
               <td>{{ resource[rsrc_desc.field_name] }}</td>
             </tr>
+            {% endif %}
+            
             {% for field in resource_fields %}
               {% unless resource_system_fields contains field.field_name %}
                 {% assign value = resource[field[field_name]] %}
