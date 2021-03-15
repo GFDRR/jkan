@@ -5,7 +5,7 @@ layout: default
 {% assign schema = page.schema | default: site.schema %}
 {% assign rdl_fields = site.data.schemas[schema].rdl_fields %}
 {% assign dataset_fields = site.data.schemas[schema].dataset_fields %}
-{% assign dataset_system_fields = "title|organization|notes|license|filename" | split: "|" %}
+{% assign dataset_system_fields = "title|organization|notes|license|filename|category" | split: "|" %}
 {% assign resource_fields = site.data.schemas[schema].resource_fields %}
 {% assign resource_system_fields = "name|url|format|description|resource_description" | split: "|" %}
 
@@ -86,9 +86,7 @@ layout: default
         </li>
       </ul>
 
-      <h2>RDL Schema Info</h2>
-      <table class="table table-striped dataset-details">
-        {% if page.category contains 'Hazard' %}
+      {% if page.category contains 'Hazard' %}
           {% assign rdl_fields = site.data.schemas[schema].rdl_hazard %}
         {% elsif page.category contains 'Exposure' %}
           {% assign rdl_fields = site.data.schemas[schema].rdl_exposure %}
@@ -96,7 +94,9 @@ layout: default
           {% assign rdl_fields = site.data.schemas[schema].rdl_vulnerability %}
         {% elsif page.category contains 'Loss' %}
           {% assign rdl_fields = site.data.schemas[schema].rdl_loss %}
-        {% endif %}
+      {% endif %}
+      <h2>RDL {{page.category}} Info</h2>
+      <table class="table table-striped dataset-details">
         
         {% for field in rdl_fields %}
           {% assign value = page[field[field_name]] %}
