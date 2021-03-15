@@ -1,25 +1,27 @@
 ---
 schema: rdl
-title: Afghanistan Landslide hazard susceptibility
+title: Afghanistan Earthquake ground shaking hazard scenarios
 organization: GFDRR
+filename: hzd-afg-eq
 resources:
-  - name: Afghanistan Landslide hazard susceptibility
+  - name: Afghanistan Earthquake ground shaking hazard scenarios
     aggregation_type: Grid
-    format: geotiff
-    h-res: '30 m'
+    format:
+      - geotiff
+    h-res: 1 km
     epsg: 32642 (WGS84 UTM42N)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/hzd-afg-ls-eq.zip
+      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/hzd-afg-eq.zip
 category:
   - Hazard
 abstract: >-
-  Susceptibility map for bedrock landslides in slow evolution (S1),  bedrock
-  landslides in rapid evolution (S2) and cover material landslides in rapid
-  evolution (S3) nationwide, including: rotational slides, translational slides,
-  earth flows and lateral spreading.
+  Earthquake hazard map representing Peak ground acceleration (PGA) measured in
+  units of g (9.81m/s2) for seven return period scenarios: RP10, RP50, RP100,
+  RP250, RP500 , RP1000 and RP2500 years. 
 notes: >-
-  Susceptibility values are represented according the following scale: 0=Null;
-  1-3=Low; 4-5=Moderate; 6=High; 7-9=Very High
+  Earthquake hazard map representing Peak ground acceleration (PGA) measured in
+  units of g (9.81m/s2) for seven return period scenarios: RP10, RP50, RP100,
+  RP250, RP500 , RP1000 and RP2500 years. 
 source: AF-MHRA
 model_date: '2016'
 version: '1'
@@ -41,7 +43,7 @@ license: 'https://creativecommons.org/licenses/by-sa/4.0/'
 maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
 hazard_type:
-  - LS
+  - EQ
 analysis_type: Probabilistic
 geo_area: ''
 time_start: ''
@@ -50,17 +52,15 @@ time_span: ''
 time_year: ''
 calculation_method: Simulated
 frequency_type:
-  - N/A
-return_period: ''
-occurrence_time_start: ''
-occurrence_time_end: ''
-occurrence_time_span: ''
-trigger_hazard_type:
-  - EQ
+  - Return Period
+return_period: '10, 50, 100, 250, 500, 1000, 2500 years'
+occurrence_time_start: '800'
+occurrence_time_end: '2001'
+occurrence_time_span: '1200'
 description: ''
 process_type:
-  - LSL
+  - QGM
 imt:
-  - I_DF_m3/s2
+  - PGA_m/s2
 data_uncertainty: ''
 ---
