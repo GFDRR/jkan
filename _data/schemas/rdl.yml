@@ -99,6 +99,9 @@ resource_fields:
     required: true
     datajson: distribution.format
     form_template: form/rdl-data_format.html
+  - field_name: resource_description
+    label: Description
+    form_template: form/textarea.html
   - field_name: h-res
     label: Horizontal resolution
   - field_name: epsg
