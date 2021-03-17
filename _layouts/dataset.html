@@ -99,6 +99,10 @@ layout: default
       <table class="table table-striped dataset-details">
         
         {% for field in rdl_fields %}
+          {% if field.field_name contains "occurrence_time" %}
+            {% continue %}
+          {% endif %}
+
           {% assign value = page[field[field_name]] %}
           {% if value != "" and value != null %}
             {% if field.display_template %}
