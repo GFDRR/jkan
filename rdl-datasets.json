@@ -3,8 +3,8 @@
 [{% for dataset in site.datasets %}
   {
     "title": {{ dataset.title | jsonify }},
-    "organization": {{ dataset.organization | jsonify }}{% if dataset.notes != "" %},
-    "abstract": {{ dataset.abstract | jsonify }}{% endif %}{% if dataset.abstract != "" %},
+    "organization": {{ dataset.organization | jsonify }}{% if dataset.abstract != "" %},
+    "abstract": {{ dataset.abstract | jsonify }}{% endif %}{% if dataset.category != "" %},
     "category": {{ dataset.category | jsonify }}{% endif %}{% if site.data.licenses[dataset.license] != null %},
     "license_display": {{ site.data.licenses[dataset.license] | jsonify }}{% endif %}{% if site.data.licenses[dataset.license] != null %},
     "license": {{ dataset.license | jsonify }}{% endif %},
