@@ -1,26 +1,28 @@
 ---
 schema: rdl
-title: Madagascar Flood (tropical cyclones) loss scenarios
+title: Madagascar Multi-Hazard loss scenarios
 organization: GFDRR
-filename: lss-mdg-fl-tcy
+filename: lss-mdg-mh-epc
 resources:
-  - name: Madagascar flood and wind (tropical cyclone) loss scenarios
+  - name: Madagascar multi-hazard loss exceedence-probability curves
     aggregation_type: Administrative boundaries
     format:
-      - gpkg
+      - csv
     resource_description: >-
-      Dataset includes aggregated AAL as well as individual RP loss estimates
-      for ADM1 and ADM2 levels.
+      Dataset includes AAL as well as individual RP loss estimates triggered by
+      all assessed hazards combined over different exposure categories at the
+      ADM1 and ADM2 levels.
     h-res: ''
     epsg: 4326 (WGS84)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/lss-mdg-tcy.gpkg
+      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/lss-mdg-mh-epc.zip
 category:
   - Loss
 abstract: >-
-  Direct loss simulated on exposed building asset measured as Average Annual
-  Losses (AAL) and six Return Period scenarios for pluvial flood triggered by
-  tropical cyclones.
+  Exceedence Probability Curves representing direct loss simulated on exposed
+  building asset measured as Average Annual Losses (AAL) and six Return Period
+  scenarios for multiple hazards (earthquake, pluvial flood, storm surge and
+  strong wind).
 notes: >-
   This data set was produced with financial support from the European Union in
   the framework of the ACP-EU Natural Disaster Risk Reduction Program, managed
@@ -47,9 +49,9 @@ license: 'https://creativecommons.org/licenses/by-sa/4.0/'
 maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
 hazard_type:
-  - FL
+  - MH
 process_type:
-  - FPF
+  - TCY
 time_start: ''
 time_end: ''
 time_year: ''
@@ -66,7 +68,8 @@ frequency_type:
 return_period: '25, 50, 100, 250, 500, 1000 years'
 metric: Annual Average Losses
 val_unit: USD
-hazard_link: 'http://jkan.riskdatalibrary.org/datasets/hzd-mdg-fl-tcy/'
+hazard_link: >-
+  http://jkan.riskdatalibrary.org/datasets/?category=hazard&geo_coverage=madagascar
 exposure_link: 'http://jkan.riskdatalibrary.org/datasets/exp-mdg-all/'
 vulnerability_link: ''
 ---
