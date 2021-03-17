@@ -2,12 +2,12 @@
 schema: rdl
 title: Madagascar Multi-Hazard loss scenarios
 organization: GFDRR
-filename: lss-mdg-mh-epc
+filename: lss-mdg-mh
 resources:
-  - name: Madagascar multi-hazard loss exceedence-probability curves
+  - name: Madagascar multi-hazard loss scenarios
     aggregation_type: Administrative boundaries
     format:
-      - csv
+      - gpkg
     resource_description: >-
       Dataset includes AAL as well as individual RP loss estimates triggered by
       all assessed hazards combined over different exposure categories at the
@@ -15,18 +15,26 @@ resources:
     h-res: ''
     epsg: 4326 (WGS84)
     url: >-
+      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/lss-mdg-mh.gpkg
+  - name: Madagascar multi-hazard loss exceedence-probability curves
+    aggregation_type: Administrative boundaries
+    format:
+      - csv
+    resource_description: >-
+      Exceedence Probability Curves for disaggregated exposure categories
+      showing simulated AAL as well as individual RP loss estimates triggered by
+      all assessed hazards combined at the ADM1 and ADM2 levels.
+    h-res: ''
+    epsg: ''
+    url: >-
       https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/lss-mdg-mh-epc.zip
 category:
   - Loss
 abstract: >-
-  Exceedence Probability Curves representing direct loss simulated on exposed
-  building asset measured as Average Annual Losses (AAL) and six Return Period
-  scenarios for multiple hazards (earthquake, pluvial flood, storm surge and
-  strong wind).
-notes: >-
-  This data set was produced with financial support from the European Union in
-  the framework of the ACP-EU Natural Disaster Risk Reduction Program, managed
-  by the Global Facility for Disaster Reduction and Recovery (GFDRR).
+  Direct loss simulated on exposed building asset measured as Average Annual
+  Losses (AAL) and six Return Period scenarios for multiple hazards (earthquake,
+  pluvial flood, storm surge and strong wind).
+notes: " \t\r\n\r\nThis data set was produced with financial support from the European Union in the framework of the ACP-EU Natural Disaster Risk Reduction Program, managed by the Global Facility for Disaster Reduction and Recovery (GFDRR)."
 source: SWIO-RAFI
 model_date: '2016'
 version: '1'
