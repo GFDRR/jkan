@@ -1,6 +1,6 @@
 ---
 schema: rdl
-title: Madagascar Flood (tropical cyclones) loss scenarios
+title: Madagascar Flood and Wind (tropical cyclones) loss scenarios
 organization: GFDRR
 filename: lss-mdg-fl-tcy
 resources:
