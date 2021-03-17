@@ -18,7 +18,9 @@ category:
 abstract: >-
   Pluvial flood hazard triggered by extra-tropical cyclones over Madagascar
   measured as the maximum water depth for six return periods.
-notes: ''
+notes: >-
+  Pluvial flood hazard triggered by extra-tropical cyclones over Madagascar
+  measured as the maximum water depth for six return periods.
 source: SWIO-RAFI
 model_date: '2016'
 version: '1'
@@ -38,6 +40,7 @@ maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
 hazard_type:
   - FL
+  - FL
 analysis_type: Probabilistic
 geo_area: ''
 time_start: ''
@@ -47,7 +50,7 @@ time_year: ''
 calculation_method: Simulated
 frequency_type:
   - Return Period
-return_period: '10, 25, 50, 100, 250, 500, 1000 years'
+return_period: '25, 50, 100, 250, 500, 1000 years'
 occurrence_time_start: ''
 occurrence_time_end: ''
 occurrence_time_span: ''
