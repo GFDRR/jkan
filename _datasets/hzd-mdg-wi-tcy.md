@@ -1,6 +1,6 @@
 ---
 schema: rdl
-title: Madagascar Tropica cyclone windfield scenarios
+title: Madagascar Tropical cyclone windfield scenarios
 organization: GFDRR
 filename: hzd-mdg-wi-tcy
 resources:
@@ -20,9 +20,9 @@ abstract: >-
   maximum one-minute sustained wind speed at 10 meters above the ground surface
   at the exposure location,
 notes: >-
-  This data set was produced with financial support from the European Union in
-  the framework of the ACP-EU Natural Disaster Risk Reduction Program, managed
-  by the Global Facility for Disaster Reduction and Recovery (GFDRR).
+  Strong Wind hazard caused by tropical cyclones over Madagascar measured as the
+  maximum one-minute sustained wind speed at 10 meters above the ground surface
+  at the exposure location,
 source: SWIO-RAFI
 model_date: '2016'
 version: '1'
@@ -45,6 +45,7 @@ license: 'https://creativecommons.org/licenses/by-sa/4.0/'
 maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
 hazard_type:
+  - WI
   - WI
 analysis_type: Probabilistic
 geo_area: ''
