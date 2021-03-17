@@ -1,10 +1,10 @@
 ---
 schema: rdl
-title: Madagascar Flood and Wind (tropical cyclones) loss scenarios
+title: Madagascar Flood (tropical cyclones) loss scenarios
 organization: GFDRR
 filename: lss-mdg-fl-tcy
 resources:
-  - name: Madagascar flood (tropical cyclone) loss scenarios
+  - name: Madagascar flood and wind (tropical cyclone) loss scenarios
     aggregation_type: Administrative boundaries
     format:
       - gpkg
@@ -19,7 +19,8 @@ category:
   - Loss
 abstract: >-
   Direct loss simulated on exposed building asset measured as Average Annual
-  Losses (AAL) and six Return Period scenarios.
+  Losses (AAL) and six Return Period scenarios for pluvial flood triggered by
+  tropical cyclones.
 notes: >-
   This data set was produced with financial support from the European Union in
   the framework of the ACP-EU Natural Disaster Risk Reduction Program, managed
