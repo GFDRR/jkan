@@ -58,8 +58,7 @@ maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
 hazard_type:
   - MH
-process_type:
-  - TCY
+process_type: ''
 time_start: ''
 time_end: ''
 time_year: ''
