@@ -36,9 +36,9 @@ project: >-
   (SWIO-RAFI)
 biblio_title: >-
   World Bank (2017) - Southwest Indian Ocean Risk Assessment and Financing
-  Initiative: Summary Report and Risk Profiles
+  Initiative: Final report on risk profiles
 biblio_url: >-
-  https://www.gfdrr.org/en/publication/southwest-indian-ocean-risk-assessment-and-financing-initiative-summary-report-and-risk
+  https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/bibliography/AIR+(2016)+-+SWIO-RAFI+Component+4+-+Risk+profiles.pdf
 geo_coverage:
   - MDG
 license: 'https://creativecommons.org/licenses/by-sa/4.0/'
