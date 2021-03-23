@@ -1,23 +1,21 @@
 ---
 schema: rdl
-title: Afghanistan population and GDP
+title: Afghanistan infrastructures
 organization: GFDRR
-filename: exp-afg-indicators
+filename: exp-afg-infrastructures
 resources:
-  - name: Afghanistan population and GDP
+  - name: Afghanistan infrastructures
     aggregation_type: Grid
     format:
       - geotiff
-    resource_description: Population cound and GDP for three sectors in USD.
+    resource_description: ''
     h-res: 90 m
     epsg: 32642 (WGS84 UTM42N)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/exposure/exp-afg-indicators.zip
+      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/exposure/exp-afg-infrastructures.zip
 category:
   - Exposure
-abstract: >-
-  Population count and GDP value in USD for three macrosectors (Industry,
-  Agriculture and Services) in Afghanistan.
+abstract: "Location, count and USD value (when available) for the following infrastructures in Afghanistan:\r\nairports, bridges, dams, health centers, hospitals, power plants, roads, schools and universities."
 notes: ''
 source: AF-MHRA
 model_date: '2016'
@@ -40,15 +38,15 @@ license: 'https://creativecommons.org/licenses/by-sa/4.0/'
 maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
 exposure_category:
-  - Indicators
+  - Infrastructures
 occupancy:
-  - Mixed
+  - Infrastructure
 occupancy_time: ''
 taxonomy_source: ''
 taxonomy_code: ''
 event_time_year: ''
 add_attributes: ''
 val_type:
-  - Product
+  - Structure
 val_unit: USD
 ---
