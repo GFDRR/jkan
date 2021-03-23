@@ -1,10 +1,10 @@
 ---
 schema: rdl
-title: Afghanistan buildings exposure
+title: Afghanistan infrastructures
 organization: GFDRR
-filename: exp-afg-buildings
+filename: exp-afg-infrastructures
 resources:
-  - name: Afghanistan buildings exposure
+  - name: Afghanistan infrastructures
     aggregation_type: Grid
     format:
       - geotiff
@@ -12,13 +12,10 @@ resources:
     h-res: 90 m
     epsg: 32642 (WGS84 UTM42N)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/exposure/exp-afg-buildings.zip
+      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/exposure/exp-afg-infrastructures.zip
 category:
   - Exposure
-abstract: >-
-  Exposure of buildings in Afghanistan for different occupancy types: urban and
-  rural structures, residential, non-residential, and industrial area. Values
-  expressed as replacement cost (USD), area (m2), or number of elements (count).
+abstract: "Location, count and USD value (when available) for the following infrastructures in Afghanistan:\r\nairports, bridges, dams, health centers, hospitals, power plants, roads, schools and universities."
 notes: ''
 source: AF-MHRA
 model_date: '2016'
@@ -41,9 +38,9 @@ license: 'https://creativecommons.org/licenses/by-sa/4.0/'
 maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
 exposure_category:
-  - Buildings
+  - Infrastructures
 occupancy:
-  - Mixed
+  - Infrastructure
 occupancy_time: ''
 taxonomy_source: ''
 taxonomy_code: ''

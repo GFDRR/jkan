@@ -57,7 +57,7 @@ maintainer_email: contact@riskdatalibrary.org
 exposure_category:
   - Buildings
 occupancy:
-  - Residential
+  - Residential, Commerce, Industry, Infrastructure, Public
 occupancy_time: ''
 taxonomy_source: AIR worldwide
 taxonomy_code: ''

@@ -1,10 +1,10 @@
 ---
 schema: rdl
-title: Afghanistan buildings exposure
+title: Afghanistan agriculture
 organization: GFDRR
-filename: exp-afg-buildings
+filename: exp-afg-agriculture
 resources:
-  - name: Afghanistan buildings exposure
+  - name: Afghanistan agriculture
     aggregation_type: Grid
     format:
       - geotiff
@@ -12,13 +12,12 @@ resources:
     h-res: 90 m
     epsg: 32642 (WGS84 UTM42N)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/exposure/exp-afg-buildings.zip
+      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/exposure/exp-afg-infrastructures.zip
 category:
   - Exposure
 abstract: >-
-  Exposure of buildings in Afghanistan for different occupancy types: urban and
-  rural structures, residential, non-residential, and industrial area. Values
-  expressed as replacement cost (USD), area (m2), or number of elements (count).
+  Location, area and USD value of rainfed and irrigated agricultural crops in
+  Afghanistan.
 notes: ''
 source: AF-MHRA
 model_date: '2016'
@@ -41,15 +40,15 @@ license: 'https://creativecommons.org/licenses/by-sa/4.0/'
 maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
 exposure_category:
-  - Buildings
+  - 'Crops, livestock and forestry'
 occupancy:
-  - Mixed
+  - Crop
 occupancy_time: ''
 taxonomy_source: ''
 taxonomy_code: ''
 event_time_year: ''
 add_attributes: ''
 val_type:
-  - Structure
+  - Content
 val_unit: USD
 ---
