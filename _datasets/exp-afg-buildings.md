@@ -1,24 +1,23 @@
 ---
 schema: rdl
-title: Afghanistan buildings exposure
+title: Afghanistan population and GDP
 organization: GFDRR
-filename: exp-afg-buildings
+filename: exp-afg-indicators
 resources:
-  - name: Afghanistan buildings exposure
+  - name: Afghanistan population and GDP
     aggregation_type: Grid
     format:
       - geotiff
-    resource_description: ''
+    resource_description: Population cound and GDP for three sectors in USD.
     h-res: 90 m
     epsg: 32642 (WGS84 UTM42N)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/exposure/exp-afg-buildings.zip
+      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/exposure/exp-afg-indicators.zip
 category:
   - Exposure
 abstract: >-
-  Exposure of buildings in Afghanistan for different occupancy types: urban and
-  rural structures, residential, non-residential, and industrial area. Values
-  expressed as replacement cost (USD), area (m2), or number of elements (count).
+  Population count and GDP value in USD for three macrosectors (Industry,
+  Agriculture and Services) in Afghanistan.
 notes: ''
 source: AF-MHRA
 model_date: '2016'
@@ -41,7 +40,7 @@ license: 'https://creativecommons.org/licenses/by-sa/4.0/'
 maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
 exposure_category:
-  - Buildings
+  - Indicators
 occupancy:
   - Mixed
 occupancy_time: ''
@@ -50,6 +49,6 @@ taxonomy_code: ''
 event_time_year: ''
 add_attributes: ''
 val_type:
-  - Structure
+  - Product
 val_unit: USD
 ---
