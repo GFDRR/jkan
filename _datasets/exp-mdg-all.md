@@ -1,6 +1,6 @@
 ---
 schema: rdl
-title: Madagascar Exposure
+title: Madagascar buildings and infrastructure exposure
 organization: GFDRR
 filename: exp-mdg-all
 resources:
