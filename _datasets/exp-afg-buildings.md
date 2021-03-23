@@ -1,10 +1,10 @@
 ---
 schema: rdl
-title: Afghanistan infrastructures
+title: Afghanistan agriculture
 organization: GFDRR
-filename: exp-afg-infrastructures
+filename: exp-afg-agriculture
 resources:
-  - name: Afghanistan infrastructures
+  - name: Afghanistan agriculture
     aggregation_type: Grid
     format:
       - geotiff
@@ -15,7 +15,9 @@ resources:
       https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/exposure/exp-afg-infrastructures.zip
 category:
   - Exposure
-abstract: "Location, count and USD value (when available) for the following infrastructures in Afghanistan:\r\nairports, bridges, dams, health centers, hospitals, power plants, roads, schools and universities."
+abstract: >-
+  Location, area and USD value of rainfed and irrigated agricultural crops in
+  Afghanistan.
 notes: ''
 source: AF-MHRA
 model_date: '2016'
@@ -38,15 +40,15 @@ license: 'https://creativecommons.org/licenses/by-sa/4.0/'
 maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
 exposure_category:
-  - Infrastructures
+  - 'Crops, livestock and forestry'
 occupancy:
-  - Infrastructure
+  - Crop
 occupancy_time: ''
 taxonomy_source: ''
 taxonomy_code: ''
 event_time_year: ''
 add_attributes: ''
 val_type:
-  - Structure
+  - Content
 val_unit: USD
 ---
