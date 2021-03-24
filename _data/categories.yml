@@ -1,18 +1,18 @@
 # RDL categories
 - name: Hazard
-  logo: /img/categories/icon-wildfire.svg
+  logo: /img/categories/haz.png
   featured: true
 
 - name: Exposure
-  logo: /img/categories/real-estate-land-records.svg
+  logo: /img/categories/exp.png
   featured: true
 
 - name: Vulnerability
-  logo: /img/categories/icon-earthquake.svg
+  logo: /img/categories/vuln.png
   featured: true
 
 - name: Loss
-  logo: /img/categories/icon-agrisk.svg
+  logo: /img/categories/loss.png
   featured: true
 
 
