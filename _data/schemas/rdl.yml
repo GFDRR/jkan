@@ -179,7 +179,7 @@ rdl_hazard:
     label: Occurrence time end
   - field_name: occurrence_time_span
     label: Occurrence time span
-  - field_name: hazard_type
+  - field_name: trigger_hazard_type
     label: Trigger hazard type
     form_template: form/rdl-hazard_type.html
     display_template: display/hazard_type.html
