@@ -34,8 +34,9 @@ resources:
 category:
   - Exposure
 abstract: >-
-  Exposure data representing settlments, land use, buildings, health facilities
-  and roads from a combination of sources: Open Street Map, OCHA and World Bank.
+  Exposure data representing location and type of settlments, land use,
+  buildings, health facilities and roads from a combination of sources: Open
+  Street Map, OCHA and World Bank.
 notes: ''
 source: OSM
 model_date: '2018'
