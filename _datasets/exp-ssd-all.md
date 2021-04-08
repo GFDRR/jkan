@@ -60,9 +60,7 @@ geo_coverage:
 license: 'https://creativecommons.org/licenses/by/4.0/'
 maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
-exposure_category:
-  - Buildings
-  - Infrastructures
+exposure_category: Buildings, Infrastructures
 occupancy:
   - Mixed
 occupancy_time: ''
