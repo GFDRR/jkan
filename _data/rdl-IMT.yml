@@ -1,4 +1,5 @@
 PGA_g: Peak ground acceleration in g
+PGA_gal: Peak ground acceleration in Gal (1 Gal equal to 0.01 m/s2)
 PGA_m/s2: Peak ground acceleration in m/s2 (meters per second squared)
 PGV_m/s: Peak ground velocity in m/s
 AvgSa_m/s2: Average spectral acceleration
