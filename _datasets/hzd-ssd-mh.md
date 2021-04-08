@@ -9,8 +9,8 @@ resources:
     format:
       - gpkg
     resource_description: >-
-  Multi-Hazard Index calculated at ADM1 level; flood exposure is calculated for
-  all return periods and exposure categories at ADM2 level.
+  Multi-Hazard Index calculated at ADM1 level. Flood exposure is calculated
+  for all return periods and exposure categories at ADM2 level.
     h-res: ''
     epsg: 4326 (WGS84)
     url: >-
