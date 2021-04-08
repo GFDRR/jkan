@@ -47,7 +47,6 @@ maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
 hazard_type:
   - FL
-  - FL
 analysis_type: Probabilistic
 geo_area: ''
 time_start: ''
