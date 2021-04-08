@@ -8,9 +8,7 @@ resources:
     aggregation_type: Administrative boundaries
     format:
       - gpkg
-    resource_description: >-
-  Multi-Hazard Index calculated at ADM1 level. Flood exposure is calculated
-  for all return periods and exposure categories at ADM2 level.
+    resource_description: ''
     h-res: ''
     epsg: 4326 (WGS84)
     url: >-
@@ -26,14 +24,14 @@ source: SSD-MH
 model_date: '2020'
 version: ''
 purpose: >-
-  These maps have been derived on a nation-wide scale for the purpose of
-  identifying high-risk areas on the district and provincial scale, from which
-  decisions can be made on allocating efforts for more detailed site specific
-  hazard and risk analysis. Use of this information on smaller scales should be
-  applied with care. Importantly for on a local scale, it is often the case that
-  more detailed case history and hazard information is required to perform such
-  hazard and risk modelling, particularly where applied to dimension mitigation
-  structures or strategies.
+  The results of the analysis contribute to the production of knowledge for
+  disaster risk management (DRM) to support the World Bank’s operational teams
+  in their in-country engagements. Specifcally, the key fndings of this study
+  allow to rank South Sudan states in terms of natural disasters risk, and to
+  identify the most critical components for each area. The output of this
+  assessment includes a geodatabase which contains both the key primary data and
+  all the resulting maps produced by the analysis, allowing risk analysts and
+  managers to explore them in detail using GIS software.
 project: 'Disasters, conflict, and displacement: Intersectional risks in South Sudan'
 biblio_title: >-
   World Bank (2020) - Disasters, conflict, and displacement: Intersectional
