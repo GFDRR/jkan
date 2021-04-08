@@ -20,7 +20,9 @@ category:
 abstract: >-
   River flood hazard extents for South Sudan derived from FATHOM 2019 for RP 5,
   20, 100, 250 years.
-notes: ''
+notes: >-
+  River flood hazard extents for South Sudan derived from FATHOM 2019 for RP 5,
+  20, 100, 250 years.
 source: FATHOM
 model_date: '2019'
 version: ''
@@ -31,11 +33,12 @@ biblio_title: >-
   risks in South Sudan
 biblio_url: 'https://www.preventionweb.net/publications/view/73878'
 geo_coverage:
-  - SDN
+  - SSD
 license: 'https://creativecommons.org/licenses/by/4.0/'
 maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
 hazard_type:
+  - FL
   - FL
 analysis_type: Probabilistic
 geo_area: ''
@@ -54,6 +57,6 @@ description: ''
 process_type:
   - FFF
 imt:
-  - fl_wd_m
+  - fl_we
 data_uncertainty: ''
 ---
