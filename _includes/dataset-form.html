@@ -1,7 +1,7 @@
 {% assign schema = include.dataset.schema | default: site.schema %}
 {% assign dataset_fields = site.data.schemas[schema].dataset_fields %}
 {% assign resource_fields = site.data.schemas[schema].resource_fields %}
-{% assign dataset_system_fields = "title|organization|notes|filename" | split: "|" %}
+{% assign dataset_system_fields = "title|organization|filename" | split: "|" %}
 {% assign datasets = site.collections | where:"label","datasets" | first %}
 
 <form data-component="form dataset-form"
@@ -63,13 +63,6 @@
         {% endif %}
         {% include {{ template }} field=field field_name=field_name value=value required=required%}
       {% endunless %}
-
-      {% if field.field_name == "abstract" %}
-        {% assign note_field = dataset_fields | where: "field_name", "notes" % | first}
-        {% assign value = include.dataset[note_field.field_name] %}
-        {% assign required=false %}
-        {% include {{ template }} field=note_field field_name=note_field.field_name value=value required=required %}
-      {% endif %}
     {% endfor %}
 
   </fieldset>

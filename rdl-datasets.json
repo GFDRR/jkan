@@ -4,7 +4,8 @@
   {
     "title": {{ dataset.title | jsonify }},
     "organization": {{ dataset.organization | jsonify }}{% if dataset.abstract != "" %},
-    "abstract": {{ dataset.abstract | jsonify }}{% endif %}{% if dataset.category != "" %},
+    "abstract": {{ dataset.abstract | jsonify }}{% endif %}{% if dataset.notes != "" %},
+    "notes": {{ dataset.notes | jsonify }}{% endif %}{% if dataset.category != "" %},
     "category": {{ dataset.category | jsonify }}{% endif %}{% if site.data.licenses[dataset.license] != null %},
     "license_display": {{ site.data.licenses[dataset.license] | jsonify }}{% endif %}{% if site.data.licenses[dataset.license] != null %},
     "license": {{ dataset.license | jsonify }}{% endif %},
