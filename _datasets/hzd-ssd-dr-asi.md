@@ -1,6 +1,6 @@
 ---
 schema: rdl
-title: South Sudan drought hazard
+title: South Sudan Drought hazard
 organization: GFDRR
 filename: hzd-ssd-fl
 resources:
