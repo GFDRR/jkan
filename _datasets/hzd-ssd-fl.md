@@ -20,9 +20,7 @@ category:
 abstract: >-
   River flood hazard extents for South Sudan derived from FATHOM 2019 for RP 5,
   20, 100, 250 years.
-notes: >-
-  River flood hazard extents for South Sudan derived from FATHOM 2019 for RP 5,
-  20, 100, 250 years.
+notes: ''
 source: FATHOM
 model_date: '2019'
 version: ''
