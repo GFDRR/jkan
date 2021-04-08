@@ -62,6 +62,7 @@ maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
 exposure_category:
   - Buildings
+  - Infrastructures
 occupancy:
   - Mixed
 occupancy_time: ''
