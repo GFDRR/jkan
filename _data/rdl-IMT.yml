@@ -12,8 +12,9 @@ EMS_-: European macroseismic scale
 MMI_-: Modified Mercalli Intensity
 CAV_m/s: Cumulative absolute velocity
 D_B_s: Bracketed duration
-fl_wd_m: Flood water depth
-fl_wv_m/s: Flood flow velocity
+fl_we: Flood water extent
+fl_wd_m: Flood water depth (m)
+fl_wv_m/s: Flood flow velocity (m/s)
 v_ect(3s)_km/h: 3-sec at 10m sustained wind speed (kph)
 v_ect(1m)_km/h: 1-min at 10m sustained wind speed (kph)
 v_etc(10m)_km/h: 10-min sustained wind speed (kph)
