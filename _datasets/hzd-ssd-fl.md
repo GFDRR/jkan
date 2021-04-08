@@ -41,7 +41,7 @@ biblio_title: >-
   risks in South Sudan
 biblio_url: 'https://www.preventionweb.net/publications/view/73878'
 geo_coverage:
-  - SDN
+  - SSD
 license: 'https://creativecommons.org/licenses/by/4.0/'
 maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
