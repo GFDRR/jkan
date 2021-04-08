@@ -4,7 +4,7 @@ title: South Sudan population
 organization: GFDRR
 filename: exp-ssd-pop
 resources:
-  - name: South Sudan population
+  - name: South Sudan population map
     aggregation_type: Grid
     format:
       - geotiff
@@ -13,6 +13,15 @@ resources:
     epsg: 4326 (WGS84)
     url: >-
       https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/exposure/exp-ssd-pop-landscan2018.zip
+  - name: South Sudan population statistics
+    aggregation_type: Administrative units
+    format:
+      - Excel sheet
+    resource_description: Demographic statistics for South Sudan from National Bureau of Statistics (NBS), IPC and ICIWG
+    h-res: ''
+    epsg: ''
+    url: >-
+      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/exposure/exp-ssd-pop_stats.zip
 category:
   - Exposure
 abstract: >-
