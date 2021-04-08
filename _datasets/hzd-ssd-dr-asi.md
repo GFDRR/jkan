@@ -1,10 +1,10 @@
 ---
 schema: rdl
-title: South Sudan Flood hazard scenarios
+title: South Sudan drought hazard
 organization: GFDRR
 filename: hzd-ssd-fl
 resources:
-  - name: South Sudan flood hazard extents
+  - name: South Sudan agricultural drought
     aggregation_type: Footprints
     format:
       - gpkg
@@ -43,7 +43,7 @@ license: 'https://creativecommons.org/licenses/by/4.0/'
 maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
 hazard_type:
-  - DTA
+  - DR
 analysis_type: Probabilistic
 geo_area: ''
 time_start: ''
@@ -58,7 +58,7 @@ occurrence_time_end: '2018'
 occurrence_time_span: '30 years'
 description: ''
 process_type:
-  - HDR
+  - DTA
 imt:
   - ASI
 data_uncertainty: ''
