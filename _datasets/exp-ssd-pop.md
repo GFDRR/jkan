@@ -1,27 +1,27 @@
 ---
 schema: rdl
-title: South Sudan Drought hazard
+title: South Sudan population
 organization: GFDRR
-filename: hzd-ssd-fl
+filename: exp-ssd-pop
 resources:
-  - name: South Sudan agricultural drought
-    aggregation_type: Footprints
+  - name: South Sudan population
+    aggregation_type: Grid
     format:
-      - gpkg
-    resource_description: >-
-      Agricultural drought hazard derived from FAO-GIEWS ASI (30 years)
-    h-res: ''
+      - geotiff
+    resource_description: Total population of South Sudan for year 2018 as 1 km grid from LandScan
+    h-res: 1 km
     epsg: 4326 (WGS84)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/hzd-ssd-dr-asi.gpkg
+      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/exposure/exp-ssd-pop-landscan2018.zip
 category:
-  - Hazard
+  - Exposure
 abstract: >-
-  Drought hazard for South Sudan measured as Agricultural Stress Index (ASI)
-  over a period of 30 years.
+  Total population of South Sudan as 1km grid for year 2018 from Landscan and
+  demographic statistics at the county level from the Inter Cluster Information
+  Management Working Group (ICIWG) and NBS for year 2019.
 notes: ''
-source: FAO-GIEWS
-model_date: '2019'
+source: Landscan
+model_date: '2018'
 version: ''
 purpose: >-
   The results of the analysis contribute to the production of knowledge for
@@ -42,24 +42,16 @@ geo_coverage:
 license: 'https://creativecommons.org/licenses/by/4.0/'
 maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
-hazard_type:
-  - DR
-analysis_type: Probabilistic
-geo_area: ''
-time_start: ''
-time_end: ''
-time_span: ''
-time_year: ''
-calculation_method: Inferred
-frequency_type: ''
-return_period: ''
-occurrence_time_start: '1984'
-occurrence_time_end: '2018'
-occurrence_time_span: '30 years'
-description: ''
-process_type:
-  - DTA
-imt:
-  - ASI
-data_uncertainty: ''
+exposure_category:
+  - Indicators
+occupancy:
+  - Residential
+occupancy_time: ''
+taxonomy_source: ''
+taxonomy_code: ''
+event_time_year: '2018'
+add_attributes: ''
+val_type:
+  - Others
+val_unit: Count
 ---
