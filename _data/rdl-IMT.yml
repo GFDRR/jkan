@@ -36,6 +36,7 @@ h_tsi_m: Tsunami wave height
 Fh_tsi_m: Tsunami Horizontal Force
 h_vaf_m: Ash fall thickness
 L_vaf_kg/m2: Ash loading
-CMI_-: Crop Moisture Index
-PDSI_-: Palmer Drought Severity Index
-SPI_-: Standard Precipitation Index
+ASI: Agricultural Stress Index
+CMI: Crop Moisture Index
+PDSI: Palmer Drought Severity Index
+SPI: Standard Precipitation Index
