@@ -1,6 +1,6 @@
 ---
 schema: rdl
-title: South Sudan multi-hazard risk index
+title: South Sudan multi-hazard index
 organization: GFDRR
 filename: hzd-ssd-mh
 resources:
@@ -8,7 +8,9 @@ resources:
     aggregation_type: Administrative boundaries
     format:
       - gpkg
-    resource_description: ''
+    resource_description: >-
+      The Multi-Hazard Index is calculated at ADM1 level. Flood exposure is
+      calculated for all return periods and exposure categories at ADM2 level.
     h-res: ''
     epsg: 4326 (WGS84)
     url: >-
