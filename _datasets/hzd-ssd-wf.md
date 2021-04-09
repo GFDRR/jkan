@@ -46,7 +46,7 @@ license: 'https://creativecommons.org/licenses/by/4.0/'
 maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
 hazard_type:
-  - EQ
+  - WF
 analysis_type: Probabilistic
 geo_area: ''
 time_start: ''
