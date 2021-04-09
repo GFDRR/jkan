@@ -10,7 +10,7 @@ resources:
       - Geotiff
     resource_description: >-
       Daily maximum Wet Bulb Globe Temperature (WBGT, in °C) from VITO
-dataset (2017).
+      dataset (2017).
     h-res: '1 km'
     epsg: 4326 (WGS84)
     url: >-
