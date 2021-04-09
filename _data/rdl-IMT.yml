@@ -41,4 +41,6 @@ ASI: Agricultural Stress Index
 CMI: Crop Moisture Index
 PDSI: Palmer Drought Severity Index
 SPI: Standard Precipitation Index
+WBGT_c: Wet Bulb Globe Temperature in Celsius
+FWI: Fire Weather Index
 MHI: Multi-Hazard Index
