@@ -14,7 +14,7 @@ resources:
     h-res: '1 km'
     epsg: 4326 (WGS84)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/hzd-ssd-eh.zip
+      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/hzd-ssd-eh-wbgt_max.zip
 category:
   - Hazard
 abstract: >-
