@@ -23,8 +23,8 @@ abstract: >-
   conditions (temperature, humidity) associated with wildfires.
   Vegetation layer is applied to mask the hazard areas, but no fuel model is applied.
 notes: ''
-source: GEM
-model_date: '2016'
+source: Vitolo et al.
+model_date: '2019'
 version: ''
 purpose: >-
   The results of the analysis contribute to the production of knowledge for
@@ -39,7 +39,7 @@ project: 'Disasters, conflict, and displacement: Intersectional risks in South S
 biblio_title: >-
   World Bank (2020) - Disasters, conflict, and displacement: Intersectional
   risks in South Sudan
-biblio_url: 'https://www.preventionweb.net/publications/view/73878'
+biblio_url: 'https://doi.org/10.1038/sdata.2019.32'
 geo_coverage:
   - SSD
 license: 'https://creativecommons.org/licenses/by/4.0/'
