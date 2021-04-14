@@ -38,7 +38,7 @@ abstract: >-
   buildings, health facilities and roads from a combination of sources: Open
   Street Map, OCHA and World Bank.
 notes: ''
-source: OSM
+source: OSM, OCHA, WB
 model_date: '2018'
 version: ''
 purpose: >-

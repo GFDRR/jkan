@@ -17,7 +17,7 @@ resources:
     aggregation_type: Administrative units
     format:
       - Excel sheet
-    resource_description: Demographic statistics for South Sudan from National Bureau of Statistics (NBS), IPC and ICIWG
+    resource_description: Demographic statistics for South Sudan from National Bureau of Statistics (NBS), ICIWG and IPC
     h-res: ''
     epsg: ''
     url: >-
@@ -29,7 +29,7 @@ abstract: >-
   demographic statistics at the county level from the Inter Cluster Information
   Management Working Group (ICIWG) and NBS for year 2019.
 notes: ''
-source: Landscan
+source: Landscan, ICIWG, NBS
 model_date: '2018'
 version: ''
 purpose: >-
