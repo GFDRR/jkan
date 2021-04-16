@@ -38,7 +38,7 @@ biblio_url: >-
   https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/bibliography/AIR+(2016)+-+SWIO-RAFI+Component+4+-+Risk+profiles.pdf
 geo_coverage:
   - MDG
-license: 'https://creativecommons.org/licenses/by-sa/4.0/'
+license: 'https://creativecommons.org/licenses/by/4.0/'
 maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
 hazard_type:

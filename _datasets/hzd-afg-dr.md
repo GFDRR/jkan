@@ -39,7 +39,7 @@ biblio_title: World Bank (2018) - Afghanistan Multi-Hazard Risk Assessment
 biblio_url: 'https://www.gfdrr.org/sites/default/files/publication/Afghanistan_MHRA.pdf'
 geo_coverage:
   - AFG
-license: 'https://creativecommons.org/licenses/by-sa/4.0/'
+license: 'https://creativecommons.org/licenses/by/4.0/'
 maintainer: GFDRR
 maintainer_email: contact@riskdatalibrary.org
 hazard_type:
