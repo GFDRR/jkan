@@ -158,7 +158,7 @@ rdl_hazard:
   - field_name: time_year
     label: General reference year for the scenario
   ## Event
-  - field_name: haz_calculation_method
+  - field_name: event_calculation_method
     label: Calculation method
     required: true
     form_template: form/dropdown.html
