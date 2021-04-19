@@ -158,7 +158,7 @@ rdl_hazard:
   - field_name: time_year
     label: General reference year for the scenario
   ## Event
-  - field_name: calculation_method
+  - field_name: haz_calculation_method
     label: Calculation method
     required: true
     form_template: form/dropdown.html
@@ -321,7 +321,7 @@ rdl_vulnerability:
       - Fragility
       - Vulnerability
       - Damage-to-Loss
-  - field_name: calculation_method
+  - field_name: vuln_calculation_method
     label: The methodology used for the calculation of the function
     form_template: form/dropdown.html
     values:
@@ -389,6 +389,14 @@ rdl_loss:
     label: Process Type
     form_template: form/rdl-process_type.html
     display_template: display/process_type.html
+  - field_name: loss_calculation_method
+    label: Calculation method
+    required: true
+    form_template: form/dropdown.html
+    values:
+      - Inferred
+      - Simulated
+      - Observed
   - field_name: time_start
     label: Event start time
   - field_name: time_end
