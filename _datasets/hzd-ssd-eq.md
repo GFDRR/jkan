@@ -50,7 +50,7 @@ time_start: ''
 time_end: ''
 time_span: ''
 time_year: ''
-calculation_method: Simulated
+event_calculation_method: Simulated
 frequency_type:
   - Return Period
 return_period: '100, 475, 975, 2475 years'

@@ -43,7 +43,7 @@ time_start: '1958'
 time_end: '2001'
 time_span: '44 years'
 time_year: ''
-calculation_method: Simulated
+event_calculation_method: Simulated
 frequency_type:
   - Return Period
 return_period: '5, 10, 20, 50, 100, 250, 500, 1000 years'

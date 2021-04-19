@@ -50,7 +50,7 @@ time_start: ''
 time_end: ''
 time_span: ''
 time_year: ''
-calculation_method: Inferred
+event_calculation_method: Inferred
 frequency_type: ''
 return_period: ''
 occurrence_time_start: '1984'
