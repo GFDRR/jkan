@@ -46,7 +46,7 @@ time_start: ''
 time_end: ''
 time_span: ''
 time_year: ''
-calculation_method: Simulated
+event_calculation_method: Simulated
 frequency_type: ''
 return_period: ''
 occurrence_time_start: '1959'
