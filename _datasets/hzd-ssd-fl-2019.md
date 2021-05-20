@@ -19,7 +19,8 @@ category:
 abstract: >-
   Water extent from satellite imagery and flooded locations from events occurring Oct-Nov 2019 in South Sudan.
 notes: ''
-source: Remote sensing
+source: 'Flood Observatory'
+source_url: 'http://floodobservatory.colorado.edu/Events/4813/2019SouthSudan4813.html'
 model_date: '2019'
 version: ''
 purpose: >-
