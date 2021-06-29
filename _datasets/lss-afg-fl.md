@@ -11,7 +11,7 @@ resources:
     h-res: ''
     epsg: 32642 (WGS84 UTM42N)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/lss-afg-fl.gpkg
+      https://development-data-hub-s3-public.s3.amazonaws.com/ddhfiles/1242266/lss-afg-fl-adm.zip
   - name: 'Afghanistan AAL and all RPs, baseline'
     aggregation_type: Grid
     format:
@@ -19,7 +19,7 @@ resources:
     h-res: '90'
     epsg: 32642 (WGS84 UTM42N)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/lss-afg-fl.zip
+      https://development-data-hub-s3-public.s3.amazonaws.com/ddhfiles/1242266/lss-afg-fl.zip
 category:
   - Loss
 abstract: >-

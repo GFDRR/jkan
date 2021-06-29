@@ -11,7 +11,7 @@ resources:
     h-res: ''
     epsg: 32642 (WGS84 UTM42N)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/hzd-afg-dr.gpkg
+      https://development-data-hub-s3-public.s3.amazonaws.com/ddhfiles/1242116/hzd-afg-dr.zip
 category:
   - Hazard
 abstract: >-

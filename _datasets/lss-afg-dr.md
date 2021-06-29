@@ -11,7 +11,7 @@ resources:
     h-res: ''
     epsg: 32642 (WGS84 UTM42N)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/lss-afg-dr-dta.gpkg
+      https://development-data-hub-s3-public.s3.amazonaws.com/ddhfiles/1242246/lss-afg-dr-dta.zip
   - name: 'Afghanistan Drought risk: water per capita'
     aggregation_type: Administrative boundaries
     format:
@@ -19,7 +19,7 @@ resources:
     h-res: ''
     epsg: 32642 (WGS84 UTM42N)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/lss-afg-dr-dts.gpkg
+      https://development-data-hub-s3-public.s3.amazonaws.com/ddhfiles/1242246/lss-afg-dr-dts.zip
   - name: 'Afghanistan Drought risk: water per capita'
     aggregation_type: Administrative boundaries
     format:
@@ -27,7 +27,7 @@ resources:
     h-res: ''
     epsg: ''
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/lss-afg-dr-dta-tab.zip
+      https://development-data-hub-s3-public.s3.amazonaws.com/ddhfiles/1242246/lss-afg-dr-dts-tab.zip
 category:
   - Loss
 abstract: >-

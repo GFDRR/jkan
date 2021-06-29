@@ -11,7 +11,7 @@ resources:
     h-res: 20 m
     epsg: 32642 (WGS84 UTM42N)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/hzd-afg-ls-lav.zip
+      https://development-data-hub-s3-public.s3.amazonaws.com/ddhfiles/1242126/hzd-afg-ls-lav.zip
   - name: Afghanistan Avalanche hazard - 1kPa and 3 kPa
     aggregation_type: Footprints
     format:
@@ -19,7 +19,7 @@ resources:
     h-res: ''
     epsg: 32642 (WGS84 UTM42N)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/hzd-afg-ls-lav.gpkg
+      https://development-data-hub-s3-public.s3.amazonaws.com/ddhfiles/1242126/hzd-afg-ls-lav-kpa.zip
   - name: Afghanistan Avalanche hazard - Snow Water Equivalents
     aggregation_type: Grid
     format:
@@ -27,7 +27,7 @@ resources:
     h-res: 2 km
     epsg: 32642 (WGS84 UTM42N)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/hzd-afg-ls-lav-rp100-swe.zip
+      https://development-data-hub-s3-public.s3.amazonaws.com/ddhfiles/1242126/hzd-afg-ls-lav-rp100-swe.zip
 category:
   - Hazard
 abstract: >-

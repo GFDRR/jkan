@@ -12,7 +12,7 @@ resources:
     h-res: 90 m
     epsg: 32642 (WGS84 UTM42N)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/exposure/exp-afg-buildings.zip
+      https://development-data-hub-s3-public.s3.amazonaws.com/ddhfiles/1242221/exp-afg-buildings.zip
 category:
   - Exposure
 abstract: >-

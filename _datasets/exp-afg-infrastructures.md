@@ -12,7 +12,7 @@ resources:
     h-res: 90 m
     epsg: 32642 (WGS84 UTM42N)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/exposure/exp-afg-infrastructures.zip
+      https://development-data-hub-s3-public.s3.amazonaws.com/ddhfiles/1242221/exp-afg-infrastructures.zip
 category:
   - Exposure
 abstract: "Location, count and USD value (when available) for the following infrastructures in Afghanistan:\r\nairports, bridges, dams, health centers, hospitals, power plants, roads, schools and universities."
