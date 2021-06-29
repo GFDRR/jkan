@@ -14,7 +14,7 @@ resources:
     h-res: ''
     epsg: 4326 (WGS84)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/hzd-ssd-mh.gpkg
+      https://development-data-hub-s3-public.s3.amazonaws.com/ddhfiles/1242456/hzd-ssd-mh.zip
 category:
   - Hazard
 abstract: >-
@@ -38,7 +38,7 @@ project: 'Disasters, conflict, and displacement: Intersectional risks in South S
 biblio_title: >-
   World Bank (2020) - Disasters, conflict, and displacement: Intersectional
   risks in South Sudan
-biblio_url: 'https://www.preventionweb.net/publications/view/73878'
+biblio_url: 'https://documents.worldbank.org/en/publication/documents-reports/documentdetail/570701601009027965/summary'
 geo_coverage:
   - SSD
 license: 'https://creativecommons.org/licenses/by/4.0/'
