@@ -12,7 +12,7 @@ resources:
     h-res: ''
     epsg: 4326 (WGS84)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/hazard/hzd-mdg-cf-fss.gpkg
+      https://development-data-hub-s3-public.s3.amazonaws.com/ddhfiles/571061/hzd-mdg-fl-fss.zip
 category:
   - Hazard
 abstract: >-
@@ -35,7 +35,7 @@ biblio_title: >-
   World Bank (2017) - Southwest Indian Ocean Risk Assessment and Financing
   Initiative: Final report on risk profiles
 biblio_url: >-
-  https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/bibliography/AIR+(2016)+-+SWIO-RAFI+Component+4+-+Risk+profiles.pdf
+  https://documents.worldbank.org/en/publication/documents-reports/documentdetail/951701497623912193/South-West-Indian-Ocean-risk-assessment-and-financing-initiative-SWIO-RAFI-summary-report
 geo_coverage:
   - MDG
 license: 'https://creativecommons.org/licenses/by/4.0/'
