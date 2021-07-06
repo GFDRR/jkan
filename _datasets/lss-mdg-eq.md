@@ -14,7 +14,7 @@ resources:
     h-res: ''
     epsg: 4326 (WGS84)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/lss-mdg-eq.gpkg
+      https://development-data-hub-s3-public.s3.amazonaws.com/ddhfiles/1244051/lss-mdg-eq.zip
 category:
   - Loss
 abstract: >-

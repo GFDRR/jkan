@@ -11,23 +11,11 @@ resources:
     resource_description: >-
       Dataset includes AAL as well as individual RP loss estimates triggered by
       all assessed hazards combined over different exposure categories at the
-      ADM1 and ADM2 levels.
+      ADM1 and ADM2 levels. Includes Exceedence Probability Curves as csv.
     h-res: ''
     epsg: 4326 (WGS84)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/lss-mdg-mh.gpkg
-  - name: Madagascar multi-hazard loss exceedence-probability curves
-    aggregation_type: Administrative boundaries
-    format:
-      - csv
-    resource_description: >-
-      Exceedence Probability Curves for disaggregated exposure categories
-      showing simulated AAL as well as individual RP loss estimates triggered by
-      all assessed hazards combined at the ADM1 and ADM2 levels.
-    h-res: ''
-    epsg: ''
-    url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/lss-mdg-mh-epc.zip
+      https://development-data-hub-s3-public.s3.amazonaws.com/ddhfiles/1244061/lss-mdg-mh.zip
 category:
   - Loss
 abstract: >-

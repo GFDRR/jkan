@@ -12,7 +12,7 @@ resources:
     h-res: 1 km
     epsg: 4326 (WGS84)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/exposure/exp-mdg-grd.zip
+      https://development-data-hub-s3-public.s3.amazonaws.com/ddhfiles/1244071/exp-mdg-grd.zip
   - name: 'Madagascar exposure, all types (ADM2 and ADM3)'
     aggregation_type: Administrative boundaries
     format:
@@ -23,7 +23,7 @@ resources:
     h-res: ''
     epsg: 4326 (WGS84)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/exposure/exp-mdg-adm.gpkg
+      https://development-data-hub-s3-public.s3.amazonaws.com/ddhfiles/1244071/exp-mdg-adm.zip
 category:
   - Exposure
 abstract: >-

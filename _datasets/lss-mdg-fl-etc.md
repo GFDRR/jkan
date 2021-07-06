@@ -14,12 +14,12 @@ resources:
     h-res: ''
     epsg: 4326 (WGS84)
     url: >-
-      https://rdl-jkan-datasets.s3-ap-southeast-2.amazonaws.com/loss/lss-mdg-etc.gpkg
+      https://development-data-hub-s3-public.s3.amazonaws.com/ddhfiles/1244041/lss-mdg-ntc.zip
 category:
   - Loss
 abstract: >-
   Direct loss simulated on exposed building asset measured as Average Annual
-  Losses (AAL) and six Return Period scenarios.
+  Losses (AAL) and six Return Period scenarios for floods occurring outside Tropical Cyclones events.
 notes: >-
   This data set was produced with financial support from the European Union in
   the framework of the ACP-EU Natural Disaster Risk Reduction Program, managed
