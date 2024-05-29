@@ -1,13 +1,18 @@
 /* global __dirname */
 module.exports = {
-  entry: ['babel-polyfill', __dirname + '/scripts/src/index.js'],
+  entry: ['./scripts/src/index.js'],
   output: {
     path: __dirname + (process.env.NODE_ENV === 'development' ? '/_site' : '') + '/scripts/dist',
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
+
   module: {
-    loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' }
+    rules: [
+      {
+          exclude: /node_modules/,
+          loader: 'babel-loader',
+          test: /\.js$/,
+      }
     ]
   },
   externals: {
