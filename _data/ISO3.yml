@@ -1,5 +1,7 @@
+# Include a Global option, even though this doesn't exist  in ISO 3166-1
+GLO: Global
+
 # ISO_3166-1_alpha-3
-# https://unstats.un.org/unsd/tradekb/knowledgebase/country-code
 # http://en.wikipedia.org/wiki/ISO_3166-1_alpha-3
 ABW: Aruba
 AFG: Afghanistan

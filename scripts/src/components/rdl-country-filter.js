@@ -1,8 +1,8 @@
 import $ from 'jquery'
-import {chain, pick, omit, filter, defaults} from 'lodash'
+import {chain, omit, defaults} from 'lodash'
 
 import TmplListGroupItem from '../templates/list-group-item'
-import {setContent, slugify, createDatasetFilters, collapseListGroup} from '../util'
+import {setContent, slugify, collapseListGroup} from '../util'
 
 
 function prep_country(country, params, datasetsForCountry) {

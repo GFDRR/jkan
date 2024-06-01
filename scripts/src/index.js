@@ -9,10 +9,9 @@ import Navigation from './components/navigation'
 import DatasetsList from './components/datasets-list'
 import RDLDatasetsList from './components/rdl-datasets-list'
 import CategoriesFilter from './components/categories-filter'
-import OrganizationsFilter from './components/organizations-filter'
-import RDLFileTypesFilter from './components/rdl-filetypes-filter'
 import RDLCountryFilter from './components/rdl-country-filter'
-import SourcesFilter from './components/sources-filter'
+import RDLLicenseFilter from './components/rdl-license-filter'
+import RDLGeographicalScaleFilter from './components/rdl-geographical-scale-filter'
 import Form from './components/form'
 import DatasetForm from './components/dataset-form'
 import AdminForm from './components/admin-form'
@@ -66,10 +65,9 @@ const components = [
   {tag: 'datasets-list', class: DatasetsList, usesDatasets: true},
   {tag: 'rdl-datasets-list', class: RDLDatasetsList, usesDatasets: true},
   {tag: 'categories-filter', class: CategoriesFilter, usesDatasets: true},
-  {tag: 'organizations-filter', class: OrganizationsFilter, usesDatasets: true},
-  {tag: 'rdl-filetypes-filter', class: RDLFileTypesFilter, usesDatasets: true},
   {tag: 'rdl-country-filter', class: RDLCountryFilter, usesDatasets: true},
-  {tag: 'sources-filter', class: SourcesFilter, usesDatasets: true}
+  {tag: 'rdl-license-filter', class: RDLLicenseFilter, usesDatasets: true},
+  {tag: 'rdl-geographical-scale-filter', class: RDLGeographicalScaleFilter, usesDatasets: true},
 ]
 for (let component of components) {
   const els = queryByComponent(component.tag)
