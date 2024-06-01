@@ -33,20 +33,8 @@ export function slugify (text) {
 export function createDatasetFilters (filters) {
   return function (dataset) {
     const conditions = []
-    if (filters.organization) {
-      conditions.push(dataset.organization && slugify(dataset.organization) === filters.organization)
-    }
     if (filters.category) {
       conditions.push(dataset.category && slugify(dataset.category).indexOf(filters.category) !== -1)
-    }
-    if (filters.resources) {
-      conditions.push(dataset.resources.some(x => {
-        if (Array.isArray(x.format)) {
-          return x.format.some(f => f === filters.resources)
-        } else {
-          return x.format === filters.resources
-        }
-      }))
     }
     if (filters.geo_coverage) {
       // for multi-country data sets, search for country name against joined string
@@ -59,6 +47,12 @@ export function createDatasetFilters (filters) {
         res = x && slugify(x) === filters.geo_coverage
       }
       conditions.push(res)
+    }
+    if (filters.geo_scale) {
+      conditions.push(dataset.geo_scale && slugify(dataset.geo_scale).indexOf(filters.geo_scale) !== -1)
+    }
+    if (filters.license_display) {
+      conditions.push(dataset.license_display && slugify(dataset.license_display).indexOf(filters.license_display) !== -1)
     }
 
     return conditions.every(function (value) { return !! value })

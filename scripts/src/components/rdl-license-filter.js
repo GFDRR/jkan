@@ -7,8 +7,8 @@ import {setContent, slugify, collapseListGroup} from '../util'
 
 function prep_license(license, params, datasetsForLicense) {
   const licenseSlug = slugify(license)
-  const selected = params.license && params.license === licenseSlug
-  const itemParams = selected ? omit(params, 'license') : defaults({license: licenseSlug}, params)
+  const selected = params.license_display && params.license_display === licenseSlug
+  const itemParams = selected ? omit(params, 'license_display') : defaults({license_display: licenseSlug}, params)
   return {
     title: license,
     url: '?' + $.param(itemParams),

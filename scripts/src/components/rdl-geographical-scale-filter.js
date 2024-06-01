@@ -7,8 +7,8 @@ import {setContent, slugify, collapseListGroup} from '../util'
 
 function prep_geographical_scale(geographicalScale, params, datasetsForGeographicalScales) {
   const geographicalScaleSlug = slugify(geographicalScale)
-  const selected = params.geographicalScale && params.geographicalScale === geographicalScaleSlug
-  const itemParams = selected ? omit(params, 'geographicalScale') : defaults({geographicalScale: geographicalScaleSlug}, params)
+  const selected = params.geo_scale && params.geo_scale === geographicalScaleSlug
+  const itemParams = selected ? omit(params, 'geo_scale') : defaults({geo_scale: geographicalScaleSlug}, params)
   return {
     title: geographicalScale,
     url: '?' + $.param(itemParams),
@@ -39,7 +39,7 @@ export default class {
 
   _geographicalScalesWithCount (datasets, params) {
     return chain(datasets)
-      .groupBy('spatial.scale')
+      .groupBy('geo_scale')
       .flatMap(function (datasetsForGeographicalScales, geographicalScale) {
         var geographicalScales = geographicalScale.split(",")
         var collated = geographicalScales.map(c => prep_geographical_scale(c, params, datasetsForGeographicalScales))
