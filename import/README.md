@@ -2,9 +2,13 @@
 
 ### Set up python environment
 
+From `/import`, run:
+
+```
 python3 -m venv .venv
 source .venv/bin/activate
 python3 -m pip install -r requirements.txt
+```
 
 If PyYAML gives you trouble, try [these steps](https://github.com/yaml/pyyaml/issues/736#issuecomment-1653209769)
 
