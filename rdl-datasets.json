@@ -3,7 +3,6 @@
 [{% for dataset in site.datasets %}
   {
     "title": {{ dataset.title | jsonify }},
-    "organization": {{ dataset.organization | jsonify }},
     {% if dataset.abstract != "" %}"abstract": {{ dataset.abstract | jsonify }},{% endif %}
     {% if dataset.notes != "" %}"notes": {{ dataset.notes | jsonify }},{% endif %}
     "category": {% if dataset.risk_data_type[0] %}
@@ -22,7 +21,6 @@
       "license_display": {{ "None" | jsonify }},
       "license": {{ "None" | jsonify }},
     {% endif %}
-    "organization": {{dataset.organization | jsonify}},
     "source": {{dataset.source | jsonify}},
     "model_date": {{dataset.model_date | jsonify}},
     "geo_coverage": {% if dataset.spatial.countries[0] %} 

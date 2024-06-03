@@ -19,8 +19,6 @@ schema: rdl
 navigation:
   - title: Datasets
     url: /datasets/
-  - title: Organizations
-    url: /organizations/
   - title: RDL Project
     url: http://riskdatalibrary.org/
 
@@ -29,9 +27,6 @@ collections:
   datasets:
     output: true
     permalink: /datasets/:path/
-  organizations:
-    output: true
-    permalink: /organizations/:path/
   sources:
     output: true
     permalink: /sources/:path/

@@ -14,28 +14,7 @@ layout: default
 
 <div data-component="view-switcher">
   <div class="row" data-component="dataset-display" data-hook="view" data-view="display" typeof="dcat:Dataset" resource="{{ page.url }}">
-    {% if organization %}
-      <div class="col-sm-3" property="dct:publisher" resource="{{ organization_url }}">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-              {% if organization.logo and organization.logo != empty %}
-              <a href="{{ site.baseurl }}/datasets/?organization={{ organization.title | slugify }}" class="thumbnail"><img src="{{ organization.logo }}" alt="{{ organization.title }} logo"></a>
-              {% endif %}
-            </div>
-            <div class="panel-body">
-              <h3>
-                <a href="{{ organization_url }}" about="{{ organization_url }}" property="foaf:homepage">
-                  <span property="foaf:name">{{ organization.title }}</span>
-                </a>
-              </h3>
-              {{ organization.description }}
-            </div>
-          </div>
-        </div>
-    <div class="col-sm-9">
-    {% else %}
     <div class="col-sm-12">
-    {% endif %}
       <h1>
         <span property="dct:title">{{ page.title }}</span>
         <a href="?view=edit" class="pull-right btn btn-default admin-only" data-hook="edit-dataset-btn">Edit</a>
