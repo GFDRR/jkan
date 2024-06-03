@@ -52,32 +52,28 @@ resources:
   title: Global flood depth-damage functions database
 risk_data_type:
 - vulnerability
-schema: 0.2_redux
+schema: rdl-02
 spatial:
   scale: global
 title: Global flood depth-damage functions
 version: '2.0'
 vulnerability:
+  approach: hybrid
+  base_data_type: inferred
+  calculation_method: null
   category: buildings
-  cost:
-  - dimension: structure
-    id: '1'
-    unit: EUR
-  - dimension: content
-    id: '2'
-    unit: EUR
-  functions:
-    fragility:
-      approach: hybrid
+  dimension: null
+  function_type: null
   hazard_analysis_type: empirical
   hazard_primary: flood
   hazard_process_primary: fluvial_flood
-  impact:
-    base_data_type: inferred
-    metric: mean_damage_ratio
-    type: direct
-    unit: percentage
+  hazard_process_secondary: null
+  hazard_secondary: null
   intensity: fl_wd:m
-  spatial:
-    scale: global
+  metric: mean_damage_ratio
+  relationship: null
+  scale: global
+  taxonomy: null
+  type: direct
+  unit: percentage
 ---

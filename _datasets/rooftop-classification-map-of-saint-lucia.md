@@ -20,13 +20,8 @@ details: 'The vector dataset depicts building footprint polygons of Saint Lucia 
   predicted probabilities per category, suffixed by "_PROB". '
 exposure:
   category: buildings
-  metrics:
-  - dimension: structure
-    id: Roof Type
-    quantity_kind: area
-  - dimension: structure
-    id: Roof Material
-    quantity_kind: area
+  dimension: null
+  quantity_kind: null
   taxonomy: Custom roof type and roof material taxonomy
 hazard: null
 id: ortho_LCA
@@ -67,7 +62,7 @@ resources:
     in the Caribbean
 risk_data_type:
 - exposure
-schema: 0.2_redux
+schema: rdl-02
 spatial:
   countries:
   - LCA
