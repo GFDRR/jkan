@@ -12,9 +12,9 @@ function license_link(data) {
 export default (data) => (
 `<rdl-dataset>
   <h3><a href="${data.url}">${data.title}</a></h3>
-  ${data.abstract || ''}
+  ${data.description || ''}
   <br/><br/>
-  <strong>Developed by (date):</strong> ${data.source} (${data.model_date || 'Date not supplied'})
+  <strong>Developed by (version):</strong> ${data.creator.name} (${data.version || 'Version not supplied'})
   <br/>
   <strong>Geo Coverage:</strong> ${data.geo_coverage.toString().replace(",", ", ") || 'Not supplied'}
   <br />

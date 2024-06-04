@@ -3,8 +3,8 @@
 [{% for dataset in site.datasets %}
   {
     "title": {{ dataset.title | jsonify }},
-    {% if dataset.abstract != "" %}"abstract": {{ dataset.abstract | jsonify }},{% endif %}
-    {% if dataset.notes != "" %}"notes": {{ dataset.notes | jsonify }},{% endif %}
+    {% if dataset.description != "" %}"description": {{ dataset.description | jsonify }},{% endif %}
+    {% if dataset.details != "" %}"details": {{ dataset.details | jsonify }},{% endif %}
     "category": {% if dataset.risk_data_type[0] %}
       [{% for cat in dataset.risk_data_type %}
           {{ cat | capitalize | jsonify }}{% unless forloop.last %}, {% endunless %}
@@ -21,8 +21,7 @@
       "license_display": {{ "None" | jsonify }},
       "license": {{ "None" | jsonify }},
     {% endif %}
-    "source": {{dataset.source | jsonify}},
-    "model_date": {{dataset.model_date | jsonify}},
+    {% if dataset.creator != "" %}"creator": {{ dataset.creator | jsonify }},{% endif %}
     "geo_coverage": {% if dataset.spatial.countries[0] %} 
         [{% for geo in dataset.spatial.countries %}
           {{ site.data.ISO3[geo] | jsonify }}{% unless forloop.last %}, {% endunless %}
@@ -38,6 +37,7 @@
         {{ "None" | jsonify }}
       {% endif %},
     "url": "{{ site.baseurl }}{{ dataset.url }}",
+    {% if dataset.version != "" %}"version": {{ dataset.version | jsonify }},{% endif %}
     "resources": {{ dataset.resources | jsonify }}
   }{% unless forloop.last %},{% endunless %}{% endfor %}
 ]
