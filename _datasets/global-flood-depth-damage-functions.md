@@ -62,9 +62,8 @@ version: '2.0'
 vulnerability:
   approach: hybrid
   base_data_type: inferred
-  calculation_method: null
   category: buildings
-  dimension: ''
+  dimension: content, structure
   function_type: fragility
   hazard_analysis_type: empirical
   hazard_primary: flood
@@ -77,5 +76,5 @@ vulnerability:
   scale: global
   taxonomy: null
   type: direct
-  unit: percentage
+  unit: EUR
 ---
