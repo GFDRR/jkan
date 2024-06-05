@@ -62,8 +62,8 @@ vulnerability:
   base_data_type: inferred
   calculation_method: null
   category: buildings
-  dimension: null
-  function_type: null
+  dimension: ''
+  function_type: fragility
   hazard_analysis_type: empirical
   hazard_primary: flood
   hazard_process_primary: fluvial_flood
@@ -71,7 +71,7 @@ vulnerability:
   hazard_secondary: null
   intensity: fl_wd:m
   metric: mean_damage_ratio
-  relationship: null
+  relationship: ''
   scale: global
   taxonomy: null
   type: direct

@@ -126,29 +126,69 @@ def make_vulnerability(vulnerability):
         return None
 
     impact = vulnerability.get("impact")
+    
+    # TODO: will there ever actually be more than one function type present on a vulnerability?
+    approach = []
+    relationship = []
+    function_type = []
+    functions = vulnerability.get("functions")
+    if "vulnerability" in functions:
+        if "approach" in functions["vulnerability"]:
+            approach.append(functions["vulnerability"]["approach"])
+        if "relationship" in functions["vulnerability"]:
+            relationship.append(functions["vulnerability"]["relationship"])
+        function_type.append("vulnerability")
+    if "fragility" in functions:
+        if "approach" in functions["fragility"]:
+            approach.append(functions["fragility"].get("approach"))
+        if "relationship" in functions["fragility"]:
+            relationship.append(functions["fragility"].get("relationship"))
+        function_type.append("fragility")
+    if "damage_to_loss" in functions:
+        if "approach" in functions["damage_to_loss"]:
+            approach.append(functions["damage_to_loss"].get("approach"))
+        if "relationship" in functions["damage_to_loss"]:
+            relationship.append(functions["damage_to_loss"].get("relationship"))
+        function_type.append("damage_to_loss")
+    if "engineering_demand" in functions:
+        if "approach" in functions["engineering_demand"]:
+            approach.append(functions["engineering_demand"].get("approach"))
+        if "relationship" in functions["engineering_demand"]:
+            relationship.append(functions["engineering_demand"].get("relationship"))
+        function_type.append("engineering_demand")
+
+    props_to_summarize = {
+        "dimension": []
+    }
+
+    if "costs" in vulnerability:
+        for cost in vulnerability["costs"]:
+            if cost["dimension"]:
+                props_to_summarize["dimension"].append(cost["dimension"])
 
     return {
+        # required; throw if missing
+        "approach": ', '.join(sorted(set(approach))),
+        "base_data_type": impact.get("base_data_type"),
+        "category": vulnerability.get("category"),
         "hazard_primary": vulnerability.get("hazard_primary"),
-        "hazard_secondary": vulnerability.get("hazard_secondary"),
+        "intensity": vulnerability.get("intensity"),
+        "metric": impact.get("metric"),
+        "relationship": ', '.join(sorted(set(relationship))),
+        "scale": vulnerability.get("spatial").get("scale"),
+        "type": impact.get("type"),
+        "unit": impact.get("unit"),
+        "dimension": ', '.join(sorted(set(props_to_summarize["dimension"]))),
+        # TODO: verify this should be derived from the property under functions
+        "function_type": ', '.join(sorted(set(function_type))),
+        # optional
+        "hazard_analysis_type": vulnerability.get("hazard_analysis_type"),
         "hazard_process_primary": vulnerability.get("hazard_process_primary"),
         "hazard_process_secondary": vulnerability.get("hazard_process_secondary"),
-        "hazard_analysis_type": vulnerability.get("hazard_analysis_type"),
-        "intensity": vulnerability.get("intensity"),
-        "category": vulnerability.get("category"),
+        "hazard_secondary": vulnerability.get("hazard_secondary"),
         "taxonomy": vulnerability.get("taxonomy"),
-        # TODO: how to get approaches from different subproperties? will there be more than one present?
-        "approach": vulnerability.get("functions").get("fragility").get("approach"),
-        "scale": vulnerability.get("spatial").get("scale"),
-        # Impact
-        "type": impact.get("type"),
-        "metric": impact.get("metric"),
-        "unit": impact.get("unit"),
-        "base_data_type": impact.get("base_data_type"),
-        # Metric
-        "dimension": vulnerability.get("dimension"),
-        "function_type": vulnerability.get("function_type"),
+        # TODO: what is this? can't find on datasets or schema
         "calculation_method": vulnerability.get("calculation_method"),
-        "relationship": vulnerability.get("relationship"),
     }
 
 
