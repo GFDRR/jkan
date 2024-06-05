@@ -218,6 +218,13 @@ def make_loss(loss):
 def make_dataset_frontmatter(dataset):
     """Formats RDL metadata into JKAN frontmatter for a dataset"""
 
+    spatial = dataset["spatial"]
+    if spatial.get("scale") == "global":
+        if "countries" in spatial and type(spatial["countries"]) == list:
+            spatial["countries"].append('GLO')
+        else:
+            spatial["countries"] = ['GLO']
+
     return {
         # required; throw if missing
         "contact_point": dataset["contact_point"],
@@ -228,7 +235,7 @@ def make_dataset_frontmatter(dataset):
         "resources": [make_resource(resource) for resource in dataset["resources"]],
         "risk_data_type": dataset["risk_data_type"],
         "schema": "rdl-02",
-        "spatial": dataset["spatial"],
+        "spatial": spatial,
         "title": dataset["title"], # required by write_yaml
         # optional
         "description": dataset.get("description"),

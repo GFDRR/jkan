@@ -54,6 +54,8 @@ risk_data_type:
 - vulnerability
 schema: rdl-02
 spatial:
+  countries:
+  - GLO
   scale: global
 title: Global flood depth-damage functions
 version: '2.0'

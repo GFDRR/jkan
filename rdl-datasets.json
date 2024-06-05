@@ -25,11 +25,7 @@
     "geo_coverage": {% if dataset.spatial.countries[0] %} 
         [{% for geo in dataset.spatial.countries %}
           {{ site.data.ISO3[geo] | jsonify }}{% unless forloop.last %}, {% endunless %}
-        {% endfor %}] 
-      {% else %} 
-        {% if dataset.spatial.scale == 'global' %} 
-          {{ site.data.ISO3.GLO | jsonify }} 
-        {% endif %}
+        {% endfor %}]
       {% endif %},
     "geo_scale": {% if dataset.spatial.scale %} 
         {{ dataset.spatial.scale | capitalize | jsonify }}

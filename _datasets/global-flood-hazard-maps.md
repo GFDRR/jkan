@@ -64,6 +64,8 @@ spatial:
   - -90
   - 180
   - 90
+  countries:
+  - GLO
   scale: global
 title: Global flood hazard maps
 version: '3'
