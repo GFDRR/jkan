@@ -54,11 +54,25 @@ def make_exposure(exposure):
     if exposure is None:
         return None
 
+    props_to_summarize = {
+        "dimension": [], # found on metric
+        "quantity_kind": [] # found on metric
+    }
+
+    if "metrics" in exposure:
+        for metric in exposure["metrics"]:
+            if metric["dimension"]:
+                props_to_summarize["dimension"].append(metric["dimension"])
+            if metric["quantity_kind"]:
+                props_to_summarize["quantity_kind"].append(metric["quantity_kind"])
+
     return {
-        "category": exposure.get("category"),
+        # required; throw if missing
+        "category": exposure["category"],
+        # optional
         "taxonomy": exposure.get("taxonomy"),
-        "dimension": exposure.get("dimension"),
-        "quantity_kind": exposure.get("quantity_kind"),
+        "dimension": ', '.join(sorted(set(props_to_summarize["dimension"]))),
+        "quantity_kind": ', '.join(sorted(set(props_to_summarize["quantity_kind"]))),
     }
 
 def make_hazard(hazard):
