@@ -1,0 +1,302 @@
+AED: UAE Dirham
+AFN: Afghani
+ALL: Lek
+AMD: Armenian Dram
+ANG: Netherlands Antillean Guilder
+AOA: Kwanza
+ARS: Argentine Peso
+AUD: Australian Dollar
+AWG: Aruban Florin
+AZN: Azerbaijan Manat
+BAM: Convertible Mark
+BBD: Barbados Dollar
+BDT: Taka
+BGN: Bulgarian Lev
+BHD: Bahraini Dinar
+BIF: Burundi Franc
+BMD: Bermudian Dollar
+BND: Brunei Dollar
+BOB: Boliviano
+BOV: Mvdol
+BRL: Brazilian Real
+BSD: Bahamian Dollar
+BTN: Ngultrum
+BWP: Pula
+BYN: Belarusian Ruble
+BZD: Belize Dollar
+CAD: Canadian Dollar
+CDF: Congolese Franc
+CHE: WIR Euro
+CHF: Swiss Franc
+CHW: WIR Franc
+CLF: Unidad de Fomento
+CLP: Chilean Peso
+CNY: Yuan Renminbi
+COP: Colombian Peso
+COU: Unidad de Valor Real
+CRC: Costa Rican Colon
+CUC: Peso Convertible
+CUP: Cuban Peso
+CVE: Cabo Verde Escudo
+CZK: Czech Koruna
+DJF: Djibouti Franc
+DKK: Danish Krone
+DOP: Dominican Peso
+DZD: Algerian Dinar
+EGP: Egyptian Pound
+ERN: Nakfa
+ETB: Ethiopian Birr
+EUR: Euro
+FJD: Fiji Dollar
+FKP: Falkland Islands Pound
+GBP: Pound Sterling
+GEL: Lari
+GHS: Ghana Cedi
+GIP: Gibraltar Pound
+GMD: Dalasi
+GNF: Guinean Franc
+GTQ: Quetzal
+GYD: Guyana Dollar
+HKD: Hong Kong Dollar
+HNL: Lempira
+HRK: Kuna
+HTG: Gourde
+HUF: Forint
+IDR: Rupiah
+ILS: New Israeli Sheqel
+INR: Indian Rupee
+IQD: Iraqi Dinar
+IRR: Iranian Rial
+ISK: Iceland Krona
+JMD: Jamaican Dollar
+JOD: Jordanian Dinar
+JPY: Yen
+KES: Kenyan Shilling
+KGS: Som
+KHR: Riel
+KMF: Comorian Franc
+KPW: North Korean Won
+KRW: Won
+KWD: Kuwaiti Dinar
+KYD: Cayman Islands Dollar
+KZT: Tenge
+LAK: Lao Kip
+LBP: Lebanese Pound
+LKR: Sri Lanka Rupee
+LRD: Liberian Dollar
+LSL: Loti
+LYD: Libyan Dinar
+MAD: Moroccan Dirham
+MDL: Moldovan Leu
+MGA: Malagasy Ariary
+MKD: Denar
+MMK: Kyat
+MNT: Tugrik
+MOP: Pataca
+MRU: Ouguiya
+MUR: Mauritius Rupee
+MVR: Rufiyaa
+MWK: Malawi Kwacha
+MXN: Mexican Peso
+MXV: Mexican Unidad de Inversion (UDI)
+MYR: Malaysian Ringgit
+MZN: Mozambique Metical
+NAD: Namibia Dollar
+NGN: Naira
+NIO: Cordoba Oro
+NOK: Norwegian Krone
+NPR: Nepalese Rupee
+NZD: New Zealand Dollar
+OMR: Rial Omani
+PAB: Balboa
+PEN: Sol
+PGK: Kina
+PHP: Philippine Peso
+PKR: Pakistan Rupee
+PLN: Zloty
+PYG: Guarani
+QAR: Qatari Rial
+RON: Romanian Leu
+RSD: Serbian Dinar
+RUB: Russian Ruble
+RWF: Rwanda Franc
+SAR: Saudi Riyal
+SBD: Solomon Islands Dollar
+SCR: Seychelles Rupee
+SDG: Sudanese Pound
+SEK: Swedish Krona
+SGD: Singapore Dollar
+SHP: Saint Helena Pound
+SLL: Leone
+SOS: Somali Shilling
+SRD: Surinam Dollar
+SSP: South Sudanese Pound
+STN: Dobra
+SVC: El Salvador Colon
+SYP: Syrian Pound
+SZL: Lilangeni
+THB: Baht
+TJS: Somoni
+TMT: Turkmenistan New Manat
+TND: Tunisian Dinar
+TOP: Pa’anga
+TRY: Turkish Lira
+TTD: Trinidad and Tobago Dollar
+TWD: New Taiwan Dollar
+TZS: Tanzanian Shilling
+UAH: Hryvnia
+UGX: Uganda Shilling
+USD: US Dollar
+USN: US Dollar (Next day)
+UYI: Uruguay Peso en Unidades Indexadas (UI)
+UYU: Peso Uruguayo
+UYW: Unidad Previsional
+UZS: Uzbekistan Sum
+VES: Bolívar Soberano
+VND: Dong
+VUV: Vatu
+WST: Tala
+XAF: CFA Franc BEAC
+XAG: Silver
+XAU: Gold
+XBA: Bond Markets Unit European Composite Unit (EURCO)
+XBB: Bond Markets Unit European Monetary Unit (E.M.U.-6)
+XBC: Bond Markets Unit European Unit of Account 9 (E.U.A.-9)
+XBD: Bond Markets Unit European Unit of Account 17 (E.U.A.-17)
+XCD: East Caribbean Dollar
+XDR: SDR (Special Drawing Right)
+XOF: CFA Franc BCEAO
+XPD: Palladium
+XPF: CFP Franc
+XPT: Platinum
+XSU: Sucre
+XTS: Codes specifically reserved for testing purposes
+XUA: ADB Unit of Account
+XXX: The codes assigned for transactions where no currency is involved
+YER: Yemeni Rial
+ZAR: Rand
+ZMW: Zambian Kwacha
+ZWL: Zimbabwe Dollar
+ADP: Andorran Peseta
+AFA: Afghani
+ALK: Old Lek
+AOK: Kwanza
+AON: New Kwanza
+AOR: Kwanza Reajustado
+ARA: Austral
+ARP: Peso Argentino
+ARY: Peso
+ATS: Schilling
+AYM: Azerbaijan Manat
+AZM: Azerbaijanian Manat
+BAD: Dinar
+BEC: Convertible Franc
+BEF: Belgian Franc
+BEL: Financial Franc
+BGJ: Lev A/52
+BGK: Lev A/62
+BGL: Lev
+BOP: Peso boliviano
+BRB: Cruzeiro
+BRC: Cruzado
+BRE: Cruzeiro
+BRN: New Cruzado
+BRR: Cruzeiro Real
+BUK: Kyat
+BYB: Belarusian Ruble
+BYR: Belarusian Ruble
+CHC: WIR Franc (for electronic)
+CSD: Serbian Dinar
+CSJ: Krona A/53
+CSK: Koruna
+CYP: Cyprus Pound
+DDM: Mark der DDR
+DEM: Deutsche Mark
+ECS: Sucre
+ECV: Unidad de Valor Constante (UVC)
+EEK: Kroon
+ESA: Spanish Peseta
+ESB: "A Account (convertible Peseta Account)"
+ESP: Spanish Peseta
+FIM: Markka
+FRF: French Franc
+GEK: Georgian Coupon
+GHC: Cedi
+GHP: Ghana Cedi
+GNE: Syli
+GNS: Syli
+GQE: Ekwele
+GRD: Drachma
+GWE: Guinea Escudo
+GWP: Guinea-Bissau Peso
+HRD: Croatian Dinar
+IEP: Irish Pound
+ILP: Pound
+ILR: Old Shekel
+ISJ: Old Krona
+ITL: Italian Lira
+LAJ: Pathet Lao Kip
+LSM: Loti
+LTL: Lithuanian Litas
+LTT: Talonas
+LUC: Luxembourg Convertible Franc
+LUF: Luxembourg Franc
+LUL: Luxembourg Financial Franc
+LVL: Latvian Lats
+LVR: Latvian Ruble
+MGF: Malagasy Franc
+MLF: Mali Franc
+MRO: Ouguiya
+MTL: Maltese Lira
+MTP: Maltese Pound
+MVQ: Maldive Rupee
+MXP: Mexican Peso
+MZE: Mozambique Escudo
+MZM: Mozambique Metical
+NIC: Cordoba
+NLG: Netherlands Guilder
+PEH: Sol
+PEI: Inti
+PES: Sol
+PLZ: Zloty
+PTE: Portuguese Escudo
+RHD: Rhodesian Dollar
+ROK: Leu A/52
+ROL: Old Leu
+RUR: Russian Ruble
+SDD: Sudanese Dinar
+SDP: Sudanese Pound
+SIT: Tolar
+SKK: Slovak Koruna
+SRG: Surinam Guilder
+STD: Dobra
+SUR: Rouble
+TJR: Tajik Ruble
+TMM: Turkmenistan Manat
+TPE: Timor Escudo
+TRL: Old Turkish Lira
+UAK: Karbovanet
+UGS: Uganda Shilling
+UGW: Old Shilling
+USS: US Dollar (Same day)
+UYN: Old Uruguay Peso
+UYP: Uruguayan Peso
+VEB: Bolivar
+VEF: Bolívar
+VNC: Old Dong
+XEU: European Currency Unit (E.C.U)
+XFO: Gold-Franc
+XFU: UIC-Franc
+XRE: RINET Funds Code
+YDD: Yemeni Dinar
+YUD: New Yugoslavian Dinar
+YUM: New Dinar
+YUN: Yugoslavian Dinar
+ZAL: Financial Rand
+ZMK: Zambian Kwacha
+ZRN: New Zaire
+ZRZ: Zaire
+ZWC: Rhodesian Dollar
+ZWD: Zimbabwe Dollar
+ZWN: Zimbabwe Dollar (new)
+ZWR: Zimbabwe Dollar

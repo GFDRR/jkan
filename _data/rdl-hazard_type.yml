@@ -1,12 +1,11 @@
-CF: Coastal Flood
-CS: Convective Storm
-DR: Drought
-EQ: Earthquake
-ET: Extreme Temperature
-FL: Flood
-LS: Landslide
-MH: Multi-Hazard
-TS: Tsunami
-VO: Volcanic
-WF: Wildfire
-WI: Strong Wind
+coastal_flood: Coastal Flood
+convective_storm: Convective Storm
+drought: Drought
+extreme_temperature: Extreme Temperature
+flood: Flood
+wildfire: Wildfire
+strong_wind: Strong Wind
+earthquake: Earthquake
+landslide: Landslide
+tsunami: Tsunami
+volcanic: Volcanic

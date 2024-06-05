@@ -2,5 +2,9 @@
     <th>{{ include.field.label }}</th>
     <td>
         {% capture code %}{{ include.value }}{% endcapture %}
-        {{ site.data.rdl-IMT[code] }}
+        {% if site.data.rdl-IMT[code] %}
+            {{ site.data.rdl-IMT[code] }}
+        {% else %}
+            {{ code }}
+        {% endif %}
     </td>

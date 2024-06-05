@@ -1,0 +1,19 @@
+damage_ratio: Damage ratio
+mean_damage_ratio: Mean damage ratio
+probability: Probability
+damage_index: Damage index
+mean_loss_ratio: Mean Loss Ratio
+downtime_vulnerability: Downtime (vulnerability)
+casualty_ratio_vulnerability: Casualty ratio (vulnerability)
+economic_loss_value: Total economic loss
+insured_loss_value: Total insured loss
+loss_ratio: Loss Ratio
+casualty_count: Number of casualties (fatalities)
+casualty_ratio_loss: Casualty ratio (loss)
+loss_annual_average_value: Annual average loss
+loss_probable_maximum_value: Probable Maximum Loss
+at_risk_value: Value at Risk
+at_risk_tail_value: Tail Value at Risk
+downtime_loss: Downtime (loss)
+asset_loss: Number of assets
+displaced_count: Number of people displaced

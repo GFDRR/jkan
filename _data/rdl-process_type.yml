@@ -1,28 +1,30 @@
-FCF: Coastal Flood
-FSS: Storm Surge
-TOR: Tornado
-DTA: Agricultural Drought
-DTH: Hydrological Drought
-DTM: Meteorological Drought
-DTS: Socio-economic Drought
-Q1R: Primary Rupture
-Q2R: Secondary Rupture
-QGM: Ground Motion
-QLI: Liquefaction
-ECD: Extreme cold
-EHT: Extreme heat
-FFF: Fluvial Flood
-FPF: Pluvial Flood
-LAV: Snow Avalanche
-LSL: Landslide (general)
-TSI: Tsunami
-VAF: Ashfall
-VBL: Ballistics
-VFH: Proximal hazards
-VLH: Lahar
-VLV: Lava
-VPF: Pyroclastic Flow
-WFI: Wildfire
-ETC: Extratropical cyclone
-TCY: Tropical cyclone
-MHC: Multi-Hazard combined
+coastal_flood: Coastal Flood
+storm_surge: Storm Surge
+tornado: Tornado
+agricultural_drought: Agricultural Drought
+hydrological_drought: Hydrological Drought
+meteorological_drought: Meteorological Drought
+socioeconomic_drought: Socio-economic Drought
+primary_rupture: Primary Rupture
+secondary_rupture: Secondary Rupture
+ground_motion: Ground Motion
+liquefaction: Liquefaction
+extreme_cold: Extreme cold
+extreme_heat: Extreme heat
+fluvial_flood: Fluvial Flood
+pluvial_flood: Pluvial Flood
+groundwater_flood: Groundwater Flood
+snow_avalanche: Snow Avalanche
+landslide_general: Landslide (general)
+landslide_rockslide: Rockslide
+landslide_mudflow: Mudflow
+landslide_rockfall: Rockfall
+tsunami: Tsunami
+ashfall: Ashfall
+volcano_ballistics: Ballistics
+lahar: Lahar
+lava: Lava
+pyroclastic_flow: Pyroclastic Flow
+wildfire: Wildfire
+extratropical_cyclone: Extratropical cyclone
+tropical_cyclone: Tropical cyclone

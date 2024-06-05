@@ -1,0 +1,6 @@
+<tr>
+  <th>{{ include.field.label }}</th>
+  <td>
+      {% capture code %}{{ include.value }}{% endcapture %}
+      {{ site.data.rdl-approach[code] }}
+  </td>

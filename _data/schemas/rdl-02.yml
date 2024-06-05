@@ -91,7 +91,7 @@ hazard:
   - field_name: hazard_type
     label: Hazard type
     required: true
-    form_template: form/rdl-hazard_type.html
+    display_template: display/hazard_type.html
     values:
       - coastal_flood
       - convective_storm
@@ -107,6 +107,7 @@ hazard:
       - strong_wind
   - field_name: processes
     label: Processes
+    display_template: display/process_type.html
     required: true
     values:
       - coastal_flood
@@ -140,14 +141,17 @@ hazard:
       - extratropical_cyclone
       - tropical_cyclone
   - field_name: intensity
+    display_template: display/IMT.html
     label: Intensity
   - field_name: hazard_analysis_type
     label: Hazard Analysis Type
+    display_template: display/analysis_type.html
     values:
       - probabilistic
       - deterministic
       - empirical
   - field_name: calculation_method
+    display_template: display/calculation_method.html
     label: Calculation Method
     values:
       - inferred
@@ -164,6 +168,7 @@ exposure:
   - field_name: category
     label: Exposure category
     required: true
+    display_template: display/exposure_category.html
     values:
       - agriculture
       - buildings
@@ -174,6 +179,7 @@ exposure:
   - field_name: taxonomy
     label: Taxonomy
   - field_name: dimension
+    display_template: display/dimension.html
     label: Metric Dimension
     values:
       - structure
@@ -182,6 +188,7 @@ exposure:
       - others
   - field_name: quantity_kind
     label: Metric Quantity Kind
+    display_template: display/quality_kind.html
 
 # VulnerabilityModel
 vulnerability:
@@ -189,27 +196,30 @@ vulnerability:
   - field_name: hazard_primary
     label: Primary hazard type
     required: true
-    form_template: form/rdl-hazard_type.html
+    display_template: display/hazard_type.html
   - field_name: hazard_secondary
     label: Secondary hazard type
-    form_template: form/rdl-hazard_type.html
+    display_template: display/hazard_type.html
   - field_name: hazard_process_primary
     label: Primary process type
     required: true
-    form_template: form/rdl-process_type.html
+    display_template: display/process_type.html
   - field_name: hazard_process_secondary
     label: Secondary process type
-    form_template: form/rdl-process_type.html
+    display_template: display/process_type.html
   - field_name: hazard_analysis_type
+    display_template: display/analysis_type.html
     label: Hazard Analysis Type
     values:
       - deterministic
       - empirical
       - probabilistic
   - field_name: intensity
+    display_template: display/IMT.html
     label: Intensity
   - field_name: category
     label: Category of exposed asset
+    display_template: display/exposure_category.html
     required: true
     values:
       - agriculture
@@ -222,15 +232,19 @@ vulnerability:
     label: Taxonomy
   - field_name: type
     label: Impact Type
+    display_template: display/impact_type.html
     values:
       - direct
       - indirect
       - total
   - field_name: metric
     label: Impact Metric
-  - field_name: unit
+    display_template: display/impact_metric.html
+  - field_name: impact_unit
     label: Impact Unit
+    display_template: display/impact_unit.html
   - field_name: base_data_type
+    display_template: display/base_data_type.html
     label: Impact Base Data Type
     values:
       - inferred
@@ -238,7 +252,7 @@ vulnerability:
       - observed
   - field_name: approach
     label: Impact Approach
-    form_template: form/dropdown.html
+    display_template: display/approach.html
     values:
       - analytical
       - empirical
@@ -246,20 +260,24 @@ vulnerability:
       - judgement
   - field_name: scale
     label: Impact Scale
+    display_template: display/scale.html
     values:
       - global
       - regional
       - sub-national
   - field_name: dimension
     label: Metric Dimension
+    display_template: display/dimension.html
     values:
       - structure
       - content
       - product
       - others
   - field_name: unit
+    display_template: display/currency.html
     label: Metric Unit
   - field_name: function_type
+    display_template: display/function_type.html
     label: Metric Function type
     required: true
     form_template: form/dropdown.html
@@ -269,6 +287,7 @@ vulnerability:
       - damage-to-loss
       - engineering_demand
   - field_name: calculation_method
+    display_template: display/calculation_method.html
     label: Metric Calculation Method
     values:
       - inferred
@@ -276,7 +295,7 @@ vulnerability:
       - observed
   - field_name: approach
     label: Metric Approach
-    form_template: form/dropdown.html
+    display_template: display/approach.html
     values:
       - analytical
       - empirical
@@ -302,18 +321,20 @@ loss:
     display_template: display/hazard_type.html
   - field_name: hazard_process
     label: Process Type
-    form_template: form/rdl-process_type.html
     display_template: display/process_type.html
   - field_name: description
     label: Description
   - field_name: category
     label: Category
+    display_template: display/exposure_category.html
     values:
+      - agriculture
       - buildings
       - infrastructure
       - population
       - natural_environment
   - field_name: dimension
+    display_template: display/dimension.html
     label: Dimension
     values:
       - structure
@@ -346,6 +367,7 @@ loss:
       - net_precat
       - net_postcat
   - field_name: approach
+    display_template: display/approach.html
     label: Approach
     values:
       - analytical
@@ -354,6 +376,7 @@ loss:
       - judgement
   - field_name: hazard_analysis_type
     label: Hazard Analysis Type
+    display_template: display/analysis_type.html
     values:
       - deterministic
       - empirical
