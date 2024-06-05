@@ -66,15 +66,44 @@ def make_hazard(hazard):
     if hazard is None:
         return None
 
-    # TODO: all these properties are nested under event sets; how should i collapse to one property?
+    props_to_summarize = {
+        "calculation_method": [], # found on event, event_set
+        "disaster_identifiers": [], # found on event
+        "hazard_analysis_type": [], # found on event_set as analysis_type
+        "hazard_type": hazard.get("type",[]), # found on hazard, event.hazard as type
+        "intensity": hazard.get("intensity_measure",[]), # found on hazard, event.hazard as intensity_measure
+        "occurrence_range": [], # found on event_set
+        "processes": hazard.get("processes",[]), # found on hazard, event.hazard
+    }
+    
+    for event_set in hazard["event_sets"]:
+        if "calculation_method" in event_set:
+            props_to_summarize["calculation_method"].append(event_set["calculation_method"])    
+        if "analysis_type" in event_set:
+            props_to_summarize["hazard_analysis_type"].append(event_set["analysis_type"])
+        if "occurrence_range" in event_set:
+            props_to_summarize["occurrence_range"].append(event_set["occurrence_range"])
+
+        if "events" in event_set:
+            for event in event_set["events"]:
+                if "calculation_method" in event:
+                    props_to_summarize["calculation_method"].append(event["calculation_method"])    
+                if "disaster_identifiers" in event:
+                    props_to_summarize["disaster_identifiers"].append(event["disaster_identifiers"])
+                if "hazard" in event and "type" in event["hazard"]:
+                    props_to_summarize["hazard_type"].append(event["hazard"]["type"])
+                if "hazard" in event and "intensity_measure" in event["hazard"]:
+                    props_to_summarize["intensity"].append(event["hazard"]["intensity_measure"])
+                if "hazard" in event and "processes" in event["hazard"]:
+                    props_to_summarize["processes"].extend(event["hazard"]["processes"])
     return {
-        "hazard_type": hazard.get("hazard_type"),
-        "processes": hazard.get("processes"),
-        "intensity": hazard.get("intensity"),
-        "hazard_analysis_type": hazard.get("hazard_analysis_type"),
-        "calculation_method": hazard.get("calculation_method"),
-        "occurrence_range": hazard.get("occurrence_range"),
-        "disaster_identifiers": hazard.get("disaster_identifiers"),
+        "calculation_method": ', '.join(sorted(set(props_to_summarize["calculation_method"]))),
+        "disaster_identifiers": ', '.join(sorted(set(props_to_summarize["disaster_identifiers"]))),
+        "hazard_analysis_type": ', '.join(sorted(set(props_to_summarize["hazard_analysis_type"]))),
+        "hazard_type": ', '.join(sorted(set(props_to_summarize["hazard_type"]))),
+        "intensity": ', '.join(sorted(set(props_to_summarize["intensity"]))),
+        "occurrence_range": ', '.join(sorted(set(props_to_summarize["occurrence_range"]))),
+        "processes": ', '.join(sorted(set(props_to_summarize["processes"])))
     }
  
 def make_vulnerability(vulnerability):

@@ -26,13 +26,13 @@ details: "The FATHOM flood-hazard model is a global gridded dataset of flood haz
   \ 500 and 1,000 years. "
 exposure: null
 hazard:
-  calculation_method: null
-  disaster_identifiers: null
-  hazard_analysis_type: null
-  hazard_type: null
-  intensity: null
-  occurrence_range: null
-  processes: null
+  calculation_method: simulated
+  disaster_identifiers: ''
+  hazard_analysis_type: probabilistic
+  hazard_type: flood
+  intensity: wd:cm
+  occurrence_range: 1/10 to 1/1000 years
+  processes: coastal_flood, fluvial_flood, pluvial_flood
 id: FTH_v3
 license: Commercial
 loss: null
