@@ -107,14 +107,23 @@ layout: default
         {% endfor %}
 
         {% if page.license and page.license != empty %}
-          <tr>
-            <th>License</th>
-            <td>
-              <a property="dct:license" resource="{{ page.license }}" href="{{ page.license }}">
+          {% if site.data.rdl-license-url[page.license] and site.data.rdl-license-url[page.license] != empty %}
+            <tr>
+              <th>License</th>
+              <td>
+                <a property="dct:license" resource="{{ page.license }}" href="{{ site.data.rdl-license-url[page.license] }}">
+                  {{ page.license }}
+                </a>
+              </td>
+            </tr>
+          {% else %}
+            <tr>
+              <th>License</th>
+              <td>
                 {{ page.license }}
-              </a>
-            </td>
-          </tr>
+              </td>
+            </tr>
+          {% endif %}
         {% endif %}
       </table>
     </div>

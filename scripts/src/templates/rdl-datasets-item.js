@@ -1,12 +1,16 @@
 function license_link(data) {
-  if (data.license_display != null) {
+  if (data.license_display == null) {
+    return `<strong>License:</strong> Unknown or not provided`
+  }
+  if (data.license != null && data.license != 'Not found' ) {
     return `<strong>License:</strong> 
     <a property="dct:license" resource="${data.license_display}" href="${data.license}">
       ${data.license_display}
     </a>`
   }
-
-  return `<strong>License:</strong> Unknown or not provided`
+  return `<strong>License:</strong> 
+    ${data.license_display}
+  `
 }
 
 export default (data) => (

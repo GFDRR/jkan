@@ -9,17 +9,17 @@
       [{% for cat in dataset.risk_data_type %}
           {{ cat | capitalize | jsonify }}{% unless forloop.last %}, {% endunless %}
         {% endfor %}]
-        {% else %} {{ "None" | jsonify }}
+      {% else %} {{ "None" | jsonify }}
     {% endif %},
-    {% if site.data.licenses[dataset.license] %}
-      "license_display": {{ site.data.licenses[dataset.license] | jsonify }},
-      "license": {{ dataset.license | jsonify }},
-    {% elsif dataset.license %}
-      "license_display": {{ dataset.license | jsonify }},
-      "license": {{ dataset.license | jsonify }},
+    {% if site.data.rdl-license-name[dataset.license] %}
+      "license_display": {{ site.data.rdl-license-name[dataset.license] | jsonify }},
     {% else %}
-      "license_display": {{ "None" | jsonify }},
-      "license": {{ "None" | jsonify }},
+      "license_display": {{ dataset.license | jsonify }},
+    {% endif %}
+    {% if site.data.rdl-license-url[dataset.license] %}
+      "license": {{ site.data.rdl-license-url[dataset.license] | jsonify }},
+    {% else %}
+      "license": "Not found",
     {% endif %}
     {% if dataset.creator != "" %}"creator": {{ dataset.creator | jsonify }},{% endif %}
     "geo_coverage": {% if dataset.spatial.countries[0] %} 
