@@ -3,11 +3,12 @@
   <td>
       {% assign split_string = include.value | split: ", " %}
       {% if split_string[0] %}
-          {% for code in split_string %}
-              {{ site.data.rdl-dimension[code] }}{% unless forloop.last or site.data.rdl-dimension[code] == nil %}, {% endunless %}
+          {% for c in split_string %}
+          {% capture code %}{{ c }}{% endcapture %}
+              {{ site.data.rdl-loss_type[code] }}{% unless forloop.last or site.data.rdl-loss_type[code] == nil %}, {% endunless %}
           {% endfor %}
       {% else %}
           {% capture code %}{{ include.value }}{% endcapture %}
-          {{ site.data.rdl-dimension[code] }}
+          {{ site.data.rdl-loss_type[code] }}
       {% endif %}
   </td>

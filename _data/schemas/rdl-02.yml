@@ -342,22 +342,27 @@ loss:
       - product
       - others
   - field_name: impact_type
+    display_template: display/impact_type.html
     label: Impact Type
     values:
       - direct
       - indirect
       - total
   - field_name: impact_metric
+    display_template: display/impact_metric.html
     label: Impact Metric
   - field_name: impact_unit
+    display_template: display/impact_unit.html
     label: Impact Unit
   - field_name: base_data_type
+    display_template: display/base_data_type.html
     label: Base Data Type
     values:
       - inferred
       - simulated
       - observed
   - field_name: type
+    display_template: display/loss_type.html
     label: Type
     values:
       - ground_up

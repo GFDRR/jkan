@@ -203,29 +203,69 @@ def make_loss(loss):
         "dimension": [],
         "hazard_type": [],
         # optional
-        "hazard_process": [],
-        "description": [],
-        "category": [],
-        "impact_type": [],
-        "impact_metric": [],
-        "impact_unit": [],
-        "base_data_type": [],
-        "type": [],
         "approach": [],
+        "base_data_type": [],
+        "category": [],
+        "description": [],
+        "exposure_id": [],
         "hazard_analysis_type": [],
         "hazard_id": [],
-        "exposure_id": [],
+        "hazard_process": [],
+        "impact_metric": [],
+        "impact_type": [],
+        "impact_unit": [],
+        "type": [],
         "vulnerability_id": [],
     }
 
     for l in loss.get("losses",[]):
-        if l["dimension"]:
+        if "dimension" in l.get("cost", {}):
             props_to_summarize["dimension"].append(l["cost"]["dimension"])
-            props_to_summarize["dimension"].append(l["hazard_type"])
-
+        if "hazard_type" in l:
+            props_to_summarize["hazard_type"].append(l["hazard_type"])
+        if "approach" in l:
+            props_to_summarize["approach"].append(l["approach"])
+        if "base_data_type" in l.get("impact", {}):
+            props_to_summarize["base_data_type"].append(l["impact"]["base_data_type"])
+        if "category" in l:
+            props_to_summarize["category"].append(l["category"])
+        if "description" in l:
+            props_to_summarize["description"].append(l["description"])
+        if "exposure_id" in l:
+            props_to_summarize["exposure_id"].append(l["exposure_id"])
+        if "hazard_analysis_type" in l:
+            props_to_summarize["hazard_analysis_type"].append(l["hazard_analysis_type"])
+        if "hazard_id" in l:
+            props_to_summarize["hazard_id"].append(l["hazard_id"])
+        if "hazard_process" in l:
+            props_to_summarize["hazard_process"].append(l["hazard_process"])
+        if "metric" in l.get("impact", {}):
+            props_to_summarize["impact_metric"].append(l["impact"]["metric"])
+        if "type" in l.get("impact", {}):
+            props_to_summarize["impact_type"].append(l["impact"]["type"])
+        if "unit" in l.get("impact", {}):
+            props_to_summarize["impact_unit"].append(l["impact"]["unit"])
+        if "type" in l:
+            props_to_summarize["type"].append(l["type"])
+        if "vulnerability_id" in l:
+            props_to_summarize["vulnerability_id"].append(l["vulnerability_id"])
+        
     return {
         "dimension": ', '.join(sorted(set(props_to_summarize["dimension"]))),
         "hazard_type": ', '.join(sorted(set(props_to_summarize["hazard_type"]))),
+        "approach": ', '.join(sorted(set(props_to_summarize["approach"]))),
+        "base_data_type": ', '.join(sorted(set(props_to_summarize["base_data_type"]))),
+        "category": ', '.join(sorted(set(props_to_summarize["category"]))),
+        "description": ', '.join(sorted(set(props_to_summarize["description"]))),
+        "exposure_id": ', '.join(sorted(set(props_to_summarize["exposure_id"]))),
+        "hazard_analysis_type": ', '.join(sorted(set(props_to_summarize["hazard_analysis_type"]))),
+        "hazard_id": ', '.join(sorted(set(props_to_summarize["hazard_id"]))),
+        "hazard_process": ', '.join(sorted(set(props_to_summarize["hazard_process"]))),
+        "impact_metric": ', '.join(sorted(set(props_to_summarize["impact_metric"]))),
+        "impact_type": ', '.join(sorted(set(props_to_summarize["impact_type"]))),
+        "impact_unit": ', '.join(sorted(set(props_to_summarize["impact_unit"]))),
+        "type": ', '.join(sorted(set(props_to_summarize["type"]))),
+        "vulnerability_id": ', '.join(sorted(set(props_to_summarize["vulnerability_id"]))),
     }
 
 def make_dataset_frontmatter(dataset):
@@ -262,8 +302,6 @@ def make_dataset_frontmatter(dataset):
         "loss": make_loss(dataset.get("loss")),
         "vulnerability": make_vulnerability(dataset.get("vulnerability")),
     }
-    
-
 
 def write_frontmatter(metadata, output_path):
     filename = (
