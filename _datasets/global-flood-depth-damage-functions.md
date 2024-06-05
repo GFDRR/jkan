@@ -70,6 +70,7 @@ vulnerability:
   hazard_process_primary: fluvial_flood
   hazard_process_secondary: null
   hazard_secondary: null
+  impact_unit: percentage
   intensity: fl_wd:m
   metric: mean_damage_ratio
   relationship: ''

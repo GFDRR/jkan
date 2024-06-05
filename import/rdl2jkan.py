@@ -158,37 +158,38 @@ def make_vulnerability(vulnerability):
         function_type.append("engineering_demand")
 
     props_to_summarize = {
-        "dimension": []
+        "dimension": [],
+        "unit": []
     }
 
-    if "costs" in vulnerability:
-        for cost in vulnerability["costs"]:
+    if "cost" in vulnerability:
+        for cost in vulnerability["cost"]:
             if cost["dimension"]:
                 props_to_summarize["dimension"].append(cost["dimension"])
+            if cost["unit"]:
+                props_to_summarize["unit"].append(cost["unit"])
 
     return {
         # required; throw if missing
         "approach": ', '.join(sorted(set(approach))),
         "base_data_type": impact.get("base_data_type"),
         "category": vulnerability.get("category"),
+        "dimension": ', '.join(sorted(set(props_to_summarize["dimension"]))),
+        "function_type": ', '.join(sorted(set(function_type))),
         "hazard_primary": vulnerability.get("hazard_primary"),
         "intensity": vulnerability.get("intensity"),
         "metric": impact.get("metric"),
         "relationship": ', '.join(sorted(set(relationship))),
         "scale": vulnerability.get("spatial").get("scale"),
         "type": impact.get("type"),
-        "unit": impact.get("unit"),
-        "dimension": ', '.join(sorted(set(props_to_summarize["dimension"]))),
-        # TODO: verify this should be derived from the property under functions
-        "function_type": ', '.join(sorted(set(function_type))),
+        "unit": ', '.join(sorted(set(props_to_summarize["unit"]))),
+        "impact_unit": impact.get("unit"),
         # optional
         "hazard_analysis_type": vulnerability.get("hazard_analysis_type"),
         "hazard_process_primary": vulnerability.get("hazard_process_primary"),
         "hazard_process_secondary": vulnerability.get("hazard_process_secondary"),
         "hazard_secondary": vulnerability.get("hazard_secondary"),
         "taxonomy": vulnerability.get("taxonomy"),
-        # TODO: what is this? can't find on datasets or schema
-        "calculation_method": vulnerability.get("calculation_method"),
     }
 
 
@@ -196,23 +197,35 @@ def make_loss(loss):
     """Convert RDL loss metadata into JKAN frontmatter"""
     if loss is None:
         return None
+    
+    props_to_summarize = {
+        # required; throw if missing
+        "dimension": [],
+        "hazard_type": [],
+        # optional
+        "hazard_process": [],
+        "description": [],
+        "category": [],
+        "impact_type": [],
+        "impact_metric": [],
+        "impact_unit": [],
+        "base_data_type": [],
+        "type": [],
+        "approach": [],
+        "hazard_analysis_type": [],
+        "hazard_id": [],
+        "exposure_id": [],
+        "vulnerability_id": [],
+    }
+
+    for l in loss.get("losses",[]):
+        if l["dimension"]:
+            props_to_summarize["dimension"].append(l["cost"]["dimension"])
+            props_to_summarize["dimension"].append(l["hazard_type"])
 
     return {
-        "hazard_type": loss.get("hazard_type"),
-        "hazard_process": loss.get("hazard_process"),
-        "description": loss.get("description"),
-        "category": loss.get("category"),
-        "dimension": loss.get("dimension"),
-        "impact_type": loss.get("impact_type"),
-        "impact_metric": loss.get("impact_metric"),
-        "impact_unit": loss.get("impact_unit"),
-        "base_data_type": loss.get("base_data_type"),
-        "type": loss.get("type"),
-        "approach": loss.get("approach"),
-        "hazard_analysis_type": loss.get("hazard_analysis_type"),
-        "hazard_id": loss.get("hazard_id"),
-        "exposure_id": loss.get("exposure_id"),
-        "vulnerability_id": loss.get("vulnerability_id"),
+        "dimension": ', '.join(sorted(set(props_to_summarize["dimension"]))),
+        "hazard_type": ', '.join(sorted(set(props_to_summarize["hazard_type"]))),
     }
 
 def make_dataset_frontmatter(dataset):
