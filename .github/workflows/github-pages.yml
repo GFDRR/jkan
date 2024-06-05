@@ -9,7 +9,7 @@ name: Deploy Jekyll site to Pages
 on:
   # Runs on pushes targeting this branch
   push:
-    branches: [gh-pages]
+    branches: [rdl-0.2]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
