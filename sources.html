@@ -4,9 +4,6 @@ layout: default
 permalink: /sources/
 ---
 {% include breadcrumbs.html %}
-
-<a href="{{ site.baseurl }}/add-data-sources/" class="btn btn-default pull-right admin-only" data-hook="add-data-sources-btn"><i class="fa fa-plus"></i> Add Data Source</a>
-
 {% for source in site.sources %}
   {% assign dataset_count = site.datasets | where:"source", source.title | size %}
   <div class="media">

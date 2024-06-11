@@ -1,9 +1,0 @@
-<div class="form-group">
-    <label for="{{ include.field_name }}[]">{{ include.field.label }}{{ include.required | default: "" }}</label>
-    <select multiple class="form-control select2" id="{{ include.field_name }}[]" name="{{ include.field_name }}[]" {% if include.required %}required="true"{% endif %} style="width: 100%">
-      {% if include.value[0] %}{% assign value = include.value[0] %}{% else %}{% assign value = include.value %}{% endif %}
-      {% for geo in site.data.ISO3 %}
-        <option{% if value == geo[0] %} selected="selected"{% endif %} value="{{ geo[0] }}">{{ geo[1] }}</option>
-      {% endfor %}
-    </select>
-  </div>

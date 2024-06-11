@@ -34,8 +34,7 @@ dataset {
 }
 
 /* Hidden from guests */
-.user-issue,
-.admin-only {
+.user-issue {
   display: none;
 }
 

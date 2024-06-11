@@ -10,7 +10,6 @@ export default class {
     const elements = {
       loginLink: queryByHook('login-link', opts.el),
       logoutLink: queryByHook('logout-link', opts.el),
-      adminLinkListItem: queryByHook('admin-link-list-item', opts.el),
       userName: queryByHook('user-name', opts.el),
       userDropdown: queryByHook('user-dropdown', opts.el),
       userDropdownLink: queryByHook('user-dropdown-link', opts.el),
