@@ -28,6 +28,7 @@ dataset_fields:
   - field_name: publisher
     label: Publisher of dataset
     required: true
+    display_template: display/entity.html
   - field_name: version
     label: Dataset version
   - field_name: purpose
@@ -39,6 +40,7 @@ dataset_fields:
   - field_name: creator
     label: Creator
     required: true
+    display_template: display/entity.html
   # TODO: rename everywhere to spatial & massage data
   - field_name: geo_coverage
     label: Spatial coverage
@@ -50,6 +52,7 @@ dataset_fields:
     datajson: license
   - field_name: contact_point
     label: Contact Point
+    display_template: display/entity.html
 
 resource_fields:
   - field_name: id
