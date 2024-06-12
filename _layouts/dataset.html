@@ -50,6 +50,14 @@ layout: default
           <span class="label label-default" property="dcat:mediaType">markdown</span>
           (right-click and "save as" to download)
         </li>
+        <li>
+          {% assign path_to_json = page.path | split: "/" | last | replace: ".md", ".json" | prepend: "_datasets/json/" %}
+          <a href="https://raw.githubusercontent.com/GFDRR/rdl-jkan/gh-pages/{{ path_to_json }}" property="dcat:accessURL" download>
+            <span property="dct:title">Metadata</span> 
+          </a>
+          <span class="label label-default" property="dcat:mediaType">json</span>
+          (right-click and "save as" to download)
+        </li>
       </ul>
       <h2>RDL {{page.risk_data_type | first | capitalize}} Info</h2>
       <table class="table table-striped dataset-details">
