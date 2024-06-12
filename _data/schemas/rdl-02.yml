@@ -6,7 +6,7 @@
 # RDS-attributes: common fields
 # Contribution (dataset)
 dataset_fields:
-  - field_name: id
+  - field_name: dataset_id
     label: ID of dataset
     required: true
   - field_name: title
@@ -378,7 +378,10 @@ loss:
       - probabilistic
   - field_name: hazard_id
     label: Hazard ID
+    display_template: display/dataset_link.html
   - field_name: exposure_id
     label: Exposure ID
+    display_template: display/dataset_link.html
   - field_name: vulnerability_id
     label: Vulnerability ID
+    display_template: display/dataset_link.html

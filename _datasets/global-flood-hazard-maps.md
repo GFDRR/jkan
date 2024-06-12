@@ -5,6 +5,7 @@ contact_point:
 creator:
   name: Fathom
   url: https://www.fathom.global/
+dataset_id: FTH_v3
 description: Probabilistic modelling of fluvial and pluvial flood hazard
 details: "The FATHOM flood-hazard model is a global gridded dataset of flood hazard\
   \ produced at the global scale. It provides flood extent and water depth to ground\
@@ -33,7 +34,6 @@ hazard:
   intensity: wd:cm
   occurrence_range: 1/10 to 1/1000 years
   processes: coastal_flood, fluvial_flood, pluvial_flood
-id: FTH_v3
 license: Commercial
 loss: null
 project: null

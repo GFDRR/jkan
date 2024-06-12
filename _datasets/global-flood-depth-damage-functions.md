@@ -4,6 +4,7 @@ contact_point:
   name: Mattia Amadio
 creator:
   name: Huizinga, J.
+dataset_id: https://publications.jrc.ec.europa.eu/repository/handle/JRC105688
 description: This dataset contains damage curves depicting fractional damage function
   of water depth as well as maximum damage values for a variety of assets and land
   use classes.
@@ -21,7 +22,6 @@ details: Based on an extensive literature survey concave damage curves have been
   assessment in countries where no damage model is currently available.
 exposure: null
 hazard: null
-id: https://publications.jrc.ec.europa.eu/repository/handle/JRC105688
 license: CC-BY-4.0
 loss: null
 project: null

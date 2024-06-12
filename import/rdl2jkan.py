@@ -290,7 +290,7 @@ def make_dataset_frontmatter(dataset):
         # required; throw if missing
         "contact_point": dataset["contact_point"],
         "creator": dataset["creator"],
-        "id": dataset["id"],
+        "dataset_id": dataset["id"],
         "license": dataset["license"],
         "publisher": dataset["publisher"],
         "resources": [make_resource(resource) for resource in dataset["resources"]],
@@ -349,7 +349,7 @@ if __name__ == "__main__":
                 dataset_frontmatter = make_dataset_frontmatter(dataset_json)
                 write_frontmatter(dataset_frontmatter, datasets_output_dir)
             except Exception as e:
-                logging.error(f"While writing {dataset_json.get("title", "a dataset with a missing title")} (id: {dataset_json.get("id", "missing")})",exc_info=e)
+                logging.error(f"While writing {dataset_json.get("title", "a dataset with a missing title")} (dataset_id: {dataset_json.get("dataset_id", "missing")})",exc_info=e)
             
 
     print("\nAll done! Please enjoy your datasets :)\n",

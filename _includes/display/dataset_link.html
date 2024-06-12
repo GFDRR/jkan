@@ -1,0 +1,22 @@
+<tr>
+  {% assign field_name = include.field.field_name %}
+  {% assign risk_data_type = page["risk_data_type"] | first %}
+  {% if field_name == "hazard_id" %}
+    {% assign linked_id = page[risk_data_type].hazard_id %}
+  {% elsif field_name == "exposure_id" %}
+    {% assign linked_id = page[risk_data_type].exposure_id %}
+  {% endif %}
+  
+  {% assign linked_dataset = site.datasets | where:"dataset_id", linked_id | first %}
+  {% if linked_dataset %}
+    <th>{{ include.field.label | split:" " | first }}</th>
+    <td class="{{field_name}}">
+      <a href="{{ linked_dataset.url }}">{{ linked_dataset.title }}</a>
+    </td>
+  {% else %}
+    <th>{{ include.field.label }}</th>
+    <td class="{{field_name}}">
+      {{ linked_id }}
+    </td>
+  {% endif %}
+

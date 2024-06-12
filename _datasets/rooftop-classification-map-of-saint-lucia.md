@@ -7,6 +7,7 @@ creator:
   email: tisabelle@worldbank.org
   name: Isabelle Tingzon
   url: https://issa-tingzon.github.io/
+dataset_id: ortho_LCA
 description: 'Building footprint polygons of Saint Lucia with corresponding roof type
   and roof material attributes predicted from RGB orthophotos taken in 2022. '
 details: 'The vector dataset depicts building footprint polygons of Saint Lucia with
@@ -24,7 +25,6 @@ exposure:
   quantity_kind: area
   taxonomy: Custom roof type and roof material taxonomy
 hazard: null
-id: ortho_LCA
 license: CC-BY-4.0
 loss: null
 project: Digital Earth for Resilient Housing and Infrastructure in the Caribbean

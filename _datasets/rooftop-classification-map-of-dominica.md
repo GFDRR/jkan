@@ -7,6 +7,7 @@ creator:
   email: tisabelle@worldbank.org
   name: Isabelle Tingzon
   url: https://issa-tingzon.github.io/
+dataset_id: ortho_DOM
 description: Building footprint polygons of Dominica with corresponding roof type
   and roof material attributes predicted from RGB orthophotos taken in 2018-2019,
   in the aftermath of Hurricane Maria.
@@ -26,7 +27,6 @@ exposure:
   quantity_kind: area
   taxonomy: Custom roof type and roof material taxonomy
 hazard: null
-id: ortho_DOM
 license: CC-BY-4.0
 loss: null
 project: Digital Earth for Resilient Housing and Infrastructure in the Caribbean
