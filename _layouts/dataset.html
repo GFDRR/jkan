@@ -44,7 +44,7 @@ layout: default
         </li>
         {% endfor %}
         <li>
-          <a href="https://raw.githubusercontent.com/GFDRR/rdl-jkan/gh-pages/{{ page.path }}" property="dcat:accessURL" download>
+          <a href="https://raw.githubusercontent.com/GFDRR/rdl-jkan/rdl-0.2/{{ page.path }}" property="dcat:accessURL" download>
             <span property="dct:title">Metadata</span> 
           </a>
           <span class="label label-default" property="dcat:mediaType">markdown</span>
@@ -52,7 +52,7 @@ layout: default
         </li>
         <li>
           {% assign path_to_json = page.path | split: "/" | last | replace: ".md", ".json" | prepend: "_datasets/json/" %}
-          <a href="https://raw.githubusercontent.com/GFDRR/rdl-jkan/gh-pages/{{ path_to_json }}" property="dcat:accessURL" download>
+          <a href="https://raw.githubusercontent.com/GFDRR/rdl-jkan/rdl-0.2/{{ path_to_json }}" property="dcat:accessURL" download>
             <span property="dct:title">Metadata</span> 
           </a>
           <span class="label label-default" property="dcat:mediaType">json</span>

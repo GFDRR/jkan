@@ -4,8 +4,9 @@
       {% capture name %}{{ include.value.name }}{% endcapture %}
       {% if include.value.url %}
         {% capture href %}{{ include.value.url }}{% endcapture %}
+        <a href="{{ href }}">{{ name }}</a>
       {% elsif include.value.email %}
         {% capture href %}{{ include.value.email }}{% endcapture %}
+        <a href="mailto:{{ href }}">{{ name }}</a>
       {% endif %}
-      <a href="{{ href }}">{{ name }}</a>
   </td>
