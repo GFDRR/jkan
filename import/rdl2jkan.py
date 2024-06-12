@@ -5,12 +5,20 @@ import json
 import os
 import re
 import unicodedata
+import logging
 from pathlib import Path
 
 import yaml
 
 generated_dir = "generated"
 datasets_output_dir = f"{generated_dir}/_datasets"
+logname = f"{generated_dir}/error.log"
+
+logging.basicConfig(filename=logname,
+                    filemode='a',
+                    format='%(asctime)s %(levelname)s %(message)s',
+                    datefmt='%H:%M:%S',
+                    level=logging.DEBUG)
 
 # Copied Django's slugify from https://github.com/django/django/blob/main/django/utils/text.py
 # It's somewhat overkill for our case (which is just generating valid filenames), but it's relatively
@@ -336,8 +344,19 @@ if __name__ == "__main__":
         datasets_json = json.load(input_file)
         for dataset_json in datasets_json["datasets"]:
             # Generate output
-            dataset_frontmatter = make_dataset_frontmatter(dataset_json)
-            # Write output
-            write_frontmatter(dataset_frontmatter, datasets_output_dir)
+            try:
+                # Write output
+                dataset_frontmatter = make_dataset_frontmatter(dataset_json)
+                write_frontmatter(dataset_frontmatter, datasets_output_dir)
+            except Exception as e:
+                logging.error(f"While writing {dataset_json.get("title", "a dataset with a missing title")} (id: {dataset_json.get("id", "missing")})",exc_info=e)
+            
 
-    print("Done! Look in the import README to see what to do with these files")
+    print("\nAll done! Please enjoy your datasets :)\n",
+          "Datasets have been generated in: `import/generated/_datasets`",
+          "To include them in your JKAN site, run the following from `import`",
+          "\nmv generated/_datasets/* ../_datasets\n",
+          "This may overwrite the existing contents of `_datasets`.\n",
+          f"Issues with your input files have been logged to: `import/{logname}`",
+          "More info is availabile at `import/README.md`\n",
+          sep=os.linesep)
