@@ -5,9 +5,8 @@ contact_point:
 creator:
   name: GFDRR
   url: https://www.gfdrr.org
-dataset_id: SWIO_hzd-strong_wind
-description: Strong Wind hazard caused by tropical cyclones measured as the maximum
-  one-minute sustained wind speed (kph) at 10 meters above the ground surface.
+dataset_id: SWIO_hzd-flood
+description: 'Flood hazard measured as the maximum water depth for six return periods. '
 details: This data set was produced with financial support from the European Union
   in the framework of the ACP-EU Natural Disaster Risk Reduction Program, managed
   by the Global Facility for Disaster Reduction and Recovery (GFDRR).
@@ -16,10 +15,10 @@ hazard:
   calculation_method: inferred, simulated
   disaster_identifiers: ''
   hazard_analysis_type: probabilistic
-  hazard_type: strong_wind
-  intensity: v_etc(10m):km/h
+  hazard_type: flood
+  intensity: fl_wd:m
   occurrence_range: 10, 25, 50, 100, 250, 500 and 1000 years
-  processes: tropical_cyclone
+  processes: fluvial_flood, pluvial_flood
 license: CC-BY-4.0
 loss: null
 project: SWIO-RAFI
@@ -39,50 +38,85 @@ purpose: 'The goal of the South West Indian Ocean Risk Assessment and Financing 
   resampled to reduce file sizes.'
 resources:
 - coordinate_system: EPSG:4326
-  description: Strong Wind hazard caused by tropical cyclones over Comoros measured
-    as the maximum one-minute sustained wind speed (kph) at 10 meters above the ground
-    surface.
-  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0038599/DR0054350/hzd-com-wi.zip
+  description: Flood hazard triggered by tropical cyclones over Comoros measured as
+    the maximum water depth for six return periods.
+  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0038590/DR0054342/hzd-com-fl-tcy.zip
   format: geotiff
-  id: COM
+  id: COM-tcy
   spatial_resolution: 90
   title: Comoros - Flood hazard scenarios (tropical cyclones)
 - coordinate_system: EPSG:4326
-  description: Strong Wind hazard caused by tropical cyclones over Madagascar measured
-    as the maximum one-minute sustained wind speed (kph) at 10 meters above the ground
-    surface.
-  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0038598/DR0054337/hzd-mdg-wi.zip
+  description: Flood hazard triggered by extra-tropical cyclones over Mauritius measured
+    as the maximum water depth for six return periods.
+  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0038590/DR0054341/hzd-com-fl-etc.zip
   format: geotiff
-  id: MDG
+  id: COM-etc
+  spatial_resolution: 90
+  title: Comoros - Flood hazard scenarios (extra-tropical cyclones)
+- coordinate_system: EPSG:4326
+  description: Flood hazard triggered by tropical cyclones over Madagascar measured
+    as the maximum water depth for six return periods.
+  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0038589/DR0054329/hzd-mdg-fl-tcy.zip
+  format: geotiff
+  id: MDG-tcy
   spatial_resolution: 900
   title: Madagascar - Flood hazard scenarios (tropical cyclones)
 - coordinate_system: EPSG:4326
-  description: Strong Wind hazard caused by tropical cyclones over Mauritius measured
-    as the maximum one-minute sustained wind speed (kph) at 10 meters above the ground
-    surface.
-  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0038597/DR0054310/hzd-mus-wi.zip
+  description: Flood hazard triggered by extra-tropical cyclones over Madagascar measured
+    as the maximum water depth for six return periods.
+  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0038589/DR0054328/hzd-mdg-fl-etc.zip
   format: geotiff
-  id: MUS
+  id: MDG-etc
+  spatial_resolution: 900
+  title: Madagascar - Flood hazard scenarios (extra-tropical cyclones)
+- coordinate_system: EPSG:4326
+  description: Flood hazard triggered by tropical cyclones over Mauritius measured
+    as the maximum water depth for six return periods.
+  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0038588/DR0054315/hzd-mus-fl-tcy.zip
+  format: geotiff
+  id: MUS-tcy
   spatial_resolution: 90
   title: Mauritius - Flood hazard scenarios (tropical cyclones)
 - coordinate_system: EPSG:4326
-  description: Strong Wind hazard caused by tropical cyclones over Seychelles measured
-    as the maximum one-minute sustained wind speed (kph) at 10 meters above the ground
-    surface.
-  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0038596/DR0054318/hzd-syc-wi.zip
+  description: Flood hazard triggered by extra-tropical cyclones over Mauritius measured
+    as the maximum water depth for six return periods.
+  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0038588/DR0054314/hzd-mus-fl-etc.zip
   format: geotiff
-  id: SYC
+  id: MUS-etc
+  spatial_resolution: 90
+  title: Mauritius - Flood hazard scenarios (extra-tropical cyclones)
+- coordinate_system: EPSG:4326
+  description: Flood hazard triggered by tropical cyclones over Seychelles measured
+    as the maximum water depth for six return periods.
+  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0038587/DR0054325/hzd-syc-fl-tcy.zip
+  format: geotiff
+  id: SYC-tcy
   spatial_resolution: 90
   title: Seychelles - Flood hazard scenarios (tropical cyclones)
 - coordinate_system: EPSG:4326
-  description: Strong Wind hazard caused by tropical cyclones over Zanzibar measured
-    as the maximum one-minute sustained wind speed (kph) at 10 meters above the ground
-    surface.
-  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0038595/DR0054365/hzd-zan-wi.zip
+  description: Flood hazard triggered by extra-tropical cyclones over Seychelles measured
+    as the maximum water depth for six return periods.
+  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0038587/DR0054324/hzd-syc-fl-etc.zip
   format: geotiff
-  id: ZAN
+  id: SYC-etc
+  spatial_resolution: 90
+  title: Seychelles - Flood hazard scenarios (extra-tropical cyclones)
+- coordinate_system: EPSG:4326
+  description: Flood hazard triggered by tropical cyclones over Zanzibar measured
+    as the maximum water depth for six return periods.
+  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0038586/DR0054359/hzd-zan-fl-tcy.zip
+  format: geotiff
+  id: ZAN-tcy
   spatial_resolution: 90
   title: Zanzibar - Flood hazard scenarios (tropical cyclones)
+- coordinate_system: EPSG:4326
+  description: Flood hazard triggered by extra-tropical cyclones over Zanzibar measured
+    as the maximum water depth for six return periods.
+  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0038586/DR0054358/hzd-zan-fl-etc.zip
+  format: geotiff
+  id: ZAN-etc
+  spatial_resolution: 90
+  title: Zanzibar - Flood hazard scenarios (extra-tropical cyclones)
 risk_data_type:
 - hazard
 schema: rdl-02
