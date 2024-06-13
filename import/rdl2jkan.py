@@ -327,9 +327,9 @@ if __name__ == "__main__":
         description="Convert RDL JSON datasets into JKAN frontmatter"
     )
     parser.add_argument(
-        "--input_file",
-        help="Path to a dump of RDL datasets, in JSON format",
-        default="rdl_datasets.json",
+        "--input_folder",
+        help="Path to the folder containing RDL datasets in JSON format",
+        default=".",
         action="store",
     )
     args = parser.parse_args()
@@ -339,8 +339,11 @@ if __name__ == "__main__":
     if not Path(datasets_output_dir).is_dir():
         os.makedirs(datasets_output_dir)
    
-    # Open input
-    with open(args.input_file) as input_file:
+
+# Iterate over all JSON files in the input folder
+input_path = Path(args.input_folder)
+for json_file in input_path.glob("../_datasets/json/*.json"):
+    with open(json_file, encoding='utf-8') as input_file:
         datasets_json = json.load(input_file)
         for dataset_json in datasets_json["datasets"]:
             # Generate output
@@ -349,8 +352,12 @@ if __name__ == "__main__":
                 dataset_frontmatter = make_dataset_frontmatter(dataset_json)
                 write_frontmatter(dataset_frontmatter, datasets_output_dir)
             except Exception as e:
-                logging.error(f"While writing {dataset_json.get("title", "a dataset with a missing title")} (dataset_id: {dataset_json.get("dataset_id", "missing")})",exc_info=e)
-            
+                logging.error(
+                    f"While writing {dataset_json.get('title', 'a dataset with a missing title')} "
+                    f"(dataset_id: {dataset_json.get('dataset_id', 'missing')})",
+                    exc_info=e
+                )
+
 
     print("\nAll done! Please enjoy your datasets :)\n",
           "Datasets have been generated in: `import/generated/_datasets`",

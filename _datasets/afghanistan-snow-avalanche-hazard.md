@@ -5,9 +5,9 @@ contact_point:
 creator:
   name: GFDRR
   url: https://www.gfdrr.org
-dataset_id: AFG_lss-flood
-description: Average Annual Losses (AAL) over population and asset under current conditions
-  and SSP scenarios at 2050.
+dataset_id: AFG_hzd-avalanche
+description: Detailed avalanche study gathering historic avalanche data and performing
+  numerical modeling of the avalanche runout potential and dynamics nationwide.
 details: "To better understand natural hazard and disaster risk, the World Bank and\
   \ Global Facility for Disaster Reduction and Recovery (GFDRR) supported the development\
   \ of new \uFB02uvial \uFB02ood, \uFB02ash \uFB02ood, drought, landslide, avalanche\
@@ -15,27 +15,16 @@ details: "To better understand natural hazard and disaster risk, the World Bank 
   \ of the costs and benefts of resilient reconstruction and risk reduction strategies.\
   \ This publication describes the applied methods and main results of the project."
 exposure: null
-hazard: null
-license: CC-BY-4.0
-loss:
-  approach: analytical
-  base_data_type: inferred
-  category: ''
-  description: Average Annual Losses (AAL) for asset SSP scenarios at 2050 (AAL_usd_SP1-5),
-    Average Annual Losses (AAL) for current asset (AALnowUSD), Average Annual Losses
-    (AAL) for current population (AALpop), Average Annual Losses (AAL) for population
-    SSP scenarios at 2050 (AALpopSP1-5)
-  dimension: population, structure
-  exposure_id: AFG_exp-asset
+hazard:
+  calculation_method: simulated
+  disaster_identifiers: ''
   hazard_analysis_type: probabilistic
-  hazard_id: AFG_hzd-flood
-  hazard_process: fluvial_flood
-  hazard_type: flood
-  impact_metric: at_risk_value, loss_annual_average_value
-  impact_type: direct
-  impact_unit: count
-  type: gross
-  vulnerability_id: ''
+  hazard_type: landslide
+  intensity: kPa
+  occurrence_range: 100 years
+  processes: snow_avalanche
+license: CC-BY-4.0
+loss: null
 project: Afghanistan Multi-hazard risk assessment
 publisher:
   name: GFDRR
@@ -49,30 +38,38 @@ purpose: These maps have been derived on a nation-wide scale for the purpose of 
   where applied to dimension mitigation structures or strategies.
 resources:
 - coordinate_system: EPSG:32642
-  description: Average Annual Losses (AAL) for current population (AALpop), current
-    asset (AALnowUSD), population SSP scenarios at 2050 (AALpopSP1-5), asset SSP scenarios
-    at 2050 (AAL_usd_SP1-5). Aggregated ad Administrative level (ADM1).
-  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0050637/DR0065486/lss-afg-fl-adm.zip
+  description: Footprint masks for hazard exceeding 1kPa and 3 kPa.
+  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0050635/DR0065479/hzd-afg-ls-lav-kpa.zip
   format: gpkg
   id: '0'
   spatial_resolution: null
-  title: Afghanistan AAL and RPs (baseline and 2050)
+  title: Snow Avalanche hazard - 1kPa and 3 kPa
 - coordinate_system: EPSG:32642
-  description: Average Annual Losses (AAL) over physical asset in USD for baseline
-    scenario.
-  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0050637/DR0065487/lss-afg-fl.zip
+  description: Hazard map
+  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0050635/DR0065478/hzd-afg-ls-lav.zip
   format: geotiff
   id: '1'
-  spatial_resolution: 90
-  title: Afghanistan AAL and RPs (baseline)
+  spatial_resolution: 20
+  title: Snow Avalanche hazard
+- coordinate_system: EPSG:32642
+  description: Snow Water Equivalent (SWE) is calculated from EUWATCH data running
+    from 1958 to 2002. The max grid cell values of each hydrological year where the
+    accumulative SWE is taken. Then of the 44 years of modelled data the maximum of
+    the aformentioned maximum values is taken. Unit is kg/m2. Only the 100 year return
+    period scenario was computed.
+  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0050635/DR0065480/hzd-afg-ls-lav-rp100-swe.zip
+  format: geotiff
+  id: '2'
+  spatial_resolution: 2000
+  title: Snow Avalanche hazard - Snow Water Equivalents
 risk_data_type:
-- loss
+- hazard
 schema: rdl-02
 spatial:
   countries:
   - AFG
   scale: national
-title: Afghanistan Flood risk
+title: Afghanistan Snow Avalanche hazard
 version: '2018'
 vulnerability: null
 ---

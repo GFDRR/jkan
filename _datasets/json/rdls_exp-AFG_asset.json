@@ -1,0 +1,149 @@
+{
+    "datasets": [
+        {
+            "id": "AFG_exp-asset",
+            "title": "Afghanistan Asset exposure",
+            "description": "Collection of exposure datasets for risk assessment purpose in Afghanistan. Includes:\n- Location, area and USD value of rainfed and irrigated agricultural crops.\n- Total exposure value of buildings for different occupancy types: urban and rural structures, residential, non-residential, and industrial area. Values expressed as replacement cost (USD), area (m2), or number of elements (count).\n- Location, count and USD value (when available) for the following infrastructures in Afghanistan: airports, bridges, dams, health centers, hospitals, power plants, roads, schools and universities.\n- Population count and GDP value in USD for three macrosectors (Industry, Agriculture and Services) in Afghanistan.",
+            "risk_data_type": [
+                "exposure"
+            ],
+            "publisher": {
+                "name": "GFDRR",
+                "url": "https://www.gfdrr.org"
+            },
+            "version": "2018",
+            "purpose": "These maps have been derived on a nation-wide scale for the purpose of identifying high risk- areas on the district and provincial scale, from which decisions can be made on allocating efforts for more detailed site specific hazard and risk analysis. Use of this information on smaller scales should be applied with care. Importantly for on a local scale, it is often the case that more detailed case history and hazard information is required to perform such hazard and risk modelling, particularly where applied to dimension mitigation structures or strategies.",
+            "project": "Afghanistan Multi-hazard risk assessment",
+            "details": "To better understand natural hazard and disaster risk, the World Bank and Global Facility for Disaster Reduction and Recovery (GFDRR) supported the development of new ﬂuvial ﬂood, ﬂash ﬂood, drought, landslide, avalanche and seismic risk information in Afghanistan, as well as a frst-order analysis of the costs and benefts of resilient reconstruction and risk reduction strategies. This publication describes the applied methods and main results of the project.",
+            "spatial": {
+                "countries": [
+                    "AFG"
+                ],
+                "scale": "national"
+            },
+            "license": "CC-BY-4.0",
+            "contact_point": {
+                "name": "Pierre Chrzanowski",
+                "email": "pchrzanowski@worldbank.org"
+            },
+            "creator": {
+                "name": "GFDRR",
+                "url": "https://www.gfdrr.org"
+            },
+            "exposure": {
+                "category": "buildings; infrastructures; agriculture; population",
+                "metrics": [
+                    {
+                        "id": "0",
+                        "dimension": "structure",
+                        "quantity_kind": "area"
+                    },
+                    {
+                        "id": "1",
+                        "dimension": "structure",
+                        "quantity_kind": "count"
+                    },
+                    {
+                        "id": "2",
+                        "dimension": "structure",
+                        "quantity_kind": "currency"
+                    },
+                    {
+                        "id": "3",
+                        "dimension": "content",
+                        "quantity_kind": "currency"
+                    }
+                ]
+            },
+            "attributions": [
+                {
+                    "id": "0",
+                    "entity": {
+                        "name": "Federica Ranghieri",
+                        "email": "franghieri@worldbank.org"
+                    },
+                    "role": "world_bank_team_lead"
+                },
+                {
+                    "id": "1",
+                    "entity": {
+                        "name": "Ditte Fallesen",
+                        "email": "dfallesen@worldbank.org"
+                    },
+                    "role": "world_bank_team_lead"
+                },
+                {
+                    "id": "2",
+                    "entity": {
+                        "name": "Brandan Jongman",
+                        "email": "bjongman@worldbank.org"
+                    },
+                    "role": "world_bank_team_lead"
+                }
+            ],
+            "referenced_by": [
+                {
+                    "id": "0",
+                    "name": "Afghanistan - Multi-hazard risk assessment",
+                    "author_names": [
+                        "Federica Ranghieri",
+                        "Ditte Fallesen",
+                        "Brenden Jongman",
+                        "Guillermo Siercke",
+                        "Abdul Azim Doosti",
+                        "Julian Palma",
+                        "Simone Balog",
+                        "Sayed Sharifullah Mashahid",
+                        "Erika Vargas"
+                    ],
+                    "date_published": "2018-12-18",
+                    "url": "https://www.gfdrr.org/sites/default/files/publication/Afghanistan_MHRA.pdf"
+                }
+            ],
+            "resources": [
+                {
+                    "id": "0",
+                    "title": "Buildings",
+                    "description": "Buildings exposure for different occupancy types and materials: urban and rural structures, residential, non-residential, and industrial area. Values expressed as replacement cost (USD), area (m2), or number of elements (count).",
+                    "format": "geotiff",
+                    "spatial_resolution": 90,
+                    "coordinate_system": "EPSG:32642",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0050638/DR0065490/exp-afg-buildings.zip"
+                },
+                {
+                    "id": "1",
+                    "title": "Infrastructures",
+                    "description": "Location, count and USD value (when available) for airports, bridges, dams, health centers, hospitals, power plants, roads, schools and universities.",
+                    "format": "geotiff",
+                    "spatial_resolution": 90,
+                    "coordinate_system": "EPSG:32642",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0050638/DR0065491/exp-afg-infrastructures.zip"
+                },
+                {
+                    "id": "2",
+                    "title": "Agriculture",
+                    "description": "Location, area and USD value of rainfed and irrigated agricultural crops.",
+                    "format": "geotiff",
+                    "spatial_resolution": 90,
+                    "coordinate_system": "EPSG:32642",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0050638/DR0065489/exp-afg-agriculture.zip"
+                },
+                {
+                    "id": "3",
+                    "title": "Population and GDP",
+                    "description": "Population count and GDP value in USD for three macrosectors (Industry, Agriculture and Services).",
+                    "format": "geotiff",
+                    "spatial_resolution": 90,
+                    "coordinate_system": "EPSG:32642",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0050638/DR0065492/exp-afg-indicators.zip"
+                }
+            ],
+            "links": [
+                {
+                    "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+                    "rel": "describedby"
+                }
+            ]
+        }
+    ]
+}

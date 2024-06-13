@@ -1,0 +1,195 @@
+{
+    "datasets": [
+        {
+            "id": "AFG_lss-flood",
+            "title": "Afghanistan Flood risk",
+            "description": "Average Annual Losses (AAL) over population and asset under current conditions and SSP scenarios at 2050.",
+            "risk_data_type": [
+                "loss"
+            ],
+            "publisher": {
+                "name": "GFDRR",
+                "url": "https://www.gfdrr.org"
+            },
+            "version": "2018",
+            "purpose": "These maps have been derived on a nation-wide scale for the purpose of identifying high risk- areas on the district and provincial scale, from which decisions can be made on allocating efforts for more detailed site specific hazard and risk analysis. Use of this information on smaller scales should be applied with care. Importantly for on a local scale, it is often the case that more detailed case history and hazard information is required to perform such hazard and risk modelling, particularly where applied to dimension mitigation structures or strategies.",
+            "project": "Afghanistan Multi-hazard risk assessment",
+            "details": "To better understand natural hazard and disaster risk, the World Bank and Global Facility for Disaster Reduction and Recovery (GFDRR) supported the development of new ﬂuvial ﬂood, ﬂash ﬂood, drought, landslide, avalanche and seismic risk information in Afghanistan, as well as a frst-order analysis of the costs and benefts of resilient reconstruction and risk reduction strategies. This publication describes the applied methods and main results of the project.",
+            "spatial": {
+                "countries": [
+                    "AFG"
+                ],
+                "scale": "national"
+            },
+            "license": "CC-BY-4.0",
+            "contact_point": {
+                "name": "Pierre Chrzanowski",
+                "email": "pchrzanowski@worldbank.org"
+            },
+            "creator": {
+                "name": "GFDRR",
+                "url": "https://www.gfdrr.org"
+            },
+            "attributions": [
+                {
+                    "id": "0",
+                    "entity": {
+                        "name": "Federica Ranghieri",
+                        "email": "franghieri@worldbank.org"
+                    },
+                    "role": "world_bank_team_lead"
+                },
+                {
+                    "id": "1",
+                    "entity": {
+                        "name": "Ditte Fallesen",
+                        "email": "dfallesen@worldbank.org"
+                    },
+                    "role": "world_bank_team_lead"
+                },
+                {
+                    "id": "2",
+                    "entity": {
+                        "name": "Brandan Jongman",
+                        "email": "bjongman@worldbank.org"
+                    },
+                    "role": "world_bank_team_lead"
+                }
+            ],
+            "referenced_by": [
+                {
+                    "id": "0",
+                    "name": "Afghanistan - Multi-hazard risk assessment",
+                    "author_names": [
+                        "Federica Ranghieri",
+                        "Ditte Fallesen",
+                        "Brenden Jongman",
+                        "Guillermo Siercke",
+                        "Abdul Azim Doosti",
+                        "Julian Palma",
+                        "Simone Balog",
+                        "Sayed Sharifullah Mashahid",
+                        "Erika Vargas"
+                    ],
+                    "date_published": "2018-12-18",
+                    "url": "https://www.gfdrr.org/sites/default/files/publication/Afghanistan_MHRA.pdf"
+                }
+            ],
+            "resources": [
+                {
+                    "id": "0",
+                    "title": "Afghanistan AAL and RPs (baseline and 2050)",
+                    "description": "Average Annual Losses (AAL) for current population (AALpop), current asset (AALnowUSD), population SSP scenarios at 2050 (AALpopSP1-5), asset SSP scenarios at 2050 (AAL_usd_SP1-5). Aggregated ad Administrative level (ADM1).",
+                    "format": "gpkg",
+                    "coordinate_system": "EPSG:32642",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0050637/DR0065486/lss-afg-fl-adm.zip"
+                },
+                {
+                    "id": "1",
+                    "title": "Afghanistan AAL and RPs (baseline)",
+                    "description": "Average Annual Losses (AAL) over physical asset in USD for baseline scenario.",
+                    "format": "geotiff",
+                    "spatial_resolution": 90,
+                    "coordinate_system": "EPSG:32642",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0050637/DR0065487/lss-afg-fl.zip"
+                }
+            ],
+            "loss": {
+                "losses": [
+                    {
+                        "id": "0",
+                        "hazard_type": "flood",
+                        "hazard_process": "fluvial_flood",
+                        "description": "Average Annual Losses (AAL) for current population (AALpop)",
+                        "cost": {
+                            "id": "0",
+                            "dimension": "population"
+                        },
+                        "impact": {
+                            "type": "direct",
+                            "metric": "at_risk_value",
+                            "unit": "count",
+                            "base_data_type": "inferred"
+                        },
+                        "type": "gross",
+                        "approach": "analytical",
+                        "hazard_analysis_type": "probabilistic",
+                        "hazard_id": "AFG_hzd-flood",
+                        "exposure_id": "AFG_exp-asset"
+                    },
+                    {
+                        "id": "1",
+                        "hazard_type": "flood",
+                        "hazard_process": "fluvial_flood",
+                        "description": "Average Annual Losses (AAL) for current asset (AALnowUSD)",
+                        "cost": {
+                            "id": "1",
+                            "dimension": "structure",
+                            "unit": "USD"
+                        },
+                        "impact": {
+                            "type": "direct",
+                            "metric": "loss_annual_average_value",
+                            "unit": "count",
+                            "base_data_type": "inferred"
+                        },
+                        "type": "gross",
+                        "approach": "analytical",
+                        "hazard_analysis_type": "probabilistic",
+                        "hazard_id": "AFG_hzd-flood",
+                        "exposure_id": "AFG_exp-asset"
+                    },
+                    {
+                        "id": "2",
+                        "hazard_type": "flood",
+                        "hazard_process": "fluvial_flood",
+                        "description": "Average Annual Losses (AAL) for population SSP scenarios at 2050 (AALpopSP1-5)",
+                        "cost": {
+                            "id": "2",
+                            "dimension": "population"
+                        },
+                        "impact": {
+                            "type": "direct",
+                            "metric": "at_risk_value",
+                            "unit": "count",
+                            "base_data_type": "inferred"
+                        },
+                        "type": "gross",
+                        "approach": "analytical",
+                        "hazard_analysis_type": "probabilistic",
+                        "hazard_id": "AFG_hzd-flood",
+                        "exposure_id": "AFG_exp-asset"
+                    },
+                    {
+                        "id": "3",
+                        "hazard_type": "flood",
+                        "hazard_process": "fluvial_flood",
+                        "description": "Average Annual Losses (AAL) for asset SSP scenarios at 2050 (AAL_usd_SP1-5)",
+                        "cost": {
+                            "id": "3",
+                            "dimension": "structure",
+                            "unit": "USD"
+                        },
+                        "impact": {
+                            "type": "direct",
+                            "metric": "loss_annual_average_value",
+                            "unit": "count",
+                            "base_data_type": "inferred"
+                        },
+                        "type": "gross",
+                        "approach": "analytical",
+                        "hazard_analysis_type": "probabilistic",
+                        "hazard_id": "AFG_hzd-flood",
+                        "exposure_id": "AFG_exp-asset"
+                    }
+                ]
+            },
+            "links": [
+                {
+                    "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+                    "rel": "describedby"
+                }
+            ]
+        }
+    ]
+}

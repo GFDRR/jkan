@@ -5,9 +5,9 @@ contact_point:
 creator:
   name: GFDRR
   url: https://www.gfdrr.org
-dataset_id: AFG_lss-flood
-description: Average Annual Losses (AAL) over population and asset under current conditions
-  and SSP scenarios at 2050.
+dataset_id: AFG_hzd-drought
+description: Annual water availability per sub-catchment for baseline and projected
+  conditions (2050) according to seven return period scenarios.
 details: "To better understand natural hazard and disaster risk, the World Bank and\
   \ Global Facility for Disaster Reduction and Recovery (GFDRR) supported the development\
   \ of new \uFB02uvial \uFB02ood, \uFB02ash \uFB02ood, drought, landslide, avalanche\
@@ -15,27 +15,16 @@ details: "To better understand natural hazard and disaster risk, the World Bank 
   \ of the costs and benefts of resilient reconstruction and risk reduction strategies.\
   \ This publication describes the applied methods and main results of the project."
 exposure: null
-hazard: null
-license: CC-BY-4.0
-loss:
-  approach: analytical
-  base_data_type: inferred
-  category: ''
-  description: Average Annual Losses (AAL) for asset SSP scenarios at 2050 (AAL_usd_SP1-5),
-    Average Annual Losses (AAL) for current asset (AALnowUSD), Average Annual Losses
-    (AAL) for current population (AALpop), Average Annual Losses (AAL) for population
-    SSP scenarios at 2050 (AALpopSP1-5)
-  dimension: population, structure
-  exposure_id: AFG_exp-asset
+hazard:
+  calculation_method: inferred, simulated
+  disaster_identifiers: ''
   hazard_analysis_type: probabilistic
-  hazard_id: AFG_hzd-flood
-  hazard_process: fluvial_flood
-  hazard_type: flood
-  impact_metric: at_risk_value, loss_annual_average_value
-  impact_type: direct
-  impact_unit: count
-  type: gross
-  vulnerability_id: ''
+  hazard_type: drought
+  intensity: Water shortage (%)
+  occurrence_range: 10, 20, 100, 250, 500, 1000 years
+  processes: hydrological_drought
+license: CC-BY-4.0
+loss: null
 project: Afghanistan Multi-hazard risk assessment
 publisher:
   name: GFDRR
@@ -49,30 +38,21 @@ purpose: These maps have been derived on a nation-wide scale for the purpose of 
   where applied to dimension mitigation structures or strategies.
 resources:
 - coordinate_system: EPSG:32642
-  description: Average Annual Losses (AAL) for current population (AALpop), current
-    asset (AALnowUSD), population SSP scenarios at 2050 (AALpopSP1-5), asset SSP scenarios
-    at 2050 (AAL_usd_SP1-5). Aggregated ad Administrative level (ADM1).
-  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0050637/DR0065486/lss-afg-fl-adm.zip
+  description: Water shortage is defined in terms of percentage deviation from the
+    baseline water demand due to rainfall deficit.
+  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0050633/DR0065474/hzd-afg-dr.zip
   format: gpkg
   id: '0'
   spatial_resolution: null
-  title: Afghanistan AAL and RPs (baseline and 2050)
-- coordinate_system: EPSG:32642
-  description: Average Annual Losses (AAL) over physical asset in USD for baseline
-    scenario.
-  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0050637/DR0065487/lss-afg-fl.zip
-  format: geotiff
-  id: '1'
-  spatial_resolution: 90
-  title: Afghanistan AAL and RPs (baseline)
+  title: Water shortage RP scenarios (historical baseline and 2050)
 risk_data_type:
-- loss
+- hazard
 schema: rdl-02
 spatial:
   countries:
   - AFG
   scale: national
-title: Afghanistan Flood risk
+title: Afghanistan Drought hazard
 version: '2018'
 vulnerability: null
 ---

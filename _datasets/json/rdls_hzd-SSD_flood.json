@@ -1,0 +1,251 @@
+{
+    "datasets": [
+        {
+            "id": "SSD_hzd-flood",
+            "title": "South Sudan Flood hazard",
+            "description": "River flood hazard extent (perimeter) in South Sudan derived from FATHOM 2019 for RP 5, 20, 100, 250 years.",
+            "risk_data_type": [
+                "hazard"
+            ],
+            "publisher": {
+                "name": "GFDRR",
+                "url": "https://www.gfdrr.org"
+            },
+            "version": "2019",
+            "purpose": "The results of the analysis contribute to the production of knowledge for disaster risk management (DRM) to support the World Bank’s operational teams in their in-country engagements. Specifcally, the key fndings of this study allow to rank South Sudan states in terms of natural disasters risk, and to identify the most critical components for each area. The output of this assessment includes a geodatabase which contains both the key primary data and all the resulting maps produced by the analysis, allowing risk analysts and managers to explore them in detail using GIS software.",
+            "project": "South Sudan Multi-hazard risk assessment",
+            "spatial": {
+                "countries": [
+                    "SSD"
+                ],
+                "scale": "national"
+            },
+            "license": "CC-BY-4.0",
+            "contact_point": {
+                "name": "Lukas Loeschner",
+                "email": "lloeschner@worldbank.org"
+            },
+            "creator": {
+                "name": "Mattia Amadio",
+                "email": "mamadio@worldbank.org"
+            },
+            "attributions": [
+                {
+                    "id": "0",
+                    "entity": {
+                        "name": "Lukas Loeschner",
+                        "email": "lloeschner@worldbank.org"
+                    },
+                    "role": "world_bank_team_lead"
+                },
+                {
+                    "id": "1",
+                    "entity": {
+                        "name": "Mattia Amadio",
+                        "email": "mamadio@worldbank.org"
+                    },
+                    "role": "author"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "0",
+                    "name": "FATHOM v2 (2019)",
+                    "type": "dataset",
+                    "component": "hazard"
+                },
+                {
+                    "id": "1",
+                    "name": "NOAA/VIIRS",
+                    "type": "dataset",
+                    "component": "hazard"
+                }
+            ],
+            "referenced_by": [
+                {
+                    "id": "0",
+                    "name": "Disasters, Conflict, and Displacement : Intersectional Risks in South Sudan (Vol. 2)",
+                    "author_names": [
+                        "Rina Meutia",
+                        "Lukas Loeschner",
+                        "Makiko Watanabe",
+                        "Meskerem Brhane",
+                        "Mattia Amadio"
+                    ],
+                    "date_published": "2020-09-24",
+                    "url": "http://documents1.worldbank.org/curated/en/570701601009027965/pdf/Summary.pdf"
+                }
+            ],
+            "resources": [
+                {
+                    "id": "0",
+                    "title": "Flood hazard scenarios (baseline)",
+                    "description": "River flood hazard extents for RP 5, 20, 100, 250 years. Derived from FATHOM 2019 model.",
+                    "format": "gpkg",
+                    "coordinate_system": "EPSG:4326",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0042413/DR0053205/hzd-ssd-fl.zip"
+                },
+                {
+                    "id": "1",
+                    "title": "Observed flood water extent (10-11/2019)",
+                    "description": "Water extent from satellite imagery and flooded locations from events occurring Oct-Nov 2019 in South Sudan.",
+                    "format": "gpkg",
+                    "coordinate_system": "EPSG:4326",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0042413/DR0053206/hzd-ssd-fl-2019.zip"
+                }
+            ],
+            "hazard": {
+                "event_sets": [
+                    {
+                        "id": "Fathom2_extents",
+                        "analysis_type": "probabilistic",
+                        "calculation_method": "simulated",
+                        "occurrence_range": "5, 20, 100, 250 years",
+                        "spatial": {
+                            "countries": [
+                                "SSD"
+                            ],
+                            "scale": "national"
+                        },
+                        "hazards": [
+                            {
+                                "id": "FL",
+                                "type": "flood",
+                                "processes": [
+                                    "fluvial_flood"
+                                ],
+                                "intensity_measure": "fl_wd:m"
+                            }
+                        ],
+                        "events": [
+                            {
+                                "id": "5",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 5
+                                    }
+                                }
+                            },
+                            {
+                                "id": "20",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 20
+                                    }
+                                }
+                            },
+                            {
+                                "id": "100",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 100
+                                    }
+                                }
+                            },
+                            {
+                                "id": "250",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 250
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Flood_2019",
+                        "analysis_type": "empirical",
+                        "calculation_method": "observed",
+                        "spatial": {
+                            "countries": [
+                                "SSD"
+                            ],
+                            "scale": "national"
+                        },
+                        "temporal": {
+                            "start": "2019",
+                            "end": "2019"
+                        },
+                        "hazards": [
+                            {
+                                "id": "FL",
+                                "type": "flood",
+                                "processes": [
+                                    "fluvial_flood"
+                                ],
+                                "intensity_measure": "fl_wd:m"
+                            }
+                        ],
+                        "events": [
+                            {
+                                "id": "0",
+                                "calculation_method": "observed",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "empirical": {
+                                        "return_period": 100
+                                    }
+                                },
+                                "disaster_identifiers": [
+                                    {
+                                        "scheme": "GLIDE",
+                                        "id": "FL-2019-000062-SSD"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "links": [
+                {
+                    "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+                    "rel": "describedby"
+                }
+            ]
+        }
+    ]
+}

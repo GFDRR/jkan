@@ -5,9 +5,10 @@ contact_point:
 creator:
   name: GFDRR
   url: https://www.gfdrr.org
-dataset_id: AFG_lss-flood
-description: Average Annual Losses (AAL) over population and asset under current conditions
-  and SSP scenarios at 2050.
+dataset_id: AFG_hzd-landslide
+description: Earthquake-induced landslide hazard measured as probability of occurrance
+  for seven return period scenarios. National hazard assessment and focus on two areas
+  (Kabul and Salang pass).
 details: "To better understand natural hazard and disaster risk, the World Bank and\
   \ Global Facility for Disaster Reduction and Recovery (GFDRR) supported the development\
   \ of new \uFB02uvial \uFB02ood, \uFB02ash \uFB02ood, drought, landslide, avalanche\
@@ -15,27 +16,16 @@ details: "To better understand natural hazard and disaster risk, the World Bank 
   \ of the costs and benefts of resilient reconstruction and risk reduction strategies.\
   \ This publication describes the applied methods and main results of the project."
 exposure: null
-hazard: null
+hazard:
+  calculation_method: inferred, simulated
+  disaster_identifiers: ''
+  hazard_analysis_type: deterministic, probabilistic
+  hazard_type: landslide
+  intensity: Debris flow intensity index
+  occurrence_range: 10, 50, 100, 250, 500, 1000, 2500 years
+  processes: landslide_general
 license: CC-BY-4.0
-loss:
-  approach: analytical
-  base_data_type: inferred
-  category: ''
-  description: Average Annual Losses (AAL) for asset SSP scenarios at 2050 (AAL_usd_SP1-5),
-    Average Annual Losses (AAL) for current asset (AALnowUSD), Average Annual Losses
-    (AAL) for current population (AALpop), Average Annual Losses (AAL) for population
-    SSP scenarios at 2050 (AALpopSP1-5)
-  dimension: population, structure
-  exposure_id: AFG_exp-asset
-  hazard_analysis_type: probabilistic
-  hazard_id: AFG_hzd-flood
-  hazard_process: fluvial_flood
-  hazard_type: flood
-  impact_metric: at_risk_value, loss_annual_average_value
-  impact_type: direct
-  impact_unit: count
-  type: gross
-  vulnerability_id: ''
+loss: null
 project: Afghanistan Multi-hazard risk assessment
 publisher:
   name: GFDRR
@@ -49,30 +39,39 @@ purpose: These maps have been derived on a nation-wide scale for the purpose of 
   where applied to dimension mitigation structures or strategies.
 resources:
 - coordinate_system: EPSG:32642
-  description: Average Annual Losses (AAL) for current population (AALpop), current
-    asset (AALnowUSD), population SSP scenarios at 2050 (AALpopSP1-5), asset SSP scenarios
-    at 2050 (AAL_usd_SP1-5). Aggregated ad Administrative level (ADM1).
-  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0050637/DR0065486/lss-afg-fl-adm.zip
-  format: gpkg
+  description: Simulated Ground Motion process triggered by earthquake measured as
+    debris-flow intensity index
+  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0050634/DR0065476/hzd-afg-ls-eq-rp.zip
+  format: geotiff
   id: '0'
-  spatial_resolution: null
-  title: Afghanistan AAL and RPs (baseline and 2050)
+  spatial_resolution: 30
+  title: Landslide hazard RP scenarios
 - coordinate_system: EPSG:32642
-  description: Average Annual Losses (AAL) over physical asset in USD for baseline
-    scenario.
-  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0050637/DR0065487/lss-afg-fl.zip
+  description: 'Susceptibility map for bedrock landslides in slow evolution (S1),
+    bedrock landslides in rapid evolution (S2) and cover material landslides in rapid
+    evolution (S3) nationwide, including: rotational slides, translational slides,
+    earth flows and lateral spreading.'
+  download_url: https://datacatalogfiles.worldbank.org/ddh-published/0050634/DR0065476/hzd-afg-ls-eq-susceptibility.zip
   format: geotiff
   id: '1'
-  spatial_resolution: 90
-  title: Afghanistan AAL and RPs (baseline)
+  spatial_resolution: 30
+  title: Landslide susceptibility
 risk_data_type:
-- loss
+- hazard
 schema: rdl-02
 spatial:
   countries:
   - AFG
+  gazetteer_entries:
+  - description: Kabul District
+    id: AFG-KAB
+    scheme: ISO 3166-2
+  - description: Salang pass
+    id: "K\u014Dtal-e S\u0101lang"
+    scheme: GEONAMES
+    uri: https://www.geonames.org/1127859/kotal-e-salang.html
   scale: national
-title: Afghanistan Flood risk
+title: Afghanistan Landslide hazard
 version: '2018'
 vulnerability: null
 ---

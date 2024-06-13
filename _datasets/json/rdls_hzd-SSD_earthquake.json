@@ -1,0 +1,187 @@
+{
+    "datasets": [
+        {
+            "id": "SSD_hzd-earthquake",
+            "title": "South Sudan Earthquake hazard",
+            "description": "Earthquake hazard intensity (g) for Sub Saharan Africa from Global Earthquake Model (GEM) 2016",
+            "risk_data_type": [
+                "hazard"
+            ],
+            "publisher": {
+                "name": "GFDRR",
+                "url": "https://www.gfdrr.org"
+            },
+            "version": "2019",
+            "purpose": "The results of the analysis contribute to the production of knowledge for disaster risk management (DRM) to support the World Bank’s operational teams in their in-country engagements. Specifcally, the key fndings of this study allow to rank South Sudan states in terms of natural disasters risk, and to identify the most critical components for each area. The output of this assessment includes a geodatabase which contains both the key primary data and all the resulting maps produced by the analysis, allowing risk analysts and managers to explore them in detail using GIS software.",
+            "project": "South Sudan Multi-hazard risk assessment",
+            "spatial": {
+                "countries": [
+                    "SSD"
+                ],
+                "scale": "national"
+            },
+            "license": "CC-BY-4.0",
+            "contact_point": {
+                "name": "Lukas Loeschner",
+                "email": "lloeschner@worldbank.org"
+            },
+            "creator": {
+                "name": "Mattia Amadio",
+                "email": "mamadio@worldbank.org"
+            },
+            "attributions": [
+                {
+                    "id": "0",
+                    "entity": {
+                        "name": "Lukas Loeschner",
+                        "email": "lloeschner@worldbank.org"
+                    },
+                    "role": "world_bank_team_lead"
+                },
+                {
+                    "id": "1",
+                    "entity": {
+                        "name": "Mattia Amadio",
+                        "email": "mamadio@worldbank.org"
+                    },
+                    "role": "author"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "0",
+                    "name": "Global Earthquake Model (GEM)",
+                    "type": "dataset",
+                    "component": "hazard"
+                }
+            ],
+            "referenced_by": [
+                {
+                    "id": "0",
+                    "name": "Disasters, Conflict, and Displacement : Intersectional Risks in South Sudan (Vol. 2)",
+                    "author_names": [
+                        "Rina Meutia",
+                        "Lukas Loeschner",
+                        "Makiko Watanabe",
+                        "Meskerem Brhane",
+                        "Mattia Amadio"
+                    ],
+                    "date_published": "2020-09-24",
+                    "url": "http://documents1.worldbank.org/curated/en/570701601009027965/pdf/Summary.pdf"
+                }
+            ],
+            "resources": [
+                {
+                    "id": "0",
+                    "title": "Earthquake hazard scenarios",
+                    "description": "Earthquake hazard intensity (g) for Sub Saharan Africa from Global Earthquake Model (GEM) 2016 for RP 100, 475, 975, 2475 years.",
+                    "format": "geotiff",
+                    "coordinate_system": "EPSG:4326",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0042411/South-Sudan-Earthquake--ground-shaking--hazard"
+                }
+            ],
+            "hazard": {
+                "event_sets": [
+                    {
+                        "id": "GEM",
+                        "analysis_type": "probabilistic",
+                        "calculation_method": "simulated",
+                        "occurrence_range": "100, 475, 975, 2475 years",
+                        "spatial": {
+                            "countries": [
+                                "SSD"
+                            ],
+                            "scale": "national"
+                        },
+                        "hazards": [
+                            {
+                                "id": "EQ",
+                                "type": "earthquake",
+                                "processes": [
+                                    "ground_motion"
+                                ],
+                                "intensity_measure": "PGA:g"
+                            }
+                        ],
+                        "events": [
+                            {
+                                "id": "100",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "EQ",
+                                    "type": "earthquake",
+                                    "processes": [
+                                        "ground_motion"
+                                    ],
+                                    "intensity_measure": "PGA:g"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 100
+                                    }
+                                }
+                            },
+                            {
+                                "id": "475",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "EQ",
+                                    "type": "earthquake",
+                                    "processes": [
+                                        "ground_motion"
+                                    ],
+                                    "intensity_measure": "PGA:g"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 475
+                                    }
+                                }
+                            },
+                            {
+                                "id": "975",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "EQ",
+                                    "type": "earthquake",
+                                    "processes": [
+                                        "ground_motion"
+                                    ],
+                                    "intensity_measure": "PGA:g"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 975
+                                    }
+                                }
+                            },
+                            {
+                                "id": "2475",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "EQ",
+                                    "type": "earthquake",
+                                    "processes": [
+                                        "ground_motion"
+                                    ],
+                                    "intensity_measure": "PGA:g"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 2475
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "links": [
+                {
+                    "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+                    "rel": "describedby"
+                }
+            ]
+        }
+    ]
+}

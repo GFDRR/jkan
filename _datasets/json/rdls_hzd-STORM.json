@@ -1,0 +1,1109 @@
+{
+    "datasets": [
+        {
+            "id": "STORM",
+            "title": "Global tropical cyclone (wind speed) hazard",
+            "description": "Datasets containing probabilistic analysis of tropical cyclone maximum wind speed (in m/s). Return periods are generated using the STORM datasets.",
+            "risk_data_type": [
+                "hazard"
+            ],
+            "publisher": {
+                "name": "4TU.Centre for Research Data",
+                "url": "https://data.4tu.nl/"
+            },
+            "version": "4",
+            "project": "STORM",
+            "details": "Return periods were empirically calculated using Weibull's plotting formula. The STORM_FIXED_RETURN_PERIOD dataset contains maximum wind speeds for a fixed set of return periods at 10 km resolution in every ocean basin.",
+            "spatial": {
+                "scale": "global"
+            },
+            "license": "CC0-1.0",
+            "contact_point": {
+                "name": "Mattia Amadio",
+                "email": "mamadio@worldbank.org"
+            },
+            "creator": {
+                "name": "Nadia Bloemendaal",
+                "url": "https://data.4tu.nl/authors/8a084c6a-3315-4ba7-9768-dd1ba1825dbc"
+            },
+            "attributions": [
+                {
+                    "id": "1",
+                    "entity": {
+                        "name": "4TU.Centre for Research Data",
+                        "url": "https://data.4tu.nl/"
+                    },
+                    "role": "resource_provider"
+                },
+                {
+                    "id": "2",
+                    "entity": {
+                        "name": "Nadia Bloemendaal",
+                        "url": "https://orcid.org/0000-0002-3418-8692"
+                    },
+                    "role": "author"
+                },
+                {
+                    "id": "3",
+                    "entity": {
+                        "name": "Tom Russell"
+                    },
+                    "role": "processor"
+                }
+            ],
+            "referenced_by": [
+                {
+                    "id": "1",
+                    "name": "Generation of a global synthetic tropical cyclone hazard dataset using STORM",
+                    "author_names": [
+                        "Nadia Bloemendaal",
+                        "Ivan D. Haigh",
+                        "Hans de Moel",
+                        "Sanne Muis",
+                        "Reindert J. Haarsma",
+                        "Jeroen C. J. H. Aerts"
+                    ],
+                    "date_published": "2020-02-06",
+                    "url": "https://www.nature.com/articles/s41597-020-0381-2",
+                    "doi": "https://doi.org/10.1038/s41597-020-0381-2"
+                }
+            ],
+            "resources": [
+                {
+                    "id": "HST",
+                    "title": "Global tropical cyclone wind speed maps by return period (historical 1979-2014)",
+                    "description": "The GeoTIFFs provided in the original STORM datasets have been mosaicked into single files with global extent for each climate model/return period. STORM_FIXED_RETURN_PERIODS_{STORM_MODEL}_{STORM_RP}_YR_RP.tif",
+                    "format": "geotiff",
+                    "spatial_resolution": 10000,
+                    "coordinate_system": "EPSG:4326",
+                    "access_url": "https://data.4tu.nl/datasets/0ea98bdd-5772-4da8-ae97-99735e891aff/4",
+                    "temporal": {
+                        "start": "1979",
+                        "end": "2014"
+                    }
+                },
+                {
+                    "id": "PRJ_MEDIAN",
+                    "title": "Global tropical cyclone wind speed maps by return period (median projections 2015-2050)",
+                    "description": "The GeoTIFFs provided in the original STORM datasets have been mosaicked into single files with global extent for each climate model/return period. STORM_FIXED_RETURN_PERIODS_{STORM_MODEL}_{STORM_RP}_YR_RP.tif",
+                    "format": "geotiff",
+                    "spatial_resolution": 10000,
+                    "coordinate_system": "EPSG:4326",
+                    "access_url": "https://data.4tu.nl/datasets/504c838e-2bd8-4d61-85a1-d495bdc560c3/3",
+                    "temporal": {
+                        "start": "2015",
+                        "end": "2050"
+                    }
+                }
+            ],
+            "hazard": {
+                "event_sets": [
+                    {
+                        "id": "HST",
+                        "analysis_type": "probabilistic",
+                        "frequency_distribution": "user_defined",
+                        "seasonality": "uniform",
+                        "calculation_method": "simulated",
+                        "occurrence_range": "1/10 to 1/10000 years",
+                        "spatial": {
+                            "scale": "global"
+                        },
+                        "hazards": [
+                            {
+                                "id": "TCW",
+                                "type": "strong_wind",
+                                "processes": [
+                                    "tropical_cyclone"
+                                ],
+                                "intensity_measure": "v_etc(10m):m/s"
+                            }
+                        ],
+                        "events": [
+                            {
+                                "id": "10",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 10
+                                    }
+                                }
+                            },
+                            {
+                                "id": "20",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 20
+                                    }
+                                }
+                            },
+                            {
+                                "id": "30",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 30
+                                    }
+                                }
+                            },
+                            {
+                                "id": "40",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 40
+                                    }
+                                }
+                            },
+                            {
+                                "id": "50",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 50
+                                    }
+                                }
+                            },
+                            {
+                                "id": "60",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 60
+                                    }
+                                }
+                            },
+                            {
+                                "id": "70",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 70
+                                    }
+                                }
+                            },
+                            {
+                                "id": "80",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 80
+                                    }
+                                }
+                            },
+                            {
+                                "id": "90",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 90
+                                    }
+                                }
+                            },
+                            {
+                                "id": "100",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 100
+                                    }
+                                }
+                            },
+                            {
+                                "id": "200",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 200
+                                    }
+                                }
+                            },
+                            {
+                                "id": "300",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 300
+                                    }
+                                }
+                            },
+                            {
+                                "id": "400",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 400
+                                    }
+                                }
+                            },
+                            {
+                                "id": "500",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 500
+                                    }
+                                }
+                            },
+                            {
+                                "id": "600",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 600
+                                    }
+                                }
+                            },
+                            {
+                                "id": "700",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 700
+                                    }
+                                }
+                            },
+                            {
+                                "id": "800",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 800
+                                    }
+                                }
+                            },
+                            {
+                                "id": "900",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 900
+                                    }
+                                }
+                            },
+                            {
+                                "id": "1000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 1000
+                                    }
+                                }
+                            },
+                            {
+                                "id": "2000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 2000
+                                    }
+                                }
+                            },
+                            {
+                                "id": "3000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 3000
+                                    }
+                                }
+                            },
+                            {
+                                "id": "4000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 4000
+                                    }
+                                }
+                            },
+                            {
+                                "id": "5000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 5000
+                                    }
+                                }
+                            },
+                            {
+                                "id": "6000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 6000
+                                    }
+                                }
+                            },
+                            {
+                                "id": "7000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 7000
+                                    }
+                                }
+                            },
+                            {
+                                "id": "8000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 8000
+                                    }
+                                }
+                            },
+                            {
+                                "id": "9000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 9000
+                                    }
+                                }
+                            },
+                            {
+                                "id": "10000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 10000
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "id": "PRJ_MEDIAN",
+                        "analysis_type": "probabilistic",
+                        "frequency_distribution": "user_defined",
+                        "seasonality": "uniform",
+                        "calculation_method": "simulated",
+                        "occurrence_range": "1/10 to 1/10000 years",
+                        "spatial": {
+                            "scale": "global"
+                        },
+                        "hazards": [
+                            {
+                                "id": "TCW",
+                                "type": "strong_wind",
+                                "processes": [
+                                    "tropical_cyclone"
+                                ],
+                                "intensity_measure": "v_etc(10m):m/s"
+                            }
+                        ],
+                        "events": [
+                            {
+                                "id": "10",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 10
+                                    }
+                                }
+                            },
+                            {
+                                "id": "20",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 20
+                                    }
+                                }
+                            },
+                            {
+                                "id": "30",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 30
+                                    }
+                                }
+                            },
+                            {
+                                "id": "40",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 40
+                                    }
+                                }
+                            },
+                            {
+                                "id": "50",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 50
+                                    }
+                                }
+                            },
+                            {
+                                "id": "60",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 60
+                                    }
+                                }
+                            },
+                            {
+                                "id": "70",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 70
+                                    }
+                                }
+                            },
+                            {
+                                "id": "80",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 80
+                                    }
+                                }
+                            },
+                            {
+                                "id": "90",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 90
+                                    }
+                                }
+                            },
+                            {
+                                "id": "100",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 100
+                                    }
+                                }
+                            },
+                            {
+                                "id": "200",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 200
+                                    }
+                                }
+                            },
+                            {
+                                "id": "300",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 300
+                                    }
+                                }
+                            },
+                            {
+                                "id": "400",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 400
+                                    }
+                                }
+                            },
+                            {
+                                "id": "500",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 500
+                                    }
+                                }
+                            },
+                            {
+                                "id": "600",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 600
+                                    }
+                                }
+                            },
+                            {
+                                "id": "700",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 700
+                                    }
+                                }
+                            },
+                            {
+                                "id": "800",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 800
+                                    }
+                                }
+                            },
+                            {
+                                "id": "900",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 900
+                                    }
+                                }
+                            },
+                            {
+                                "id": "1000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 1000
+                                    }
+                                }
+                            },
+                            {
+                                "id": "2000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 2000
+                                    }
+                                }
+                            },
+                            {
+                                "id": "3000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 3000
+                                    }
+                                }
+                            },
+                            {
+                                "id": "4000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 4000
+                                    }
+                                }
+                            },
+                            {
+                                "id": "5000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 5000
+                                    }
+                                }
+                            },
+                            {
+                                "id": "6000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 6000
+                                    }
+                                }
+                            },
+                            {
+                                "id": "7000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 7000
+                                    }
+                                }
+                            },
+                            {
+                                "id": "8000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 8000
+                                    }
+                                }
+                            },
+                            {
+                                "id": "9000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 9000
+                                    }
+                                }
+                            },
+                            {
+                                "id": "10000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "TCW",
+                                    "type": "strong_wind",
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ],
+                                    "intensity_measure": "v_etc(10m):m/s"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 10000
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "links": [
+                {
+                    "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+                    "rel": "describedby"
+                }
+            ]
+        }
+    ]
+}

@@ -7,9 +7,9 @@ creator:
   email: tisabelle@worldbank.org
   name: Isabelle Tingzon
   url: https://issa-tingzon.github.io/
-dataset_id: ortho_DOM
-description: Building footprint polygons of Dominica with corresponding roof type
-  and roof material attributes predicted from RGB orthophotos taken in 2018-2019,
+dataset_id: ortho_OECS
+description: Building footprint polygons in Dominica and Saint Lucia with corresponding
+  roof type and roof material attributes predicted from RGB orthophotos taken in 2018-2019,
   in the aftermath of Hurricane Maria.
 details: 'The vector dataset depicts building footprint polygons of Dominica with
   corresponding roof type and roof material attributes. The categories for roof type
@@ -20,12 +20,12 @@ details: 'The vector dataset depicts building footprint polygons of Dominica wit
   classification maps were predicted from nationwide very high-resolution RGB orthophotos
   with a spatial resolution of 20 cm/px taken in 2018-2019, in the aftermath of Hurricane
   Maria in 2017. The dataset also contains the predicted probabilities per category,
-  suffixed by "_PROB". '
+  suffixed by \"_PROB\". '
 exposure:
   category: buildings
   dimension: structure
   quantity_kind: area
-  taxonomy: Custom roof type and roof material taxonomy
+  taxonomy: Custom
 hazard: null
 license: CC-BY-4.0
 loss: null
@@ -44,6 +44,14 @@ resources:
   id: '0'
   spatial_resolution: null
   title: Dominica Rooftop Classification Map
+- coordinate_system: EPSG:32620
+  description: Building footprint polygons of Saint Lucia with corresponding roof
+    type and roof material attributes predicted from RGB orthophotos taken in 2022.
+  download_url: https://drive.google.com/file/d/1VjaGp_Hhh7urqJsWU3QxYHirqQzReT8y/view?usp=drive_link
+  format: gpkg
+  id: '1'
+  spatial_resolution: null
+  title: Saint Lucia Rooftop Classification Map
 - coordinate_system: null
   description: Accurate and up-to-date information on building characteristics is
     essential for vulnerability assessment; however, the high costs and long timeframes
@@ -69,7 +77,9 @@ schema: rdl-02
 spatial:
   countries:
   - DOM
-title: Rooftop classification map of Dominica
-version: version_01
+  - LCA
+  scale: national
+title: Rooftop classification map of Dominica and Saint Lucia
+version: '1.0'
 vulnerability: null
 ---
