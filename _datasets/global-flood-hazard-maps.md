@@ -50,7 +50,7 @@ purpose: Fathom Global hazard maps can support risk screening and analysis at th
 resources:
 - coordinate_system: EPSG:4326
   description: Global country data - access limited to WB operations via request form
-  download_url: null
+  download_url: https://forms.office.com/r/sG0qWTnC0L
   format: geotiff
   id: FTH_form_WB
   spatial_resolution: 30
