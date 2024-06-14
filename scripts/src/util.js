@@ -54,6 +54,9 @@ export function createDatasetFilters (filters) {
     if (filters.license_display) {
       conditions.push(dataset.license_display && slugify(dataset.license_display).indexOf(filters.license_display) !== -1)
     }
+    if (filters.project) {
+      conditions.push(dataset.project && slugify(dataset.project).indexOf(filters.project) !== -1)
+    }
 
     return conditions.every(function (value) { return !! value })
   }

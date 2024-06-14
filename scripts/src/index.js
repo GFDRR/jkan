@@ -6,18 +6,17 @@ import {omit} from 'lodash'
 
 import UserModel from './models/user'
 import Navigation from './components/navigation'
-import DatasetsList from './components/datasets-list'
 import RDLDatasetsList from './components/rdl-datasets-list'
 import CategoriesFilter from './components/categories-filter'
 import RDLCountryFilter from './components/rdl-country-filter'
 import RDLLicenseFilter from './components/rdl-license-filter'
+import RDLProjectFilter from './components/rdl-project-filter'
 import RDLGeographicalScaleFilter from './components/rdl-geographical-scale-filter'
 import DatasetDisplay from './components/dataset-display'
 import RDLDatasetDisplay from './components/rdl-datasets-display'
 import ViewSwitcher from './components/view-switcher'
 import ThemeGallery from './components/theme-gallery'
 import {queryByComponent, setParams} from './util'
-import RDLProjectFilter from './components/rdl-project-filter'
 
 const params = $.deparam(window.location.search.substr(1))
 
@@ -42,7 +41,6 @@ const components = [
   {tag: 'rdl-dataset-display', class: RDLDatasetDisplay},
   {tag: 'view-switcher', class: ViewSwitcher},
   {tag: 'theme-gallery', class: ThemeGallery},
-  {tag: 'datasets-list', class: DatasetsList, usesDatasets: true},
   {tag: 'rdl-datasets-list', class: RDLDatasetsList, usesDatasets: true},
   {tag: 'categories-filter', class: CategoriesFilter, usesDatasets: true},
   {tag: 'rdl-country-filter', class: RDLCountryFilter, usesDatasets: true},

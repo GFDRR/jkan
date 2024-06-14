@@ -1,6 +1,6 @@
 /**
  * Usage:
- * <div data-component="datasets-list">
+ * <div data-component="rdl-datasets-list">
  *   <h3 class="datasets-count" data-hook="datasets-count"></h3>
  *   <input type="text" data-hook="search-query" placeholder="Search..." class="form-control">
  *   <div data-hook="datasets-items"></div>
@@ -30,8 +30,8 @@ export default class {
     }
 
     // Filter datasets and render in items container
-    const paramFilters = pick(opts.params, ['category', 'geo_coverage', 'geo_scale', 'license_display'])
-    const attributeFilters = pick(opts.el.data(), ['category', 'geo_coverage', 'geo_scale', 'license_display'])
+    const paramFilters = pick(opts.params, ['category', 'geo_coverage', 'geo_scale', 'license_display','project'])
+    const attributeFilters = pick(opts.el.data(), ['category', 'geo_coverage', 'geo_scale', 'license_display','project'])
     const filters = createDatasetFilters(defaults(paramFilters, attributeFilters))
 
     const filteredDatasets = filter(opts.datasets, filters)

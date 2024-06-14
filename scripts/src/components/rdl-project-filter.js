@@ -21,18 +21,8 @@ function prep_project(project, params, datasetsForProject) {
 export default class {
   constructor (opts) {
     const projects = this._projectsWithCount(opts.datasets, opts.params)
-    var consolidated = []
-    projects.forEach(function(l) {
-      const idx = consolidated.findIndex(x => x.title === l.title)
-      if (idx == -1) {
-        consolidated.push(l)
-      } else {
-        consolidated[idx].count += l.count
-        consolidated[idx].unfilteredCount += l.unfilteredCount
-      }
-    })
 
-    const projectsMarkup = consolidated.sort((a,b) => {
+    const projectsMarkup = projects.sort((a,b) => {
       // ignore upper and lowercase
       const titleA = a.title.toUpperCase();
       const titleB = b.title.toUpperCase();
@@ -48,10 +38,7 @@ export default class {
     return chain(datasets)
       .groupBy('project')
       .flatMap(function (datasetsForProject, project) {
-        var projects = project.split(",")
-        var collated = projects.map(c => prep_project(c, params, datasetsForProject))
-
-        return collated
+        return prep_project(project, params, datasetsForProject)
       })
       .orderBy('unfilteredCount', 'desc')
       .value()
