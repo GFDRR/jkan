@@ -7,7 +7,14 @@ import {setContent, slugify, createDatasetFilters, collapseListGroup} from '../u
 export default class {
   constructor (opts) {
     const categories = this._categoriesWithCount(opts.datasets, opts.params)
-    const categoriesMarkup = categories.map(TmplListGroupItem)
+    const categoriesMarkup = categories.sort((a,b) => {
+      // ignore upper and lowercase
+      const titleA = a.title.toUpperCase();
+      const titleB = b.title.toUpperCase();
+      if (titleA < titleB) return -1;
+      if (titleA > titleB) return 1;
+      return 0;
+    }).map(TmplListGroupItem)
     setContent(opts.el, categoriesMarkup)
     collapseListGroup(opts.el)
   }
