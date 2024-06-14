@@ -33,7 +33,11 @@
         {{ "None" | jsonify }}
       {% endif %},
     "url": "{{ site.baseurl }}{{ dataset.url }}",
-    {% if dataset.version != "" %}"version": {{ dataset.version | jsonify }},{% endif %}
+    "project": {% if dataset.project %} 
+        {{ dataset.project | jsonify }}
+      {% else %}
+        {{ "None" | jsonify }}
+      {% endif %},    {% if dataset.version != "" %}"version": {{ dataset.version | jsonify }},{% endif %}
     "resources": {{ dataset.resources | jsonify }}
   }{% unless forloop.last %},{% endunless %}{% endfor %}
 ]
