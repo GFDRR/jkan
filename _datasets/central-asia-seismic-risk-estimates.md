@@ -71,7 +71,7 @@ resources:
     combined using current exposure. Losses are aggregated at regional, national and
     Oblast levels in one csv file per ADM unit and sector giving the estimated loss
     per selected exceedance probability (return period).
-  download_url: null
+  download_url: https://datacatalog.worldbank.org/search/dataset/0064271
   format: csv
   id: CA_SFRARR_EQ_loss_EP
   spatial_resolution: null
@@ -84,7 +84,7 @@ resources:
     to regional, national and Oblast levels, for each sector sector and all sectors
     combined using current exposure. One csv file per loss breakdown, giving the estimated
     loss per event. '
-  download_url: null
+  download_url: https://datacatalog.worldbank.org/search/dataset/0064272
   format: csv
   id: CA_SFRARR_EQ_ELTs
   spatial_resolution: null
@@ -93,7 +93,7 @@ resources:
   description: Geospatial data layer describing estimated return period losses, Annual
     aggregate and probable maximum losses at Oblast level per country per sectors,
     current and projected exposure
-  download_url: null
+  download_url: https://datacatalog.worldbank.org/search/dataset/0064275
   format: shp
   id: CA_SFRARR_EQ_RP_maps
   spatial_resolution: null
@@ -104,7 +104,7 @@ resources:
     Ashgabat, and Dushanbe. EQ-Scenario Losses-Deterministic Analysis.csv: Table showing
     the estimated fatalities, economic loss (million USD) and event parameters due
     to each simulated scenario.'
-  download_url: null
+  download_url: https://datacatalog.worldbank.org/search/dataset/0064276
   format: csv
   id: CA_SFRARR_EQ_scenarioLosses
   spatial_resolution: null
@@ -116,7 +116,7 @@ resources:
     in Central Asia program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia).
     Number of assets exposed to each maximum seismic ground shaking (pga) class for
     each return period.'
-  download_url: null
+  download_url: https://datacatalog.worldbank.org/search/dataset/0064274
   format: csv
   id: CA_SFRARR_EQ_hazardIntensity
   spatial_resolution: null

@@ -31,7 +31,7 @@ resources:
 - coordinate_system: EPSG:4326
   description: The GeoTIFFs provided in the original STORM datasets have been mosaicked
     into single files with global extent for each climate model/return period. STORM_FIXED_RETURN_PERIODS_{STORM_MODEL}_{STORM_RP}_YR_RP.tif
-  download_url: null
+  download_url: https://data.4tu.nl/datasets/0ea98bdd-5772-4da8-ae97-99735e891aff/4
   format: geotiff
   id: HST
   spatial_resolution: 10000
@@ -39,7 +39,7 @@ resources:
 - coordinate_system: EPSG:4326
   description: The GeoTIFFs provided in the original STORM datasets have been mosaicked
     into single files with global extent for each climate model/return period. STORM_FIXED_RETURN_PERIODS_{STORM_MODEL}_{STORM_RP}_YR_RP.tif
-  download_url: null
+  download_url: https://data.4tu.nl/datasets/504c838e-2bd8-4d61-85a1-d495bdc560c3/3
   format: geotiff
   id: PRJ_MEDIAN
   spatial_resolution: 10000

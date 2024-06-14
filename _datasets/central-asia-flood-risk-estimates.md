@@ -351,7 +351,7 @@ resources:
 - coordinate_system: null
   description: Event Loss Tables (ELTs) showing the severity and frequency of estimated
     loss for each simulated flood event.
-  download_url: null
+  download_url: https://datacatalog.worldbank.org/search/dataset/0064269
   format: csv
   id: CA_SFRARR_FL_ELTs
   spatial_resolution: null
@@ -359,7 +359,7 @@ resources:
 - coordinate_system: null
   description: Geospatial data layers describing estimated losses. Annual average
     loss and probable maximum losses at Oblast level.
-  download_url: null
+  download_url: https://datacatalog.worldbank.org/search/dataset/0064280
   format: shp
   id: CA_SFRARR_FL_RP_maps
   spatial_resolution: null
@@ -368,7 +368,7 @@ resources:
   description: Tabulated summary of simulated fatalities and economic loss due to
     three selected 1-in-100-year fluvial flood scenarios (Kara-Unkur River, Parkent
     River, and Turkmenabat).
-  download_url: null
+  download_url: https://datacatalog.worldbank.org/search/dataset/0064267
   format: csv
   id: CA_SFRARR_FL_scenarioLosses
   spatial_resolution: null
@@ -377,7 +377,7 @@ resources:
   description: 'Tabulated and map summaries of fluvial flood hazard intensity for
     selected infrastructure: airports, industrial sites, infrastructure, population
     and transport.'
-  download_url: null
+  download_url: https://datacatalog.worldbank.org/search/dataset/0064279
   format: csv
   id: CA_SFRARR_FL_hazardIntensity
   spatial_resolution: null

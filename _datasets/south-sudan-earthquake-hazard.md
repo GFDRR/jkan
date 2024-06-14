@@ -36,7 +36,7 @@ resources:
 - coordinate_system: EPSG:4326
   description: Earthquake hazard intensity (g) for Sub Saharan Africa from Global
     Earthquake Model (GEM) 2016 for RP 100, 475, 975, 2475 years.
-  download_url: null
+  download_url: https://datacatalog.worldbank.org/search/dataset/0042411/South-Sudan-Earthquake--ground-shaking--hazard
   format: geotiff
   id: '0'
   spatial_resolution: null

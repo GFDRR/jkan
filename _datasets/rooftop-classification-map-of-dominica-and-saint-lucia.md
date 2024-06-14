@@ -65,7 +65,7 @@ resources:
     0.92 for roof type and roof material classification, respectively. This work is
     intended to help governments produce more timely building information to improve
     resilience and disaster response in the Caribbean.
-  download_url: null
+  download_url: https://arxiv.org/abs/2307.16177
   format: pdf
   id: '2'
   spatial_resolution: null

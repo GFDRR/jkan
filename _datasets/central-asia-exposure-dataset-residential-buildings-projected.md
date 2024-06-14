@@ -46,7 +46,7 @@ resources:
     Dataset includes SSP1, SSP4, SSP5 scenarios.
 
     Files: RESIDENTIAL_[OBLAST]._2080_[SSP].csv'
-  download_url: null
+  download_url: https://datacatalog.worldbank.org/search/dataset/0064254
   format: csv
   id: CA_SFRARR_exp_res_projected
   spatial_resolution: null

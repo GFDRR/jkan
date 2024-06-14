@@ -47,7 +47,7 @@ resources:
 
     File naming: COMMERCIAL_[OBLAST].csv, INDUSTRIAL_[OBLAST].csv, HEALTHCARE_[OBLAST].csv,
     EDUCATION_[OBLAST].csv'
-  download_url: null
+  download_url: https://datacatalog.worldbank.org/search/dataset/0064288
   format: csv
   id: CA_SFRARR_exp_nonres
   spatial_resolution: null

@@ -43,7 +43,7 @@ resources:
   description: 'Regional layer of population distribution in Central Asia. Files:
     POPULATION_[OBLAST].shp, POPULATION_[OBLAST].csv. File names contain the Oblast
     GAD_ID_1 code'
-  download_url: null
+  download_url: https://datacatalog.worldbank.org/search/dataset/0064250
   format: csv
   id: CA_SFRARR_exp_pop
   spatial_resolution: null

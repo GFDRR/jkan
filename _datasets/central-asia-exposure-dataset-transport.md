@@ -53,7 +53,7 @@ resources:
     \ done with care and taking into account the limitations of the approach. \n\n\
     \nCentral Asia exposure dataset - Transport - Bridges - UZB\n\nFiles: BRIDGES_[OBLAST].csv;\
     \ BRIDGES_[OBLAST].shp"
-  download_url: null
+  download_url: https://datacatalog.worldbank.org/search/dataset/0064252
   format: csv
   id: CA_SFRARR_exp_transport
   spatial_resolution: null

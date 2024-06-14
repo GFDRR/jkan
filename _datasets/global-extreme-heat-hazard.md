@@ -41,7 +41,7 @@ purpose: null
 resources:
 - coordinate_system: EPSG:4326
   description: Global heat stress maps by return period (5, 20, 100 years)
-  download_url: null
+  download_url: https://datacatalog.worldbank.org/search/dataset/0040194/Global-extreme-heat-hazard
   format: geotiff
   id: '0'
   spatial_resolution: 10000

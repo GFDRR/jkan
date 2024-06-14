@@ -53,7 +53,7 @@ def make_resource(resource):
         "title": resource["title"],
         # optional
         "coordinate_system": resource.get("coordinate_system"),
-        "download_url": resource.get("download_url"),
+        "download_url": resource.get("download_url", resource.get("access_url")),
         "spatial_resolution": resource.get("spatial_resolution"),
     }
 

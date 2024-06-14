@@ -49,7 +49,7 @@ resources:
     \ be done with care and taking into account the limitations of the approach. \n\
     \n\nFiles: Infrastructure_lines.shp; Infrastructure_lines.csv: Infrastructure_points.shp;\
     \ Infrastructure_points.csv"
-  download_url: null
+  download_url: https://datacatalog.worldbank.org/search/dataset/0064253
   format: csv
   id: CA_SFRARR_exp_infra
   spatial_resolution: null
