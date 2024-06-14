@@ -6,7 +6,9 @@ creator:
   email: cscaini@inogs.it
   name: Chiara Scaini
 dataset_id: CA_SFRARR_exp_nonres
-description: 'Data from the EU-funded ''Strengthening Financial Resilience and Accelerating
+description: Central Asia exposure dataset - Non-residential buildings (education,
+  healthcare, industrial, commercial)
+details: 'Data from the EU-funded ''Strengthening Financial Resilience and Accelerating
   Risk Reduction in Central Asia'' Program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia).
 
   Exposure data developed using high-resolution global and regional datasets and local
@@ -17,7 +19,6 @@ description: 'Data from the EU-funded ''Strengthening Financial Resilience and A
   and airstrips, mines, and supply infrastructure. The exposure database developed
   during this project can be used at regional scale, national scale or sub-national
   scale (e.g., at Oblast scale). '
-details: null
 exposure:
   category: buildings
   dimension: structure

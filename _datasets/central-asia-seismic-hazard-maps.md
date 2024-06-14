@@ -5,8 +5,13 @@ contact_point:
 creator:
   name: Ettore Faga
 dataset_id: CA_SFRARR_EQ
-description: null
-details: null
+description: Seismic hazard maps for 25, 50, 100, 250, 475, 500, 1000 and 10,000 years
+  return period.
+details: 'Data from the Strengthening Financial Resilience and Accelerating Risk Reduction
+  in Central Asia program (https://www.gfdrr.org/en/program/SFRARR-Central-Asia).
+
+  Seismic vulnerability data for buildings, infrastructure, and population. The approach
+  is described in the technical accompanying technical report.'
 exposure: null
 hazard:
   calculation_method: simulated

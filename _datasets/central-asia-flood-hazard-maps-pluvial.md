@@ -5,10 +5,14 @@ contact_point:
 creator:
   name: Gabriele Coccia
 dataset_id: CA_SFRARR_PL
-description: 'Pluvial flood hazard maps for 5,10,20,50,100,200,500,1,000 years return
+description: Pluvial flood hazard maps for 5,10,20,50,100,200,500,1,000 years return
   time and 6 hours duration, i.e., a map for each return time where each pixel represents
-  the maximum water depth. '
-details: null
+  the maximum water depth.
+details: 'Data from the Strengthening Financial Resilience and Accelerating Risk Reduction
+  in Central Asia program (https://www.gfdrr.org/en/program/SFRARR-Central-Asia).
+
+  Seismic vulnerability data for buildings, infrastructure, and population. The approach
+  is described in the technical accompanying technical report.'
 exposure: null
 hazard:
   calculation_method: simulated

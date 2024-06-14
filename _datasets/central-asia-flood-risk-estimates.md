@@ -5,9 +5,13 @@ contact_point:
 creator:
   name: Paolo Bazzuro
 dataset_id: CA_SFRARR_FL_loss
-description: 'Fluvial flood risk estimates, including return period loss estimates,
-  annual average loss estimates and event loss tables '
-details: null
+description: Fluvial flood risk estimates, including return period loss estimates,
+  annual average loss estimates and event loss tables.
+details: 'Data from the Strengthening Financial Resilience and Accelerating Risk Reduction
+  in Central Asia program (https://www.gfdrr.org/en/program/SFRARR-Central-Asia).
+
+  Seismic vulnerability data for buildings, infrastructure, and population. The approach
+  is described in the technical accompanying technical report.'
 exposure: null
 hazard: null
 license: CC-BY-SA-4.0

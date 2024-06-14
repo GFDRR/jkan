@@ -6,7 +6,9 @@ creator:
   email: cscaini@inogs.it
   name: Chiara Scaini
 dataset_id: CA_SFRARR_exp_res_projected
-description: 'Data from the EU-funded ''Strengthening Financial Resilience and Accelerating
+description: Regional layer of current residential buildings in Central Asia and projected
+  (2080) residential exposure.
+details: 'Data from the EU-funded ''Strengthening Financial Resilience and Accelerating
   Risk Reduction in Central Asia'' Program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia).
 
   Exposure data developed using high-resolution global and regional datasets and local
@@ -17,7 +19,6 @@ description: 'Data from the EU-funded ''Strengthening Financial Resilience and A
   and airstrips, mines, and supply infrastructure. The exposure database developed
   during this project can be used at regional scale, national scale or sub-national
   scale (e.g., at Oblast scale). '
-details: null
 exposure:
   category: buildings
   dimension: structure
@@ -40,8 +41,8 @@ purpose: Regional risk modelling. These data have been derived on a regional sca
   modelling, particularly were applied to dimension mitigation structures or strategies
 resources:
 - coordinate_system: null
-  description: 'Regional layer of residential buildings in Central Asia.Central Asia
-    projected (2080) residential exposure - all countries, Oblast level: SSP4
+  description: 'Regional layer of residential buildings in Central Asia. Central Asia
+    projected (2080) residential exposure. Oblast level: SSP4
 
     Dataset includes SSP1, SSP4, SSP5 scenarios.
 

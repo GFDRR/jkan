@@ -7,7 +7,11 @@ creator:
 dataset_id: CA_SFRARR_FL
 description: Fluvial flood hazard maps for 5,10,20,50,100,200,500,1,000 years return
   period.
-details: null
+details: 'Data from the Strengthening Financial Resilience and Accelerating Risk Reduction
+  in Central Asia program (https://www.gfdrr.org/en/program/SFRARR-Central-Asia).
+
+  Seismic vulnerability data for buildings, infrastructure, and population. The approach
+  is described in the technical accompanying technical report.'
 exposure: null
 hazard:
   calculation_method: simulated
