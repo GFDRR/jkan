@@ -182,7 +182,7 @@ exposure:
       - others
   - field_name: quantity_kind
     label: Metric Quantity Kind
-    display_template: display/quality_kind.html
+    display_template: display/quantity_kind.html
 
 # VulnerabilityModel
 vulnerability:

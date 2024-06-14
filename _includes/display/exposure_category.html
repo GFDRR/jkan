@@ -1,6 +1,14 @@
 <tr>
   <th>{{ include.field.label }}</th>
   <td>
-      {% capture code %}{{ include.value }}{% endcapture %}
-      {{ site.data.rdl-exposure_category[code] }}
+    {% assign split_string = include.value | split: ", " %}
+    {% if split_string[0] %}
+        {% for code in split_string %}
+            {{ site.data.rdl-exposure_category[code] }}{% unless forloop.last or site.data.rdl-exposure_category[code] == nil %}, {% endunless %}
+          {% endfor %}
+    {% else %}
+        {% capture code %}{{ include.value }}{% endcapture %}
+        {{ site.data.rdl-exposure_category[code] }}
+    {% endif %}
   </td>
+  

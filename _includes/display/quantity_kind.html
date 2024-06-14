@@ -1,0 +1,13 @@
+<tr>
+  <th>{{ include.field.label }}</th>
+  <td>
+    {% assign split_string = include.value | split: ", " %}
+    {% if split_string[0] %}
+      {% for code in split_string %}
+        {{ site.data.rdl-quantity_kind[code] }}{% unless forloop.last or site.data.rdl-quantity_kind[code] == nil %}, {% endunless %}
+      {% endfor %}
+    {% else %}
+        {% capture code %}{{ include.value }}{% endcapture %}
+        {{ site.data.rdl-quantity_kind[code] }}
+    {% endif %}
+  </td>
