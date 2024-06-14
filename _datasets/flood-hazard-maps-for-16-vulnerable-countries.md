@@ -5,10 +5,12 @@ contact_point:
 creator:
   name: Fathom
   url: https://www.fathom.global/
-dataset_id: FTH_v3
+dataset_id: FTH_v3-oac
 description: Third release of the probabilistic modelling of fluvial, pluvial and
-  coastal flood hazard developed by Fathom. Includes baseline (2020) and projections
-  (2030, 2050, 2080) under four different IPCC scenarios.
+  coastal flood hazard developed by Fathom. This selection includes 16 countries among
+  the most vulnerable to climate change, such as Pakistan, Somalia, and Yemen, which
+  often struggle with limited data resources. Under World Bank agreement, Fathom offers
+  free-of-charge access to flood data for these countries for non-commercial use.
 details: "The FATHOM flood-hazard model is a global gridded dataset of flood hazard\
   \ produced at the global scale. It provides flood extent and water depth to ground\
   \ (in centimeters) for three types of flood phenomena:\n- Fluvial (or river) flooding\
@@ -36,12 +38,12 @@ hazard:
   intensity: wd:cm
   occurrence_range: 1/10 to 1/1000 years
   processes: coastal_flood, fluvial_flood, pluvial_flood
-license: Commercial
+license: CC-BY-4.0
 loss: null
 project: null
 publisher:
   name: Fathom
-  url: https://www.fathom.global/
+  url: https://www.fathom.global/newsroom/world-bank-collaboration/
 purpose: Fathom Global hazard maps can support risk screening and analysis at the
   sub-national level. Caution is advised when using these data as the only source
   of flood hazard information for site-specific analysis. The model is driven by global
@@ -51,25 +53,36 @@ purpose: Fathom Global hazard maps can support risk screening and analysis at th
   as construction of bridges or flood defences).
 resources:
 - coordinate_system: EPSG:4326
-  description: Global country data - access limited to WB operations via request form
+  description: Fragility, Conflict and Vulnerability countries data (16 countries)
+    - open access via request form, requires to sign EULA
   download_url: null
   format: geotiff
-  id: FTH_form_WB
+  id: FTH_form_FCV
   spatial_resolution: 30
-  title: Fathom v3 global dataset
+  title: Fathom v3 FCV countries (public)
 risk_data_type:
 - hazard
 schema: rdl-02
 spatial:
-  bbox:
-  - -180
-  - -90
-  - 180
-  - 90
   countries:
-  - GLO
-  scale: global
-title: Global flood hazard maps
+  - BFA
+  - BDI
+  - CAF
+  - TCD
+  - COD
+  - DJI
+  - HND
+  - MDG
+  - FSM
+  - MOZ
+  - PAK
+  - PNG
+  - SOM
+  - SSD
+  - TLS
+  - YEM
+  scale: national
+title: Flood hazard maps for 16 vulnerable countries
 version: '3'
 vulnerability: null
 ---

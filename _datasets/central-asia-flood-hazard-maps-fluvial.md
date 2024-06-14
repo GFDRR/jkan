@@ -19,8 +19,7 @@ hazard:
   processes: fluvial_flood
 license: CC-BY-SA-4.0
 loss: null
-project: World Bank SFRARR - Strengthening Financial Resilience and Accelerating Risk
-  Reduction in Central Asia program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia)
+project: SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia
 publisher:
   name: RED - Risk, Engineering  Development - Pavia (Italy)
   url: https://www.redrisk.com

@@ -13,3 +13,12 @@ Gemfile
 Gemfile.lock
 
 .dev_gemfile.lock
+import/.venv/Scripts/pythonw.exe
+import/.venv/Scripts/python.exe
+import/.venv/Scripts/pip3.exe
+import/.venv/Scripts/pip3.11.exe
+import/.venv/Scripts/pip.exe
+import/.venv/Scripts/deactivate.bat
+import/.venv/Scripts/Activate.ps1
+import/.venv/Scripts/activate.bat
+import/.venv/Scripts/activate
