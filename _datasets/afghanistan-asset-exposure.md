@@ -28,9 +28,9 @@ details: "To better understand natural hazard and disaster risk, the World Bank 
   \ of the costs and benefts of resilient reconstruction and risk reduction strategies.\
   \ This publication describes the applied methods and main results of the project."
 exposure:
-  category: buildings; infrastructures; agriculture; population
-  dimension: content, structure
-  quantity_kind: area, count, currency
+  category: buildings;infrastructures;agriculture;population
+  dimension: content,structure
+  quantity_kind: area,count,currency
   taxonomy: null
 hazard: null
 license: CC-BY-4.0

@@ -13,7 +13,7 @@
             },
             "version": "2022",
             "purpose": "Scenario modelling of selected floods representative of an extreme event in three countries (KGZ, TKM, UZB) and one historical scenario (TJK). Used for validation of flood modelling approach against historical observations and to communicate potential extreme flood impacts.",
-            "project": "World Bank SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia)",
+            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia",
             "spatial": {
                 "countries": [
                     "KAZ",
