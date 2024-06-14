@@ -112,7 +112,7 @@ def make_hazard(hazard):
                     props_to_summarize["calculation_method"].append(event["calculation_method"])    
                 if "disaster_identifiers" in event:
                     for di in event["disaster_identifiers"]:
-                        props_to_summarize["disaster_identifiers"].append(f"{di.get("id")}; {di.get("scheme")}")
+                        props_to_summarize["disaster_identifiers"].append(f"{di.get('id')}; {di.get('scheme')}")
                 if "hazard" in event and "type" in event["hazard"]:
                     props_to_summarize["hazard_type"].append(event["hazard"]["type"])
                 if "hazard" in event and "intensity_measure" in event["hazard"]:
