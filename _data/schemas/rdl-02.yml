@@ -154,6 +154,7 @@ hazard:
   - field_name: occurrence_range
     label: Occurrence Range
   - field_name: disaster_identifiers
+    display_template: display/disaster_identifiers.html
     label: Disaster Identifiers
 
 # ExposureModel

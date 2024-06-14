@@ -1,0 +1,13 @@
+<tr>
+  <th>{{ include.field.label }}</th>
+  <td>
+      {% assign disasters = include.value | split: ", " %}
+      {% if disasters[0] %}
+      {% for disaster in disasters %}
+            {% assign disaster_parts = disaster | split: "; " %}
+            {% assign disaster_id = disaster_parts | first %}
+            {% assign disaster_scheme_code = disaster_parts | last %}
+            {{ disaster_id }} ({{ site.data.rdl-disaster_scheme[disaster_scheme_code] }}){% unless forloop.last or site.data.rdl-disaster_scheme[code] == nil %}, {% endunless %}
+          {% endfor %}
+      {% endif %}
+  </td>
