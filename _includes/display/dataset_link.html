@@ -5,6 +5,8 @@
     {% assign linked_id = page[risk_data_type].hazard_id %}
   {% elsif field_name == "exposure_id" %}
     {% assign linked_id = page[risk_data_type].exposure_id %}
+  {% elsif field_name == "vulnerability_id" %}
+    {% assign linked_id = page[risk_data_type].vulnerability_id %}
   {% endif %}
   
   {% assign linked_dataset = site.datasets | where:"dataset_id", linked_id | first %}
