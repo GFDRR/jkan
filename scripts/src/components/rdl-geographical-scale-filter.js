@@ -32,7 +32,14 @@ export default class {
       }
     })
 
-    const geographicalScalesMarkup = consolidated.map(TmplListGroupItem)
+    const geographicalScalesMarkup = consolidated.sort((a,b) => {
+      // ignore upper and lowercase
+      const titleA = a.title.toUpperCase();
+      const titleB = b.title.toUpperCase();
+      if (titleA < titleB) return -1;
+      if (titleA > titleB) return 1;
+      return 0;
+    }).map(TmplListGroupItem)
     setContent(opts.el, geographicalScalesMarkup)
     collapseListGroup(opts.el)
   }
