@@ -4,6 +4,12 @@ import {chain, omit, defaults} from 'lodash'
 import TmplListGroupItem from '../templates/list-group-item'
 import {setContent, slugify, collapseListGroup} from '../util'
 
+const ORDER = [
+  'Global',
+  'Regional',
+  'National',
+  'Sub-national',
+]
 
 function prep_geographical_scale(geographicalScale, params, datasetsForGeographicalScales) {
   const geographicalScaleSlug = slugify(geographicalScale)
@@ -32,7 +38,11 @@ export default class {
       }
     })
 
-    const geographicalScalesMarkup = consolidated.map(TmplListGroupItem)
+    const geographicalScalesMarkup = consolidated.sort((a,b) => {
+      const aIndex = ORDER.findIndex((title) => title === a.title);
+      const bIndex = ORDER.findIndex((title) => title === b.title);
+      return aIndex - bIndex;
+    }).map(TmplListGroupItem)
     setContent(opts.el, geographicalScalesMarkup)
     collapseListGroup(opts.el)
   }
