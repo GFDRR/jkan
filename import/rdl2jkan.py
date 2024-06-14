@@ -280,14 +280,9 @@ def make_loss(loss):
 def make_dataset_frontmatter(dataset):
     """Formats RDL metadata into JKAN frontmatter for a dataset"""
 
-    spatial = dataset["spatial"]
-    if spatial.get("scale") == "global":
-        if "countries" in spatial and type(spatial["countries"]) == list:
-            spatial["countries"].append('GLO')
-        else:
-            spatial["countries"] = ['GLO']
-
-    return {
+    payload = {
+        # try first; required by write_yaml
+        "title": dataset["title"],
         # required; throw if missing
         "contact_point": dataset["contact_point"],
         "creator": dataset["creator"],
@@ -297,8 +292,7 @@ def make_dataset_frontmatter(dataset):
         "resources": [make_resource(resource) for resource in dataset["resources"]],
         "risk_data_type": dataset["risk_data_type"],
         "schema": "rdl-02",
-        "spatial": spatial,
-        "title": dataset["title"], # required by write_yaml
+        "spatial": dataset["spatial"],
         # optional
         "description": dataset.get("description"),
         "details": dataset.get("details"),
@@ -311,6 +305,13 @@ def make_dataset_frontmatter(dataset):
         "loss": make_loss(dataset.get("loss")),
         "vulnerability": make_vulnerability(dataset.get("vulnerability")),
     }
+
+    if payload["spatial"].get("scale") == "global":
+        if "countries" in payload["spatial"] and type(payload["spatial"]["countries"]) == list:
+            payload["spatial"]["countries"].append('GLO')
+        else:
+            payload["spatial"]["countries"] = ['GLO']
+    return payload
 
 def write_frontmatter(metadata, output_path):
     filename = (
@@ -341,30 +342,30 @@ if __name__ == "__main__":
         os.makedirs(datasets_output_dir)
    
 
-# Iterate over all JSON files in the input folder
-input_path = Path(args.input_folder)
-for json_file in input_path.glob("../_datasets/json/*.json"):
-    with open(json_file, encoding='utf-8') as input_file:
-        datasets_json = json.load(input_file)
-        for dataset_json in datasets_json["datasets"]:
-            # Generate output
-            try:
-                # Write output
-                dataset_frontmatter = make_dataset_frontmatter(dataset_json)
-                write_frontmatter(dataset_frontmatter, datasets_output_dir)
-            except Exception as e:
-                logging.error(
-                    f"While writing {dataset_json.get('title', 'a dataset with a missing title')} "
-                    f"(dataset_id: {dataset_json.get('dataset_id', 'missing')})",
-                    exc_info=e
-                )
+    # Iterate over all JSON files in the input folder
+    input_path = Path(args.input_folder)
+    for json_file in input_path.glob("../_datasets/json/*.json"):
+        with open(json_file, encoding='utf-8') as input_file:
+            datasets_json = json.load(input_file)
+            for dataset in datasets_json["datasets"]:
+                try:
+                    # Generate output
+                    dataset_frontmatter = make_dataset_frontmatter(dataset)
+                    # Write output
+                    write_frontmatter(dataset_frontmatter, datasets_output_dir)
+                except Exception as e:
+                    logging.error(
+                        f"While writing {dataset.get('title', 'a dataset with a missing title')} "
+                        f"(dataset_id: {dataset.get('id', 'missing')})",
+                        exc_info=e
+                    )
 
 
     print("\nAll done! Please enjoy your datasets :)\n",
-          "Datasets have been generated in: `import/generated/_datasets`",
-          "To include them in your JKAN site, run the following from `import`",
-          "\nmv generated/_datasets/* ../_datasets\n",
-          "This may overwrite the existing contents of `_datasets`.\n",
-          f"Issues with your input files have been logged to: `import/{logname}`",
-          "More info is availabile at `import/README.md`\n",
-          sep=os.linesep)
+            "Datasets have been generated in: `import/generated/_datasets`",
+            "To include them in your JKAN site, run the following from `import`",
+            "\nmv generated/_datasets/* ../_datasets\n",
+            "This may overwrite the existing contents of `_datasets`.\n",
+            f"Issues with your input files have been logged to: `import/{logname}`",
+            "More info is availabile at `import/README.md`\n",
+            sep=os.linesep)
