@@ -7,13 +7,13 @@ creator:
   name: Mattia Amadio
 dataset_id: SSD_hzd-flood
 description: River flood hazard extent (perimeter) in South Sudan derived from FATHOM
-  2019 for RP 5, 20, 100, 250 years.
+  2019 for RP 5, 20, 100, 250 years; observed extent of 2019 flood from remote sensing.
 details: null
 exposure: null
 hazard:
-  calculation_method: observed, simulated
+  calculation_method: simulated
   disaster_identifiers: FL-2019-000062-SSD; GLIDE
-  hazard_analysis_type: empirical, probabilistic
+  hazard_analysis_type: probabilistic
   hazard_type: flood
   intensity: fl_wd:m
   occurrence_range: 5, 20, 100, 250 years
