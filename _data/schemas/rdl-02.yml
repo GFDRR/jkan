@@ -71,7 +71,7 @@ resource_fields:
     label: Reference coordinate system
     placeholder: "Hint: 4326 (WGS84)"
   - field_name: spatial_resolution
-    label: Spatial Resolution
+    label: Spatial Resolution (meters)
   - field_name: download_url
     label: URL to resource
     datajson: downloadURL
