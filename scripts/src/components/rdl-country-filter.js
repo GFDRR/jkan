@@ -46,15 +46,21 @@ export default class {
   }
 
   _countriesWithCount (datasets, params) {
-    return chain(datasets)
-      .groupBy('geo_coverage')
-      .flatMap(function (datasetsForCountry, country) {
-        var countries = country.split(",")
-        var collated = countries.map(c => prep_country(c, params, datasetsForCountry))
-
-        return collated
+    const datasetsByCountry = datasets.reduce((result, dataset) => {
+      dataset.geo_coverage.forEach(country => {
+        if (Array.isArray(result[country])) {
+          result[country].push(dataset)
+        } else {
+          result[country] = [dataset]
+        }
       })
-      .orderBy('unfilteredCount', 'desc')
-      .value()
+      return result;
+    }, {})
+
+    return Object.entries(datasetsByCountry).map((datasetsEntryForOneCountry) => {
+      const country = datasetsEntryForOneCountry[0];
+      const datasetsForOneCountry = datasetsEntryForOneCountry[1];
+      return prep_country(country, params, datasetsForOneCountry)
+    }, []).sort((a,b) => a.unfilteredCount - b.unfilteredCount)
   }
 }
