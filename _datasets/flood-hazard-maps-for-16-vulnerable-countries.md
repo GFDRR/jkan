@@ -55,7 +55,7 @@ resources:
 - coordinate_system: EPSG:4326
   description: Fragility, Conflict and Vulnerability countries data (16 countries)
     - open access via request form, requires to sign EULA
-  download_url: null
+  download_url: https://forms.office.com/r/u55iJgeZGU
   format: geotiff
   id: FTH_form_FCV
   spatial_resolution: 30
