@@ -117,7 +117,7 @@
             },
             "version": "2022",
             "purpose": "Regional risk modelling. These data have been derived on a regional scale for the purpose of consistent regional multi-country hazard and risk assessment. Application of this information on smaller scales should be done with care. Importantly on a local scale, it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies., it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies",
-            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia",
+            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia)",
             "spatial": {
                 "countries": [
                     "KAZ",
@@ -284,7 +284,7 @@
             },
             "version": "2022",
             "purpose": "Regional risk modelling. These data have been derived on a regional scale for the purpose of consistent regional multi-country hazard and risk assessment. Application of this information on smaller scales should be done with care. Importantly on a local scale, it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies., it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies",
-            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia",
+            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia)",
             "spatial": {
                 "countries": [
                     "KAZ",
@@ -387,7 +387,7 @@
             },
             "version": "2022",
             "purpose": "Regional risk modelling. These data have been derived on a regional scale for the purpose of consistent regional multi-country hazard and risk assessment. Application of this information on smaller scales should be done with care. Importantly on a local scale, it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies., it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies",
-            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia",
+            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia)",
             "spatial": {
                 "countries": [
                     "KAZ",
@@ -490,7 +490,7 @@
             },
             "version": "2022",
             "purpose": "Regional risk modelling. These data have been derived on a regional scale for the purpose of consistent regional multi-country hazard and risk assessment. Application of this information on smaller scales should be done with care. Importantly on a local scale, it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies., it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies",
-            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia",
+            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia)",
             "spatial": {
                 "countries": [
                     "KAZ",
@@ -593,7 +593,7 @@
             },
             "version": "2022",
             "purpose": "Regional risk modelling. These data have been derived on a regional scale for the purpose of consistent regional multi-country hazard and risk assessment. Application of this information on smaller scales should be done with care. Importantly on a local scale, it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies., it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies",
-            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia",
+            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia)",
             "spatial": {
                 "countries": [
                     "KAZ",
@@ -700,7 +700,7 @@
             },
             "version": "2022",
             "purpose": "Regional risk modelling. These data have been derived on a regional scale for the purpose of consistent regional multi-country hazard and risk assessment. Application of this information on smaller scales should be done with care. Importantly on a local scale, it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies., it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies",
-            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia",
+            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia)",
             "spatial": {
                 "countries": [
                     "KAZ",
@@ -803,7 +803,7 @@
             },
             "version": "2022",
             "purpose": "Regional risk modelling. These data have been derived on a regional scale for the purpose of consistent regional multi-country hazard and risk assessment. Application of this information on smaller scales should be done with care. Importantly on a local scale, it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies., it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies",
-            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia",
+            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia)",
             "spatial": {
                 "countries": [
                     "KAZ",
@@ -888,6 +888,109 @@
                         "start": "2080",
                         "end": "2080"
                     }
+                }
+            ],
+            "links": [
+                {
+                    "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+                    "rel": "describedby"
+                }
+            ]
+        },
+        {
+            "id": "CA_SFRARR_exp",
+            "title": "Central Asia exposure dataset",
+            "description": "Data from the EU-funded 'Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia' Program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia).\nExposure data developed using high-resolution global and regional datasets and local official data, harmonized to produce a regionally-consistent exposure database for Central Asia. The exposure database includes: population, residential buildings, non-residential buildings (schools, healthcare facilities, industrial and commercial buildings), croplands, transportation system (roads, railways and bridges), airports and airstrips, mines, and supply infrastructure. The exposure database developed during this project can be used at regional scale, national scale or sub-national scale (e.g., at Oblast scale). ",
+            "risk_data_type": [
+                "exposure"
+            ],
+            "publisher": {
+                "name": "RED - Risk, Engineering  Development - Pavia (Italy)",
+                "url": "https://www.redrisk.com"
+            },
+            "version": "2022",
+            "purpose": "Regional risk modelling. These data have been derived on a regional scale for the purpose of consistent regional multi-country hazard and risk assessment. Application of this information on smaller scales should be done with care. Importantly on a local scale, it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies., it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies",
+            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia)",
+            "spatial": {
+                "countries": [
+                    "KAZ",
+                    "KGZ",
+                    "TKM",
+                    "TJK",
+                    "UZB"
+                ],
+                "bbox": [
+                    46,
+                    88,
+                    34,
+                    57
+                ],
+                "scale": "regional",
+                "gazetteer_entries": [
+                    {
+                        "id": "CA_SFRARR_exp_gaz",
+                        "scheme": "ISO 3166-1 alpha-2",
+                        "description": "Oblast codes and names are used."
+                    }
+                ]
+            },
+            "license": "CC-BY-SA-4.0",
+            "contact_point": {
+                "name": "Paola Ceresa",
+                "email": "paola.ceresa@redrisk.com"
+            },
+            "creator": {
+                "name": "Chiara Scaini",
+                "email": "cscaini@inogs.it"
+            },
+            "exposure": {
+                "category": "buildings",
+                "metrics": [
+                    {
+                        "id": "CA_SFRARR_exp",
+                        "dimension": "structure",
+                        "quantity_kind": "currency"
+                    }
+                ]
+            },
+            "attributions": [
+                {
+                    "id": "CA_SFRARR_OGS",
+                    "entity": {
+                        "name": "National Institute of Oceanography and Applied Geophysics, OGS, Italy"
+                    },
+                    "role": "author"
+                },
+                {
+                    "id": "CA_SFRARR_WB",
+                    "entity": {
+                        "name": "World Bank"
+                    },
+                    "role": "resource_provider"
+                },
+                {
+                    "id": "CA_SFRARR_RED",
+                    "entity": {
+                        "name": "RED - Risk, Engineering  Development - Pavia (Italy)"
+                    },
+                    "role": "principal_investigator"
+                }
+            ],
+            "referenced_by": [
+                {
+                    "id": "CA_SFRARR_expReport_RU",
+                    "name": "Central Asia exposure data development technical report - Russian version",
+                    "date_published": "2022-11-16",
+                    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0064117/DR0091011/Task4_Exposure_Report_r6_RU.pdf?versionId=2023-07-21T17:33:26.6527091Z"
+                }
+            ],
+            "resources": [
+                {
+                    "id": "CA_SFRARR_exp",
+                    "title": "Central Asia exposure dataset - multiple sectors",
+                    "description": "Central Asia exposure dataset - containing access to building, population, infrastructure, agriculture data for risk analytics.",
+                    "format": "shp",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064117/Central-Asia-Exposure-Data"
                 }
             ],
             "links": [
