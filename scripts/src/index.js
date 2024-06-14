@@ -17,6 +17,7 @@ import RDLDatasetDisplay from './components/rdl-datasets-display'
 import ViewSwitcher from './components/view-switcher'
 import ThemeGallery from './components/theme-gallery'
 import {queryByComponent, setParams} from './util'
+import RDLProjectFilter from './components/rdl-project-filter'
 
 const params = $.deparam(window.location.search.substr(1))
 
@@ -46,6 +47,7 @@ const components = [
   {tag: 'categories-filter', class: CategoriesFilter, usesDatasets: true},
   {tag: 'rdl-country-filter', class: RDLCountryFilter, usesDatasets: true},
   {tag: 'rdl-license-filter', class: RDLLicenseFilter, usesDatasets: true},
+  {tag: 'rdl-project-filter', class: RDLProjectFilter, usesDatasets: true},
   {tag: 'rdl-geographical-scale-filter', class: RDLGeographicalScaleFilter, usesDatasets: true},
 ]
 for (let component of components) {
