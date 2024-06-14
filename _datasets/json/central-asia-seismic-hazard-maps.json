@@ -39,6 +39,15 @@
             "creator": {
                 "name": "Ettore Faga"
             },
+            "attributions": [
+                {
+                    "id": "CA_SFRARR_RED",
+                    "entity": {
+                        "name": "RED - Risk, Engineering  Development - Pavia (Italy)"
+                    },
+                    "role": "principal_investigator"
+                }
+            ],
             "referenced_by": [
                 {
                     "id": "SFRARR_SeismicHazardReport_English",
@@ -384,18 +393,6 @@
                 {
                     "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
                     "rel": "describedby"
-                }
-            ]
-        },
-        {
-            "id": "CA_SFRARR_FL",
-            "attributions": [
-                {
-                    "id": "CA_SFRARR_RED",
-                    "entity": {
-                        "name": "RED - Risk, Engineering  Development - Pavia (Italy)"
-                    },
-                    "role": "principal_investigator"
                 }
             ]
         }

@@ -653,18 +653,7 @@
                     "rel": "describedby"
                 }
             ]
-        },
-        {
-            "id": "AFG_hzd-landslide",
-            "spatial": {
-                "gazetteer_entries": [
-                    {
-                        "id": "AFG-KAB",
-                        "scheme": "ISO 3166-2",
-                        "description": "Kabul District"
-                    }
-                ]
-            }
+
         }
     ]
 }

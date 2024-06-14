@@ -916,19 +916,6 @@
                     "rel": "describedby"
                 }
             ]
-        },
-        {
-            "resources": [
-                {
-                    "id": "FTH_form_FCV",
-                    "title": "Fathom v3 FCV countries (public)",
-                    "description": "Fragility, Conflict and Vulnerability countries data (16 countries) - open access via request form, requires to sign EULA",
-                    "format": "geotiff",
-                    "spatial_resolution": 30,
-                    "coordinate_system": "EPSG:4326",
-                    "access_url": "https://forms.office.com/r/u55iJgeZGU"
-                }
-            ]
         }
     ]
 }
