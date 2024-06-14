@@ -36,7 +36,7 @@ resources:
     collected from different sources from historical time to 2020. Developed as part
     of the Strengthening Financial Resilience and Accelerating Risk Reduction in Central
     Asia program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia)
-  download_url: null
+  download_url: https://datacatalog.worldbank.org/search/dataset/0064167
   format: csv
   id: CA_SFRARR_EQ_catalogue
   spatial_resolution: null
@@ -46,7 +46,7 @@ resources:
     from the AFEAD database converted to the geospatial GEM format. Developed as part
     of the Strengthening Financial Resilience and Accelerating Risk Reduction in Central
     Asia program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia)
-  download_url: null
+  download_url: https://datacatalog.worldbank.org/search/dataset/0064168
   format: api
   id: CA_SFRARR_EQ_faultDB
   spatial_resolution: null
@@ -65,7 +65,7 @@ resources:
   description: Central Asia seismic stochastic event set. Developed as part of the
     Strengthening Financial Resilience and Accelerating Risk Reduction in Central
     Asia program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia)
-  download_url: null
+  download_url: https://datacatalog.worldbank.org/search/dataset/0064233
   format: api
   id: CA_SFRARR_EQ_EventSet
   spatial_resolution: null
@@ -74,7 +74,7 @@ resources:
   description: Central Asia seismic hazard curves. Developed as part of the Strengthening
     Financial Resilience and Accelerating Risk Reduction in Central Asia program.
     (https://www.gfdrr.org/en/program/SFRARR-Central-Asia)
-  download_url: null
+  download_url: https://datacatalog.worldbank.org/search/dataset/0064237
   format: csv
   id: CA_SFRARR_EQ_HazCurves
   spatial_resolution: null
@@ -83,7 +83,7 @@ resources:
   description: Central Asia seismic hazard disaggregation. Developed as part of the
     Strengthening Financial Resilience and Accelerating Risk Reduction in Central
     Asia program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia)
-  download_url: null
+  download_url: https://datacatalog.worldbank.org/search/dataset/0064235
   format: csv
   id: CA_SFRARR_EQ_HazDisagg
   spatial_resolution: null

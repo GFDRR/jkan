@@ -94,7 +94,7 @@ spatial:
   - SYC
   - TZA
   scale: regional
-title: South West Indian Ocean Flood hazard
+title: South West Indian Ocean Cyclone hazard
 version: '2017'
 vulnerability: null
 ---

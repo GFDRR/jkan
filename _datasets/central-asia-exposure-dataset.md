@@ -42,7 +42,7 @@ resources:
 - coordinate_system: null
   description: Central Asia exposure dataset - containing access to building, population,
     infrastructure, agriculture data for risk analytics.
-  download_url: null
+  download_url: https://datacatalog.worldbank.org/search/dataset/0064117/Central-Asia-Exposure-Data
   format: shp
   id: CA_SFRARR_exp
   spatial_resolution: null
