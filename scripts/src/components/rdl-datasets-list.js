@@ -30,8 +30,8 @@ export default class {
     }
 
     // Filter datasets and render in items container
-    const paramFilters = pick(opts.params, ['category', 'geo_coverage', 'geo_scale', 'license_display','project'])
-    const attributeFilters = pick(opts.el.data(), ['category', 'geo_coverage', 'geo_scale', 'license_display','project'])
+    const paramFilters = pick(opts.params, ['category', 'geo_coverage', 'geo_scale', 'license_display', 'project', 'hazard_type'])
+    const attributeFilters = pick(opts.el.data(), ['category', 'geo_coverage', 'geo_scale', 'license_display', 'project', 'hazard_type'])
     const filters = createDatasetFilters(defaults(paramFilters, attributeFilters))
 
     const filteredDatasets = filter(opts.datasets, filters)
