@@ -36,11 +36,12 @@ export default class {
   }
 
   _hazardTypesWithCount (datasets, params) {
+    const exposureDatasets = datasets.filter(d => d.category.includes('Exposure'))
     return chain(datasets)
       .groupBy('hazard_type')
       .flatMap(function (datasetsForHazardType, hazard_type) {
         var hazardTypes = hazard_type.split(",")
-        var collated = hazardTypes.map(c => prep_hazard_type(c, params, datasetsForHazardType))
+        var collated = hazardTypes.map(c => prep_hazard_type(c, params, [...datasetsForHazardType,...exposureDatasets]))
 
         return collated
       })
