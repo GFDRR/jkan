@@ -68,7 +68,7 @@ spatial:
   - TJK
   - UZB
   scale: regional
-title: Central Asia exposure dataset - residential buildings - projected
+title: Central Asia exposure dataset - residential buildings (2080)
 version: '2022'
 vulnerability: null
 ---
