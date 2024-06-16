@@ -11,6 +11,18 @@
         {% endfor %}]
       {% else %} {{ "None" | jsonify }}
     {% endif %},
+    "hazard_type": {% if dataset.risk_data_type[0] %}
+        [{% for cat in dataset.risk_data_type %}
+        {% assign hazard_type_code = dataset[cat]["hazard_type"] %}
+          {% if hazard_type_code and site.data.rdl-hazard_type[hazard_type_code] %}
+            {{ site.data.rdl-hazard_type[hazard_type_code] | jsonify }}{% unless forloop.last %}, {% endunless %}
+          {% else %}
+            {{ "None" | jsonify }}
+          {% endif %}
+        {% endfor %}]
+      {% else %}
+        {{ "None" | jsonify }}
+    {% endif %},
     {% if site.data.rdl-license-name[dataset.license] %}
       "license_display": {{ site.data.rdl-license-name[dataset.license] | jsonify }},
     {% else %}
