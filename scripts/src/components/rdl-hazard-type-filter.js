@@ -41,7 +41,7 @@ export default class {
       .groupBy('hazard_type')
       .flatMap(function (datasetsForHazardType, hazard_type) {
         var hazardTypes = hazard_type.split(",")
-        var collated = hazardTypes.map(c => prep_hazard_type(c, params, [...datasetsForHazardType,...exposureDatasets]))
+        var collated = hazardTypes.map(c => prep_hazard_type(c, params, [...datasetsForHazardType]))
 
         return collated
       })
