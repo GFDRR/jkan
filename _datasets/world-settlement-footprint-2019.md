@@ -47,7 +47,7 @@ resources:
   format: geotiff
   id: '0'
   spatial_resolution: 10
-  title: World Settlement Footprint (WSF) 2019 - Sentinel-1/2 - Global
+  title: World Settlement Footprint (WSF) 2019
 risk_data_type:
 - exposure
 schema: rdl-02

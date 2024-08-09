@@ -81,7 +81,7 @@
             "resources": [
                 {
                     "id": "0",
-                    "title": "World Settlement Footprint (WSF) 2019 - Sentinel-1/2 - Global",
+                    "title": "World Settlement Footprint (WSF) Evolution",
                     "description": "Binary mask at 10m resolution outlining the extent of human settlements globally derived by means of 2019 multitemporal Sentinel-1 (S1) and Sentinel-2 (S2) imagery. ",
                     "format": "geotiff",
                     "spatial_resolution": 30,
