@@ -1,4 +1,6 @@
-## How to import data from a CKAN site
+## How to convert RDLS json to md file (JKAN site)
+
+See here on how to convert and prepare you metadata in JSON file https://metadata.riskdatalibrary.org/
 
 ### Set up python environment
 
