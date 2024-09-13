@@ -32,7 +32,7 @@ hazard:
   calculation_method: simulated
   disaster_identifiers: ''
   hazard_analysis_type: probabilistic
-  hazard_type: flood
+  hazard_type: flood, coastal_flood
   intensity: wd:cm
   occurrence_range: 1/10 to 1/1000 years
   processes: coastal_flood, fluvial_flood, pluvial_flood
