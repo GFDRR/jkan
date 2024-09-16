@@ -92,7 +92,7 @@
           "spatial_resolution": 5000,
           "coordinate_system": "EPSG:4326",
           "download_url": "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/csv/carbonplan-extreme-heat-days-over-29-degC-WBGT-shade.csv"
-        },
+        }
       ]
     }
   ]
