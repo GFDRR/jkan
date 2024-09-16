@@ -1,0 +1,494 @@
+{
+datasets: [
+{
+id: "HS_cp",
+title: "Extreme Heat - Carbon Plan & The Washington Post",
+description: "The final output dataset includes historical and future estimates of WBGT in the shade and in the sun for ~15,300 cities and ~24,000 climatically-similar regions around the world. The full analysis includes 26 global climate models (GCMs) and one emissions scenario (SSP2-4.5). To support different use cases, we've made the results available at a few different levels of granularity and in two different formats.",
+risk_data_type: [
+"hazard"
+],
+publisher: {
+name: "GFDRR",
+url: "https://gfdrr.org"
+},
+purpose: "As part of a collaborative project with The Washington Post, we developed a new dataset modeling extreme heat under a changing climate.",
+project: "Modeling extreme heat in a changing climate",
+spatial: {
+scale: "global"
+},
+license: "CC-BY-4.0",
+contact_point: {
+name: "Pierre Chrzanowski",
+email: "pchrzanowski@worldbank.org"
+},
+creator: {
+name: "Carbon Plan",
+email: "hello@carbonplan.org",
+url: "https://carbonplan.org/"
+},
+attributions: [
+{
+id: "0",
+entity: {
+name: "Carbon Plan",
+email: "hello@carbonplan.org",
+url: "https://carbonplan.org/"
+},
+role: "author"
+},
+{
+id: "1",
+entity: {
+name: "The Washington Post",
+url: "https://www.washingtonpost.com"
+},
+role: "author"
+}
+],
+sources: [
+{
+id: "0",
+name: "NASA Earth Exchange Global Daily Downscaled Projections (NEX-GDDP-CMIP6)",
+url: "https://www.nccs.nasa.gov/services/data-collections/land-based-products/nex-gddp-cmip6",
+type: "dataset",
+component: "hazard"
+},
+{
+id: "1",
+name: "GHSL - Global Human Settlement Layer",
+url: "https://human-settlement.emergency.copernicus.eu/datasets.php",
+type: "dataset",
+component: "hazard"
+}
+],
+referenced_by: [
+{
+id: "0",
+name: "Where dangerous heat is surging",
+author_names: [
+"The Washington Post"
+],
+date_published: "2023-09-05",
+url: "https://www.washingtonpost.com/climate-environment/interactive/2023/extreme-heat-wet-bulb-globe-temperature/"
+}
+],
+resources: [
+{
+id: "0",
+title: "WBGT in the shade annual maximum",
+description: "Medians over time and medians over GCMs",
+media_type: "text/csv",
+format: "csv",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/csv/carbonplan-extreme-heat-annual-maximum-WBGT-shade.csv"
+},
+{
+id: "1",
+title: "WBGT in the shade days over 29degC",
+description: "Medians over time and medians over GCMs",
+media_type: "text/csv",
+format: "csv",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/csv/carbonplan-extreme-heat-days-over-29-degC-WBGT-shade.csv"
+},
+{
+id: "2",
+title: "WBGT in the shade days over 30.5degC",
+description: "Medians over time and medians over GCMs",
+media_type: "text/csv",
+format: "csv",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/csv/carbonplan-extreme-heat-days-over-30.5-degC-WBGT-shade.csv"
+},
+{
+id: "3",
+title: "WBGT in the shade days over 32degC",
+description: "Medians over time and medians over GCMs",
+media_type: "text/csv",
+format: "csv",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/csv/carbonplan-extreme-heat-days-over-32-degC-WBGT-shade.csv"
+},
+{
+id: "4",
+title: "WBGT in the shade days over 35degC",
+description: "Medians over time and medians over GCMs",
+media_type: "text/csv",
+format: "csv",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/csv/carbonplan-extreme-heat-days-over-35-degC-WBGT-shade.csv"
+},
+{
+id: "5",
+title: "WBGT in the shade heatwave days over 29degC",
+description: "Medians over time and medians over GCMs",
+media_type: "text/csv",
+format: "csv",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/csv/carbonplan-extreme-heat-heatwave-days-over-29-degC-WBGT-shade.csv"
+},
+{
+id: "6",
+title: "WBGT in the shade heatwave days over 30.5degC",
+description: "Medians over time and medians over GCMs",
+media_type: "text/csv",
+format: "csv",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/csv/carbonplan-extreme-heat-heatwave-days-over-30.5-degC-WBGT-shade.csv"
+},
+{
+id: "7",
+title: "WBGT in the shade heatwave days over 32degC",
+description: "Medians over time and medians over GCMs",
+media_type: "text/csv",
+format: "csv",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/csv/carbonplan-extreme-heat-heatwave-days-over-32-degC-WBGT-shade.csv"
+},
+{
+id: "8",
+title: "WBGT in the shade heatwave days over 35degC",
+description: "Medians over time and medians over GCMs",
+media_type: "text/csv",
+format: "csv",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/csv/carbonplan-extreme-heat-heatwave-days-over-35-degC-WBGT-shade.csv"
+},
+{
+id: "9",
+title: "WBGT in the sun annual maximum",
+description: "Medians over time and medians over GCMs",
+media_type: "text/csv",
+format: "csv",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/csv/carbonplan-extreme-heat-annual-maximum-WBGT-sun.csv"
+},
+{
+id: "10",
+title: "WBGT in the sun days over 29degC",
+description: "Medians over time and medians over GCMs",
+media_type: "text/csv",
+format: "csv",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/csv/carbonplan-extreme-heat-days-over-29-degC-WBGT-sun.csv"
+},
+{
+id: "11",
+title: "WBGT in the sun days over 30.5degC",
+description: "Medians over time and medians over GCMs",
+media_type: "text/csv",
+format: "csv",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/csv/carbonplan-extreme-heat-days-over-30.5-degC-WBGT-sun.csv"
+},
+{
+id: "12",
+title: "WBGT in the sun days over 32degC",
+description: "Medians over time and medians over GCMs",
+media_type: "text/csv",
+format: "csv",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/csv/carbonplan-extreme-heat-days-over-32-degC-WBGT-sun.csv"
+},
+{
+id: "13",
+title: "WBGT in the sun days over 35degC",
+description: "Medians over time and medians over GCMs",
+media_type: "text/csv",
+format: "csv",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/csv/carbonplan-extreme-heat-days-over-35-degC-WBGT-sun.csv"
+},
+{
+id: "14",
+title: "WBGT in the sun heatwave days over 29degC",
+description: "Medians over time and medians over GCMs",
+media_type: "text/csv",
+format: "csv",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/csv/carbonplan-extreme-heat-heatwave-days-over-29-degC-WBGT-sun.csv"
+},
+{
+id: "15",
+title: "WBGT in the sun heatwave days over 30.5degC",
+description: "Medians over time and medians over GCMs",
+media_type: "text/csv",
+format: "csv",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/csv/carbonplan-extreme-heat-heatwave-days-over-30.5-degC-WBGT-sun.csv"
+},
+{
+id: "16",
+title: "WBGT in the sun heatwave days over 32degC",
+description: "Medians over time and medians over GCMs",
+media_type: "text/csv",
+format: "csv",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/csv/carbonplan-extreme-heat-heatwave-days-over-32-degC-WBGT-sun.csv"
+},
+{
+id: "17",
+title: "WBGT in the sun heatwave days over 35degC",
+description: "Medians over time and medians over GCMs",
+media_type: "text/csv",
+format: "csv",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/csv/carbonplan-extreme-heat-heatwave-days-over-35-degC-WBGT-sun.csv"
+},
+{
+id: "18",
+title: "WBGT in the shade historical",
+description: "Daily projections for the full ensemble of GCMs",
+format: "Zarr",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/zarr/daily/historical-WBGT-shade.zarr"
+},
+{
+id: "19",
+title: "WBGT in the shade ssp2-4.5 (2020-2039)",
+description: "Daily projections for the full ensemble of GCMs",
+format: "Zarr",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/zarr/daily/ssp245-2030-WBGT-shade.zarr"
+},
+{
+id: "20",
+title: "WBGT in the shade ssp2-4.5 (2040-2059)",
+description: "Daily projections for the full ensemble of GCMs",
+format: "Zarr",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/zarr/daily/ssp245-2050-WBGT-shade.zarr"
+},
+{
+id: "21",
+title: "WBGT in the sun historical",
+description: "Daily projections for the full ensemble of GCMs",
+format: "Zarr",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/zarr/daily/historical-WBGT-sun.zarr"
+},
+{
+id: "22",
+title: "WBGT in the sun ssp2-4.5 (2020-2039)",
+description: "Daily projections for the full ensemble of GCMs",
+format: "Zarr",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/zarr/daily/ssp245-2030-WBGT-sun.zarr"
+},
+{
+id: "23",
+title: "WBGT in the sun ssp2-4.5 (2040-2059)",
+description: "Daily projections for the full ensemble of GCMs",
+format: "Zarr",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/zarr/daily/ssp245-2050-WBGT-sun.zarr"
+},
+{
+id: "24",
+title: "WBGT in the shade annual maxima, days over threshold historical",
+description: "Medians over time for the full ensemble of GCMs",
+format: "Zarr",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/zarr/summaries/historical-summaries-WBGT-shade.zarr"
+},
+{
+id: "25",
+title: "WBGT in the shade heatwave days ssp2-4.5 (2020-2039)",
+description: "Medians over time for the full ensemble of GCMs",
+format: "Zarr",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/zarr/summaries/historical-summaries-heatwaves-WBGT-shade.zarr"
+},
+{
+id: "26",
+title: "WBGT in the shade annual maxima, days over threshold ssp2-4.5 (2040-2059)",
+description: "Medians over time for the full ensemble of GCMs",
+format: "Zarr",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/zarr/summaries/ssp245-2030-summaries-WBGT-shade.zarr"
+},
+{
+id: "27",
+title: "WBGT in the shade heatwave days historical",
+description: "Medians over time for the full ensemble of GCMs",
+format: "Zarr",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/zarr/summaries/ssp245-2030-summaries-heatwaves-WBGT-shade.zarr"
+},
+{
+id: "28",
+title: "WBGT in the shade annual maxima, days over threshold ssp2-4.5 (2020-2039)",
+description: "Medians over time for the full ensemble of GCMs",
+format: "Zarr",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/zarr/summaries/ssp245-2050-summaries-WBGT-shade.zarr"
+},
+{
+id: "29",
+title: "WBGT in the shade heatwave days ssp2-4.5 (2040-2059)",
+description: "Medians over time for the full ensemble of GCMs",
+format: "Zarr",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/zarr/summaries/ssp245-2050-summaries-heatwaves-WBGT-shade.zarr"
+},
+{
+id: "30",
+title: "WBGT in the sun annual maxima, days over threshold historical",
+description: "Medians over time for the full ensemble of GCMs",
+format: "Zarr",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/zarr/summaries/historical-summaries-WBGT-sun.zarr"
+},
+{
+id: "31",
+title: "WBGT in the sun heatwave days ssp2-4.5 (2020-2039)",
+description: "Medians over time for the full ensemble of GCMs",
+format: "Zarr",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/zarr/summaries/historical-summaries-heatwaves-WBGT-sun.zarr"
+},
+{
+id: "32",
+title: "WBGT in the sun annual maxima, days over threshold ssp2-4.5 (2040-2059)",
+description: "Medians over time for the full ensemble of GCMs",
+format: "Zarr",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/zarr/summaries/ssp245-2030-summaries-WBGT-sun.zarr"
+},
+{
+id: "33",
+title: "WBGT in the sun heatwave days historical",
+description: "Medians over time for the full ensemble of GCMs",
+format: "Zarr",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/zarr/summaries/ssp245-2030-summaries-heatwaves-WBGT-sun.zarr"
+},
+{
+id: "34",
+title: "WBGT in the sun annual maxima, days over threshold ssp2-4.5 (2020-2039)",
+description: "Medians over time for the full ensemble of GCMs",
+format: "Zarr",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/zarr/summaries/ssp245-2050-summaries-WBGT-sun.zarr"
+},
+{
+id: "35",
+title: "WBGT in the sun heatwave days ssp2-4.5 (2040-2059)",
+description: "Medians over time for the full ensemble of GCMs",
+format: "Zarr",
+spatial_resolution: 5000,
+coordinate_system: "EPSG:4326",
+download_url: "https://carbonplan-climate-impacts.s3.us-west-2.amazonaws.com/extreme-heat/v1.0/outputs/zarr/summaries/ssp245-2050-summaries-heatwaves-WBGT-sun.zarr"
+}
+],
+hazard: {
+event_sets: [
+{
+id: "0",
+analysis_type: "empirical",
+frequency_distribution: "user_defined",
+seasonality: "user_defined",
+calculation_method: "inferred",
+temporal: {
+start: "1985",
+end: "2014"
+},
+hazards: [
+{
+id: "0",
+type: "extreme_temperature",
+processes: [
+"extreme_heat"
+],
+intensity_measure: "WBGT:c"
+}
+]
+},
+{
+id: "1",
+analysis_type: "deterministic",
+frequency_distribution: "user_defined",
+seasonality: "user_defined",
+calculation_method: "simulated",
+temporal: {
+start: "2020",
+end: "2039"
+},
+hazards: [
+{
+id: "0",
+type: "extreme_temperature",
+processes: [
+"extreme_heat"
+],
+intensity_measure: "WBGT:c"
+}
+]
+},
+{
+id: "2",
+analysis_type: "deterministic",
+frequency_distribution: "user_defined",
+seasonality: "user_defined",
+calculation_method: "simulated",
+temporal: {
+start: "2040",
+end: "2059"
+},
+hazards: [
+{
+id: "0",
+type: "extreme_temperature",
+processes: [
+"extreme_heat"
+],
+intensity_measure: "WBGT:c"
+}
+]
+}
+]
+},
+links: [
+{
+href: "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+rel: "describedby"
+}
+]
+}
+]
+}
