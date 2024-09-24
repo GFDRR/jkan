@@ -1,0 +1,382 @@
+{
+    "datasets": [
+        {
+            "id": "CA_SFRARR_FL_loss",
+            "title": "Central Asia flood risk estimates",
+            "description": "Fluvial flood risk estimates, including return period loss estimates, annual average loss estimates and event loss tables ",
+            "details": "Data from the EU-funded 'Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia' Program (https://www.gfdrr.org/en/program/SFRARR-Central-Asia).\nExposure data developed using high-resolution global and regional datasets and local official data, harmonized to produce a regionally-consistent exposure database for Central Asia. The exposure database includes: population, residential buildings, non-residential buildings (schools, healthcare facilities, industrial and commercial buildings), croplands, transportation system (roads, railways and bridges), airports and airstrips, mines, and supply infrastructure. The exposure database developed during this project can be used at regional scale, national scale or sub-national scale (e.g., at Oblast scale).",
+            "risk_data_type": [
+                "loss"
+            ],
+            "publisher": {
+                "name": "RED - Risk, Engineering  Development - Pavia (Italy)",
+                "url": "https://www.redrisk.com"
+            },
+            "version": "2022",
+            "purpose": "Regional risk modelling. These data have been derived on a regional scale for the purpose of consistent regional multi-country hazard and risk assessment. Application of this information on smaller scales should be done with care. Importantly on a local scale, it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies.",
+            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia",
+            "spatial": {
+                "countries": [
+                    "KAZ",
+                    "KGZ",
+                    "TKM",
+                    "TJK",
+                    "UZB"
+                ],
+                "bbox": [
+                    46,
+                    88,
+                    34,
+                    57
+                ],
+                "scale": "regional"
+            },
+            "license": "CC-BY-SA-4.0",
+            "contact_point": {
+                "name": "Paola Ceresa",
+                "email": "paola.ceresa@redrisk.com"
+            },
+            "creator": {
+                "name": "Paolo Bazzuro"
+            },
+            "attributions": [
+                {
+                    "id": "CA_SFRARR_RED",
+                    "entity": {
+                        "name": "RED - Risk, Engineering  Development - Pavia (Italy)"
+                    },
+                    "role": "principal_investigator"
+                }
+            ],
+            "referenced_by": [
+                {
+                    "id": "SFRARR_RiskReport_English",
+                    "name": "Task 6 Earthquake and flood risk assessment",
+                    "date_published": "2022-12-08",
+                    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0064118/DR0091047/Task6_Risk_Report_r6_EN.pdf?versionId=2023-07-21T17:23:49.5763790Z"
+                },
+                {
+                    "id": "SFRARR_RiskReport_Russian",
+                    "name": "Task 6 Earthquake and flood risk assessment",
+                    "date_published": "2022-12-08",
+                    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0064118/DR0091049/Task6_Risk_Report_r6_RU.pdf?versionId=2023-07-21T17:23:52.9654590Z"
+                },
+                {
+                    "id": "SFRARR_RiskAnnex_Russian",
+                    "name": "Task 6 Earthquake and flood risk assessment - annex",
+                    "date_published": "2022-12-08",
+                    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0064118/DR0091050/Task6_Risk_Annex_r6_RU.pdf?versionId=2023-07-21T17:23:54.6115255Z"
+                },
+                {
+                    "id": "SFRARR_RiskAnnex_English",
+                    "name": "Task 6 Earthquake and flood risk assessment - annex",
+                    "date_published": "2022-12-08",
+                    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0064118/DR0091048/Task6_Risk_Annex_r6_EN.pdf?versionId=2023-07-21T17:23:51.3253877Z"
+                }
+            ],
+            "resources": [
+                {
+                    "id": "CA_SFRARR_FL_loss_RP_KAZ",
+                    "title": "Central Asia flood risk return period summaries - KAZ",
+                    "description": "Central Asia flood risk return period summaries.\n\nEstimated economic loss and fatalities per sector and for all sectors combined for fluvial flood risk (current defended and undefended scenarios, and for future climate scenarios)\n\nSummaries aggregated at ADM1 (Oblast) and country level.\n\nOne csv file per loss breakdown, giving the estimated loss per return period.",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064270",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064270/DR0091702/RP_KZ.zip?versionId=2023-07-05T13:58:52.6031766Z"
+                },
+                {
+                    "id": "CA_SFRARR_FL_loss_RP_TJK",
+                    "title": "Central Asia flood risk return period summaries - TJK",
+                    "description": "Central Asia flood risk return period summaries.\n\nEstimated economic loss and fatalities per sector and for all sectors combined for fluvial flood risk (current defended and undefended scenarios, and for future climate scenarios)\n\nSummaries aggregated at ADM1 (Oblast) and country level.\n\nOne csv file per loss breakdown, giving the estimated loss per return period.",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064270",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064270/DR0091703/RP_TJ.zip?versionId=2023-07-05T13:58:48.7054093Z"
+                },
+                {
+                    "id": "CA_SFRARR_FL_loss_RP_reg",
+                    "title": "Central Asia flood risk return period summaries - regional level",
+                    "description": "Estimated economic loss and fatalities per sector and for all sectors combined for fluvial flood risk (current defended and undefended scenarios, and for future climate scenarios)\n\nSummaries aggregated to the regional level (all CA countries combined).\n\nOne csv file per loss breakdown, giving the estimated loss per return period.",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064270",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064270/DR0091700/RP_CA.zip?versionId=2023-07-05T13:58:54.3411816Z"
+                },
+                {
+                    "id": "CA_SFRARR_FL_loss_RP_KGZ",
+                    "title": "Central Asia flood risk return period summaries - KGZ",
+                    "description": "Central Asia flood risk return period summaries.\n\nEstimated economic loss and fatalities per sector and for all sectors combined for fluvial flood risk (current defended and undefended scenarios, and for future climate scenarios)\n\nSummaries aggregated at ADM1 (Oblast) and country level.\n\nOne csv file per loss breakdown, giving the estimated loss per return period.",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064270",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064270/DR0091701/RP_KG.zip?versionId=2023-07-05T13:58:58.0210737Z"
+                },
+                {
+                    "id": "CA_SFRARR_FL_loss_RP_UZB",
+                    "title": "Central Asia flood risk return period summaries - UZB",
+                    "description": "Central Asia flood risk return period summaries.\n\nEstimated economic loss and fatalities per sector and for all sectors combined for fluvial flood risk (current defended and undefended scenarios, and for future climate scenarios)\n\nSummaries aggregated at ADM1 (Oblast) and country level.\n\nOne csv file per loss breakdown, giving the estimated loss per return period.",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064270",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064270/DR0091705/RP_UZ.zip?versionId=2023-07-05T13:58:56.1241597Z"
+                },
+                {
+                    "id": "CA_SFRARR_FL_loss_RP_TKM",
+                    "title": "Central Asia flood risk return period summaries - TKM",
+                    "description": "Central Asia flood risk return period summaries.\n\nEstimated economic loss and fatalities per sector and for all sectors combined for fluvial flood risk (current defended and undefended scenarios, and for future climate scenarios)\n\nSummaries aggregated at ADM1 (Oblast) and country level.\n\nOne csv file per loss breakdown, giving the estimated loss per return period.",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064270",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064270/DR0091704/RP_TM.zip?versionId=2023-07-05T13:58:50.7882165Z"
+                },
+                {
+                    "id": "CA_SFRARR_FL_def_loss_EP_CA",
+                    "title": "Central Asia flood risk EP curves - economic loss - flood defended",
+                    "description": "Estimated economic loss per sector and for all sectors combined, aggregated at Oblast and national level.\n\nOne csv file per loss breakdown, giving the estimated loss per exceedance probability.",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064268",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064268/DR0091710/EP_DEF_EC_CA.zip?versionId=2023-07-05T13:58:33.1952945Z"
+                },
+                {
+                    "id": "CA_SFRARR_FL_def_loss_EP_KAZ",
+                    "title": "Central Asia flood risk EP curves - economic loss - flood defended - KAZ",
+                    "description": "Estimated economic loss per sector and for all sectors combined, aggregated at Oblast and national level.\n\nOne csv file per loss breakdown, giving the estimated loss per exceedance probability.",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064268",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064268/DR0091713/EP_DEF_EC_KZ.zip?versionId=2023-07-05T13:58:08.8342487Z"
+                },
+                {
+                    "id": "CA_SFRARR_FL_def_loss_EP_KGZ",
+                    "title": "Central Asia flood risk EP curves - economic loss - flood defended - KGZ",
+                    "description": "Estimated economic loss per sector and for all sectors combined, aggregated at Oblast and national level.\n\nOne csv file per loss breakdown, giving the estimated loss per exceedance probability.",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064268",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064268/DR0091712/EP_DEF_EC_KG.zip?versionId=2023-07-05T13:58:14.4190494Z"
+                },
+                {
+                    "id": "CA_SFRARR_FL_def_loss_EP_TJK",
+                    "title": "Central Asia flood risk EP curves - economic loss - flood defended - TJK",
+                    "description": "Estimated economic loss per sector and for all sectors combined, aggregated at Oblast and national level.\n\nOne csv file per loss breakdown, giving the estimated loss per exceedance probability.",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064268",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064268/DR0091714/EP_DEF_EC_TJ.zip?versionId=2023-07-05T13:58:27.4545822Z"
+                },
+                {
+                    "id": "CA_SFRARR_FL_def_loss_EP_TKM",
+                    "title": "Central Asia flood risk EP curves - economic loss - flood defended - TKM",
+                    "description": "Estimated economic loss per sector and for all sectors combined, aggregated at Oblast and national level.\n\nOne csv file per loss breakdown, giving the estimated loss per exceedance probability.",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064268",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064268/DR0091715/EP_DEF_EC_TM.zip?versionId=2023-07-05T13:58:16.2689906Z"
+                },
+                {
+                    "id": "CA_SFRARR_FL_def_loss_EP_UZB",
+                    "title": "Central Asia flood risk EP curves - economic loss - flood defended - UZB",
+                    "description": "Estimated economic loss per sector and for all sectors combined, aggregated at Oblast and national level.\n\nOne csv file per loss breakdown, giving the estimated loss per exceedance probability.",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064268",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064268/DR0091716/EP_DEF_EC_UZ.zip?versionId=2023-07-05T13:58:18.0429734Z"
+                },
+                {
+                    "id": "CA_SFRARR_FL_undef_loss_EP_CA",
+                    "title": "Central Asia flood risk EP curves - economic loss - flood undefended",
+                    "description": "Estimated economic loss per sector and for all sectors combined, aggregated at Oblast and national level.\n\nOne csv file per loss breakdown, giving the estimated loss per exceedance probability.",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064268",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064268/DR0091711/EP_UND_EC_CA.zip?versionId=2023-07-05T13:58:35.0142527Z"
+                },
+                {
+                    "id": "CA_SFRARR_FL_undef_loss_EP_KAZ",
+                    "title": "Central Asia flood risk EP curves - economic loss - flood undefended - KAZ",
+                    "description": "Estimated economic loss per sector and for all sectors combined, aggregated at Oblast and national level.\n\nOne csv file per loss breakdown, giving the estimated loss per exceedance probability.",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064268",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064268/DR0091718/EP_UND_EC_KZ.zip?versionId=2023-07-05T13:58:21.7618436Z"
+                },
+                {
+                    "id": "CA_SFRARR_FL_undef_loss_EP_KGZ",
+                    "title": "Central Asia flood risk EP curves - economic loss - flood undefended - KGZ",
+                    "description": "Estimated economic loss per sector and for all sectors combined, aggregated at Oblast and national level.\n\nOne csv file per loss breakdown, giving the estimated loss per exceedance probability.",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064268",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064268/DR0091717/EP_UND_EC_KG.zip?versionId=2023-07-05T13:58:19.9968546Z"
+                },
+                {
+                    "id": "CA_SFRARR_FL_undef_loss_EP_TJK",
+                    "title": "Central Asia flood risk EP curves - economic loss - flood undefended - TJK",
+                    "description": "Estimated economic loss per sector and for all sectors combined, aggregated at Oblast and national level.\n\nOne csv file per loss breakdown, giving the estimated loss per exceedance probability.",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064268",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064268/DR0091719/EP_UND_EC_TJ.zip?versionId=2023-07-05T13:58:23.7826866Z"
+                },
+                {
+                    "id": "CA_SFRARR_FL_undef_loss_EP_TKM",
+                    "title": "Central Asia flood risk EP curves - economic loss - flood undefended - TKM",
+                    "description": "Estimated economic loss per sector and for all sectors combined, aggregated at Oblast and national level.\n\nOne csv file per loss breakdown, giving the estimated loss per exceedance probability.",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064268",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064268/DR0091720/EP_UND_EC_TM.zip?versionId=2023-07-05T13:58:25.5886514Z"
+                },
+                {
+                    "id": "CA_SFRARR_FL_undef_loss_EP_UZB",
+                    "title": "Central Asia flood risk EP curves - economic loss - flood undefended - UZB",
+                    "description": "Estimated economic loss per sector and for all sectors combined, aggregated at Oblast and national level.\n\nOne csv file per loss breakdown, giving the estimated loss per exceedance probability.",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064268",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064268/DR0091721/EP_UND_EC_UZ.zip?versionId=2023-07-05T13:58:10.7261652Z"
+                },
+                {
+                    "id": "CA_SFRARR_FL_def_population_EP",
+                    "title": "Central Asia flood risk EP curves - population - flood defended",
+                    "description": "Central Asia flood risk EP curves - population - flood defended\n\nEstimated fatalities per sector and for all sectors combined, aggregated at ADM1, country, and regional levels.\n\nOne csv file per loss breakdown, giving the estimated loss per exceedance probability.",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064268",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064268/DR0091707/EP_Def_Population.zip?versionId=2023-07-05T13:58:06.9733151Z"
+                },
+                {
+                    "id": "CA_SFRARR_FL_undef_population_EP",
+                    "title": "Central Asia flood risk EP curves - population - flood undefended",
+                    "description": "Central Asia flood risk EP curves - population - flood undefended\n\nEstimated fatalities per sector and for all sectors combined, aggregated at ADM1, country, and regional levels.\n\nOne csv file per loss breakdown, giving the estimated loss per exceedance probability.",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064268",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064268/DR0091706/EP_UND_Population.zip?versionId=2023-07-05T13:58:29.6513239Z"
+                },
+                {
+                    "id": "CA_SFRARR_FL_loss_EP_2080",
+                    "title": "Central Asia flood risk EP curves - economic loss - flood climate change scenario 2080",
+                    "description": "Central Asia flood risk EP curves - economic loss - flood climate change scenario 2080.\n\nIncludes climate change and residential exposure change using SSP1, SSP4, and SSP5.\n\nEstimated economic loss per sector and for all sectors combined, aggregated at ADM1, country, and regional levels.\n\nOne csv file per loss breakdown, giving the estimated loss per exceedance probability.",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064268",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064268/DR0091709/EP_CC_EC.zip?versionId=2023-07-05T13:58:31.4862739Z"
+                },
+                {
+                    "id": "CA_SFRARR_FL_population_EP_2080",
+                    "title": "Central Asia flood risk EP curves - population - flood climate change scenario 2080",
+                    "description": "Central Asia flood risk EP curves - population - flood climate change scenario 2080.\n\nIncludes climate change and residential exposure change using SSP1, SSP4, and SSP5.\n\nEstimated fatalities per sector and for all sectors combined, aggregated at ADM1, country, and regional levels.\n\nOne csv file per loss breakdown, giving the estimated loss per exceedance probability.",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064268",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064268/DR0091708/EP_CC_Population.zip?versionId=2023-07-05T13:58:12.5291319Z"
+                },
+                {
+                    "id": "CA_SFRARR_FL_ELTs",
+                    "title": "Central Asia flood risk - Event Loss Tables (ELTs)",
+                    "description": "Event Loss Tables (ELTs) showing the severity and frequency of estimated loss for each simulated flood event.",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064269"
+                },
+                {
+                    "id": "CA_SFRARR_FL_RP_maps",
+                    "title": "Central Asia flood risk AAL and Return Period Loss maps",
+                    "description": "Geospatial data layers describing estimated losses. Annual average loss and probable maximum losses at Oblast level.",
+                    "format": "shp",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064280"
+                },
+                {
+                    "id": "CA_SFRARR_FL_scenarioLosses",
+                    "title": "Central Asia flood risk scenario losses",
+                    "description": "Tabulated summary of simulated fatalities and economic loss due to three selected 1-in-100-year fluvial flood scenarios (Kara-Unkur River, Parkent River, and Turkmenabat).",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064267"
+                },
+                {
+                    "id": "CA_SFRARR_FL_hazardIntensity",
+                    "title": "Central Asia flood risk hazard intensity summaries",
+                    "description": "Tabulated and map summaries of fluvial flood hazard intensity for selected infrastructure: airports, industrial sites, infrastructure, population and transport.",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064279"
+                }
+            ],
+            "loss": {
+                "losses": [
+                    {
+                        "id": "FL_loss_ec_bldg",
+                        "hazard_type": "flood",
+                        "hazard_process": "fluvial_flood",
+                        "description": "Estimated economic loss per sector and for all sectors combined for fluvial flood risk (current defended and undefended scenarios, and for future climate scenarios), aggregated to the Oblast, national and regional level",
+                        "category": "buildings",
+                        "cost": {
+                            "id": "FL_cost_struct",
+                            "dimension": "structure",
+                            "unit": "USD"
+                        },
+                        "impact": {
+                            "type": "direct",
+                            "metric": "economic_loss_value",
+                            "base_data_type": "simulated"
+                        },
+                        "type": "ground_up",
+                        "approach": "analytical",
+                        "hazard_analysis_type": "probabilistic",
+                        "hazard_id": "CA_SFRARR_FL",
+                        "exposure_id": "CA_SFRARR_exp",
+                        "vulnerability_id": "CA_SFRARR_FL_vuln"
+                    },
+                    {
+                        "id": "FL_loss_pop",
+                        "hazard_type": "flood",
+                        "hazard_process": "fluvial_flood",
+                        "description": "Estimated fatalities due to fluvial flood risk (current defended and undefended scenarios, and for future climate scenarios), aggregated to the Oblast, national and regional level",
+                        "category": "population",
+                        "impact": {
+                            "type": "direct",
+                            "metric": "casualty_count",
+                            "unit": "count",
+                            "base_data_type": "simulated"
+                        },
+                        "approach": "analytical",
+                        "hazard_analysis_type": "probabilistic",
+                        "hazard_id": "CA_SFRARR_FL",
+                        "exposure_id": "CA_SFRARR_exp",
+                        "vulnerability_id": "CA_SFRARR_FL_vuln"
+                    },
+                    {
+                        "id": "FL_loss_ec_agri",
+                        "hazard_type": "flood",
+                        "hazard_process": "fluvial_flood",
+                        "description": "Estimated economic loss per sector and for all sectors combined for fluvial flood risk (current defended and undefended scenarios, and for future climate scenarios), aggregated to the Oblast, national and regional level",
+                        "category": "agriculture",
+                        "cost": {
+                            "id": "FL_cost_struct",
+                            "dimension": "product",
+                            "unit": "USD"
+                        },
+                        "impact": {
+                            "type": "direct",
+                            "metric": "economic_loss_value",
+                            "base_data_type": "simulated"
+                        },
+                        "type": "ground_up",
+                        "approach": "analytical",
+                        "hazard_analysis_type": "probabilistic",
+                        "hazard_id": "CA_SFRARR_FL",
+                        "exposure_id": "CA_SFRARR_exp",
+                        "vulnerability_id": "CA_SFRARR_FL_vuln"
+                    },
+                    {
+                        "id": "FL_loss_ec_infra",
+                        "hazard_type": "flood",
+                        "hazard_process": "fluvial_flood",
+                        "description": "Estimated economic loss per sector and for all sectors combined for fluvial flood risk (current defended and undefended scenarios, and for future climate scenarios), aggregated to the Oblast, national and regional level",
+                        "category": "infrastructure",
+                        "cost": {
+                            "id": "FL_cost_struct",
+                            "dimension": "structure",
+                            "unit": "USD"
+                        },
+                        "impact": {
+                            "type": "direct",
+                            "metric": "economic_loss_value",
+                            "base_data_type": "simulated"
+                        },
+                        "type": "ground_up",
+                        "approach": "analytical",
+                        "hazard_analysis_type": "probabilistic",
+                        "hazard_id": "CA_SFRARR_FL",
+                        "exposure_id": "CA_SFRARR_exp",
+                        "vulnerability_id": "CA_SFRARR_FL_vuln"
+                    }
+                ]
+            },
+            "links": [
+                {
+                    "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+                    "rel": "describedby"
+                }
+            ]
+        }
+    ]
+}

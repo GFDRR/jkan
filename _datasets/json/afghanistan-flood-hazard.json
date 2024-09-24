@@ -1,0 +1,659 @@
+{
+    "datasets": [
+        {
+            "id": "AFG_hzd-flood",
+            "title": "Afghanistan Flood hazard",
+            "description": "Fluvial flood hazard is calculated based on probabilistic hydrological analysis models (precipitation into runoff) and hydrodynamic analysis (runoff into river flow and inundation, and flow over floodplain areas).",
+            "risk_data_type": [
+                "hazard"
+            ],
+            "publisher": {
+                "name": "GFDRR",
+                "url": "https://www.gfdrr.org"
+            },
+            "version": "2018",
+            "purpose": "These maps have been derived on a nation-wide scale for the purpose of identifying high risk- areas on the district and provincial scale, from which decisions can be made on allocating efforts for more detailed site specific hazard and risk analysis. Use of this information on smaller scales should be applied with care. Importantly for on a local scale, it is often the case that more detailed case history and hazard information is required to perform such hazard and risk modelling, particularly where applied to dimension mitigation structures or strategies.",
+            "project": "Afghanistan Multi-hazard risk assessment",
+            "details": "To better understand natural hazard and disaster risk, the World Bank and Global Facility for Disaster Reduction and Recovery (GFDRR) supported the development of new ﬂuvial ﬂood, ﬂash ﬂood, drought, landslide, avalanche and seismic risk information in Afghanistan, as well as a frst-order analysis of the costs and benefts of resilient reconstruction and risk reduction strategies. This publication describes the applied methods and main results of the project.",
+            "spatial": {
+                "countries": [
+                    "AFG"
+                ],
+                "scale": "national"
+            },
+            "license": "CC-BY-4.0",
+            "contact_point": {
+                "name": "Pierre Chrzanowski",
+                "email": "pchrzanowski@worldbank.org"
+            },
+            "creator": {
+                "name": "GFDRR",
+                "url": "https://www.gfdrr.org"
+            },
+            "attributions": [
+                {
+                    "id": "0",
+                    "entity": {
+                        "name": "Federica Ranghieri",
+                        "email": "franghieri@worldbank.org"
+                    },
+                    "role": "world_bank_team_lead"
+                },
+                {
+                    "id": "1",
+                    "entity": {
+                        "name": "Ditte Fallesen",
+                        "email": "dfallesen@worldbank.org"
+                    },
+                    "role": "world_bank_team_lead"
+                },
+                {
+                    "id": "2",
+                    "entity": {
+                        "name": "Brandan Jongman",
+                        "email": "bjongman@worldbank.org"
+                    },
+                    "role": "world_bank_team_lead"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "0",
+                    "name": "EUWATCH",
+                    "type": "dataset",
+                    "component": "hazard"
+                },
+                {
+                    "id": "1",
+                    "name": "WFLOW",
+                    "type": "model",
+                    "component": "hazard"
+                }
+            ],
+            "referenced_by": [
+                {
+                    "id": "0",
+                    "name": "Afghanistan - Multi-hazard risk assessment",
+                    "author_names": [
+                        "Federica Ranghieri",
+                        "Ditte Fallesen",
+                        "Brenden Jongman",
+                        "Guillermo Siercke",
+                        "Abdul Azim Doosti",
+                        "Julian Palma",
+                        "Simone Balog",
+                        "Sayed Sharifullah Mashahid",
+                        "Erika Vargas"
+                    ],
+                    "date_published": "2018-12-18",
+                    "url": "https://www.gfdrr.org/sites/default/files/publication/Afghanistan_MHRA.pdf"
+                }
+            ],
+            "resources": [
+                {
+                    "id": "0",
+                    "title": "Flood hazard scenarios - country (baseline)",
+                    "description": "Flood extent and water depth in Afghanistan for eight return period scenarios (5, 10, 20, 50, 100, 250, 500 and 1000 years) based on historical baseline.",
+                    "format": "geotiff",
+                    "spatial_resolution": 90,
+                    "coordinate_system": "EPSG:32642",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0050632/DR0065469/hzd-afg-fl-baseline.zip"
+                },
+                {
+                    "id": "1",
+                    "title": "Flood hazard scenarios - country (2050)",
+                    "description": "Flood extent and water depth in Afghanistan for eight return period scenarios (5, 10, 20, 50, 100, 250, 500 and 1000 years) based on climate projections for 2050.",
+                    "format": "geotiff",
+                    "spatial_resolution": 90,
+                    "coordinate_system": "EPSG:32642",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0050632/DR0065469/hzd-afg-fl-2050.zip"
+                },
+                {
+                    "id": "2",
+                    "title": "Flood hazard scenarios - Kabul (baseline)",
+                    "description": "Flood extent and water depth in Kabul for three return period scenarios (5, 100 and 1000 years) based on historical baseline.",
+                    "format": "geotiff",
+                    "spatial_resolution": 10,
+                    "coordinate_system": "EPSG:32642",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0050632/DR0065472/hzd-afg-fl-kabul.zip"
+                },
+                {
+                    "id": "3",
+                    "title": "Flood hazard scenarios - country (2050)",
+                    "description": "Flood extent and water depth simulated for four historical events: 1978, 1991 (2 river floods), 1992 (flash flood and landslide) event.",
+                    "format": "geotiff",
+                    "spatial_resolution": 90,
+                    "coordinate_system": "EPSG:32642",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0050632/DR0065471/hzd-afg-fl-hist_events.zip"
+                }
+            ],
+            "hazard": {
+                "event_sets": [
+                    {
+                        "id": "Baseline",
+                        "analysis_type": "probabilistic",
+                        "calculation_method": "simulated",
+                        "occurrence_range": "5, 10, 20, 50, 100, 250, 500, 1000 years",
+                        "spatial": {
+                            "countries": [
+                                "AFG"
+                            ],
+                            "scale": "national"
+                        },
+                        "temporal": {
+                            "start": "1958",
+                            "end": "2001",
+                            "duration": "P44Y"
+                        },
+                        "hazards": [
+                            {
+                                "id": "FL",
+                                "type": "flood",
+                                "processes": [
+                                    "fluvial_flood"
+                                ],
+                                "intensity_measure": "fl_wd:m"
+                            }
+                        ],
+                        "events": [
+                            {
+                                "id": "BL_5",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 5
+                                    }
+                                }
+                            },
+                            {
+                                "id": "BL_10",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 10
+                                    }
+                                }
+                            },
+                            {
+                                "id": "BL_20",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 20
+                                    }
+                                }
+                            },
+                            {
+                                "id": "BL_50",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 50
+                                    }
+                                }
+                            },
+                            {
+                                "id": "BL_100",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 100
+                                    }
+                                }
+                            },
+                            {
+                                "id": "BL_250",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 250
+                                    }
+                                }
+                            },
+                            {
+                                "id": "BL_500",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 500
+                                    }
+                                }
+                            },
+                            {
+                                "id": "BL_1000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 1000
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Projections",
+                        "analysis_type": "probabilistic",
+                        "calculation_method": "simulated",
+                        "occurrence_range": "5, 10, 20, 50, 100, 250, 500, 1000 years",
+                        "spatial": {
+                            "countries": [
+                                "AFG"
+                            ],
+                            "scale": "national"
+                        },
+                        "temporal": {
+                            "start": "2010",
+                            "end": "2050",
+                            "duration": "P40Y"
+                        },
+                        "hazards": [
+                            {
+                                "id": "FL",
+                                "type": "flood",
+                                "processes": [
+                                    "fluvial_flood"
+                                ],
+                                "intensity_measure": "fl_wd:m"
+                            }
+                        ],
+                        "events": [
+                            {
+                                "id": "CP_5",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 5
+                                    }
+                                }
+                            },
+                            {
+                                "id": "CP_10",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 10
+                                    }
+                                }
+                            },
+                            {
+                                "id": "CP_20",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 20
+                                    }
+                                }
+                            },
+                            {
+                                "id": "CP_50",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 50
+                                    }
+                                }
+                            },
+                            {
+                                "id": "CP_100",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 100
+                                    }
+                                }
+                            },
+                            {
+                                "id": "CP_250",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 250
+                                    }
+                                }
+                            },
+                            {
+                                "id": "CP_500",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 500
+                                    }
+                                }
+                            },
+                            {
+                                "id": "CP_1000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 1000
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Baseline-Kabul",
+                        "analysis_type": "probabilistic",
+                        "calculation_method": "simulated",
+                        "occurrence_range": "5, 100, 1000 years",
+                        "spatial": {
+                            "countries": [
+                                "AFG"
+                            ],
+                            "scale": "sub-national",
+                            "gazetteer_entries": [
+                                {
+                                    "id": "AFG-KAB",
+                                    "scheme": "ISO 3166-2",
+                                    "description": "Kabul District"
+                                }
+                            ]
+                        },
+                        "temporal": {
+                            "start": "1958",
+                            "end": "2001",
+                            "duration": "P44Y"
+                        },
+                        "hazards": [
+                            {
+                                "id": "FL",
+                                "type": "flood",
+                                "processes": [
+                                    "fluvial_flood"
+                                ],
+                                "intensity_measure": "fl_wd:m"
+                            }
+                        ],
+                        "events": [
+                            {
+                                "id": "BLK_5",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 5
+                                    }
+                                }
+                            },
+                            {
+                                "id": "BLK_100",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 100
+                                    }
+                                }
+                            },
+                            {
+                                "id": "BLK_1000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 1000
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Historical events",
+                        "analysis_type": "empirical",
+                        "calculation_method": "simulated",
+                        "spatial": {
+                            "countries": [
+                                "AFG"
+                            ],
+                            "scale": "sub-national"
+                        },
+                        "hazards": [
+                            {
+                                "id": "FL",
+                                "type": "flood",
+                                "processes": [
+                                    "fluvial_flood"
+                                ],
+                                "intensity_measure": "fl_wd:m"
+                            }
+                        ],
+                        "events": [
+                            {
+                                "id": "HST_1978",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "empirical": {
+                                        "temporal": {
+                                            "start": "1978"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "id": "HST_1991_1",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "empirical": {
+                                        "temporal": {
+                                            "start": "1991"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "id": "HST_1991_2",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "empirical": {
+                                        "temporal": {
+                                            "start": "1991"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "id": "HST_1992",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "FL",
+                                    "type": "flood",
+                                    "processes": [
+                                        "fluvial_flood"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "empirical": {
+                                        "temporal": {
+                                            "start": "1992"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "links": [
+                {
+                    "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+                    "rel": "describedby"
+                }
+            ]
+
+        }
+    ]
+}

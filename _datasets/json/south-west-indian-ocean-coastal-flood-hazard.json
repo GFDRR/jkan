@@ -1,0 +1,295 @@
+{
+    "datasets": [
+        {
+            "id": "SWIO_hzd-coastal_flood",
+            "title": "South West Indian Ocean Coastal Flood hazard",
+            "description": "Coastal flood hazard measured as the maximum water depth for six return periods. ",
+            "risk_data_type": [
+                "hazard"
+            ],
+            "publisher": {
+                "name": "GFDRR",
+                "url": "https://www.gfdrr.org"
+            },
+            "version": "2017",
+            "purpose": "The goal of the South West Indian Ocean Risk Assessment and Financing Initiative (SWIO RAFI) is to improve the resiliency and capacity of the island states through the creation of disaster risk financing strategies. A key component of this effort involves the quantification of site specific risk from the perils of flood, earthquakes, and tropical cyclones as well as their secondary hazards of storm surge and tsunamis.\nRegional hazard intensity calculations were applied to 10,000 years of Stochastic catalogs derived from the historical records to produce hazard intensity profiles at mean return periods of 25, 50, 100, 250, 500 and 1,000 years. All datasets are at their original resolution (0.00083) except for Madagascar (0.0032) which was resampled to reduce file sizes.",
+            "project": "SWIO-RAFI",
+            "details": "This data set was produced with financial support from the European Union in the framework of the ACP-EU Natural Disaster Risk Reduction Program, managed by the Global Facility for Disaster Reduction and Recovery (GFDRR).",
+            "spatial": {
+                "countries": [
+                    "COM",
+                    "MDG",
+                    "MUS",
+                    "SYC",
+                    "TZA"
+                ],
+                "scale": "regional"
+            },
+            "license": "CC-BY-4.0",
+            "contact_point": {
+                "name": "Pierre Chrzanowski",
+                "email": "pchrzanowski@worldbank.org"
+            },
+            "creator": {
+                "name": "GFDRR",
+                "url": "https://www.gfdrr.org"
+            },
+            "attributions": [
+                {
+                    "id": "0",
+                    "entity": {
+                        "name": "GFDRR",
+                        "url": "https://www.gfdrr.org"
+                    },
+                    "role": "owner"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "0",
+                    "name": "AIR-Worldwide",
+                    "url": "https://www.air-worldwide.com/",
+                    "type": "model",
+                    "component": "hazard"
+                }
+            ],
+            "referenced_by": [
+                {
+                    "id": "0",
+                    "name": "South West Indian Ocean risk assessment and financing initiative (SWIO-RAFI): summary report ",
+                    "author_names": [
+                        "Doekle Wielinga",
+                        "Alanna Simpson",
+                        "Julie Dana",
+                        "Emily White",
+                        "Emma Philips",
+                        "Liana Razafindrazay",
+                        "Luis Corrales",
+                        "Richard Murnane",
+                        "Richard Poulter",
+                        "Samantha Cook",
+                        "Simone Balog",
+                        "Stuart Fraser",
+                        "Vivien Deparday"
+                    ],
+                    "date_published": "2017-01-01",
+                    "url": "http://documents1.worldbank.org/curated/en/951701497623912193/pdf/116342-WP-PUBLIC-52p-SWIO-RAFI-Summary-Report-2017-Publish-Version.pdf"
+                }
+            ],
+            "resources": [
+                {
+                    "id": "COM",
+                    "title": "Comoros - Coastal flood hazard scenarios (tropical cyclones)",
+                    "description": "Coastal flood hazard triggered by tropical cyclones over Comoros measured as the maximum water depth for six return periods.",
+                    "format": "geotiff",
+                    "spatial_resolution": 90,
+                    "coordinate_system": "EPSG:4326",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0038604/Comoros-coastal-flood-hazard--tropical-cyclone-",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0038604/DR0054354/hzd-com-fl-fss.zip"
+                },
+                {
+                    "id": "MDG",
+                    "title": "Madagascar - Coastal flood hazard scenarios (tropical cyclones)",
+                    "description": "Coastal flood hazard triggered by tropical cyclones over Madagascar measured as the maximum water depth for six return periods.",
+                    "format": "geotiff",
+                    "spatial_resolution": 900,
+                    "coordinate_system": "EPSG:4326",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0038603/Madagascar-coastal-flood-hazard--tropical-cyclone-",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0038603/DR0053234/hzd-mdg-fl-fss.zip"
+                },
+                {
+                    "id": "MUS",
+                    "title": "Mauritius - Coastal flood hazard scenarios (tropical cyclones)",
+                    "description": "Coastal flood hazard triggered by tropical cyclones over Mauritius measured as the maximum water depth for six return periods.",
+                    "format": "geotiff",
+                    "spatial_resolution": 90,
+                    "coordinate_system": "EPSG:4326",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0038602/Mauritius-coastal-flood-hazard--tropical-cyclone-",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0038602/DR0054307/hzd-mdg-fl-fss.zip"
+                },
+                {
+                    "id": "SYC",
+                    "title": "Seychelles - Coastal flood hazard scenarios (tropical cyclones)",
+                    "description": "Coastal flood hazard triggered by tropical cyclones over Seychelles measured as the maximum water depth for six return periods.",
+                    "format": "geotiff",
+                    "spatial_resolution": 90,
+                    "coordinate_system": "EPSG:4326",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0038601/Seychelles-coastal-flood-hazard--tropical-cyclone-",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0038601/DR0053235/hzd-syc-fl-fss.zip"
+                },
+                {
+                    "id": "ZAN",
+                    "title": "Zanzibar - Coastal flood hazard scenarios (tropical cyclones)",
+                    "description": "Coastal flood hazard triggered by tropical cyclones over Zanzibar measured as the maximum water depth for six return periods.",
+                    "format": "geotiff",
+                    "spatial_resolution": 90,
+                    "coordinate_system": "EPSG:4326",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0043492/Zanzibar-coastal-storm-surge-flood-hazard--tropical-cyclone-",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0043492/DR0054304/hzd-zan-fl-fss.zip"
+                }
+            ],
+            "hazard": {
+                "event_sets": [
+                    {
+                        "id": "0",
+                        "analysis_type": "probabilistic",
+                        "calculation_method": "inferred",
+                        "occurrence_range": "10, 25, 50, 100, 250, 500 and 1000 years",
+                        "spatial": {
+                            "countries": [
+                                "COM",
+                                "MDG",
+                                "MUS",
+                                "SYC",
+                                "TZA"
+                            ],
+                            "scale": "national"
+                        },
+                        "hazards": [
+                            {
+                                "id": "CF",
+                                "type": "coastal_flood",
+                                "processes": [
+                                    "storm_surge"
+                                ],
+                                "intensity_measure": "fl_wd:m",
+                                "trigger": {
+                                    "processes": [
+                                        "tropical_cyclone"
+                                    ]
+                                }
+                            }
+                        ],
+                        "events": [
+                            {
+                                "id": "10",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "CF",
+                                    "type": "coastal_flood",
+                                    "processes": [
+                                        "storm_surge"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 10
+                                    }
+                                }
+                            },
+                            {
+                                "id": "25",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "CF",
+                                    "type": "coastal_flood",
+                                    "processes": [
+                                        "storm_surge"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 25
+                                    }
+                                }
+                            },
+                            {
+                                "id": "50",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "CF",
+                                    "type": "coastal_flood",
+                                    "processes": [
+                                        "storm_surge"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 50
+                                    }
+                                }
+                            },
+                            {
+                                "id": "100",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "CF",
+                                    "type": "coastal_flood",
+                                    "processes": [
+                                        "storm_surge"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 100
+                                    }
+                                }
+                            },
+                            {
+                                "id": "250",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "CF",
+                                    "type": "coastal_flood",
+                                    "processes": [
+                                        "storm_surge"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 250
+                                    }
+                                }
+                            },
+                            {
+                                "id": "500",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "CF",
+                                    "type": "coastal_flood",
+                                    "processes": [
+                                        "storm_surge"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 500
+                                    }
+                                }
+                            },
+                            {
+                                "id": "1000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "CF",
+                                    "type": "coastal_flood",
+                                    "processes": [
+                                        "storm_surge"
+                                    ],
+                                    "intensity_measure": "fl_wd:m"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 1000
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "links": [
+                {
+                    "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+                    "rel": "describedby"
+                }
+            ]
+        }
+    ]
+}

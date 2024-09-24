@@ -1,0 +1,400 @@
+{
+    "datasets": [
+        {
+            "id": "CA_SFRARR_EQ",
+            "title": "Central Asia seismic hazard maps",
+			"description": "Collection of seismic data, both historical and probabilistic, for Central Asia.",
+            "details": "Data from the EU-funded 'Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia' Program (https://www.gfdrr.org/en/program/SFRARR-Central-Asia).\nExposure data developed using high-resolution global and regional datasets and local official data, harmonized to produce a regionally-consistent exposure database for Central Asia. The exposure database includes: population, residential buildings, non-residential buildings (schools, healthcare facilities, industrial and commercial buildings), croplands, transportation system (roads, railways and bridges), airports and airstrips, mines, and supply infrastructure. The exposure database developed during this project can be used at regional scale, national scale or sub-national scale (e.g., at Oblast scale).",
+            "risk_data_type": [
+                "hazard"
+            ],
+            "publisher": {
+                "name": "RED - Risk, Engineering  Development - Pavia (Italy)",
+                "url": "https://www.redrisk.com"
+            },
+            "version": "2022",
+            "purpose": "Regional risk modelling. These data have been derived on a regional scale for the purpose of consistent regional multi-country hazard and risk assessment. Application of this information on smaller scales should be done with care. Importantly on a local scale, it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies., it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies",
+            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia",
+            "spatial": {
+                "countries": [
+                    "KAZ",
+                    "KGZ",
+                    "TKM",
+                    "TJK",
+                    "UZB"
+                ],
+                "bbox": [
+                    46,
+                    88,
+                    34,
+                    57
+                ],
+                "scale": "regional"
+            },
+            "license": "CC-BY-SA-4.0",
+            "contact_point": {
+                "name": "Paola Ceresa",
+                "email": "paola.ceresa@redrisk.com"
+            },
+            "creator": {
+                "name": "Ettore Faga"
+            },
+            "attributions": [
+                {
+                    "id": "CA_SFRARR_RED",
+                    "entity": {
+                        "name": "RED - Risk, Engineering  Development - Pavia (Italy)"
+                    },
+                    "role": "principal_investigator"
+                }
+            ],
+            "referenced_by": [
+                {
+                    "id": "SFRARR_SeismicHazardReport_English",
+                    "name": "Central Asia Seismic hazard technical report - English version",
+                    "date_published": "2022-09-02",
+                    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0064114/DR0090813/Task2_EqHaz_Report_r4_EN.pdf?versionId=2023-07-21T17:34:27.2314284Z"
+                },
+                {
+                    "id": "SFRARR_SeismicHazardReport_Russian",
+                    "name": "Central Asia Seismic hazard technical report - Russian version",
+                    "date_published": "2022-09-02",
+                    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0064114/DR0090814/Task2_EqHaz_Report_r4_RU.pdf?versionId=2023-07-21T17:34:29.0304105Z"
+                }
+            ],
+            "resources": [
+                {
+                    "id": "CA_SFRARR_EQ_catalogue",
+                    "title": "Central Asia earthquake catalogue",
+                    "description": "The harmonized earthquake catalogue included the earthquake events collected from different sources from historical time to 2020. Developed as part of the Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia)",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064167"
+                },
+                {
+                    "id": "CA_SFRARR_EQ_faultDB",
+                    "title": "Central Asia earthquake fault database",
+                    "description": "This dataset contains a selection of the active faults in central Asia from the AFEAD database converted to the geospatial GEM format. Developed as part of the Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia)",
+                    "format": "api",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064168"
+                },
+                {
+                    "id": "CA_SFRARR_EQ_Oqfiles",
+                    "title": "Central Asia PSHA OpenQuake model files",
+                    "description": "The archive contains the OpenQuake input files for the calculation of the SFRARR probabilistic earthquake hazard model for central Asia. Developed as part of the Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia)",
+                    "format": "api",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064169",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064169/DR0090887/PSHA_OQ_Model.zip?versionId=2023-07-21T17:13:59.1976251Z"
+                },
+                {
+                    "id": "CA_SFRARR_EQ_EventSet",
+                    "title": "Central Asia seismic stochastic event set",
+                    "description": "Central Asia seismic stochastic event set. Developed as part of the Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia)",
+                    "format": "api",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064233"
+                },
+                {
+                    "id": "CA_SFRARR_EQ_HazCurves",
+                    "title": "Central Asia seismic hazard curves",
+                    "description": "Central Asia seismic hazard curves. Developed as part of the Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia)",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064237"
+                },
+                {
+                    "id": "CA_SFRARR_EQ_HazDisagg",
+                    "title": "Central Asia seismic hazard disaggregation",
+                    "description": "Central Asia seismic hazard disaggregation. Developed as part of the Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia)",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064235"
+                },
+                {
+                    "id": "CA_SFRARR_EQ_ScenFootprints",
+                    "title": "Central Asia seismic hazard scenario footprints",
+                    "description": "Selected earthquake footprint scenarios from the SFRARR Central Asia Probabilistic Earthquake Hazard Model computed with the OpenQuake calculation engine for six selected target sites. Developed as part of the Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia)",
+                    "format": "geotiff",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064170",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064170/DR0090889/eq_scenario_[SITE]_PGA_[GMPE].zip?versionId=2023-07-21T17:18:56.7522490Z"
+                },
+                {
+                    "id": "CA_SFRARR_EQ_hazMapsIntensity",
+                    "title": "Central Asia seismic hazard maps - MKS and MCS intensity",
+                    "description": "Hazard maps in Macroseismic intensity of the SFRARR Central Asia Probabilistic Earthquake Hazard Model computed with the OpenQuake calculation engine for a site grid of 0.2 degrees. Developed as part of the Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia)",
+                    "format": "geotiff",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064171",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064171/DR0090891/hazard_map-mean_[SCALE].zip?versionId=2023-07-21T17:18:35.0695276Z"
+                },
+                {
+                    "id": "CA_SFRARR_EQ_hazMapsPGA",
+                    "title": "Central Asia seismic return period hazard maps - PGA",
+                    "description": "Georeferenced TIFF files including earthquake hazard maps in PGA for the different probability of exceedance (86, 63, 39, 18, 10, 9 and 5% in 50 years observation time, corresponding to 25, 50, 100, 250, 475, 500 and 1000 years return period). Developed as part of the Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia program. (https://www.gfdrr.org/en/program/SFRARR-Central-Asia)",
+                    "format": "geotiff",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064172",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064172/DR0091669/SFRARR_seismicHazardMaps.zip?versionId=2023-07-05T14:01:30.0430008Z"
+                }
+            ],
+            "hazard": {
+                "event_sets": [
+                    {
+                        "id": "CA_SFRARR_EQ_RP",
+                        "analysis_type": "probabilistic",
+                        "seasonality": "uniform",
+                        "calculation_method": "simulated",
+                        "event_count": 7,
+                        "spatial": {
+                            "countries": [
+                                "KAZ",
+                                "KGZ",
+                                "TJK",
+                                "TKM",
+                                "UZB"
+                            ],
+                            "bbox": [
+                                46,
+                                88,
+                                34,
+                                57
+                            ],
+                            "scale": "regional"
+                        },
+                        "hazards": [
+                            {
+                                "id": "1",
+                                "type": "earthquake",
+                                "processes": [
+                                    "ground_motion"
+                                ],
+                                "intensity_measure": "PGA:g"
+                            }
+                        ],
+                        "events": [
+                            {
+                                "id": "CA_SFRARR_EQ25",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "CA_SFRARR_EQ25",
+                                    "type": "earthquake",
+                                    "processes": [
+                                        "ground_motion"
+                                    ],
+                                    "intensity_measure": "PGA:g"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 25,
+                                        "probability": {
+                                            "value": 0.86,
+                                            "span": 50
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "id": "CA_SFRARR_EQ50",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "CA_SFRARR_EQ50",
+                                    "type": "earthquake",
+                                    "processes": [
+                                        "ground_motion"
+                                    ],
+                                    "intensity_measure": "PGA:g"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 50,
+                                        "probability": {
+                                            "value": 0.63,
+                                            "span": 50
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "id": "CA_SFRARR_EQ100",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "CA_SFRARR_EQ100",
+                                    "type": "earthquake",
+                                    "processes": [
+                                        "ground_motion"
+                                    ],
+                                    "intensity_measure": "PGA:g"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 100,
+                                        "probability": {
+                                            "value": 0.39,
+                                            "span": 50
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "id": "CA_SFRARR_EQ250",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "CA_SFRARR_EQ250",
+                                    "type": "earthquake",
+                                    "processes": [
+                                        "ground_motion"
+                                    ],
+                                    "intensity_measure": "PGA:g"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 250,
+                                        "probability": {
+                                            "value": 0.18,
+                                            "span": 50
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "id": "CA_SFRARR_EQ475",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "CA_SFRARR_EQ475",
+                                    "type": "earthquake",
+                                    "processes": [
+                                        "ground_motion"
+                                    ],
+                                    "intensity_measure": "PGA:g"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 475,
+                                        "probability": {
+                                            "value": 0.1,
+                                            "span": 50
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "id": "CA_SFRARR_EQ500",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "CA_SFRARR_EQ500",
+                                    "type": "earthquake",
+                                    "processes": [
+                                        "ground_motion"
+                                    ],
+                                    "intensity_measure": "PGA:g"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 500,
+                                        "probability": {
+                                            "value": 0.09,
+                                            "span": 50
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "id": "CA_SFRARR_EQ1000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "CA_SFRARR_EQ1000",
+                                    "type": "earthquake",
+                                    "processes": [
+                                        "ground_motion"
+                                    ],
+                                    "intensity_measure": "PGA:g"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 1000,
+                                        "probability": {
+                                            "value": 0.05,
+                                            "span": 50
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "id": "CA_SFRARR_EQ_StochEvSet",
+                        "analysis_type": "probabilistic",
+                        "seasonality": "uniform",
+                        "calculation_method": "simulated",
+                        "event_count": 10000,
+                        "spatial": {
+                            "countries": [
+                                "KAZ",
+                                "KGZ",
+                                "TJK",
+                                "TKM",
+                                "UZB"
+                            ],
+                            "bbox": [
+                                46,
+                                88,
+                                34,
+                                57
+                            ],
+                            "scale": "regional"
+                        },
+                        "hazards": [
+                            {
+                                "id": "2",
+                                "type": "earthquake",
+                                "processes": [
+                                    "ground_motion"
+                                ],
+                                "intensity_measure": "MMI:-"
+                            },
+                            {
+                                "id": "3",
+                                "type": "earthquake",
+                                "processes": [
+                                    "ground_motion"
+                                ],
+                                "intensity_measure": "MKS:-"
+                            },
+                            {
+                                "id": "4",
+                                "type": "earthquake",
+                                "processes": [
+                                    "ground_motion"
+                                ],
+                                "intensity_measure": "AvgSa:m/s2"
+                            }
+                        ],
+                        "events": [
+                            {
+                                "id": "CA_SFRARR_EQ_StochEvSet",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "CA_SFRARR_EQ_StochEvSet",
+                                    "type": "earthquake",
+                                    "processes": [
+                                        "ground_motion"
+                                    ],
+                                    "intensity_measure": "PGA:g"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 1000,
+                                        "probability": {
+                                            "value": 0.05,
+                                            "span": 50
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "links": [
+                {
+                    "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+                    "rel": "describedby"
+                }
+            ]
+        }
+    ]
+}

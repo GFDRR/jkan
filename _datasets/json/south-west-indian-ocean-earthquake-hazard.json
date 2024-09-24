@@ -1,0 +1,291 @@
+{
+    "datasets": [
+        {
+            "id": "SWIO_hzd-earthquake",
+            "title": "South West Indian Ocean Earthquake hazard",
+            "description": "Earthquake hazard map representing Peak ground acceleration (PGA-g) for six return period scenarios.",
+            "risk_data_type": [
+                "hazard"
+            ],
+            "publisher": {
+                "name": "GFDRR",
+                "url": "https://www.gfdrr.org"
+            },
+            "version": "2017",
+            "purpose": "The goal of the South West Indian Ocean Risk Assessment and Financing Initiative (SWIO RAFI) is to improve the resiliency and capacity of the island states through the creation of disaster risk financing strategies. A key component of this effort involves the quantification of site specific risk from the perils of flood, earthquakes, and tropical cyclones as well as their secondary hazards of storm surge and tsunamis.\nRegional hazard intensity calculations were applied to 10,000 years of Stochastic catalogs derived from the historical records to produce hazard intensity profiles at mean return periods of 25, 50, 100, 250, 500 and 1,000 years. All datasets are at their original resolution (0.00083) except for Madagascar (0.0032) which was resampled to reduce file sizes.",
+            "project": "SWIO-RAFI",
+            "details": "This data set was produced with financial support from the European Union in the framework of the ACP-EU Natural Disaster Risk Reduction Program, managed by the Global Facility for Disaster Reduction and Recovery (GFDRR).",
+            "spatial": {
+                "countries": [
+                    "COM",
+                    "MDG",
+                    "MUS",
+                    "SYC",
+                    "TZA"
+                ],
+                "scale": "regional"
+            },
+            "license": "CC-BY-4.0",
+            "contact_point": {
+                "name": "Pierre Chrzanowski",
+                "email": "pchrzanowski@worldbank.org"
+            },
+            "creator": {
+                "name": "GFDRR",
+                "url": "https://www.gfdrr.org"
+            },
+            "attributions": [
+                {
+                    "id": "0",
+                    "entity": {
+                        "name": "GFDRR",
+                        "url": "https://www.gfdrr.org"
+                    },
+                    "role": "owner"
+                }
+            ],
+            "sources": [
+                {
+                    "id": "0",
+                    "name": "AIR-Worldwide",
+                    "url": "https://www.air-worldwide.com/",
+                    "type": "model",
+                    "component": "hazard"
+                }
+            ],
+            "referenced_by": [
+                {
+                    "id": "0",
+                    "name": "South West Indian Ocean risk assessment and financing initiative (SWIO-RAFI): summary report ",
+                    "author_names": [
+                        "Doekle Wielinga",
+                        "Alanna Simpson",
+                        "Julie Dana",
+                        "Emily White",
+                        "Emma Philips",
+                        "Liana Razafindrazay",
+                        "Luis Corrales",
+                        "Richard Murnane",
+                        "Richard Poulter",
+                        "Samantha Cook",
+                        "Simone Balog",
+                        "Stuart Fraser",
+                        "Vivien Deparday"
+                    ],
+                    "date_published": "2017-01-01",
+                    "url": "http://documents1.worldbank.org/curated/en/951701497623912193/pdf/116342-WP-PUBLIC-52p-SWIO-RAFI-Summary-Report-2017-Publish-Version.pdf"
+                }
+            ],
+            "resources": [
+                {
+                    "id": "COM",
+                    "title": "Comoros - Earthquake ground shaking hazard scenarios",
+                    "description": "Earthquake hazard map representing Peak ground acceleration (PGA) measured in units of g for seven return period scenarios (10, 25, 50, 100, 250, 500 and 1000 years).",
+                    "format": "geotiff",
+                    "spatial_resolution": 1000,
+                    "coordinate_system": "EPSG:4326",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0038594/DR0054346/hzd-com-eq.zip"
+                },
+                {
+                    "id": "MDG",
+                    "title": "Madagascar - Earthquake ground shaking hazard scenarios",
+                    "description": "Earthquake hazard map representing Peak ground acceleration (PGA) measured in units of g for seven return period scenarios (10, 25, 50, 100, 250, 500 and 1000 years).",
+                    "format": "geotiff",
+                    "spatial_resolution": 1000,
+                    "coordinate_system": "EPSG:4326",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0038594/DR0054346/hzd-mdg-eq.zip"
+                },
+                {
+                    "id": "MUS",
+                    "title": "Mauritius - Earthquake ground shaking hazard scenarios",
+                    "description": "Earthquake hazard map representing Peak ground acceleration (PGA) measured in units of g for seven return period scenarios (10, 25, 50, 100, 250, 500 and 1000 years).",
+                    "format": "geotiff",
+                    "spatial_resolution": 1000,
+                    "coordinate_system": "EPSG:4326",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0038594/DR0054346/hzd-mus-eq.zip"
+                },
+                {
+                    "id": "SYC",
+                    "title": "Seychelles - Earthquake ground shaking hazard scenarios",
+                    "description": "Earthquake hazard map representing Peak ground acceleration (PGA) measured in units of g for seven return period scenarios (10, 25, 50, 100, 250, 500 and 1000 years).",
+                    "format": "geotiff",
+                    "spatial_resolution": 1000,
+                    "coordinate_system": "EPSG:4326",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0038594/DR0054346/hzd-syc-eq.zip"
+                },
+                {
+                    "id": "ZAN",
+                    "title": "Zanzibar - Earthquake ground shaking hazard scenarios",
+                    "description": "Earthquake hazard map representing Peak ground acceleration (PGA) measured in units of g for seven return period scenarios (10, 25, 50, 100, 250, 500 and 1000 years).",
+                    "format": "geotiff",
+                    "spatial_resolution": 1000,
+                    "coordinate_system": "EPSG:4326",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0038594/DR0054346/hzd-zan-eq.zip"
+                }
+            ],
+            "hazard": {
+                "event_sets": [
+                    {
+                        "id": "0",
+                        "analysis_type": "probabilistic",
+                        "calculation_method": "simulated",
+                        "event_count": 1228,
+                        "occurrence_range": "10, 25, 50, 100, 250, 500 and 1000 years",
+                        "spatial": {
+                            "countries": [
+                                "COM",
+                                "MDG",
+                                "MUS",
+                                "SYC",
+                                "TZA"
+                            ],
+                            "scale": "national"
+                        },
+                        "temporal": {
+                            "start": "1901",
+                            "end": "2014",
+                            "duration": "114"
+                        },
+                        "hazards": [
+                            {
+                                "id": "EQ",
+                                "type": "earthquake",
+                                "processes": [
+                                    "ground_motion"
+                                ],
+                                "intensity_measure": "PGA:g"
+                            }
+                        ],
+                        "events": [
+                            {
+                                "id": "10",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "EQ",
+                                    "type": "earthquake",
+                                    "processes": [
+                                        "ground_motion"
+                                    ],
+                                    "intensity_measure": "PGA:g"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 10
+                                    }
+                                }
+                            },
+                            {
+                                "id": "25",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "EQ",
+                                    "type": "earthquake",
+                                    "processes": [
+                                        "ground_motion"
+                                    ],
+                                    "intensity_measure": "PGA:g"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 25
+                                    }
+                                }
+                            },
+                            {
+                                "id": "50",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "EQ",
+                                    "type": "earthquake",
+                                    "processes": [
+                                        "ground_motion"
+                                    ],
+                                    "intensity_measure": "PGA:g"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 50
+                                    }
+                                }
+                            },
+                            {
+                                "id": "100",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "EQ",
+                                    "type": "earthquake",
+                                    "processes": [
+                                        "ground_motion"
+                                    ],
+                                    "intensity_measure": "PGA:g"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 100
+                                    }
+                                }
+                            },
+                            {
+                                "id": "250",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "EQ",
+                                    "type": "earthquake",
+                                    "processes": [
+                                        "ground_motion"
+                                    ],
+                                    "intensity_measure": "PGA:g"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 250
+                                    }
+                                }
+                            },
+                            {
+                                "id": "500",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "EQ",
+                                    "type": "earthquake",
+                                    "processes": [
+                                        "ground_motion"
+                                    ],
+                                    "intensity_measure": "PGA:g"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 500
+                                    }
+                                }
+                            },
+                            {
+                                "id": "1000",
+                                "calculation_method": "simulated",
+                                "hazard": {
+                                    "id": "EQ",
+                                    "type": "earthquake",
+                                    "processes": [
+                                        "ground_motion"
+                                    ],
+                                    "intensity_measure": "PGA:g"
+                                },
+                                "occurrence": {
+                                    "probabilistic": {
+                                        "return_period": 1000
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "links": [
+                {
+                    "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+                    "rel": "describedby"
+                }
+            ]
+        }
+    ]
+}

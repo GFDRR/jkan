@@ -1,0 +1,100 @@
+{
+    "datasets": [
+        {
+            "id": "GLB-CI",
+            "title": "A spatially-explicit harmonized global dataset of critical infrastructure",
+            "description": "The spatially-explicit harmonized global dataset of critical infrastructure (CI) contains data on the amount of infrastructure per infrastructure type and the Critical Infrastructure Spatial Index (CISI)",
+            "risk_data_type": [
+                "exposure"
+            ],
+            "publisher": {
+                "name": "Institute for Environmental Studies (IVM)",
+                "url": "https://vu.nl/en/about-vu/research-institutes/ivm"
+            },
+            "version": "1",
+            "spatial": {
+                "scale": "global"
+            },
+            "license": "CC-BY-4.0",
+            "contact_point": {
+                "name": "Sadhana Nirandjan",
+                "email": "sadhana.nirandjan@vu.nl"
+            },
+            "creator": {
+                "name": "Sadhana Nirandjan",
+                "email": "sadhana.nirandjan@vu.nl"
+            },
+            "exposure": {
+                "category": "infrastructure",
+                "metrics": [
+                    {
+                        "id": "0",
+                        "dimension": "structure",
+                        "quantity_kind": "area"
+                    }
+                ]
+            },
+            "attributions": [
+                {
+                    "id": "0",
+                    "entity": {
+                        "name": "Sadhana Nirandjan",
+                        "email": "sadhana.nirandjan@vu.nl"
+                    },
+                    "role": "author"
+                },
+                {
+                    "id": "1",
+                    "entity": {
+                        "name": "Institute for Environmental Studies (IVM)",
+                        "url": "https://vu.nl/en/about-vu/research-institutes/ivm"
+                    },
+                    "role": "distributor"
+                }
+            ],
+            "referenced_by": [
+                {
+                    "id": "0",
+                    "name": "A spatially-explicit harmonized global dataset of critical infrastructure ",
+                    "author_names": [
+                        "Sadhana Nirandjan",
+                        "Elco E Koks",
+                        "Philip J Ward",
+                        "Jeroen C J H Aerts"
+                    ],
+                    "date_published": "2022-04-01",
+                    "url": "https://www.nature.com/articles/s41597-022-01218-4",
+                    "doi": "10.1038/s41597-022-01218-4 "
+                }
+            ],
+            "resources": [
+                {
+                    "id": "AoI",
+                    "title": "Amount of infrastructure",
+                    "description": "Amount of infrastructure per infrastructure type at a resolution of 0.10x0.10 and 0.25x0.25 degrees.",
+                    "format": "geotiff",
+                    "spatial_resolution": 11132,
+                    "coordinate_system": "EPSG:4326",
+                    "access_url": "https://zenodo.org/records/4957647#.YlPdTChBw2w",
+                    "download_url": "https://zenodo.org/records/4957647/files/Amount_of_infrastructure.zip?download=1"
+                },
+                {
+                    "id": "CISI",
+                    "title": "Critical Infrastructure Spatial Index (CISI)",
+                    "description": "Critical Infrastructure Spatial Index (CISI) as a combination of individual infrastracture categories at a resolution of 0.10x0.10 and 0.25x0.25 degrees",
+                    "format": "geotiff",
+                    "spatial_resolution": 11132,
+                    "coordinate_system": "EPSG:4326",
+                    "access_url": "https://zenodo.org/records/4957647#.YlPdTChBw2w",
+                    "download_url": "https://zenodo.org/records/4957647/files/CISI.zip?download=1"
+                }
+            ],
+            "links": [
+                {
+                    "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+                    "rel": "describedby"
+                }
+            ]
+        }
+    ]
+}

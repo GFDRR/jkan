@@ -1,0 +1,1013 @@
+{
+    "datasets": [
+        {
+            "id": "CA_SFRARR_exp_airport",
+            "title": "Central Asia exposure dataset - airports",
+            "description": "Collection of airport location and extent.",
+            "details": "Data from the EU-funded 'Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia' Program (https://www.gfdrr.org/en/program/SFRARR-Central-Asia).\nExposure data developed using high-resolution global and regional datasets and local official data, harmonized to produce a regionally-consistent exposure database for Central Asia. The exposure database includes: population, residential buildings, non-residential buildings (schools, healthcare facilities, industrial and commercial buildings), croplands, transportation system (roads, railways and bridges), airports and airstrips, mines, and supply infrastructure. The exposure database developed during this project can be used at regional scale, national scale or sub-national scale (e.g., at Oblast scale).",
+            "risk_data_type": [
+                "exposure"
+            ],
+            "publisher": {
+                "name": "RED - Risk, Engineering  Development - Pavia (Italy)",
+                "url": "https://www.redrisk.com"
+            },
+            "version": "2022",
+            "purpose": "Regional risk modelling. These data have been derived on a regional scale for the purpose of consistent regional multi-country hazard and risk assessment. Application of this information on smaller scales should be done with care. Importantly on a local scale, it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies., it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies",
+            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia",
+            "spatial": {
+                "countries": [
+                    "KAZ",
+                    "KGZ",
+                    "TKM",
+                    "TJK",
+                    "UZB"
+                ],
+                "bbox": [
+                    46,
+                    88,
+                    34,
+                    57
+                ],
+                "scale": "regional"
+            },
+            "license": "CC-BY-SA-4.0",
+            "contact_point": {
+                "name": "Paola Ceresa",
+                "email": "paola.ceresa@redrisk.com"
+            },
+            "creator": {
+                "name": "Chiara Scaini",
+                "email": "cscaini@inogs.it"
+            },
+            "exposure": {
+                "category": "infrastructure",
+                "metrics": [
+                    {
+                        "id": "CA_SFRARR_exp_airport",
+                        "dimension": "structure",
+                        "quantity_kind": "count"
+                    }
+                ]
+            },
+            "attributions": [
+                {
+                    "id": "CA_SFRARR_RED",
+                    "entity": {
+                        "name": "RED - Risk, Engineering  Development - Pavia (Italy)"
+                    },
+                    "role": "principal_investigator"
+                },
+                {
+                    "id": "CA_SFRARR_OGS",
+                    "entity": {
+                        "name": "National Institute of Oceanography and Applied Geophysics, OGS, Italy"
+                    },
+                    "role": "author"
+                },
+                {
+                    "id": "CA_SFRARR_WB",
+                    "entity": {
+                        "name": "World Bank"
+                    },
+                    "role": "resource_provider"
+                }
+            ],
+            "referenced_by": [
+                {
+                    "id": "CA_SFRARR_expReport_EN",
+                    "name": "Central Asia exposure data development technical report - English version",
+                    "date_published": "2022-11-16",
+                    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0064117/DR0091010/Task4_Exposure_Report_r6_EN.pdf?versionId=2023-07-21T17:33:32.2845222Z"
+                },
+                {
+                    "id": "CA_SFRARR_expReport_RU",
+                    "name": "Central Asia exposure data development technical report - Russian version",
+                    "date_published": "2022-11-16",
+                    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0064117/DR0091011/Task4_Exposure_Report_r6_RU.pdf?versionId=2023-07-21T17:33:26.6527091Z"
+                }
+            ],
+            "resources": [
+                {
+                    "id": "CA_SFRARR_exp_airport",
+                    "title": "Central Asia exposure dataset - airports",
+                    "description": "Regional layer of airports in Central Asia. The dataset has been developed based on global-scale airport layers, and validated locally based on visual inspection. The folder contains one points shapefile of the airports locations, and one polygon shapefile with the airport extent (assumed based on a circular buffer of variable radius). The two shapefiles contain the same fields. These data have been derived on a regional scale for the purpose of consistent regional (multi-country hazard and risk assessment).\nApplication of this information should on smaller scales should be done with care and taking into account the limitations of the approach. \nFiles: Airports_Centralasia.shp; Airports_Centralasia_points.shp",
+                    "media_type": "application/vnd.shp",
+                    "format": "shp",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064255",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064255/DR0091666/SFRARR_exposure_CA_Airports.zip?versionId=2023-07-05T13:40:53.8644184Z"
+                }
+            ],
+            "links": [
+                {
+                    "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+                    "rel": "describedby"
+                }
+            ]
+        },
+        {
+            "id": "CA_SFRARR_exp_agri",
+            "title": "Central Asia exposure dataset - agriculture (wheat and cotton)",
+            "description": "Cotton and wheat cropland in Central Asia. The dataset has been developed based on cropland data (cotton, wheat) collected from local data provided at sub-national level.",
+            "details": "Data from the EU-funded 'Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia' Program (https://www.gfdrr.org/en/program/SFRARR-Central-Asia).\nExposure data developed using high-resolution global and regional datasets and local official data, harmonized to produce a regionally-consistent exposure database for Central Asia. The exposure database includes: population, residential buildings, non-residential buildings (schools, healthcare facilities, industrial and commercial buildings), croplands, transportation system (roads, railways and bridges), airports and airstrips, mines, and supply infrastructure. The exposure database developed during this project can be used at regional scale, national scale or sub-national scale (e.g., at Oblast scale). ",
+            "risk_data_type": [
+                "exposure"
+            ],
+            "publisher": {
+                "name": "RED - Risk, Engineering  Development - Pavia (Italy)",
+                "url": "https://www.redrisk.com"
+            },
+            "version": "2022",
+            "purpose": "Regional risk modelling. These data have been derived on a regional scale for the purpose of consistent regional multi-country hazard and risk assessment. Application of this information on smaller scales should be done with care. Importantly on a local scale, it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies., it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies",
+            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia",
+            "spatial": {
+                "countries": [
+                    "KAZ",
+                    "KGZ",
+                    "TKM",
+                    "TJK",
+                    "UZB"
+                ],
+                "bbox": [
+                    46,
+                    88,
+                    34,
+                    57
+                ],
+                "scale": "regional"
+            },
+            "license": "CC-BY-SA-4.0",
+            "contact_point": {
+                "name": "Paola Ceresa",
+                "email": "paola.ceresa@redrisk.com"
+            },
+            "creator": {
+                "name": "Chiara Scaini",
+                "email": "cscaini@inogs.it"
+            },
+            "exposure": {
+                "category": "agriculture",
+                "metrics": [
+                    {
+                        "id": "CA_SFRARR_exp_agri",
+                        "dimension": "product",
+                        "quantity_kind": "currency"
+                    }
+                ]
+            },
+            "attributions": [
+                {
+                    "id": "CA_SFRARR_RED",
+                    "entity": {
+                        "name": "RED - Risk, Engineering  Development - Pavia (Italy)"
+                    },
+                    "role": "principal_investigator"
+                },
+                {
+                    "id": "CA_SFRARR_OGS",
+                    "entity": {
+                        "name": "National Institute of Oceanography and Applied Geophysics, OGS, Italy"
+                    },
+                    "role": "author"
+                },
+                {
+                    "id": "CA_SFRARR_WB",
+                    "entity": {
+                        "name": "World Bank"
+                    },
+                    "role": "resource_provider"
+                }
+            ],
+            "referenced_by": [
+                {
+                    "id": "CA_SFRARR_expReport_EN",
+                    "name": "Central Asia exposure data development technical report - English version",
+                    "date_published": "2022-11-16",
+                    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0064117/DR0091010/Task4_Exposure_Report_r6_EN.pdf?versionId=2023-07-21T17:33:32.2845222Z"
+                },
+                {
+                    "id": "CA_SFRARR_expReport_RU",
+                    "name": "Central Asia exposure data development technical report - Russian version",
+                    "date_published": "2022-11-16",
+                    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0064117/DR0091011/Task4_Exposure_Report_r6_RU.pdf?versionId=2023-07-21T17:33:26.6527091Z"
+                }
+            ],
+            "resources": [
+                {
+                    "id": "CA_SFRARR_exp_agri_KAZ",
+                    "title": "Central Asia exposure dataset - agricultural crops - KAZ",
+                    "description": "Cotton and wheat cropland in Kazakhstan, Central Asia. The dataset has been developed based on cropland data (cotton, wheat) collected from local data provided at sub-national level. These data have been derived on a regional scale for the purpose of consistent regional (multi-country hazard and risk assessment). Application of this information should on smaller scales should be done with care and taking into account the limitations of the approach. \n\n\n\nCOTTON_[OBLAST].csv, WHEAT_[OBLAST].csv. File names contain the Oblast GAD_ID_1 code\n\nCSV files only provided due to large size of GIS (.shp) files.",
+                    "media_type": "text/csv",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064248",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064248/DR0091987/SFRARR_exposure_croplands_KAZ_csvOnly.zip?versionId=2023-07-21T17:07:52.3193748Z"
+                },
+                {
+                    "id": "CA_SFRARR_exp_agri_KGZ",
+                    "title": "Central Asia exposure dataset - agricultural crops - KGZ",
+                    "description": "Cotton and wheat cropland in Kyrgyz Republic, Central Asia. The dataset has been developed based on cropland data (cotton, wheat) collected from local data provided at sub-national level. These data have been derived on a regional scale for the purpose of consistent regional (multi-country hazard and risk assessment). Application of this information should on smaller scales should be done with care and taking into account the limitations of the approach. \n\n\n\nCOTTON_[OBLAST].csv, WHEAT_[OBLAST].csv. File names contain the Oblast GAD_ID_1 code\n\nCSV files only provided due to large size of GIS (.shp) files.",
+                    "media_type": "text/csv",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064248",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064248/DR0091995/SFRARR_exposure_croplands_KGZ.zip?versionId=2023-07-21T17:07:56.1382112Z"
+                },
+                {
+                    "id": "CA_SFRARR_exp_agri_TKM",
+                    "title": "Central Asia exposure dataset - agricultural crops - TKM",
+                    "description": "Cotton and wheat cropland in Turkmenistan, Central Asia. The dataset has been developed based on cropland data (cotton, wheat) collected from local data provided at sub-national level. These data have been derived on a regional scale for the purpose of consistent regional (multi-country hazard and risk assessment). Application of this information should on smaller scales should be done with care and taking into account the limitations of the approach. \n\n\n\nCOTTON_[OBLAST].csv, WHEAT_[OBLAST].csv. File names contain the Oblast GAD_ID_1 code\n\nCSV files only provided due to large size of GIS (.shp) files.",
+                    "media_type": "text/csv",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064248",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064248/DR0091651/SFRARR_exposure_croplands_TKM.zip?versionId=2023-07-21T17:07:54.2642733Z"
+                },
+                {
+                    "id": "CA_SFRARR_exp_agri_TJK",
+                    "title": "Central Asia exposure dataset - agricultural crops - TJK",
+                    "description": "Cotton and wheat cropland in Tajikistan, Central Asia. The dataset has been developed based on cropland data (cotton, wheat) collected from local data provided at sub-national level. These data have been derived on a regional scale for the purpose of consistent regional (multi-country hazard and risk assessment). Application of this information should on smaller scales should be done with care and taking into account the limitations of the approach. \n\n\n\nCOTTON_[OBLAST].csv, WHEAT_[OBLAST].csv. File names contain the Oblast GAD_ID_1 code\n\nCSV files only provided due to large size of GIS (.shp) files.",
+                    "media_type": "text/csv",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064248",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064248/DR0091652/SFRARR_exposure_croplands_TJK.zip?versionId=2023-07-21T17:07:48.2706690Z"
+                },
+                {
+                    "id": "CA_SFRARR_exp_agri_UZB",
+                    "title": "Central Asia exposure dataset - agricultural crops - UZB",
+                    "description": "Cotton and wheat cropland in Uzbekistan, Central Asia. The dataset has been developed based on cropland data (cotton, wheat) collected from local data provided at sub-national level. These data have been derived on a regional scale for the purpose of consistent regional (multi-country hazard and risk assessment). Application of this information should on smaller scales should be done with care and taking into account the limitations of the approach. \n\n\n\nCOTTON_[OBLAST].csv, WHEAT_[OBLAST].csv. File names contain the Oblast GAD_ID_1 code\n\nCSV files only provided due to large size of GIS (.shp) files.",
+                    "media_type": "text/csv",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064248",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064248/DR0091653/SFRARR_exposure_croplands_UZB_csvOnly.zip?versionId=2023-07-21T17:07:50.3494905Z"
+                },
+                {
+                    "id": "CA_SFRARR_exp_agri_KGZ_shp",
+                    "title": "Central Asia exposure dataset - agricultural crops - KGZ",
+                    "description": "Cotton and wheat cropland in Kyrgyz Republic, Central Asia. The dataset has been developed based on cropland data (cotton, wheat) collected from local data provided at sub-national level. These data have been derived on a regional scale for the purpose of consistent regional (multi-country hazard and risk assessment). Application of this information should on smaller scales should be done with care and taking into account the limitations of the approach. \n\n\n\nCOTTON_[OBLAST].csv, WHEAT_[OBLAST].csv. File names contain the Oblast GAD_ID_1 code\n\nCSV files only provided due to large size of GIS (.shp) files.",
+                    "media_type": "application/vnd.shp",
+                    "format": "shp",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064248",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064248/DR0091995/SFRARR_exposure_croplands_KGZ.zip?versionId=2023-07-21T17:07:56.1382112Z"
+                },
+                {
+                    "id": "CA_SFRARR_exp_agri_TKM_shp",
+                    "title": "Central Asia exposure dataset - agricultural crops - TKM",
+                    "description": "Cotton and wheat cropland in Turkmenistan, Central Asia. The dataset has been developed based on cropland data (cotton, wheat) collected from local data provided at sub-national level. These data have been derived on a regional scale for the purpose of consistent regional (multi-country hazard and risk assessment). Application of this information should on smaller scales should be done with care and taking into account the limitations of the approach. \n\n\n\nCOTTON_[OBLAST].csv, WHEAT_[OBLAST].csv. File names contain the Oblast GAD_ID_1 code\n\nCSV files only provided due to large size of GIS (.shp) files.",
+                    "media_type": "application/vnd.shp",
+                    "format": "shp",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064248",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064248/DR0091651/SFRARR_exposure_croplands_TKM.zip?versionId=2023-07-21T17:07:54.2642733Z"
+                },
+                {
+                    "id": "CA_SFRARR_exp_agri_TJK_shp",
+                    "title": "Central Asia exposure dataset - agricultural crops - TJK",
+                    "description": "Cotton and wheat cropland in Tajikistan, Central Asia. The dataset has been developed based on cropland data (cotton, wheat) collected from local data provided at sub-national level. These data have been derived on a regional scale for the purpose of consistent regional (multi-country hazard and risk assessment). Application of this information should on smaller scales should be done with care and taking into account the limitations of the approach. \n\n\n\nCOTTON_[OBLAST].csv, WHEAT_[OBLAST].csv. File names contain the Oblast GAD_ID_1 code\n\nCSV files only provided due to large size of GIS (.shp) files.",
+                    "media_type": "application/vnd.shp",
+                    "format": "shp",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064248",
+                    "download_url": "https://datacatalogfiles.worldbank.org/ddh-published/0064248/DR0091652/SFRARR_exposure_croplands_TJK.zip?versionId=2023-07-21T17:07:48.2706690Z"
+                }
+            ],
+            "links": [
+                {
+                    "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+                    "rel": "describedby"
+                }
+            ]
+        },
+        {
+            "id": "CA_SFRARR_exp_nonres",
+            "title": "Central Asia exposure dataset - nonresidential buildings",
+            "description": "Central Asia exposure dataset - Non-residential buildings (education, healthcare, industrial, commercial)",
+            "details": "Data from the EU-funded 'Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia' Program (https://www.gfdrr.org/en/program/SFRARR-Central-Asia).\nExposure data developed using high-resolution global and regional datasets and local official data, harmonized to produce a regionally-consistent exposure database for Central Asia. The exposure database includes: population, residential buildings, non-residential buildings (schools, healthcare facilities, industrial and commercial buildings), croplands, transportation system (roads, railways and bridges), airports and airstrips, mines, and supply infrastructure. The exposure database developed during this project can be used at regional scale, national scale or sub-national scale (e.g., at Oblast scale). ",
+            "risk_data_type": [
+                "exposure"
+            ],
+            "publisher": {
+                "name": "RED - Risk, Engineering  Development - Pavia (Italy)",
+                "url": "https://www.redrisk.com"
+            },
+            "version": "2022",
+            "purpose": "Regional risk modelling. These data have been derived on a regional scale for the purpose of consistent regional multi-country hazard and risk assessment. Application of this information on smaller scales should be done with care. Importantly on a local scale, it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies., it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies",
+            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia",
+            "spatial": {
+                "countries": [
+                    "KAZ",
+                    "KGZ",
+                    "TKM",
+                    "TJK",
+                    "UZB"
+                ],
+                "bbox": [
+                    46,
+                    88,
+                    34,
+                    57
+                ],
+                "scale": "regional"
+            },
+            "license": "CC-BY-SA-4.0",
+            "contact_point": {
+                "name": "Paola Ceresa",
+                "email": "paola.ceresa@redrisk.com"
+            },
+            "creator": {
+                "name": "Chiara Scaini",
+                "email": "cscaini@inogs.it"
+            },
+            "exposure": {
+                "category": "buildings",
+                "metrics": [
+                    {
+                        "id": "CA_SFRARR_exp_nonres",
+                        "dimension": "structure",
+                        "quantity_kind": "currency"
+                    }
+                ]
+            },
+            "attributions": [
+                {
+                    "id": "CA_SFRARR_RED",
+                    "entity": {
+                        "name": "RED - Risk, Engineering  Development - Pavia (Italy)"
+                    },
+                    "role": "principal_investigator"
+                },
+                {
+                    "id": "CA_SFRARR_OGS",
+                    "entity": {
+                        "name": "National Institute of Oceanography and Applied Geophysics, OGS, Italy"
+                    },
+                    "role": "author"
+                },
+                {
+                    "id": "CA_SFRARR_WB",
+                    "entity": {
+                        "name": "World Bank"
+                    },
+                    "role": "resource_provider"
+                }
+            ],
+            "referenced_by": [
+                {
+                    "id": "CA_SFRARR_expReport_EN",
+                    "name": "Central Asia exposure data development technical report - English version",
+                    "date_published": "2022-11-16",
+                    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0064117/DR0091010/Task4_Exposure_Report_r6_EN.pdf?versionId=2023-07-21T17:33:32.2845222Z"
+                },
+                {
+                    "id": "CA_SFRARR_expReport_RU",
+                    "name": "Central Asia exposure data development technical report - Russian version",
+                    "date_published": "2022-11-16",
+                    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0064117/DR0091011/Task4_Exposure_Report_r6_RU.pdf?versionId=2023-07-21T17:33:26.6527091Z"
+                }
+            ],
+            "resources": [
+                {
+                    "id": "CA_SFRARR_exp_nonres",
+                    "title": "Central Asia exposure dataset - Non-residential buildings (education, healthcare, industrial, commercial)",
+                    "description": "Central Asia exposure dataset - Non-residential buildings (education, healthcare, industrial, commercial)\nNon-residential data provided as CSV files.\nFile naming: COMMERCIAL_[OBLAST].csv, INDUSTRIAL_[OBLAST].csv, HEALTHCARE_[OBLAST].csv, EDUCATION_[OBLAST].csv",
+                    "media_type": "text/csv",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064288"
+                }
+            ],
+            "links": [
+                {
+                    "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+                    "rel": "describedby"
+                }
+            ]
+        },
+        {
+            "id": "CA_SFRARR_exp_pop",
+            "title": "Central Asia exposure dataset - population",
+            "description": "Regional layer of population distribution in Central Asia.",
+            "details": "Data from the EU-funded 'Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia' Program (https://www.gfdrr.org/en/program/SFRARR-Central-Asia).\nExposure data developed using high-resolution global and regional datasets and local official data, harmonized to produce a regionally-consistent exposure database for Central Asia. The exposure database includes: population, residential buildings, non-residential buildings (schools, healthcare facilities, industrial and commercial buildings), croplands, transportation system (roads, railways and bridges), airports and airstrips, mines, and supply infrastructure. The exposure database developed during this project can be used at regional scale, national scale or sub-national scale (e.g., at Oblast scale). ",
+            "risk_data_type": [
+                "exposure"
+            ],
+            "publisher": {
+                "name": "RED - Risk, Engineering  Development - Pavia (Italy)",
+                "url": "https://www.redrisk.com"
+            },
+            "version": "2022",
+            "purpose": "Regional risk modelling. These data have been derived on a regional scale for the purpose of consistent regional multi-country hazard and risk assessment. Application of this information on smaller scales should be done with care. Importantly on a local scale, it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies., it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies",
+            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia",
+            "spatial": {
+                "countries": [
+                    "KAZ",
+                    "KGZ",
+                    "TKM",
+                    "TJK",
+                    "UZB"
+                ],
+                "bbox": [
+                    46,
+                    88,
+                    34,
+                    57
+                ],
+                "scale": "regional"
+            },
+            "license": "CC-BY-SA-4.0",
+            "contact_point": {
+                "name": "Paola Ceresa",
+                "email": "paola.ceresa@redrisk.com"
+            },
+            "creator": {
+                "name": "Chiara Scaini",
+                "email": "cscaini@inogs.it"
+            },
+            "exposure": {
+                "category": "population",
+                "metrics": [
+                    {
+                        "id": "CA_SFRARR_exp_pop",
+                        "dimension": "population",
+                        "quantity_kind": "count"
+                    }
+                ]
+            },
+            "attributions": [
+                {
+                    "id": "CA_SFRARR_RED",
+                    "entity": {
+                        "name": "RED - Risk, Engineering  Development - Pavia (Italy)"
+                    },
+                    "role": "principal_investigator"
+                },
+                {
+                    "id": "CA_SFRARR_OGS",
+                    "entity": {
+                        "name": "National Institute of Oceanography and Applied Geophysics, OGS, Italy"
+                    },
+                    "role": "author"
+                },
+                {
+                    "id": "CA_SFRARR_WB",
+                    "entity": {
+                        "name": "World Bank"
+                    },
+                    "role": "resource_provider"
+                }
+            ],
+            "referenced_by": [
+                {
+                    "id": "CA_SFRARR_expReport_EN",
+                    "name": "Central Asia exposure data development technical report - English version",
+                    "date_published": "2022-11-16",
+                    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0064117/DR0091010/Task4_Exposure_Report_r6_EN.pdf?versionId=2023-07-21T17:33:32.2845222Z"
+                },
+                {
+                    "id": "CA_SFRARR_expReport_RU",
+                    "name": "Central Asia exposure data development technical report - Russian version",
+                    "date_published": "2022-11-16",
+                    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0064117/DR0091011/Task4_Exposure_Report_r6_RU.pdf?versionId=2023-07-21T17:33:26.6527091Z"
+                }
+            ],
+            "resources": [
+                {
+                    "id": "CA_SFRARR_exp_pop",
+                    "title": "Central Asia exposure dataset - Population",
+                    "description": "Regional layer of population distribution in Central Asia. Files: POPULATION_[OBLAST].shp, POPULATION_[OBLAST].csv. File names contain the Oblast GAD_ID_1 code",
+                    "media_type": "text/csv",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064250"
+                }
+            ],
+            "links": [
+                {
+                    "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+                    "rel": "describedby"
+                }
+            ]
+        },
+        {
+            "id": "CA_SFRARR_exp_res",
+            "title": "Central Asia exposure dataset - residential buildings",
+            "description": "Central Asia exposure dataset - Residential buildings",
+            "details": "Data from the EU-funded 'Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia' Program (https://www.gfdrr.org/en/program/SFRARR-Central-Asia).\nExposure data developed using high-resolution global and regional datasets and local official data, harmonized to produce a regionally-consistent exposure database for Central Asia. The exposure database includes: population, residential buildings, non-residential buildings (schools, healthcare facilities, industrial and commercial buildings), croplands, transportation system (roads, railways and bridges), airports and airstrips, mines, and supply infrastructure. The exposure database developed during this project can be used at regional scale, national scale or sub-national scale (e.g., at Oblast scale). ",
+            "risk_data_type": [
+                "exposure"
+            ],
+            "publisher": {
+                "name": "RED - Risk, Engineering  Development - Pavia (Italy)",
+                "url": "https://www.redrisk.com"
+            },
+            "version": "2022",
+            "purpose": "Regional risk modelling. These data have been derived on a regional scale for the purpose of consistent regional multi-country hazard and risk assessment. Application of this information on smaller scales should be done with care. Importantly on a local scale, it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies., it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies",
+            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia",
+            "spatial": {
+                "countries": [
+                    "KAZ",
+                    "KGZ",
+                    "TKM",
+                    "TJK",
+                    "UZB"
+                ],
+                "bbox": [
+                    46,
+                    88,
+                    34,
+                    57
+                ],
+                "scale": "regional"
+            },
+            "license": "CC-BY-SA-4.0",
+            "contact_point": {
+                "name": "Paola Ceresa",
+                "email": "paola.ceresa@redrisk.com"
+            },
+            "creator": {
+                "name": "Chiara Scaini",
+                "email": "cscaini@inogs.it"
+            },
+            "exposure": {
+                "category": "buildings",
+                "metrics": [
+                    {
+                        "id": "CA_SFRARR_exp_res",
+                        "dimension": "structure",
+                        "quantity_kind": "currency"
+                    }
+                ]
+            },
+            "attributions": [
+                {
+                    "id": "CA_SFRARR_RED",
+                    "entity": {
+                        "name": "RED - Risk, Engineering  Development - Pavia (Italy)"
+                    },
+                    "role": "principal_investigator"
+                },
+                {
+                    "id": "CA_SFRARR_OGS",
+                    "entity": {
+                        "name": "National Institute of Oceanography and Applied Geophysics, OGS, Italy"
+                    },
+                    "role": "author"
+                },
+                {
+                    "id": "CA_SFRARR_WB",
+                    "entity": {
+                        "name": "World Bank"
+                    },
+                    "role": "resource_provider"
+                }
+            ],
+            "referenced_by": [
+                {
+                    "id": "CA_SFRARR_expReport_EN",
+                    "name": "Central Asia exposure data development technical report - English version",
+                    "date_published": "2022-11-16",
+                    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0064117/DR0091010/Task4_Exposure_Report_r6_EN.pdf?versionId=2023-07-21T17:33:32.2845222Z"
+                },
+                {
+                    "id": "CA_SFRARR_expReport_RU",
+                    "name": "Central Asia exposure data development technical report - Russian version",
+                    "date_published": "2022-11-16",
+                    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0064117/DR0091011/Task4_Exposure_Report_r6_RU.pdf?versionId=2023-07-21T17:33:26.6527091Z"
+                }
+            ],
+            "resources": [
+                {
+                    "id": "CA_SFRARR_exp_res",
+                    "title": "Central Asia exposure dataset - Residential buildings",
+                    "description": "Central Asia exposure layers – Residential buildings.\nFiles: RESIDENTIAL_[OBLAST].csv, RESIDENTIAL_[OBLAST].shp",
+                    "media_type": "text/csv",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064251"
+                }
+            ],
+            "links": [
+                {
+                    "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+                    "rel": "describedby"
+                }
+            ]
+        },
+        {
+            "id": "CA_SFRARR_exp_transport",
+            "title": "Central Asia exposure dataset - transport",
+            "description": "Regional layer of transportation infrastructure in Central Asia. The dataset has been developed based on transportation data collected from Openstreetmap and validated based on local data.",
+            "details": "Data from the EU-funded 'Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia' Program (https://www.gfdrr.org/en/program/SFRARR-Central-Asia).\nExposure data developed using high-resolution global and regional datasets and local official data, harmonized to produce a regionally-consistent exposure database for Central Asia. The exposure database includes: population, residential buildings, non-residential buildings (schools, healthcare facilities, industrial and commercial buildings), croplands, transportation system (roads, railways and bridges), airports and airstrips, mines, and supply infrastructure. The exposure database developed during this project can be used at regional scale, national scale or sub-national scale (e.g., at Oblast scale). ",
+            "risk_data_type": [
+                "exposure"
+            ],
+            "publisher": {
+                "name": "RED - Risk, Engineering  Development - Pavia (Italy)",
+                "url": "https://www.redrisk.com"
+            },
+            "version": "2022",
+            "purpose": "Regional risk modelling. These data have been derived on a regional scale for the purpose of consistent regional multi-country hazard and risk assessment. Application of this information on smaller scales should be done with care. Importantly on a local scale, it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies., it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies",
+            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia",
+            "spatial": {
+                "countries": [
+                    "KAZ",
+                    "KGZ",
+                    "TKM",
+                    "TJK",
+                    "UZB"
+                ],
+                "bbox": [
+                    46,
+                    88,
+                    34,
+                    57
+                ],
+                "scale": "regional"
+            },
+            "license": "CC-BY-SA-4.0",
+            "contact_point": {
+                "name": "Paola Ceresa",
+                "email": "paola.ceresa@redrisk.com"
+            },
+            "creator": {
+                "name": "Chiara Scaini",
+                "email": "cscaini@inogs.it"
+            },
+            "exposure": {
+                "category": "infrastructure",
+                "metrics": [
+                    {
+                        "id": "CA_SFRARR_exp_transport",
+                        "dimension": "structure",
+                        "quantity_kind": "currency"
+                    }
+                ]
+            },
+            "attributions": [
+                {
+                    "id": "CA_SFRARR_RED",
+                    "entity": {
+                        "name": "RED - Risk, Engineering  Development - Pavia (Italy)"
+                    },
+                    "role": "principal_investigator"
+                },
+                {
+                    "id": "CA_SFRARR_OGS",
+                    "entity": {
+                        "name": "National Institute of Oceanography and Applied Geophysics, OGS, Italy"
+                    },
+                    "role": "author"
+                },
+                {
+                    "id": "CA_SFRARR_WB",
+                    "entity": {
+                        "name": "World Bank"
+                    },
+                    "role": "resource_provider"
+                }
+            ],
+            "referenced_by": [
+                {
+                    "id": "CA_SFRARR_expReport_EN",
+                    "name": "Central Asia exposure data development technical report - English version",
+                    "date_published": "2022-11-16",
+                    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0064117/DR0091010/Task4_Exposure_Report_r6_EN.pdf?versionId=2023-07-21T17:33:32.2845222Z"
+                },
+                {
+                    "id": "CA_SFRARR_expReport_RU",
+                    "name": "Central Asia exposure data development technical report - Russian version",
+                    "date_published": "2022-11-16",
+                    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0064117/DR0091011/Task4_Exposure_Report_r6_RU.pdf?versionId=2023-07-21T17:33:26.6527091Z"
+                }
+            ],
+            "resources": [
+                {
+                    "id": "CA_SFRARR_exp_transport",
+                    "title": "Central Asia exposure dataset - Transport",
+                    "description": "Regional layer of transportation infrastructure in Central Asia. The dataset has been developed based on transportation data collected from Openstreetmap and validated based on local data. Bridges location was derived based on spatial analysis, in particular identifying the intersection of main roads/railways and rivers. These data have been derived on a regional scale for the purpose of consistent regional (multi-country hazard and risk assessment). The folder includes one point layer containing Central Asia bridges, and one lines layer containing roads and railways of different types. Note that minor roads (e.g. residential, service) and railway types (e.g. subway) were not included in the analysis. Application of this information should on smaller scales should be done with care and taking into account the limitations of the approach. \n\n\nCentral Asia exposure dataset - Transport - Bridges - UZB\n\nFiles: BRIDGES_[OBLAST].csv; BRIDGES_[OBLAST].shp",
+                    "media_type": "text/csv",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064252",
+                    "temporal": {
+                        "start": "2020",
+                        "end": "2020"
+                    }
+                }
+            ],
+            "links": [
+                {
+                    "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+                    "rel": "describedby"
+                }
+            ]
+        },
+        {
+            "id": "CA_SFRARR_exp_infra",
+            "title": "Central Asia exposure dataset - infrastructure",
+            "description": "Regional layer of power and communications infrastructure in Central Asia. The dataset has been developed based on infrastructure data collected from global/regional layers and based on local data.",
+            "details": "Data from the EU-funded 'Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia' Program (https://www.gfdrr.org/en/program/SFRARR-Central-Asia).\nExposure data developed using high-resolution global and regional datasets and local official data, harmonized to produce a regionally-consistent exposure database for Central Asia. The exposure database includes: population, residential buildings, non-residential buildings (schools, healthcare facilities, industrial and commercial buildings), croplands, transportation system (roads, railways and bridges), airports and airstrips, mines, and supply infrastructure. The exposure database developed during this project can be used at regional scale, national scale or sub-national scale (e.g., at Oblast scale). ",
+            "risk_data_type": [
+                "exposure"
+            ],
+            "publisher": {
+                "name": "RED - Risk, Engineering  Development - Pavia (Italy)",
+                "url": "https://www.redrisk.com"
+            },
+            "version": "2022",
+            "purpose": "Regional risk modelling. These data have been derived on a regional scale for the purpose of consistent regional multi-country hazard and risk assessment. Application of this information on smaller scales should be done with care. Importantly on a local scale, it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies., it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies",
+            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia",
+            "spatial": {
+                "countries": [
+                    "KAZ",
+                    "KGZ",
+                    "TKM",
+                    "TJK",
+                    "UZB"
+                ],
+                "bbox": [
+                    46,
+                    88,
+                    34,
+                    57
+                ],
+                "scale": "regional"
+            },
+            "license": "CC-BY-SA-4.0",
+            "contact_point": {
+                "name": "Paola Ceresa",
+                "email": "paola.ceresa@redrisk.com"
+            },
+            "creator": {
+                "name": "Chiara Scaini",
+                "email": "cscaini@inogs.it"
+            },
+            "exposure": {
+                "category": "infrastructure",
+                "metrics": [
+                    {
+                        "id": "CA_SFRARR_exp_infra",
+                        "dimension": "structure",
+                        "quantity_kind": "currency"
+                    }
+                ]
+            },
+            "attributions": [
+                {
+                    "id": "CA_SFRARR_RED",
+                    "entity": {
+                        "name": "RED - Risk, Engineering  Development - Pavia (Italy)"
+                    },
+                    "role": "principal_investigator"
+                },
+                {
+                    "id": "CA_SFRARR_OGS",
+                    "entity": {
+                        "name": "National Institute of Oceanography and Applied Geophysics, OGS, Italy"
+                    },
+                    "role": "author"
+                },
+                {
+                    "id": "CA_SFRARR_WB",
+                    "entity": {
+                        "name": "World Bank"
+                    },
+                    "role": "resource_provider"
+                }
+            ],
+            "referenced_by": [
+                {
+                    "id": "CA_SFRARR_expReport_EN",
+                    "name": "Central Asia exposure data development technical report - English version",
+                    "date_published": "2022-11-16",
+                    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0064117/DR0091010/Task4_Exposure_Report_r6_EN.pdf?versionId=2023-07-21T17:33:32.2845222Z"
+                },
+                {
+                    "id": "CA_SFRARR_expReport_RU",
+                    "name": "Central Asia exposure data development technical report - Russian version",
+                    "date_published": "2022-11-16",
+                    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0064117/DR0091011/Task4_Exposure_Report_r6_RU.pdf?versionId=2023-07-21T17:33:26.6527091Z"
+                }
+            ],
+            "resources": [
+                {
+                    "id": "CA_SFRARR_exp_infra",
+                    "title": "Central Asia exposure dataset - Other infrastructure",
+                    "description": "Regional layer of power and communications infrastructure in Central Asia. The dataset has been developed based on infrastructure data collected from global/regional layers and based on local data.\n\n\nThe layers contain point infrastructure (extraction sites and mines, power plants, dams and reservoirs) and lines infrastructure (oil, gas and water pipelines, electricity and communication network).\n\n\nApplication of this information should on smaller scales should be done with care and taking into account the limitations of the approach. \n\n\nFiles: Infrastructure_lines.shp; Infrastructure_lines.csv: Infrastructure_points.shp; Infrastructure_points.csv",
+                    "media_type": "text/csv",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064253"
+                }
+            ],
+            "links": [
+                {
+                    "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+                    "rel": "describedby"
+                }
+            ]
+        },
+        {
+            "id": "CA_SFRARR_exp_res_projected",
+            "title": "Central Asia exposure dataset - residential buildings - projected",
+            "description": "Regional layer of current residential buildings in Central Asia and projected (2080) residential exposure.",
+            "details": "Data from the EU-funded 'Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia' Program (https://www.gfdrr.org/en/program/SFRARR-Central-Asia).\nExposure data developed using high-resolution global and regional datasets and local official data, harmonized to produce a regionally-consistent exposure database for Central Asia. The exposure database includes: population, residential buildings, non-residential buildings (schools, healthcare facilities, industrial and commercial buildings), croplands, transportation system (roads, railways and bridges), airports and airstrips, mines, and supply infrastructure. The exposure database developed during this project can be used at regional scale, national scale or sub-national scale (e.g., at Oblast scale). ",
+            "risk_data_type": [
+                "exposure"
+            ],
+            "publisher": {
+                "name": "RED - Risk, Engineering  Development - Pavia (Italy)",
+                "url": "https://www.redrisk.com"
+            },
+            "version": "2022",
+            "purpose": "Regional risk modelling. These data have been derived on a regional scale for the purpose of consistent regional multi-country hazard and risk assessment. Application of this information on smaller scales should be done with care. Importantly on a local scale, it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies., it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies",
+            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia",
+            "spatial": {
+                "countries": [
+                    "KAZ",
+                    "KGZ",
+                    "TKM",
+                    "TJK",
+                    "UZB"
+                ],
+                "bbox": [
+                    46,
+                    88,
+                    34,
+                    57
+                ],
+                "scale": "regional"
+            },
+            "license": "CC-BY-SA-4.0",
+            "contact_point": {
+                "name": "Paola Ceresa",
+                "email": "paola.ceresa@redrisk.com"
+            },
+            "creator": {
+                "name": "Chiara Scaini",
+                "email": "cscaini@inogs.it"
+            },
+            "exposure": {
+                "category": "buildings",
+                "metrics": [
+                    {
+                        "id": "CA_SFRARR_exp_res_projected",
+                        "dimension": "structure",
+                        "quantity_kind": "currency"
+                    }
+                ]
+            },
+            "attributions": [
+                {
+                    "id": "CA_SFRARR_RED",
+                    "entity": {
+                        "name": "RED - Risk, Engineering  Development - Pavia (Italy)"
+                    },
+                    "role": "principal_investigator"
+                },
+                {
+                    "id": "CA_SFRARR_OGS",
+                    "entity": {
+                        "name": "National Institute of Oceanography and Applied Geophysics, OGS, Italy"
+                    },
+                    "role": "author"
+                },
+                {
+                    "id": "CA_SFRARR_WB",
+                    "entity": {
+                        "name": "World Bank"
+                    },
+                    "role": "resource_provider"
+                }
+            ],
+            "referenced_by": [
+                {
+                    "id": "CA_SFRARR_expReport_EN",
+                    "name": "Central Asia exposure data development technical report - English version",
+                    "date_published": "2022-11-16",
+                    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0064117/DR0091010/Task4_Exposure_Report_r6_EN.pdf?versionId=2023-07-21T17:33:32.2845222Z"
+                },
+                {
+                    "id": "CA_SFRARR_expReport_RU",
+                    "name": "Central Asia exposure data development technical report - Russian version",
+                    "date_published": "2022-11-16",
+                    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0064117/DR0091011/Task4_Exposure_Report_r6_RU.pdf?versionId=2023-07-21T17:33:26.6527091Z"
+                }
+            ],
+            "resources": [
+                {
+                    "id": "CA_SFRARR_exp_res_projected",
+                    "title": "Central Asia exposure dataset - Projected residential exposure",
+                    "description": "Regional layer of residential buildings in Central Asia. Central Asia projected (2080) residential exposure. Oblast level: SSP4\nDataset includes SSP1, SSP4, SSP5 scenarios.\nFiles: RESIDENTIAL_[OBLAST]._2080_[SSP].csv",
+                    "media_type": "text/csv",
+                    "format": "csv",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064254",
+                    "temporal": {
+                        "start": "2080",
+                        "end": "2080"
+                    }
+                }
+            ],
+            "links": [
+                {
+                    "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+                    "rel": "describedby"
+                }
+            ]
+        },
+        {
+            "id": "CA_SFRARR_exp",
+            "title": "Central Asia exposure dataset",
+            "description": "Central Asia exposure dataset - access to building, population, infrastructure, agriculture data for risk analytics.",
+            "details": "Data from the EU-funded 'Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia' Program (https://www.gfdrr.org/en/program/SFRARR-Central-Asia).\nExposure data developed using high-resolution global and regional datasets and local official data, harmonized to produce a regionally-consistent exposure database for Central Asia. The exposure database includes: population, residential buildings, non-residential buildings (schools, healthcare facilities, industrial and commercial buildings), croplands, transportation system (roads, railways and bridges), airports and airstrips, mines, and supply infrastructure. The exposure database developed during this project can be used at regional scale, national scale or sub-national scale (e.g., at Oblast scale). ",
+            "risk_data_type": [
+                "exposure"
+            ],
+            "publisher": {
+                "name": "RED - Risk, Engineering  Development - Pavia (Italy)",
+                "url": "https://www.redrisk.com"
+            },
+            "version": "2022",
+            "purpose": "Regional risk modelling. These data have been derived on a regional scale for the purpose of consistent regional multi-country hazard and risk assessment. Application of this information on smaller scales should be done with care. Importantly on a local scale, it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies., it is often the case that more detailed history and hazard information is required to perform such hazard and risk modelling, particularly were applied to dimension mitigation structures or strategies",
+            "project": "SFRARR - Strengthening Financial Resilience and Accelerating Risk Reduction in Central Asia",
+            "spatial": {
+                "countries": [
+                    "KAZ",
+                    "KGZ",
+                    "TKM",
+                    "TJK",
+                    "UZB"
+                ],
+                "bbox": [
+                    46,
+                    88,
+                    34,
+                    57
+                ],
+                "scale": "regional",
+                "gazetteer_entries": [
+                    {
+                        "id": "CA_SFRARR_exp_gaz",
+                        "scheme": "ISO 3166-1 alpha-2",
+                        "description": "Oblast codes and names are used."
+                    }
+                ]
+            },
+            "license": "CC-BY-SA-4.0",
+            "contact_point": {
+                "name": "Paola Ceresa",
+                "email": "paola.ceresa@redrisk.com"
+            },
+            "creator": {
+                "name": "Chiara Scaini",
+                "email": "cscaini@inogs.it"
+            },
+            "exposure": {
+                "category": "buildings",
+                "metrics": [
+                    {
+                        "id": "CA_SFRARR_exp",
+                        "dimension": "structure",
+                        "quantity_kind": "currency"
+                    }
+                ]
+            },
+            "attributions": [
+                {
+                    "id": "CA_SFRARR_OGS",
+                    "entity": {
+                        "name": "National Institute of Oceanography and Applied Geophysics, OGS, Italy"
+                    },
+                    "role": "author"
+                },
+                {
+                    "id": "CA_SFRARR_WB",
+                    "entity": {
+                        "name": "World Bank"
+                    },
+                    "role": "resource_provider"
+                },
+                {
+                    "id": "CA_SFRARR_RED",
+                    "entity": {
+                        "name": "RED - Risk, Engineering  Development - Pavia (Italy)"
+                    },
+                    "role": "principal_investigator"
+                }
+            ],
+            "referenced_by": [
+                {
+                    "id": "CA_SFRARR_expReport_RU",
+                    "name": "Central Asia exposure data development technical report - Russian version",
+                    "date_published": "2022-11-16",
+                    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0064117/DR0091011/Task4_Exposure_Report_r6_RU.pdf?versionId=2023-07-21T17:33:26.6527091Z"
+                }
+            ],
+            "resources": [
+                {
+                    "id": "CA_SFRARR_exp",
+                    "title": "Central Asia exposure dataset - multiple sectors",
+                    "description": "Central Asia exposure dataset - containing access to building, population, infrastructure, agriculture data for risk analytics.",
+                    "format": "shp",
+                    "access_url": "https://datacatalog.worldbank.org/search/dataset/0064117/Central-Asia-Exposure-Data"
+                }
+            ],
+            "links": [
+                {
+                    "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+                    "rel": "describedby"
+                }
+            ]
+        }
+    ]
+}
