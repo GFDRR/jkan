@@ -51,8 +51,8 @@ layout: default
           (right-click and "save as" to download)
         </li>
         <li>
-          {% assign path_to_json = page.path | split: "/" | last | replace: ".md", ".json" | prepend: "_datasets/json/" %}
-          <a href="https://raw.githubusercontent.com/GFDRR/rdl-jkan/rdl-0.2/{{ path_to_json }}" property="dcat:accessURL" download>
+          {% assign path_to_json = page.path | split: "/" | last | replace: ".md", ".json" | prepend: "datasets/json/" %}
+          <a href="https://jkan.riskdatalibrary.org/{{ path_to_json }}" property="dcat:accessURL" download>
             <span property="dct:title">Metadata</span> 
           </a>
           <span class="label label-default" property="dcat:mediaType">json</span>
